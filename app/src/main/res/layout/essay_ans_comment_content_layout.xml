@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.business.essay.cusview.RightContentLinearlayout
+        android:id="@+id/ans_comment_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.RightContentLinearlayout
+        android:id="@+id/ans_comment_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.RightContentLinearlayout
+        android:id="@+id/ans_comment_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.RightContentLinearlayout
+        android:id="@+id/ans_comment_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.RightContentLinearlayout
+        android:id="@+id/ans_comment_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</LinearLayout>

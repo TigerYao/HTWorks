@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/mTopViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/mViewBack"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ig_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mTvHomeworkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:maxLength="13"
+            android:text="课后作业"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mTvAllRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:maxLength="13"
+            android:text="全部已读"
+            android:textColor="@color/blackF4"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_tab"
+        android:layout_width="44dp"
+        android:layout_height="3dp"
+        android:background="@drawable/top_round_red_line"
+        android:layout_alignBottom="@+id/line2"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_top_order_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mTopViewTitle"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_civil_service"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="客观题"
+                android:textColor="@color/redF3"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_civil_service_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/tv_civil_service"
+                android:background="@drawable/textview_oval_border"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="9dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_essay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="申论"
+                android:textColor="#6D7172"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_essay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/tv_essay"
+                android:background="@drawable/textview_oval_border"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="9dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/ll_top_order_bar"
+        android:background="@color/gray005" />
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/mCommonErrorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line2"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/mPullRefreshRecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/line2"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+
+</RelativeLayout>

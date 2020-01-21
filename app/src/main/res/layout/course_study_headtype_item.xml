@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="44dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的课程"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center|left"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最近学习"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:id="@+id/study_order_view"
+        android:drawablePadding="8dp"
+        android:drawableRight="@mipmap/study_filter_type_icon"
+        android:layout_marginLeft="111dp"
+        android:layout_gravity="center|left"
+        android:textColor="#ff4a4a4a"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/recycle_course_btn"
+        android:layout_marginRight="60dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:layout_gravity="center|right"
+        android:src="@mipmap/study_recyler_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:id="@+id/filter_course_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:layout_gravity="center|right"
+        android:src="@mipmap/study_course_filter_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center|right"
+        android:drawableLeft="@mipmap/course_clear_full_icon"
+        android:drawablePadding="8dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空已过期课程"
+        android:textColor="#ff6c7172"
+        android:textSize="12sp"
+        />
+</FrameLayout>

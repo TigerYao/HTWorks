@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/play_changeRate_txt"
+        android:visibility="gone"
+        android:background="@drawable/play_ratechange_btn_bg"
+        android:layout_gravity="center|left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="1.0x"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff"
+        android:textSize="15sp"
+        />
+    <ImageView
+        android:id="@+id/play_judge_img"
+        android:layout_width="44dp"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:layout_height="44dp"
+        android:padding="@dimen/common_4dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/common_10dp"
+       android:layout_gravity="center|right"
+        android:background="@drawable/course_judge_bg"
+        android:src="@mipmap/course_judge__land_icon"
+        />
+
+    <ImageView
+        android:id="@+id/cover_img"
+        android:background="@mipmap/play_default_cover"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <include layout="@layout/player_center_controller_dialog"/>
+    <Button
+        android:id="@+id/start_play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/play_btn_bg_selector"
+        android:drawableRight="@drawable/videoicon"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:minWidth="60dp"
+        android:paddingLeft="@dimen/common_10dp"
+        android:paddingRight="@dimen/common_10dp"
+        android:text="开始学习"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/bjplayer_center_video_progress_dialog_title_iv"
+        android:layout_width="208dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:background="@drawable/play_progress_text_selector"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bjplayer_center_controller_volume_dialog_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/bjplayer_bg_radius_8"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bjplayer_center_controller_volume_ic_iv"
+            style="@style/bjplayer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bjplayer_ic_volume_up_white"/>
+
+        <TextView
+            android:id="@+id/bjplayer_center_controller_volume_tv"
+            style="@style/bjplayer_text_big"
+            tools:text="50%"/>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/player_video_frame_layout"/>
+
+    <include layout="@layout/player_video_rate_layout"/>
+
+<!--    <include layout="@layout/player_video_segments_layout"/> -->
+
+    <ImageView
+        android:id="@+id/lock_screen_btn"
+        android:visibility="gone"
+        android:tag="0"
+        android:src="@drawable/lock_screen_selector"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="14dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp" />
+
+
+
+
+</FrameLayout>

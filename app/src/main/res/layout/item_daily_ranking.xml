@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:minHeight="80dp"
+
+    >
+
+    <FrameLayout
+        android:id="@+id/fl_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/item_img_cup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_app"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/item_tv_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/athletics_ranking_bg"
+            android:maxLength="4"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="999+"
+            android:textColor="#fff8dd"
+            android:textSize="15sp"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/item_img_portrait"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/fl_rank"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icon_app"/>
+
+    <TextView
+        android:id="@+id/item_athletic_win_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/about"
+        android:textColor="#ff9500"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/item_tv_daily_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/item_img_portrait"
+        android:layout_toLeftOf="@id/item_athletic_win_num"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        android:textColor="@color/text_color"
+        android:textSize="15sp"/>
+
+    <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"/>-->
+
+
+
+</RelativeLayout>

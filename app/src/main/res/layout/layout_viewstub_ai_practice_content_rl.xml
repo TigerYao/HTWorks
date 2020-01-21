@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/arena_ai_practice_no_tip_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_arrow_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="智能刷题"
+        android:textColor="@color/common_style_text_color"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/ai_tip_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+        android:text="根据您近期做题练习情况智能推送\n刷题不限量\n 快速提升考试能力！"
+        android:textColor="#576069"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/arena_ai_practice_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/arena_ai_practice_no_tip_ll"
+        android:layout_below="@+id/ai_tip_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5.2dp"
+        android:text="去“我的”设置考试地区,\n“智能刷题”更智能更贴近你的考情哦！"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/arena_ai_practice_no_tip_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/arena_ai_practice_know_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/arena_ai_practice_no_tip_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@mipmap/arena_ai_practice_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="下次不再提示"
+            android:textColor="#999999"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/arena_ai_practice_know_tv"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/arena_exam_ai_tips_btn_bg"
+        android:gravity="center"
+        android:text="知道了"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+</RelativeLayout>

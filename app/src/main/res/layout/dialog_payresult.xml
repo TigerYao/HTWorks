@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_ffffff" >
+
+    <ImageView
+        android:id="@+id/pay_result_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/icon_pay_faile"/>
+
+    <ImageView
+        android:id="@+id/pay_result_face_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/pay_result_cry" />
+
+    <TextView
+        android:id="@+id/pay_result_info_tv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_result_face_img"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="支付失败"
+        android:textColor="@color/gray_333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pay_result_tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_result_info_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:text="请选择其他支付方式"
+        android:textColor="@color/gray_333333"
+        android:textSize="12sp" />
+</RelativeLayout>

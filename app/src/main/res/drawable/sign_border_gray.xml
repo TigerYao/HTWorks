@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--圆角矩形边框-->
+    <!-- 设置透明背景色 -->
+    <solid android:color="#ffffff" />
+
+    <!-- 设置灰色边框 -->
+    <stroke
+        android:width="2px"
+        android:color="#666666" />
+    <!-- 设置四个圆角的半径 -->
+    <corners
+        android:bottomLeftRadius="26px"
+        android:bottomRightRadius="26px"
+        android:topLeftRadius="26px"
+        android:topRightRadius="26px" />
+
+</shape>

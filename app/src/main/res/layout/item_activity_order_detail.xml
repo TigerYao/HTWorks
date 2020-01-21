@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:minHeight="82dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="13dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_order_car"
+        android:scaleType="center"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@mipmap/jiantou_right"/>
+
+    <TextView
+        android:id="@id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/iv_arrow"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/iv_car"
+        android:maxLines="2"
+        android:gravity=""
+        android:textColor="#3ABABC"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_address"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/iv_arrow"
+        android:textColor="#999999"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

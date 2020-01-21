@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".business.faceteach.FillInformationActivity">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_black_new" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="学员信息"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#FF3F47"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFEF" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:theme="@style/txt_lab"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/err_txt_appearance"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="姓名"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/sp_gender"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/face_gender_spinner_bg" />
+
+    <View
+        android:id="@+id/view_gender"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#EFEFEF" />
+
+    <TextView
+        android:id="@+id/tv_gender_err"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#FF6269"
+        android:textSize="10sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:theme="@style/txt_lab"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/err_txt_appearance"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="电话"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tl_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:theme="@style/txt_lab"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/err_txt_appearance"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="身份证号"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tl_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:theme="@style/txt_lab"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/err_txt_appearance"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:theme="@style/txt_lab"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/err_txt_appearance"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="地区"
+                android:paddingRight="10dp"
+                android:textColor="#4A4A4A"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:id="@+id/view_area_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tl_area"
+            android:layout_alignTop="@+id/tl_area"
+            android:layout_alignRight="@+id/tl_area"
+            android:layout_alignBottom="@+id/tl_area" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tl_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:theme="@style/txt_lab"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/err_txt_appearance"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="详细地址"
+            android:maxLength="50"
+            android:paddingRight="10dp"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoneng.xnchatui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <application>
+        <activity
+            android:name="cn.xiaoneng.activity.ChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.activity.LeaveMsgActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.activity.ShowCameraActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation|layoutDirection|touchscreen|locale|mnc|mcc|fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@style/MyDialogTopRight" />
+        <activity
+            android:name="cn.xiaoneng.activity.ShowAlbumActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="cn.xiaoneng.activity.ValuationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/valuationdialog" />
+        <activity
+            android:name="cn.xiaoneng.activity.ShowPictureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.activity.XNExplorerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.video.VideoPreviewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.video.RecordVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.xiaoneng.video.XNVideoPlayer"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+
+</manifest>

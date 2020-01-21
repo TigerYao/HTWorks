@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        app:layout_heightPercent="16.67%w">
+
+        <ProgressBar
+            android:id="@+id/loading_icon"
+            android:layout_width="21.5dp"
+            android:layout_height="24.5dp"
+            android:layout_gravity="center_vertical"
+            app:layout_heightPercent="6.81%w"
+            app:layout_widthPercent="5.97%w" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="加载中..."
+            android:textColor="#000000"
+            app:layout_marginLeftPercent="2.78%w"
+            app:layout_textSizePercent="4.17%w" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

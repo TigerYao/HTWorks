@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimens_50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_round_top_white"
+        android:gravity="center"
+        android:text="互动题"
+        android:textColor="#ff4a4a4a"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/test_options_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/send_answer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33000000"
+        android:gravity="center"
+        android:paddingTop="@dimen/common_15dp"
+        android:text="提交答案"
+        android:textColor="#9B9B9B"
+        android:visibility="gone"
+        android:textSize="16sp" />
+    <!--<ImageView-->
+    <!--android:id="@+id/answer_tip"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@id/title_vertical"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@color/white"-->
+    <!--android:src="@mipmap/live_video_test_right" />-->
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxWidth="100dp"
+            android:singleLine="true"
+            android:text="贾克斯"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            app:layout_marginBottomPercent="5.5%w"
+            app:layout_marginLeftPercent="4.1%w"
+            app:layout_marginTopPercent="5.5%w"
+            app:layout_textSizePercent="4.1%w" />
+
+        <LinearLayout
+            android:id="@+id/rl_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@+id/tv_username"
+            android:orientation="horizontal"
+            app:layout_marginLeftPercent="2.2%w"
+            app:layout_marginTopPercent="6.38%w">
+
+            <ImageView
+                android:id="@+id/iv_star1"
+                style="@style/evaluate_star_style"
+                android:background="@drawable/teacher_kxing" />
+
+            <ImageView
+                android:id="@+id/iv_star2"
+                style="@style/evaluate_star_style"
+                android:background="@drawable/teacher_kxing" />
+
+            <ImageView
+                android:id="@+id/iv_star3"
+                style="@style/evaluate_star_style"
+                android:background="@drawable/teacher_kxing" />
+
+            <ImageView
+                android:id="@+id/iv_star4"
+                style="@style/evaluate_star_style"
+                android:background="@drawable/teacher_kxing" />
+
+            <ImageView
+                android:id="@+id/iv_star5"
+                style="@style/evaluate_star_style"
+                android:background="@drawable/teacher_kxing" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_username"
+            android:layout_marginRight="15dp"
+            android:text="465132156"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            app:layout_marginRightPercent="4.1%w"
+            app:layout_textSizePercent="4.1%w" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_username"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="15dp"
+            android:text="asdsadsadsasasadsadsadasdsacsvdsfsadsadsacdsvsadsadsacdsvdsfsadsadsacsacsa"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_marginBottomPercent="5.5%w"
+            app:layout_marginRightPercent="4.1%w"
+            app:layout_textSizePercent="4.1%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

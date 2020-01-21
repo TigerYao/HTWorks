@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@id/whole_content"
+    android:background="@drawable/grey_list_default_bg"
+     android:layout_height="70dp">
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.huatu.handheld_huatu.ui.PieProgressView
+            android:id="@+id/learn_status_img"
+            android:layout_marginTop="2dp"
+            android:layout_width="14dp"
+            android:layout_height="14dp"/>
+        <TextView style="@style/basetxt_content"
+            android:singleLine="true"
+            android:id="@+id/title_name_txt"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="@string/accountInformation" />
+
+    </LinearLayout>
+    <TextView style="@style/basetxt_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/learn_time_txt"
+        android:layout_marginLeft="51dp"
+        android:text="视频 - 剩余00:20分钟"
+        android:textColor="#ff6d7172" />
+    <TextView style="@style/basetxt_content"
+        android:id="@+id/lession_teacher_txt"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="15dp"
+        android:text="主讲老师：刘有珍"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ff6d7172" />
+     <com.huatu.handheld_huatu.ui.DownBtnLayout
+        android:layout_marginRight="1dp"
+        android:layout_width="45dp"
+        android:layout_gravity="right"
+        android:id="@+id/down_status_layout"
+        android:layout_height="45dp">
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/loading_progress"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminateDrawable="@drawable/down_loading_progress" />
+        <ImageView
+           android:padding="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/course_start_down_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.huatu.handheld_huatu.ui.DownBtnLayout>
+<View android:background="#f3f3f3" android:layout_gravity="bottom" style="@style/comm_split_line"></View>
+</FrameLayout>

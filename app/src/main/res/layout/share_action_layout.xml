@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/share_ver_bg"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="分享到"
+        android:textColor="#ff9b9b9b"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/shart_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/share_txt_style2"
+            android:drawableTop="@mipmap/share_wechat"
+            android:tag="0"
+            android:text="微信" />
+
+        <TextView
+            style="@style/share_txt_style2"
+            android:drawableTop="@mipmap/share_pengyou"
+            android:tag="1"
+            android:text="朋友圈" />
+
+        <TextView
+            style="@style/share_txt_style2"
+            android:drawableTop="@mipmap/share_qq"
+            android:tag="2"
+            android:text="QQ" />
+
+        <TextView
+            style="@style/share_txt_style2"
+            android:drawableTop="@mipmap/share_weibo"
+            android:tag="3"
+            android:text="微博" />
+
+        <TextView
+            style="@style/share_txt_style2"
+            android:drawableTop="@mipmap/share_copylink"
+            android:singleLine="true"
+            android:tag="4"
+            android:text="复制链接" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel_action_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:text="取消"
+        android:textColor="#ff6d7172"
+        android:textSize="18sp" />
+</LinearLayout>

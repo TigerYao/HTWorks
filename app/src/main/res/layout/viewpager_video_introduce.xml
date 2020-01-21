@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginRightPercent="4.1%w"
+                app:layout_marginTopPercent="5.5%w">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="科目："
+                    android:textColor="#666666"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+
+                <TextView
+                    android:id="@+id/textview_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginRightPercent="4.1%w"
+                app:layout_marginTopPercent="5.5%w">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主题："
+                    android:textColor="#666666"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+
+                <TextView
+                    android:id="@+id/textview_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginRightPercent="4.1%w"
+                app:layout_marginTopPercent="5.5%w">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="讲师："
+                    android:textColor="#666666"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+
+                <TextView
+                    android:id="@+id/textview_lecturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginRightPercent="4.1%w"
+                app:layout_marginTopPercent="5.5%w">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课时："
+                    android:textColor="#666666"
+                    android:textSize="14dp"
+                    app:layout_textSizePercent="3.8%w" />
+
+                <TextView
+                    android:id="@+id/textview_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="14dp"
+                    app:layout_marginBottomPercent="5.5%w"
+                    app:layout_textSizePercent="3.8%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f6f6f7"
+                app:layout_widthPercent="2.7%w" />
+
+            <TextView
+                android:id="@+id/texview_course_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="22dp"
+                android:text="课程内容"
+                android:textColor="#333333"
+                android:textSize="14dp"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginTopPercent="5.5%w"
+                app:layout_textSizePercent="3.8%w" />
+
+            <WebView
+                android:id="@+id/textview_course_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginRightPercent="4.1%w"
+                app:layout_marginTopPercent="3.8%w" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="15dp"
+                android:background="#dcdcdc"
+                app:layout_marginTopPercent="4.1%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="讲义、资料查看方法"
+                android:textColor="#333333"
+                android:textSize="14dp"
+                app:layout_textSizePercent="3.8%w" />
+
+            <TextView
+                android:id="@+id/textview_methods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="请您使用电脑登陆 v.huatu.com,进入“会员中心”点击“我的课程”找到本课程，点击“学习”,找到右侧目录对应录播课件进行下载；若尚无对应信息，请您耐心等待，我们将尽快上传。"
+                android:textColor="#666666"
+                android:textSize="12dp"
+                app:layout_marginLeftPercent="4.1%w"
+                app:layout_marginRightPercent="4.1%w"
+                app:layout_marginTopPercent="3.8%w"
+                app:layout_textSizePercent="3.3%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </ScrollView>
+</com.zhy.android.percent.support.PercentRelativeLayout>

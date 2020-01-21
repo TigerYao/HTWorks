@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homef_listitem_accuracy_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/homef_listitem_accuracy_0_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/homef_item_water_percent_no" />
+
+    <ImageView
+        android:id="@+id/homef_listitem_accuracy_1_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/homef_item_water_percent_no" />
+
+    <ImageView
+        android:id="@+id/homef_listitem_accuracy_2_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/homef_item_water_percent_no" />
+
+    <ImageView
+        android:id="@+id/homef_listitem_accuracy_3_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/homef_item_water_percent_no" />
+
+    <ImageView
+        android:id="@+id/homef_listitem_accuracy_4_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/homef_item_water_percent_no" />
+</merge>

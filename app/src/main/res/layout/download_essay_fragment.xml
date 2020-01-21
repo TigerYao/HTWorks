@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_tab"
+            android:layout_width="66dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/red250"
+            android:visibility="invisible" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_top_order_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_heightPercent="13.89%w">
+
+            <TextView
+                android:id="@+id/tv_single"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="标准答案"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_multi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="套题"
+                android:textColor="@color/black250"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_argue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="文章写作"
+                android:textColor="@color/black250"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_nodata"
+        layout="@layout/download_essay_fragitem_nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.view.ListViewForScroll
+        android:id="@+id/base_list_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+    <LinearLayout
+        android:id="@+id/down_essay_count_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/div1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/gray_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@color/common_style_text_color" />
+
+            <TextView
+                android:id="@+id/down_essay_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/gray_333333" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/gray_divider" />
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.view.swiperecyclerview.swipemenu.SwipeMenuRecyclerView
+        android:id="@+id/srv_down_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

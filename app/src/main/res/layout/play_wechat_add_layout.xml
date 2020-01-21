@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@id/whole_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_rectangle_top_ffffff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:src="@mipmap/wechat_close_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+         android:layout_marginTop="15dp"
+        android:id="@+id/wechat_code_img"
+        android:scaleType="fitXY"
+        android:layout_width="170dp"
+        android:layout_height="170dp" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wechat_num_txt"
+        android:text="微信号：-------"
+        android:textColor="#ff000000"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请以购课手机号添加微信号为好友，以便邀您入群"
+        android:textColor="#ff4a4a4a"
+        android:textSize="12sp"
+        />
+
+    <com.huatu.handheld_huatu.ui.RoundbgTextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="6dp"
+        android:paddingLeft="6dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击“保存二维码”可下载二维码至相册\n 保存后点击“扫码加群”打开微信，识别“相册”中的图片。"
+        android:textColor="#ff9b9b9b"
+        android:textSize="13sp"
+        app:qmui_backgroundColor="#F3F3F3"
+        app:qmui_radiusBottomLeft="8dp"
+        app:qmui_radiusTopLeft="8dp"
+        app:qmui_radiusBottomRight="8dp"
+        app:qmui_radiusTopRight="8dp"
+    />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.huatu.handheld_huatu.ui.RoundbgTextView
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:text="保存二维码"
+            android:id="@+id/save_wechatpic_btn"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            app:qmui_backgroundColor="#FF6D73"
+            app:qmui_radiusBottomLeft="8dp"
+            app:qmui_radiusTopLeft="8dp"
+            app:qmui_radiusBottomRight="8dp"
+            app:qmui_radiusTopRight="8dp"
+            />
+        <com.huatu.handheld_huatu.ui.RoundbgTextView
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:text="扫码入群"
+            android:id="@+id/scan_add_wechat"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            app:qmui_backgroundColor="#FF6D73"
+            app:qmui_radiusBottomLeft="8dp"
+            app:qmui_radiusTopLeft="8dp"
+            app:qmui_radiusBottomRight="8dp"
+            app:qmui_radiusTopRight="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>

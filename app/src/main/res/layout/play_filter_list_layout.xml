@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_rectangle_top_ffffff"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/filter_title_txt"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阶段筛选"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/close_btn"
+        android:layout_gravity="right"
+        android:paddingRight="13dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@mipmap/course_evalute_close_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.huatu.handheld_huatu.ui.recyclerview.RecyclerViewEx
+        android:id="@+id/xi_comm_page_list"
+        android:layout_width="fill_parent"
+        android:layout_height="307dp"
+        android:layout_marginTop="54dp" />
+
+    <include
+        android:layout_marginTop="54dp"
+        layout="@layout/catatlog_filter_loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</FrameLayout>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_vod_play"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/rl_progress"
+        android:layout_toRightOf="@+id/rl_progress"
+        app:layout_heightPercent="72%w">
+
+        <RelativeLayout
+            android:id="@+id/offline_fl_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:clickable="true"
+            android:focusable="true">
+
+            <SurfaceView
+                android:id="@+id/playerSurfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_default_play_cc" />
+        </RelativeLayout>
+        <!-- 解锁 -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_lock"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            app:layout_heightPercent="17.22%h"
+            app:layout_widthPercent="17.22%h">
+
+            <ImageView
+                android:id="@+id/iv_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_unlock_full_screen" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/playerBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#CC222222"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@drawable/vod_video_pause"
+                app:layout_paddingLeftPercent="2.7%w"
+                />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:layout_paddingBottomPercent="0.5%w">
+
+                <SeekBar
+                    android:id="@+id/skbProgress"
+                    style="@style/Widget.SeekBar.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:progressDrawable="@drawable/seekbar_selector_new"
+                    android:thumb="@drawable/video_play_seek_bar"
+                    android:thumbOffset="0dp" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/playDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="00:00/"
+                android:textColor="@color/white_common"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/videoDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="00:00"
+                android:textColor="@color/white_common"
+                android:textSize="11dp" />
+
+            <ImageButton
+                android:id="@+id/image_change_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@drawable/video_play_screen_full"
+                app:layout_paddingLeftPercent="0.83%w"
+                app:layout_paddingRightPercent="3.3%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ImageView
+            android:id="@+id/image_vod_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/loading"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/rl_start_play_vod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/video_play_btn_icon"/>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/rl_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/video_play_title_back"
+                app:layout_marginLeftPercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/textView_TitleBar_Info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/bg_text_speed"
+                    android:gravity="center"
+                    android:text="1.0x"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/imageview_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/image_ml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/bg_text_speed"
+                    android:gravity="center"
+                    android:text="课表"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_titlebt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:paddingRight="12dp"
+                android:src="@drawable/video_play_title_more"
+                app:layout_paddingRightPercent="3.3%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <ListView
+            android:id="@+id/listview_ml"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#CC222222"
+            android:visibility="gone"
+            app:layout_widthPercent="41.67%w" />
+        <!--快进 快退显示-->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_mediaplay_operation_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/kuaijinbj2"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/tv_mediaplay_operation_speed_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp" />
+
+            <TextView
+                android:id="@+id/tv_mediaplay_operation_speed_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mediaplay_operation_speed_bg"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="11dp"
+
+                android:text="26:31"
+                android:textColor="@color/ht_txt_style_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_mediaplay_operation_speed_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mediaplay_operation_speed_bg"
+                android:layout_marginBottom="9dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/tv_mediaplay_operation_speed_position"
+                android:text="/26:31"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/record_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="稍等片刻,精彩即将开始..."
+            android:visibility="gone"
+            app:layout_textSizePercent="6.1%w" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_video_pro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="@android:style/Widget.DeviceDefault.ProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="8.3%w"
+                app:layout_widthPercent="8.3%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!--
+        <ImageView
+            android:id="@+id/image_live_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loading"
+            android:layout_alignTop="@+id/rl_vod_play"
+            android:layout_alignBottom="@+id/rl_vod_play"
+            android:visibility="gone"
+             />
+    -->
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_tab_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_vod_play"
+        android:background="@color/arena_exam_common_text_bg"
+        app:layout_heightPercent="12.2%w">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            app:layout_marginLeftPercent="4.1%w"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="课表"
+                android:textColor="#e9304e"
+                android:textSize="16sp"
+                app:layout_paddingLeftPercent="4.1%w"
+                app:layout_paddingRightPercent="4.1%w"
+                app:layout_textSizePercent="4.4%w"
+                />
+
+            <View
+                android:id="@+id/textview_schedule_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/main_color" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/vod_xiazai"
+            app:layout_marginRightPercent="3.3%w" />
+
+        <ImageButton
+            android:id="@+id/ib_jiangyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59dp"
+            android:background="@drawable/vod_jiangyi"
+            app:layout_marginRightPercent="16.3%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#bfbfbf" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_kebiao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_tab_info"
+        android:background="#ffffff"
+        android:divider="@null" />
+    <TextView
+        android:id="@+id/tv_no_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_tab_info"
+        android:text="暂无课表"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_textSizePercent="4.4%w"
+        android:textColor="@color/common_error_view_text_color"
+        android:visibility="gone"
+        />
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66FFFFFF"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_activity"
+            style="@android:style/Widget.DeviceDefault.ProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8.3%w"
+            app:layout_widthPercent="8.3%w" />
+
+        <TextView
+            android:id="@+id/tv_activity_data_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_activity"
+            android:layout_centerHorizontal="true"
+            android:text="@string/moveview"
+            app:layout_marginTopPercent="2.7%w"
+            app:layout_textSizePercent="5.5%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <!--声音 亮度显示-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_mediaplay_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_rectangle_transparent_a0"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_heightPercent="41.39%h"
+        app:layout_widthPercent="41.39%h">
+
+        <TextView
+            android:id="@+id/tv_mediaplay_operation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="音量"
+            android:textColor="@color/white"
+            app:layout_marginTopPercent="8.06%w"
+            app:layout_textSizePercent="10.74%w" />
+
+        <ImageView
+            android:id="@+id/tv_mediaplay_operation_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_mediaplay_vol"
+            app:layout_marginTopPercent="31.54%w" />
+
+        <LinearLayout
+            android:id="@+id/v_mediaplay_operation_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#C8000000"
+            app:layout_heightPercent="3.36%h"
+            app:layout_marginBottomPercent="10.07%w"
+            app:layout_widthPercent="85.23%h">
+
+            <View
+                android:id="@+id/v_mediaplay_operation_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layerType="software" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_mediaplay_operation_novoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="静音"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_marginBottomPercent="9.73%w"
+            app:layout_textSizePercent="10.74%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:minHeight="122dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp"
+    android:background="#f6f6f7">
+
+    <ImageView
+        android:id="@+id/item_shop_img"
+        android:layout_width="118dp"
+        android:layout_height="86dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/item_shop_tv_shortTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_shop_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:background="@color/main_color"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_shop_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_shop_tv_shortTitle"
+        android:layout_below="@id/item_shop_tv_shortTitle"
+        android:layout_toEndOf="@id/item_shop_img"
+        android:layout_toRightOf="@id/item_shop_img"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/text_color_dark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/item_shop_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_shop_tv_shortTitle"
+        android:includeFontPadding="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:maxLines="1"
+        android:text="@string/lesson_tv_free"
+        android:textSize="@dimen/text_size" />
+    <LinearLayout
+        android:id="@+id/item_shop_tv_origin_price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_shop_tv_price"
+        android:layout_alignBottom="@id/item_shop_tv_price"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:text="￥"-->
+        <!--android:textSize="12sp"-->
+        <!--android:textColor="@color/gray_999999" />-->
+        <TextView
+            android:id="@+id/item_shop_tv_origin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/gray_999999"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_shop_tv_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_shop_tv_shortTitle"
+        android:layout_above="@id/item_shop_tv_price"
+        android:layout_below="@id/item_shop_tv_title"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="老师"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_size_small" />
+
+
+
+
+
+</RelativeLayout>
+

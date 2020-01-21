@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.business.arena.customview.ArenaQuestionViewHeader
+        android:id="@+id/question_header"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.huatu.handheld_huatu.business.arena.customview.ArenaDragMaterialScrollView
+            android:id="@+id/ns_material"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/arena_exam_common_bg"
+            android:fillViewport="false"
+            android:layout_marginBottom="35dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <com.huatu.handheld_huatu.business.arena.customview.ArenaQuestionMaterial
+                android:id="@+id/question_material"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.huatu.handheld_huatu.business.arena.customview.ArenaDragMaterialScrollView>
+
+        <!--拖拽的Bar-->
+        <LinearLayout
+            android:id="@+id/ll_slide_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ns_question"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_slide"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/essay_material_drag_bg" />
+
+                <ImageView
+                    android:id="@+id/iv_drag_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitEnd"
+                    android:src="@mipmap/arena_drag_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_slide_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/arena_setting_bottom_bg"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="12dp"
+                android:text="根据材料回答以下问题"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_slide_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/ns_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_multi_sure"
+            android:layout_below="@+id/ns_material"
+            android:background="@color/arena_exam_common_bg"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <com.huatu.handheld_huatu.business.arena.customview.ArenaQuestionBody
+                android:id="@+id/question_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/tv_multi_sure"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red002"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

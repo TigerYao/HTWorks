@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval"  android:useLevel="false"> >
+    <!--长方形边框-->
+    <!--透明背景-->
+    <solid android:color="@color/gray005" />
+    <!--灰色边框-->
+
+</shape>

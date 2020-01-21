@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huatu.handheld_huatu.ui.recyclerview.RecyclerViewEx
+        android:id="@+id/xi_comm_page_list"
+        android:layout_marginBottom="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+    <com.qmuiteam.qmui.layout.QMUILinearLayout
+        android:id="@+id/bottom_action_layout2"
+
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        app:qmui_borderColor="@color/qmui_config_color_separator"
+        app:qmui_outerNormalColor="@color/qmui_config_color_background"
+        app:qmui_radius="15dp"
+        app:qmui_shadowAlpha="0.25"
+        app:qmui_shadowElevation="14dp"
+        app:qmui_showBorderOnlyBeforeL="true">
+
+        <TextView
+            android:id="@+id/selAll_btn2"
+            style="@style/width_weight"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="全选"
+            android:textColor="#ff4a4a4a"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            style="@style/width_weight"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bt_down_delete2"
+                style="@style/basetxt_title"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="删除"
+                android:textColor="#5163F1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/delNum_txt2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bt_down_delete2"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+
+
+
+    <include
+        layout="@layout/loading_default_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>
+

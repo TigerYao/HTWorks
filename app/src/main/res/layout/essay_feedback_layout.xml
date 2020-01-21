@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@id/whole_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_rectangle_top_ffffff"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_marginTop="13dp"
+        android:id="@+id/close_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="32dp"
+        android:layout_height="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="批改反馈"
+        android:layout_marginTop="13dp"
+        android:textColor="#ff4a4a4a"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="认真填写反馈可以获得更匹配的老师批改哦~"
+        android:textColor="#ff919191"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="批改满意度"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#ff919191"
+            android:textSize="12sp"
+            />
+
+        <com.huatu.widget.CustomRatingBar
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:paddingTop="12dp"
+            app:starCount="5"
+            app:starEmpty="@mipmap/rate_star_uncheck"
+            app:starFill="@mipmap/rate_star_check"
+            app:starHalf="@mipmap/rate_star_check"
+            app:starImageSize="28dp"
+            app:starPadding="14dp"
+            app:starStep="0"
+            app:stepSize="Full" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:id="@+id/input_container_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="120dp">
+         <EditText
+             android:id="@+id/et_feedback_content"
+             android:padding="10dp"
+             android:textColorHint="#9B9B9B"
+             android:hint="其他反馈…"
+             android:textSize="14sp"
+             android:gravity="top|left"
+             android:background="@null"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="0/200"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="3dp"
+            android:textColor="#ff9b9b9b"
+            android:visibility="gone"
+            android:textSize="14sp"
+            />
+
+    </FrameLayout>
+
+    <com.huatu.handheld_huatu.ui.RoundbgTextView
+        android:id="@+id/submit_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+
+        android:gravity="center"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="提交"
+
+        android:textColor="#A66200"
+        android:textSize="16sp"
+        app:qmui_backgroundColor="#FFCA0E"
+        app:qmui_radiusBottomLeft="22dp"
+        app:qmui_radiusTopLeft="22dp"
+        app:qmui_radiusBottomRight="22dp"
+        app:qmui_radiusTopRight="22dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/essay_exam_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ViewStub
+        android:id="@+id/viewstub_id_sc_start_five"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="50dp"
+        android:inflatedId="@+id/viewstub_inflateid_sc_start_five"
+        android:layout="@layout/layout_viewstub_sc_start_five_ll" />
+</RelativeLayout>
+

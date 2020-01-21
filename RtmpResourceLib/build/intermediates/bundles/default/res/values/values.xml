@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="english_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="lunar_first_of_month">
+        <item>春节</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+    <string-array name="lunar_str">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </string-array>
+    <string-array name="month_string_array">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="solar_festival">
+        <item>0101元旦</item>
+        <item>0214情人节</item>
+        <item>0308妇女节</item>
+        <item>0312植树节</item>
+        <item>0315消权日</item>
+        <item>0401愚人节</item>
+        <item>0422地球日</item>
+        <item>0501劳动节</item>
+        <item>0504青年节</item>
+        <item>0601儿童节</item>
+        <item>0701建党节</item>
+        <item>0801建军节</item>
+        <item>0910教师节</item>
+        <item>1001国庆节</item>
+        <item>1031万圣节</item>
+        <item>1111光棍节</item>
+        <item>1224平安夜</item>
+        <item>1225圣诞节</item>
+    </string-array>
+    <string-array name="solar_term">
+        <item>春分</item>
+        <item>清明</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+    </string-array>
+    <string-array name="special_festivals">
+        <item>母亲节</item>
+        <item>父亲节</item>
+        <item>感恩节</item>
+    </string-array>
+    <string-array name="tradition_festival">
+        <item>除夕</item>
+        <item>0101春节</item>
+        <item>0115元宵</item>
+        <item>0505端午</item>
+        <item>0707七夕</item>
+        <item>0815中秋</item>
+        <item>0909重阳</item>
+    </string-array>
+    <string-array name="week_string_array">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <attr format="reference" name="QMUILoadingStyle"/>
+    <attr format="boolean" name="centered"/>
+    <attr format="float" name="qmui_alpha_disabled"/>
+    <attr format="float" name="qmui_alpha_pressed"/>
+    <attr format="color" name="qmui_backgroundColor"/>
+    <attr format="color" name="qmui_borderColor"/>
+    <attr format="dimension" name="qmui_borderWidth"/>
+    <attr format="float" name="qmui_general_shadow_alpha"/>
+    <attr format="dimension" name="qmui_general_shadow_elevation"/>
+    <attr format="boolean" name="qmui_isRadiusAdjustBounds"/>
+    <attr format="dimension" name="qmui_radius"/>
+    <attr format="dimension" name="qmui_radiusBottomLeft"/>
+    <attr format="dimension" name="qmui_radiusBottomRight"/>
+    <attr format="dimension" name="qmui_radiusTopLeft"/>
+    <attr format="dimension" name="qmui_radiusTopRight"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <color name="alert_default_error_background">#F44336</color>
+    <color name="alert_default_icon_color">@android:color/black</color>
+    <color name="alert_default_text_color">@android:color/black</color>
+    <color name="chat_divide_line">#ededed</color>
+    <color name="chat_edit_view">#aaaaaa</color>
+    <color name="chat_select_self">#626262</color>
+    <color name="chat_system_message">#ffb6322c</color>
+    <color name="chat_view_bg">#f5f5f5</color>
+    <color name="item_ly_pop_normal">#ffffff</color>
+    <color name="item_ly_pop_press">#efefef</color>
+    <color name="pop_list_do_line_bg">#f2f2f5</color>
+    <color name="pop_list_do_text">#da5744</color>
+    <color name="qa_item_content">#626262</color>
+    <color name="qa_name_lit_red">#ffba5d02</color>
+    <color name="qmui_config_color_75_pure_black">#C0000000</color>
+    <color name="qmui_config_color_background">#F4F5F7</color>
+    <color name="qmui_config_color_separator">#DEE0E2</color>
+    <color name="transparent">#00000000</color>
+    <color name="vote_answer_tv">#626262</color>
+    <color name="vote_count_tv">#b6322c</color>
+    <color name="vote_lv_divide">#e8e8e8</color>
+    <color name="vote_receive_total_join">#b6322c</color>
+    <color name="vote_select_tv">#626262</color>
+    <color name="white">#ffffff</color>
+    <declare-styleable name="AVLoadingIndicatorView"><attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr><attr format="color" name="indicator_color"/></declare-styleable>
+    <declare-styleable name="Alert"><attr format="reference" name="alertIcon"/><attr format="color" name="alertBackgroundColor"/><attr format="string" name="alertTitle"/><attr format="string" name="alertText"/></declare-styleable>
+    <declare-styleable name="Alerter"><attr format="reference" name="alertStyle"/></declare-styleable>
+    <declare-styleable name="CMSViewSizeCalculate"><attr format="float" name="cmsWidthWeight"/><attr format="float" name="cmsHeightWeight"/><attr format="enum" name="cmsDatum">
+            <enum name="cmsFromWidth" value="1"/>
+            <enum name="cmsFromHeight" value="2"/>
+        </attr></declare-styleable>
+    <declare-styleable name="CalendarLayout"><attr name="default_status">
+            <enum name="expand" value="0"/>
+            <enum name="shrink" value="1"/>
+        </attr><attr name="gesture_mode">
+            <enum name="default_mode" value="0"/>
+            
+            <enum name="disabled" value="2"/>
+        </attr><attr name="calendar_show_mode">
+            <enum name="both_month_week_view" value="0"/>
+            <enum name="only_week_view" value="1"/>
+            <enum name="only_month_view" value="2"/>
+        </attr><attr format="integer" name="calendar_content_view_id"/></declare-styleable>
+    <declare-styleable name="CalendarView"><attr format="dimension" name="calendar_padding"/><attr format="color" name="week_background"/><attr format="color" name="week_line_background"/><attr format="color" name="week_text_color"/><attr format="dimension" name="week_text_size"/><attr format="dimension" name="week_line_margin"/><attr format="string" name="month_view"/><attr format="string" name="week_view"/><attr format="dimension" name="week_bar_height"/><attr format="string" name="week_bar_view"/><attr format="string" name="scheme_text"/><attr format="dimension" name="day_text_size"/><attr format="dimension" name="lunar_text_size"/><attr format="dimension" name="calendar_height"/><attr format="color" name="scheme_text_color"/><attr format="color" name="scheme_month_text_color"/><attr format="color" name="scheme_lunar_text_color"/><attr format="color" name="scheme_theme_color"/><attr format="color" name="selected_theme_color"/><attr format="color" name="selected_text_color"/><attr format="color" name="selected_lunar_text_color"/><attr format="color" name="current_day_text_color"/><attr format="color" name="current_day_lunar_text_color"/><attr format="color" name="current_month_text_color"/><attr format="color" name="other_month_text_color"/><attr format="color" name="current_month_lunar_text_color"/><attr format="color" name="other_month_lunar_text_color"/><attr format="dimension" name="year_view_month_text_size"/><attr format="dimension" name="year_view_day_text_size"/><attr format="color" name="year_view_month_text_color"/><attr format="color" name="year_view_day_text_color"/><attr format="color" name="year_view_scheme_color"/><attr format="color" name="year_view_background"/><attr format="integer" name="min_year"/><attr format="integer" name="max_year"/><attr format="integer" name="min_year_month"/><attr format="integer" name="max_year_month"/><attr format="integer" name="min_year_day"/><attr format="integer" name="max_year_day"/><attr format="boolean" name="month_view_scrollable"/><attr format="boolean" name="week_view_scrollable"/><attr format="boolean" name="year_view_scrollable"/><attr name="month_view_show_mode">
+            <enum name="mode_all" value="0"/>
+            <enum name="mode_only_current" value="1"/>
+            <enum name="mode_fix" value="2"/>
+        </attr><attr name="week_start_with">
+            <enum name="sun" value="1"/>
+            <enum name="mon" value="2"/>
+            <enum name="sat" value="7"/>
+        </attr><attr name="select_mode">
+            <enum name="default_mode" value="0"/>
+            <enum name="single_mode" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="CirclePagerIndicator"><attr format="boolean" name="circle_indicator_centerHorizontal"/><attr format="boolean" name="circle_indicator_follow"/><attr format="reference" name="circle_indicator_orientation"/><attr format="color" name="circle_indicator_color"/><attr format="color" name="circle_indicator_stroke_color"/><attr format="dimension" name="circle_indicator_stroke_width"/><attr format="color" name="circle_indicator_fill_color"/><attr format="dimension" name="circle_indicator_radius"/><attr format="dimension" name="circle_indicator_space"/><attr format="dimension" name="circle_indicator_indicator_radius"/></declare-styleable>
+    <declare-styleable name="FixedRatioImageView"><attr format="float" name="ratio"/></declare-styleable>
+    <declare-styleable name="ImprovedSwipeLayoutAttrs"><attr format="reference" name="scrollableChildId"/></declare-styleable>
+    <declare-styleable name="IndexImage"><attr format="integer" name="ImageId"/><attr format="dimension|reference" name="PointMarginTop"/><attr format="dimension|reference" name="PointMarginRight"/></declare-styleable>
+    <declare-styleable name="LikeButton"><attr format="string" name="icon_type"/><attr format="dimension|reference" name="icon_size"/><attr format="reference" name="like_drawable"/><attr format="reference" name="unlike_drawable"/><attr format="color|reference" name="dots_primary_color"/><attr format="color|reference" name="dots_secondary_color"/><attr format="color|reference" name="circle_start_color"/><attr format="color|reference" name="circle_end_color"/><attr format="boolean" name="liked"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsIndicatorWidth"/><attr format="dimension" name="pstsIndicatorBottom"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="dimension" name="pstsTextSize"/><attr format="reference" name="pstsTextColor"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/><attr format="boolean" name="pstsLineOffset"/></declare-styleable>
+    <declare-styleable name="ProgressWheel"><attr format="boolean" name="matProg_progressIndeterminate"/><attr format="color" name="matProg_barColor"/><attr format="color" name="matProg_rimColor"/><attr format="dimension" name="matProg_rimWidth"/><attr format="float" name="matProg_spinSpeed"/><attr format="integer" name="matProg_barSpinCycleTime"/><attr format="dimension" name="matProg_circleRadius"/><attr format="boolean" name="matProg_fillRadius"/><attr format="dimension" name="matProg_barWidth"/><attr format="boolean" name="matProg_linearProgress"/></declare-styleable>
+    <declare-styleable name="PtrClassicHeader"><attr format="integer" name="ptr_rotate_ani_time"/></declare-styleable>
+    <declare-styleable name="PtrFrameLayout"><attr format="reference" name="ptr_header"/><attr format="reference" name="ptr_content"/><attr format="float" name="ptr_resistance"/><attr format="float" name="ptr_ratio_of_header_height_to_refresh"/><attr format="integer" name="ptr_duration_to_close"/><attr format="integer" name="ptr_duration_to_close_header"/><attr format="boolean" name="ptr_pull_to_fresh"/><attr format="boolean" name="ptr_keep_header_when_refresh"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+            <flag name="custom" value="0x2"/>
+            <flag name="oldflip" value="0x3"/>
+        </attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="QMUILayout"><attr name="android:maxWidth"/><attr name="android:maxHeight"/><attr name="android:minWidth"/><attr name="android:minHeight"/><attr format="dimension" name="qmui_bottomDividerHeight"/><attr format="color|reference" name="qmui_bottomDividerColor"/><attr format="dimension" name="qmui_bottomDividerInsetLeft"/><attr format="dimension" name="qmui_bottomDividerInsetRight"/><attr format="dimension" name="qmui_topDividerHeight"/><attr format="color|reference" name="qmui_topDividerColor"/><attr format="dimension" name="qmui_topDividerInsetLeft"/><attr format="dimension" name="qmui_topDividerInsetRight"/><attr format="dimension" name="qmui_leftDividerWidth"/><attr format="color|reference" name="qmui_leftDividerColor"/><attr format="dimension" name="qmui_leftDividerInsetTop"/><attr format="dimension" name="qmui_leftDividerInsetBottom"/><attr format="dimension" name="qmui_rightDividerWidth"/><attr format="color|reference" name="qmui_rightDividerColor"/><attr format="dimension" name="qmui_rightDividerInsetTop"/><attr format="dimension" name="qmui_rightDividerInsetBottom"/><attr name="qmui_radius"/><attr name="qmui_borderColor"/><attr name="qmui_borderWidth"/><attr format="color|reference" name="qmui_outerNormalColor"/><attr format="enum" name="qmui_hideRadiusSide">
+            <enum name="none" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="left" value="4"/>
+        </attr><attr format="boolean" name="qmui_showBorderOnlyBeforeL"/><attr format="dimension" name="qmui_shadowElevation"/><attr format="boolean" name="qmui_useThemeGeneralShadowElevation"/><attr format="float" name="qmui_shadowAlpha"/><attr format="dimension" name="qmui_outlineInsetTop"/><attr format="dimension" name="qmui_outlineInsetLeft"/><attr format="dimension" name="qmui_outlineInsetRight"/><attr format="dimension" name="qmui_outlineInsetBottom"/><attr format="boolean" name="qmui_outlineExcludePadding"/></declare-styleable>
+    <declare-styleable name="QMUILoadingView"><attr format="dimension" name="qmui_loading_view_size"/><attr name="android:color"/></declare-styleable>
+    <declare-styleable name="QMUIProgressBar"><attr format="enum" name="qmui_type">
+            <enum name="type_rect" value="0"/>
+            <enum name="type_circle" value="1"/>
+        </attr><attr format="color" name="qmui_progress_color"/><attr format="color" name="qmui_background_color"/><attr format="integer" name="qmui_max_value"/><attr format="integer" name="qmui_value"/><attr format="dimension" name="qmui_stroke_width"/><attr format="boolean" name="qmui_stroke_round_cap"/><attr name="android:textSize"/><attr name="android:textColor"/></declare-styleable>
+    <declare-styleable name="QMUIRoundButton"><attr name="qmui_backgroundColor"/><attr name="qmui_borderColor"/><attr name="qmui_borderWidth"/><attr name="qmui_isRadiusAdjustBounds"/><attr name="qmui_radius"/><attr name="qmui_radiusTopLeft"/><attr name="qmui_radiusTopRight"/><attr name="qmui_radiusBottomLeft"/><attr name="qmui_radiusBottomRight"/></declare-styleable>
+    <declare-styleable name="QMUITextCommonStyleDef"><attr name="android:textColor"/><attr name="android:textSize"/><attr name="android:background"/><attr name="android:gravity"/><attr name="android:paddingTop"/><attr name="android:paddingLeft"/><attr name="android:paddingRight"/><attr name="android:paddingBottom"/><attr name="android:singleLine"/><attr name="android:ellipsize"/><attr name="android:maxLines"/><attr name="android:lineSpacingExtra"/><attr name="android:drawablePadding"/><attr name="android:textColorHint"/></declare-styleable>
+    <declare-styleable name="RatingBar"><attr format="dimension" name="starImageSize"/><attr format="dimension" name="starPadding"/><attr format="integer" name="starCount"/><attr format="reference" name="starEmpty"/><attr format="reference" name="starFill"/><attr format="reference" name="starHalf"/><attr format="boolean" name="clickable"/><attr format="float" name="starStep"/><attr name="stepSize">
+            <enum name="Half" value="0"/>
+            <enum name="Full" value="1"/>
+        </attr></declare-styleable>
+    <declare-styleable name="ShimmerView"><attr format="color" name="reflectionColor"/></declare-styleable>
+    <declare-styleable name="SimplePagerIndicator"><attr format="integer" name="item_count"/><attr format="boolean" name="item_fill"/><attr format="color" name="item_indcolor"/></declare-styleable>
+    <declare-styleable name="StickyScrollView"><attr format="dimension" name="stuckShadowHeight"/><attr format="reference" name="stuckShadowDrawable"/></declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference" name="kswThumbDrawable"/><attr format="color|reference" name="kswThumbColor"/><attr format="dimension|reference" name="kswThumbMargin"/><attr format="dimension|reference" name="kswThumbMarginTop"/><attr format="dimension|reference" name="kswThumbMarginBottom"/><attr format="dimension|reference" name="kswThumbMarginLeft"/><attr format="dimension|reference" name="kswThumbMarginRight"/><attr format="dimension|reference" name="kswThumbWidth"/><attr format="dimension|reference" name="kswThumbHeight"/><attr format="dimension|reference" name="kswThumbRadius"/><attr format="dimension|reference" name="kswBackRadius"/><attr format="reference" name="kswBackDrawable"/><attr format="color|reference" name="kswBackColor"/><attr format="boolean" name="kswFadeBack"/><attr format="float" name="kswBackMeasureRatio"/><attr format="integer" name="kswAnimationDuration"/><attr format="color|reference" name="kswTintColor"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="alerter_activity_horizontal_margin">18dp</dimen>
+    <dimen name="alerter_activity_vertical_margin">16dp</dimen>
+    <dimen name="alerter_alert_icn_size">38dp</dimen>
+    <dimen name="alerter_alert_max_height">84dp</dimen>
+    <dimen name="alerter_alert_min_height">64dp</dimen>
+    <dimen name="alerter_alert_negative_margin_top">-26dp</dimen>
+    <dimen name="alerter_alert_padding">30dp</dimen>
+    <dimen name="alerter_padding_half">8dp</dimen>
+    <dimen name="alerter_padding_small">4dp</dimen>
+    <dimen name="bottom_btn_length">160dp</dimen>
+    <dimen name="bottom_btn_text_size">16sp</dimen>
+    <dimen name="chat_bottom_left_width">80dp</dimen>
+    <dimen name="chat_bottom_padding">5dp</dimen>
+    <dimen name="chat_editview_context">12sp</dimen>
+    <dimen name="chat_editview_context_left">4dp</dimen>
+    <dimen name="chat_listview_content_top">10dp</dimen>
+    <dimen name="chat_listview_context">14sp</dimen>
+    <dimen name="chat_listview_context_bottom">15dp</dimen>
+    <dimen name="chat_listview_context_left">19dp</dimen>
+    <dimen name="chat_listview_name">14sp</dimen>
+    <dimen name="chat_listview_name_left">19dp</dimen>
+    <dimen name="chat_listview_time">14sp</dimen>
+    <dimen name="chat_listview_time_right">19dp</dimen>
+    <dimen name="chat_padding_top">10dp</dimen>
+    <dimen name="chat_select_name_size">14sp</dimen>
+    <dimen name="chat_select_person_left">5dp</dimen>
+    <dimen name="chat_select_self">14sp</dimen>
+    <dimen name="chat_select_self_width">150dp</dimen>
+    <dimen name="chat_sendbutton_right">5dp</dimen>
+    <dimen name="circle_point_radius">7dp</dimen>
+    <dimen name="common_circle_bord">1dp</dimen>
+    <dimen name="common_circle_width">2dp</dimen>
+    <dimen name="config_minScalingSpan">27mm</dimen>
+    <dimen name="config_minScalingTouchMajor">48dp</dimen>
+    <dimen name="header_footer_left_right_padding">12dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="pop_list_do_text">14sp</dimen>
+    <dimen name="pop_list_item_height">40dp</dimen>
+    <dimen name="pop_list_pop_height">215dp</dimen>
+    <dimen name="pop_list_pop_width">150dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="vote_answer_item_ver">24dp</dimen>
+    <dimen name="vote_answer_tv">16sp</dimen>
+    <dimen name="vote_bottom_btn_margin_top">10dp</dimen>
+    <dimen name="vote_bottom_btn_padding">10dp</dimen>
+    <dimen name="vote_lv_ver">2dp</dimen>
+    <dimen name="vote_margin_hor">15dp</dimen>
+    <dimen name="vote_question_bottom">28dp</dimen>
+    <dimen name="vote_question_top">24dp</dimen>
+    <dimen name="vote_question_tv">16sp</dimen>
+    <dimen name="vote_receive_margin_ver">15dp</dimen>
+    <dimen name="vote_receive_total_join">12sp</dimen>
+    <dimen name="vote_select_lenght">120dp</dimen>
+    <dimen name="vote_select_size_tv">16sp</dimen>
+    <dimen name="vote_select_top_ver">10dp</dimen>
+    <dimen name="vote_top_ver">5dp</dimen>
+    <item name="FloatingText_wrapper" type="id"/>
+    <item name="hierarchy" type="id"/>
+    <item name="isexpand" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="web_filechooser" type="id"/>
+    <item name="webview" type="id"/>
+    <integer name="loading_showtime">80</integer>
+    <integer name="pop_config_AnimTime">80</integer>
+    <integer name="pop_config_showAnimTime">50</integer>
+    <integer name="qmui_anim_duration">300</integer>
+    <item name="msf_interpolator" type="interpolator">@android:interpolator/decelerate_cubic</item>
+    <string name="allname">所有人</string>
+    <string name="brow_bs_cn">【emotion.bs.gif】</string>
+    <string name="brow_bs_cn_text">【鄙视】</string>
+    <string name="brow_dx_cn">【rose.down.png】</string>
+    <string name="brow_dx_cn_text">【凋谢】</string>
+    <string name="brow_fd_cn">【feedback.against.gif】</string>
+    <string name="brow_fd_cn_text">【反对】</string>
+    <string name="brow_fn_cn">【emotion.angerly.gif】</string>
+    <string name="brow_fn_cn_text">【愤怒】</string>
+    <string name="brow_gx_cn">【emotion.laugh.gif】</string>
+    <string name="brow_gx_cn_text">【高兴】</string>
+    <string name="brow_gz_cn">【feedback.applaud.png】</string>
+    <string name="brow_gz_cn_text">【鼓掌】</string>
+    <string name="brow_lh_cn">【emotion.lh.gif】</string>
+    <string name="brow_lh_cn_text">【流汗】</string>
+    <string name="brow_lw_cn">【chat.gift.png】</string>
+    <string name="brow_lw_cn_text">【礼物】</string>
+    <string name="brow_nh_cn">【emotion.smile.gif】</string>
+    <string name="brow_nh_cn_text">【你好】</string>
+    <string name="brow_sx_cn">【emotion.cry.gif】</string>
+    <string name="brow_sx_cn_text">【伤心】</string>
+    <string name="brow_tkl_cn">【feedback.quickly.png】</string>
+    <string name="brow_tkl_cn_text">【太快了】</string>
+    <string name="brow_tml_cn">【feedback.slowly.png】</string>
+    <string name="brow_tml_cn_text">【太慢了】</string>
+    <string name="brow_wl_cn">【emotion.nod.gif】</string>
+    <string name="brow_wl_cn_text">【无聊】</string>
+    <string name="brow_xh_cn">【rose.up.png】</string>
+    <string name="brow_xh_cn_text">【鲜花】</string>
+    <string name="brow_yw_cn">【emotion.question.gif】</string>
+    <string name="brow_yw_cn_text">【疑问】</string>
+    <string name="brow_zdsk_cn">【feedback.think.png】</string>
+    <string name="brow_zdsk_cn_text">【值得思考】</string>
+    <string name="brow_zj_cn">【emotion.goodbye.gif】</string>
+    <string name="brow_zj_cn_text">【再见】</string>
+    <string name="brow_zt_cn">【feedback.agreed.png】</string>
+    <string name="brow_zt_cn_text">【赞同】</string>
+    <string name="chat_context_avatar_max">聊天内容表情数不能大于20个</string>
+    <string name="chat_context_max">聊天内容总数不能大于512个</string>
+    <string name="chat_disable">禁止聊天</string>
+    <string name="chat_enable">允许聊天</string>
+    <string name="chat_me">我</string>
+    <string name="chat_msg_not_null">聊天信息不能为空</string>
+    <string name="chat_not_to_self">不能和自己聊天</string>
+    <string name="chat_say">说</string>
+    <string name="chat_self_null">自己的用户信息为空</string>
+    <string name="chat_system_msg_colon">系统消息:</string>
+    <string name="chat_to">对</string>
+    <string name="commit">提交</string>
+    <string name="displaytime">00:00:00</string>
+    <string name="emotion_bz_cn">【emotion.bz.gif】</string>
+    <string name="emotion_bz_cn_text">【闭嘴】</string>
+    <string name="emotion_fd_cn">【emotion.fd.gif】</string>
+    <string name="emotion_fd_cn_text">【奋斗】</string>
+    <string name="emotion_gg_cn">【emotion.gg.gif】</string>
+    <string name="emotion_gg_cn_text">【尴尬】</string>
+    <string name="emotion_gz_cn">【emotion.gz.gif】</string>
+    <string name="emotion_gz_cn_text">【鼓掌】</string>
+    <string name="emotion_hx_cn">【emotion.hx.gif】</string>
+    <string name="emotion_hx_cn_text">【害羞】</string>
+    <string name="emotion_jk_cn">【emotion.jk.gif】</string>
+    <string name="emotion_jk_cn_text">【惊恐】</string>
+    <string name="emotion_jy_cn">【emotion.jy.gif】</string>
+    <string name="emotion_jy_cn_text">【惊讶】</string>
+    <string name="emotion_kb_cn">【emotion.kb.gif】</string>
+    <string name="emotion_kb_cn_text">【抠鼻】</string>
+    <string name="emotion_kl_cn">【emotion.kl.gif】</string>
+    <string name="emotion_kl_cn_text">【可怜】</string>
+    <string name="emotion_ll_cn">【emotion.ll.gif】</string>
+    <string name="emotion_ll_cn_text">【流泪】</string>
+    <string name="emotion_qd_cn">【emotion.qd.gif】</string>
+    <string name="emotion_qd_cn_text">【敲打】</string>
+    <string name="emotion_qh_cn">【emotion.qh.gif】</string>
+    <string name="emotion_qh_cn_text">【强悍】</string>
+    <string name="emotion_qq_cn">【emotion.qq.gif】</string>
+    <string name="emotion_qq_cn_text">【亲亲】</string>
+    <string name="emotion_rb_cn">【emotion.rb.gif】</string>
+    <string name="emotion_rb_cn_text">【弱爆】</string>
+    <string name="emotion_se_cn">【emotion.se.gif】</string>
+    <string name="emotion_se_cn_text">【色】</string>
+    <string name="emotion_tx_cn">【emotion.tx.gif】</string>
+    <string name="emotion_tx_cn_text">【偷笑】</string>
+    <string name="emotion_xu_cn">【emotion.xu.gif】</string>
+    <string name="emotion_xu_cn_text">【嘘】</string>
+    <string name="emotion_yun_cn">【emotion.yun.gif】</string>
+    <string name="emotion_yun_cn_text">【晕】</string>
+    <string name="fri">五</string>
+    <string name="justlookmyname">只看我的聊天</string>
+    <string name="justlookmyqa">只看我的提问</string>
+    <string name="live_pause">直播暂停</string>
+    <string name="live_playing">直播中</string>
+    <string name="mon">一</string>
+    <string name="multi_choice">【多选】</string>
+    <string name="ptr_from_bottom_pull_label">@string/ptr_pull_label</string>
+    <string name="ptr_from_bottom_refreshing_label">@string/ptr_refreshing_label</string>
+    <string name="ptr_from_bottom_release_label">@string/ptr_release_label</string>
+    <string name="ptr_pull_label">下拉刷新</string>
+    <string name="ptr_refreshing_label">正在加载</string>
+    <string name="ptr_release_label">松开刷新数据</string>
+    <string name="query_self_tip">查询中,请稍候....</string>
+    <string name="sat">六</string>
+    <string name="single_choice">【单选】</string>
+    <string name="sun">日</string>
+    <string name="sytsemmesg">系统消息</string>
+    <string name="text_wd">【问答】</string>
+    <string name="thu">四</string>
+    <string name="tue">二</string>
+    <string name="vote_count">%d份</string>
+    <string name="vote_deadline_tip">抱歉! 本试卷已被终止，不能提交了。</string>
+    <string name="vote_have_commit">已提交</string>
+    <string name="vote_not_exist">试卷不存在</string>
+    <string name="vote_please_dawan">请先答题再提交</string>
+    <string name="vote_please_dawan_all">请回答完所有问题</string>
+    <string name="vote_qiangzhi_tip">当前为强制投票，需要提交后才能关闭</string>
+    <string name="vote_question_fenshu">, 分数：%d</string>
+    <string name="vote_total_person_join">共(%d人)参与</string>
+    <string name="wed">三</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <style name="AlertStyle" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alerter_alert_min_height</item>
+        <item name="android:maxHeight">@dimen/alerter_alert_max_height</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">top</item>
+        <item name="android:paddingTop">@dimen/alerter_alert_padding</item>
+    </style>
+    <style name="AlertTextAppearance">
+        <item name="android:textColor">@color/alert_default_text_color</item>
+    </style>
+    <style name="AlertTextAppearance.Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AlertTextAppearance.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Animations"/>
+    <style name="Animations.PopDownMenu"/>
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_fade_in_center</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_fade_out</item>
+<!--        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>-->
+      <!--  <item name="@android:windowEnterAnimation">@android:anim/grow_fade_in_center</item>
+        <item name="@android:windowExitAnimation">@android:anim/shrink_fade_out_center</item>-->
+    </style>
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="Animations.PopUpMenu"/>
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <style name="CustomProgressDialog2" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="QMUI.Animation" parent="@android:style/Animation"/>
+    <style name="QMUI.Animation.PopDownMenu"/>
+    <style name="QMUI.Animation.PopDownMenu.Center">
+     <!--   <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>-->
+
+        <item name="@android:windowEnterAnimation">@anim/grow_fade_in_center</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_fade_out</item>
+    </style>
+    <style name="QMUI.Animation.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+    <style name="QMUI.Animation.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+    <style name="QMUI.Animation.PopUpMenu"/>
+    <style name="QMUI.Animation.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+    <style name="QMUI.Animation.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+    <style name="QMUI.Animation.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+    <style name="QMUI.TipDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="SwitchButtonStyle_ios">
+        <item name="kswAnimationDuration">300</item>
+        <item name="kswBackDrawable">@drawable/ios_back_drawable</item>
+        <item name="kswBackMeasureRatio">1.6</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="kswThumbDrawable">@drawable/community_management_open</item>
+        <item name="kswThumbMarginBottom">-1dp</item>
+        <item name="kswThumbMarginLeft">0dp</item>
+        <item name="kswThumbMarginRight">0dp</item>
+        <item name="kswThumbMarginTop">-1dp</item>
+    </style>
+    <style name="TooltipDefaultStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="bottom_btn">
+        <item name="android:layout_width">@dimen/bottom_btn_length</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/bottom_btn_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_vote_btn_commit</item>
+    </style>
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="qmui_tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@drawable/qmui_tip_dialog_bg</item>
+    </style>
+    <style name="select_tv">
+        <item name="android:layout_width">@dimen/vote_select_lenght</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/bottom_btn_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_vote_select_switch</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

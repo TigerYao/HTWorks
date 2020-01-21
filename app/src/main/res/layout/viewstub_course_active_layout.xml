@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/onsale_hint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:background="@mipmap/course_youhuibg"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/onsale_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@mipmap/free_limit"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/onsale_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/onsale_icon"
+        android:background="@mipmap/course_youhuibg_tv"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/common_5dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="@dimen/common_6dp"
+        android:text="限时优惠"
+        android:textColor="#EE6F6E"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/onsal_hint_real_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:gravity="right|center"
+        android:paddingTop="@dimen/common_2dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</LinearLayout>

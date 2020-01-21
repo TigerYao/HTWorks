@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="86dp">
+
+
+    <com.huatu.widget.text.MessageTextView
+        android:id="@+id/mTvHomework"
+        app:PointMarginRight="2dp"
+        app:PointMarginTop="2dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:drawableTop="@mipmap/study_after_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课后作业"
+        android:layout_marginLeft="15dp"
+        android:drawablePadding="3dp"
+        android:textColor="#ff696969"
+        android:textSize="12sp"
+        />
+
+    <com.huatu.widget.text.MessageTextView
+        android:id="@+id/mTvSectionalExamination"
+        app:PointMarginRight="2dp"
+        app:PointMarginTop="2dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:drawableTop="@mipmap/study_exam_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阶段测评"
+        android:layout_marginLeft="35dp"
+        android:drawablePadding="3dp"
+        android:textColor="#ff696969"
+        android:textSize="12sp"
+        />
+
+    <com.huatu.widget.text.MessageTextView
+        app:PointMarginRight="2dp"
+        android:id="@+id/tv_exam_essence"
+        app:PointMarginTop="2dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:drawableTop="@mipmap/study_read_icon"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="3dp"
+        android:text="备考精华"
+        android:textColor="#ff696969"
+        android:textSize="12sp"
+        />
+</LinearLayout>

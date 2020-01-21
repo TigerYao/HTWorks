@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/five_card_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAFAFA"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_nine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <com.huatu.handheld_huatu.business.matches.customview.ScCardLinearlayout
+        android:id="@+id/sc_card_ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

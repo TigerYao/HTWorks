@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.main.MainTabActivity">
+
+    <FrameLayout
+        android:id="@+id/main_tab_real_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible" />
+
+    <!--底部tabhost-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/main_tab_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cut_line" />
+
+        <com.huatu.handheld_huatu.base.StateFragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+        </com.huatu.handheld_huatu.base.StateFragmentTabHost>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_tip_02"
+            android:layout_width="350dp"
+            android:layout_height="116dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_tip_setting" />
+    </RelativeLayout>
+</FrameLayout>

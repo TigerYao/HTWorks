@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_bg"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.FixedRatioImageView
+        android:id="@+id/calendarbg_view"
+        android:scaleType="fitXY"
+        app:ratio="1.05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.huatu.widget.KitkatProfileFramLayout
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:tag="1"
+        android:paddingTop="4dp"
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rl_scan_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+
+            android:src="@drawable/layer_scan_selector" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/search_bar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/drawable_rectangle_e3e3e3"
+            android:drawableLeft="@mipmap/calendar_search_grey_icon"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="学习内容"
+            android:textColor="#9B9B9B"
+            android:textSize="16sp" />
+
+        <com.huatu.widget.MessageImageView
+            android:id="@+id/iv_message"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            app:PointMarginRight="0dp"
+            app:PointMarginTop="0dp"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/layer_msg_selector" />
+
+    </com.huatu.widget.KitkatProfileFramLayout>
+
+    <com.huatu.handheld_huatu.ui.PullNestRefreshRecyclerView
+        android:id="@+id/xi_comm_page_list"
+
+        android:layout_below="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+    <include
+        android:layout_below="@+id/head_layout"
+        layout="@layout/loading_default_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</RelativeLayout>

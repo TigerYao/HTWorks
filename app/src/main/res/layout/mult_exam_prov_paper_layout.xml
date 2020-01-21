@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.66"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/show_province_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/sel_text_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="请选择地区"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/sel_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/app_name"
+                android:textColor="#4A4A4A"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/sel_text_togg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/homef_title_pop_up" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/sel_text_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toLeftOf="@+id/sel_text_togg"-->
+        <!--android:textSize="15dp"-->
+        <!--android:gravity="center|left"-->
+        <!--android:text="请选择地区"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/sel_text_togg"-->
+        <!--android:layout_width="34dp"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:padding="8dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:src="@mipmap/homef_title_pop_up"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_province_rl"
+        android:layout_marginBottom="120dp"
+        android:background="@color/white"
+        android:divider="@color/white"
+        android:dividerHeight="0.5dp"
+        android:gravity="center" />
+
+</RelativeLayout>

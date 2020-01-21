@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bjyll_title"
+        android:background="@drawable/video_play_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/bjyrl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/vod_back"
+            app:layout_marginLeftPercent="3.3%w" />
+
+        <TextView
+            android:id="@+id/bjytextView_TitleBar_Info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/bjyrl_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/bjytext_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/bg_text_speed"
+                android:gravity="center"
+                android:text="1.0x"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/bjyimageview_ml"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/bjyimage_ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/bg_text_speed"
+                android:gravity="center"
+                android:text="课表"
+                android:textColor="#ffffff"
+                android:textSize="13dp" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <ImageView
+            android:id="@+id/bjyiv_titlebt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:paddingRight="12dp"
+            android:src="@drawable/vod_titlebt"
+            app:layout_paddingRightPercent="3.3%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>

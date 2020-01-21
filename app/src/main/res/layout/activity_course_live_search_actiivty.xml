@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar_general_type5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hot"
+            app:layout_heightPercent="4.4%w"
+            app:layout_marginBottomPercent="2.7%w"
+            app:layout_marginLeftPercent="5.4%w"
+            app:layout_marginTopPercent="4.1%w"
+            app:layout_widthPercent="6.1%w" />
+
+        <GridView
+            android:id="@+id/gridview_hotwords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hot"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp"
+            app:layout_marginLeftPercent="5.4%w">
+
+        </GridView>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_lishi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gridview_hotwords"
+            android:background="@color/gray001"
+            app:layout_heightPercent="10.8%w"
+            app:layout_marginTopPercent="8.3%w"
+            app:layout_paddingLeftPercent="5.4%w">
+
+            <TextView
+                android:id="@+id/tv_lisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="历史搜索"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                app:layout_textSizePercent="4.1%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_lishi"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.huatu.handheld_huatu.view.ListViewForScroll
+
+                    android:id="@+id/listview_lishi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:smoothScrollbar="true">
+
+                </com.huatu.handheld_huatu.view.ListViewForScroll>
+
+                <View
+                    android:id="@+id/dixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/listview_lishi"
+                    android:background="#dcdcdc" />
+
+                <Button
+                    android:id="@+id/bt_lishi_clear"
+                    android:layout_width="240dp"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/listview_lishi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="48dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/shape_yuanjiao"
+                    android:text="清空搜索历史"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    app:layout_heightPercent="10.2%w"
+                    app:layout_marginBottomPercent="13.3%w"
+                    app:layout_marginTopPercent="6.6%w"
+                    app:layout_textSizePercent="3.6%w"
+                    app:layout_widthPercent="66.6%w" />
+            </RelativeLayout>
+        </ScrollView>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_xianshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginLeft="12dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_marginLeftPercent="3.3%w"
+        app:layout_textSizePercent="3.8%w" />
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.refresh.RefreshListView
+        android:id="@+id/refreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_xianshi"
+        android:layout_marginTop="18dp"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:visibility="gone"
+        app:layout_marginTopPercent="5%w" />
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_xianshi"
+        android:background="#F6F6F6"
+        android:visibility="gone">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_down_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_xianshi"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/down_no_num"
+                app:layout_heightPercent="23.6%w"
+                app:layout_widthPercent="25%w" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="没有找到相关课程"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                app:layout_marginTopPercent="6.1%w"
+                app:layout_textSizePercent="3.8%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.huatu.handheld_huatu.business.ztk_zhibo.play.RefreshLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/nonetwork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_xianshi"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_paixunodata"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/down_no_num"
+            app:layout_heightPercent="23.6%w"
+            app:layout_widthPercent="25%w" />
+
+        <TextView
+            android:id="@+id/tv_paixunodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_paixunodata"
+            android:layout_centerHorizontal="true"
+            android:text="点击屏幕，重新加载"
+            android:textColor="#999999"
+            app:layout_marginTopPercent="4.1%w"
+            app:layout_textSizePercent="3.8%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

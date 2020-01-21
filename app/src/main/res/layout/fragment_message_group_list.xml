@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.huatu.handheld_huatu.view.TopActionBar
+    android:id="@+id/top_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    app:topbarLeftImgRes="@drawable/icon_arrow_left"
+    app:topbarIsLeftShow="true"
+    app:topbarIsRightShow="false"
+    app:topbarIsRight2Show="false" />
+
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/xi_comm_page_list"
+        android:layout_below="@id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorViewExsc
+        android:id="@+id/view_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_title"
+        android:visibility="gone" />
+</RelativeLayout>

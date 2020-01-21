@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:background="@drawable/loading_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+
+    <com.huatu.widget.ProgressWheel
+        android:id="@+id/xi_progress_loading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        app:matProg_barColor="#999999"
+        app:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/xi_rotate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="请稍后,正在提交..."
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+</LinearLayout>

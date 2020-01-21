@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.ui.CommSmallLoadingView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xi_layout_loading"
+     android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        style="?android:attr/progressBarStyleSmall"
+        android:indeterminateDrawable="@drawable/rotate_progress"
+        android:indeterminateDuration="600"
+         />
+    <TextView
+        android:id="@+id/xi_hite_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/xs_loading_text"
+        android:textColor="#757575"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/xi_tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:textColor="#757575"
+        android:layout_gravity="center_horizontal"
+         />
+</com.huatu.handheld_huatu.ui.CommSmallLoadingView>

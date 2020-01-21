@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@+id/type_name"
+        android:layout_alignBottom="@+id/type_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="#FFCCDF" />
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/view"
+        android:drawablePadding="10dp"
+        android:text="问题1"
+        android:textColor="@color/sc_report_common_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sc_essay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="得分"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sc_essay_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/sc_report_divider" />
+</RelativeLayout>
+
+
+

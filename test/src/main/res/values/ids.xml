@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id" />
+
+    <!-- Glide实现的ImageGetter中的图片id -->
+    <item name="glide_tag_id_exercise" type="id" />
+    <!-- 做题页面，RecyclerView Adapter中给选项设置tag的id -->
+    <item name="exercise_position_tag_id" type="id" />
+    <!-- 做题页面，RecyclerView Adapter中给选项ExerciseTextView设置tag的id -->
+    <item name="exercise_position_tv_tag_id" type="id" />
+    <!-- 答题报告页面，1级知识点ViewHolder的id -->
+    <item name="tag_position_item" type="id" />
+    <item name="first_level_point_holder_tag_id" type="id" />
+    <item name="second_level_point_holder_tag_id" type="id" />
+    <item name="third_level_point_holder_tag_id" type="id" />
+    <item name="hierarchy" type="id" />
+    <item name="isexpand" type="id" />
+    <item name="looper_item_tag" type="id" />
+
+
+    <item name="reuse_tag" type="id" />
+    <item name="reuse_tag2" type="id" />
+    <item name="reuse_cachetag" type="id" />
+
+    <item name="xi_toolbar" type="id" />
+    <item name="xi_toolbar_center_title" type="id" />
+
+    <item name="xi_swipe_pull_to_refresh" type="id" />
+    <item name="whole_content" type="id" />
+
+    <item name="smContentView" type="id" />
+
+    <item name="smMenuView" type="id" />
+
+    <item name="BaseQuickAdapter_viewholder_support" type="id" />
+
+    <item name="BaseQuickAdapter_swiping_support" type="id" />
+
+    <item name="BaseQuickAdapter_dragging_support" type="id" />
+
+    <item name="essay_bottom_material" type="id" />
+    <item name="fullscreen_container_id" type="id" />
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.me.fragment.ErrorPapersListFragment">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:background="@drawable/err_question_top_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:layout_below="@+id/view_statue"
+        android:background="@drawable/err_question_top_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_back_white_white_new" />
+
+        <TextView
+            android:id="@+id/tv_title_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的错题"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_export"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_title_clear"
+            android:padding="7dp"
+            android:src="@mipmap/err_export" />
+
+        <ImageView
+            android:id="@+id/iv_title_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_title_right"
+            android:padding="7dp"
+            android:src="@mipmap/err_clear" />
+
+        <ImageView
+            android:id="@+id/iv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="7dp"
+            android:src="@mipmap/err_setting" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top_titlebar"
+        android:background="#ffffff"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/listview"
+        android:background="#dcdcdc" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/arena_exam_main_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top_titlebar"
+        android:background="@color/arena_exam_common_text_bg"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_tip_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6000000"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_guide"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="65dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/err_tip"
+        android:visibility="gone" />
+</RelativeLayout>

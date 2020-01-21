@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:layout_alignBaseline="@+id/ess_ex_answer_tip_tv"
+        android:layout_marginLeft="15dp"
+        android:background="@mipmap/bg_check_bottom" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.OcTextView
+        android:id="@+id/ess_ex_answer_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:drawablePadding="5dp"
+        android:text="标准答案"
+        android:textColor="@color/gray_333333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/son_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/ess_ex_answer_tip_tv"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="topic"
+            android:textColor="@color/gray_333333"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/subTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text="subTopic"
+            android:textColor="@color/gray_333333"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/callName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:padding="5dp"
+            android:text="callName"
+            android:textColor="@color/gray_333333"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/ess_ex_answer_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text=""
+            android:textColor="@color/gray_333333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+                android:id="@+id/inscribedName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="inscribedName"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+                android:id="@+id/inscribedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="30dp"
+                android:padding="2dp"
+                android:text="inscribedDate"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray001" />
+</RelativeLayout>

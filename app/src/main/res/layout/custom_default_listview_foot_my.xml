@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.ui.CommListFooter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@color/main_bg"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="60dp"
+        android:id="@+id/comm_loading_layout"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/xi_footer_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+
+            android:text="@string/list_footer_end"
+            android:textColor="@color/color_00"
+            android:textSize="14sp" />
+        <ProgressBar
+            android:id="@+id/xi_footer_bar"
+            style="@android:style/Widget.DeviceDefault.ProgressBar"
+            android:indeterminateOnly="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDuration="500"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+             />
+
+
+    </LinearLayout>
+</com.huatu.handheld_huatu.ui.CommListFooter>

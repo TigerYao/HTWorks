@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.ui.StageLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:minHeight="40dp"
+    android:layout_height="40dp">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/catalogstage_txt"
+        android:layout_height="40dp"
+        android:text="基础阶段"
+        android:tag="0"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:drawableRight="@drawable/zf_icon_aa"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        android:textColor="#ff4a4a4a"
+        android:textSize="14sp" />
+    <TextView
+        android:tag="1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/zf_icon_aa"
+
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        android:singleLine="true"
+        android:id="@+id/catalogName_txt"
+        android:layout_height="40dp"
+        android:text="全部课程"
+
+        android:gravity="center"
+        android:textColor="#ff4a4a4a"
+        android:textSize="14sp"  />
+    <TextView
+        android:tag="2"
+        android:layout_width="0dp"
+        android:drawableRight="@drawable/zf_icon_aa"
+        android:paddingRight="14dp"
+        android:paddingLeft="14dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:id="@+id/techer_des_txt"
+        android:layout_height="40dp"
+        android:text="全部老师"
+        android:gravity="center"
+        android:textColor="#ff4a4a4a"
+        android:textSize="14sp"
+        />
+</com.huatu.handheld_huatu.ui.StageLinearLayout>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/raw/emoji",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/raw/emoji"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/raw/xnemoji",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/raw/xnemoji"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/raw/xnsdkconfig.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/raw/xnsdkconfig.xml"
+    }
+]

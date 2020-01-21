@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.gensee.view.GSVideoView
+        android:id="@+id/gsvideoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.gensee.view.GSDocViewGx
+        android:id="@+id/palydoc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/stopveidoplay"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/live_back" />
+
+    <ImageView
+        android:id="@+id/video_ppt"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/live_ppt" />
+
+    <LinearLayout
+        android:id="@+id/video_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/live_bj"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/pauseresumeplay"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/live_stop" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingBottom="2dp" >
+
+            <SeekBar
+                android:id="@+id/seekbarpalyviedo"
+                style="@style/Widget.SeekBar.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:thumbOffset="0dp" />
+
+            <TextView
+                android:id="@+id/palyalltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="02:10:14"
+                android:textColor="@color/white_common"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/palyalltime"
+                android:text="/"
+                android:textColor="@color/white_common"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/palynowtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/tv_line"
+                android:text="00:00:00"
+                android:textColor="@color/white_common"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+<!--         <ImageView -->
+<!--             android:id="@+id/video_change" -->
+<!--             android:layout_width="32dp" -->
+<!--             android:layout_height="32dp" -->
+<!--             android:layout_marginBottom="8dp" -->
+<!--             android:layout_marginRight="20dp" -->
+<!--             android:layout_marginTop="8dp" -->
+<!--             android:src="@drawable/live_sm" /> -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/record_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="稍等片刻,精彩即将开始..."
+        android:textSize="22sp" />
+
+</RelativeLayout>

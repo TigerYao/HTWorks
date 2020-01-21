@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp" >
+
+    <ImageView
+        android:id="@+id/img_select_status"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/img_down_select" />
+
+    <ImageView
+        android:id="@+id/img_offline_course"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/img_select_status"
+        android:scaleType="fitXY"
+        android:src="@mipmap/load_default" />
+
+    <ImageView
+        android:id="@+id/img_down_forward"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/forward_downing"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_offline_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_offline_course"
+        android:layout_toLeftOf="@id/img_down_forward"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="江苏考前训练营第二期江苏考前训练营第二期江苏考前训练营第二期"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_offline_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/img_offline_course"
+        android:layout_below="@id/tv_offline_title"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="共10讲"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_offline_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_offline_title"
+        android:layout_toRightOf="@id/tv_offline_total"
+        android:layout_toLeftOf="@id/img_down_forward"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="已缓存5讲"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/img_offline_course"
+        android:background="#dcdcdc"
+        />
+</RelativeLayout>

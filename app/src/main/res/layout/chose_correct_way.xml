@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="选择批改方式"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3dp"
+        android:text="申论批改可采用智能批改或者人工批改，人工批改为名师一对一批改，选择后仍可在答题页内更改批改模式 "
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="7dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/correct_personal" />
+
+        <ImageView
+            android:id="@+id/iv_ai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-25dp"
+            android:src="@mipmap/correct_ai" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_known"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:drawableRight="@mipmap/eva_explain"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="了解人工批改"
+        android:textColor="#9B9B9B"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

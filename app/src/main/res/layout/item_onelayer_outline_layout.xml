@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/one_layer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/outline_last_layer">
+
+    <TextView
+        android:id="@+id/one_layer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:paddingRight="50dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/one_layer_video_shiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/one_layer_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/common_10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/red"
+        android:paddingLeft="@dimen/common_5dp"
+        android:paddingRight="@dimen/common_5dp"
+        android:text="试听"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/one_layer_videoinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_layer_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="视频"
+        android:textColor="@color/outline_last_layer_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/one_layer_teacherinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/one_layer_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="主讲老师"
+        android:textColor="@color/outline_last_layer_text"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/homework_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/one_layer_videoinfo"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/homework_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@mipmap/homework" />
+
+        <TextView
+            android:id="@+id/homework_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/homework_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="课后作业"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/homework_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homework_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/homework_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="练习题-5道题"
+            android:textColor="@color/outline_last_layer_text"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

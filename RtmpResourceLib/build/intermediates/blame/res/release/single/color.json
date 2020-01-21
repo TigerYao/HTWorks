@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_tint_switch_track.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/switch_thumb_material_light.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_tint_edittext.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/design_tint_password_toggle.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/switch_thumb_material_dark.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_search_url_text.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_primary_text_material_light.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/abc_tint_default.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color/design_error.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/color/design_error.xml"
+    }
+]

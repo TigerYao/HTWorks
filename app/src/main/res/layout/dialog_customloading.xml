@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#80000000"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.DeviceDefault.ProgressBar"
+            android:indeterminateTint="@color/main_color"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"/>
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            app:layout_marginTopPercent="10%w"
+            android:text="加载中…"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_textSizePercent="10%w"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

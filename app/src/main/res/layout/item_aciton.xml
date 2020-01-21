@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f9">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f5f9"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="#f4f5f9"
+            android:visibility="visible"
+            app:layout_heightPercent="2.5%w" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_activity_showing"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:background="@mipmap/wanderful_activity_progress"
+            app:layout_heightPercent="8%w"
+            app:layout_marginBottomPercent="1.35%w"
+            app:layout_marginTopPercent="2.08%w">
+
+            <ImageView
+                android:id="@+id/image_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:background="@mipmap/wanderful_activity_time"
+                app:layout_marginLeftPercent="2.22%w" />
+
+            <TextView
+                android:id="@+id/textview_avtivity_showing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/image_time"
+                android:text="正在进行"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                app:layout_marginLeftPercent="1.39%w"
+                app:layout_marginRightPercent="8.33%w"
+                app:layout_textSizePercent="3.33%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_wanderful_activity_item"
+            android:orientation="vertical"
+            app:layout_marginLeftPercent="2.22%w"
+            app:layout_marginRightPercent="2.22%w">
+
+            <ImageView
+                android:id="@+id/image_wanderful_icon"
+                android:layout_width="match_parent"
+                android:layout_height="154dp"
+                android:background="@mipmap/load_default"
+                android:scaleType="fitXY"
+                app:layout_heightPercent="42.78%w" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/image_wanderful_icon"
+                android:background="#B2222222"
+                android:orientation="horizontal"
+                app:layout_heightPercent="8.72%w">
+
+                <TextView
+                    android:id="@+id/textview_avtivity_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="12月1日-12月5日"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    app:layout_marginLeftPercent="2.33%w"
+                    app:layout_textSizePercent="3.49%w" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/wanderful_activity_number"
+                    app:layout_marginLeftPercent="1.45%w" />
+
+                <TextView
+                    android:id="@+id/textview_activity_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:text="68人"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    app:layout_marginLeftPercent="1.45%w"
+                    app:layout_marginRightPercent="2.33%w"
+                    app:layout_textSizePercent="3.49%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_below="@id/image_wanderful_icon"
+                android:orientation="horizontal"
+                app:layout_heightPercent="11.34%w">
+
+                <TextView
+                    android:id="@+id/textview_activity_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="2016浙江公考网络直播课36晚2016浙江公考网络直播课36晚2016浙江公考网络直播课36晚"
+                    android:textSize="12dp"
+                    app:layout_marginLeftPercent="2.33%w"
+                    app:layout_textSizePercent="3.49%w" />
+
+                <TextView
+                    android:id="@+id/textview_activity_join"
+                    android:layout_width="67dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="9dp"
+                    android:background="@drawable/bg_wanderful_bt"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="马上参加"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    app:layout_heightPercent="8.14%w"
+                    app:layout_marginLeftPercent="2.33%w"
+                    app:layout_marginRightPercent="2.62%w"
+                    app:layout_textSizePercent="3.49%w"
+                    app:layout_widthPercent="19.48%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

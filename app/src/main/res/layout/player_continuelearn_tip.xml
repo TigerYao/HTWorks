@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/play_continue_bg"
+    android:text="继续上次课程：中央国家行政机关职位分析与报岗知道"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:textColor="#ffffffff"
+    android:layout_gravity="bottom"
+    android:singleLine="true"
+    android:layout_marginBottom="30dp"
+    android:layout_marginRight="30dp"
+    android:drawableRight="@mipmap/play_continue_lean_icon2"
+    android:drawablePadding="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="3dp"
+    android:gravity="center_vertical"
+    android:textSize="12sp"
+    android:layout_height="36dp">
+
+</TextView>

@@ -1,0 +1,561 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".business.essay.examfragment.EssayExamRobotCheckReport">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/essay_report_check_top_bg" />
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view_statue"
+        android:background="@drawable/essay_report_check_top_bg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="13dp"
+            android:src="@mipmap/icon_back_white_white_new" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="批改报告"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_go_check"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_essay_control">
+        <!--智能批改转人工批改布局-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="查看批改详情"
+            android:textColor="#FF6D73"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_go_check"
+        android:layout_below="@+id/action_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/arena_report_item_bg_color"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/essay_report_check_top_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_paper_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:text="考试"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_score_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="0.0"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="分/"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_score_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_up_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/essay_report_check_time_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="同比变化"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_up_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:src="@mipmap/essay_check_report_down" />
+
+                    <TextView
+                        android:id="@+id/tv_up_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:text="0.0"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_check_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.5"
+                    android:text="批改时间：2018年01月01日 00:00"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!--排名-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/essay_report_check_top_bg" />
+
+                <LinearLayout
+                    android:id="@+id/sc_answer_report_compare_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/sc_main_card_bg2"
+                    android:elevation="3dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_rank_center"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_rank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/view_rank_center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_rank_all_area"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxWidth="60dp"
+                                android:singleLine="true"
+                                android:text="0"
+                                android:textColor="#FF5F5C"
+                                android:textSize="20sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/tv_rank_all_area_all"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="/0"
+                                android:textColor="@color/presale_tab_unselect"
+                                android:textSize="16sp"
+                                android:textStyle="bold|italic" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/sc_answer_report_ranking_total_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_rank_center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1dp"
+                            android:text="全站排名"
+                            android:textColor="@color/arena_exam_common_text"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_rank_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/essay_report_up_bg"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_rank_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/essay_report_up" />
+
+                            <TextView
+                                android:id="@+id/tv_rank_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#FF4E4E"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_score_center"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/tv_high_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/view_score_center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:text="0"
+                            android:textColor="#FF5F5C"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/sc_answer_report_max_score_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_score_center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1dp"
+                            android:text="全站最高分"
+                            android:textColor="@color/arena_exam_common_text"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_score_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/essay_report_up_bg"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/iv_score_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/essay_report_up" />
+
+                            <TextView
+                                android:id="@+id/tv_score_up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#FF4E4E"
+                                android:textSize="10dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sc_rp_area_rl"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <View
+                            android:id="@+id/view_ave_center"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/tv_ave_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/view_ave_center"
+                            android:layout_centerHorizontal="true"
+                            android:maxWidth="60dp"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="#FF5F5C"
+                            android:textSize="20sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/sc_answer_report_ranking_samejob_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view_ave_center"
+                            android:layout_centerHorizontal="true"
+                            android:text="全站平均分"
+                            android:textColor="@color/arena_exam_common_text"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--考试情况-->
+            <RelativeLayout
+                android:id="@+id/rl_paper_all_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="10dp"
+                    android:layout_alignBaseline="@+id/tv_paper_total_score"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/bg_check_bottom" />
+
+                <TextView
+                    android:id="@+id/tv_paper_total_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="考试情况"
+                    android:textColor="@color/arena_exam_common_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!--考试情况-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共"
+                    android:textColor="#9B9B9B"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/pink250"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="道，未答"
+                    android:textColor="#9B9B9B"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_no_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/pink250"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="道，总计共用时"
+                    android:textColor="#9B9B9B"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0'00''"
+                    android:textColor="@color/pink250"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <com.huatu.handheld_huatu.view.ListViewForScroll
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="80dp"
+                android:background="#F3F3F3" />
+
+
+            <!--<include layout="@layout/layout_covert_manuel" />-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/try_manual_check_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@mipmap/switch_manual_check_bg"-->
+            <!--android:paddingLeft="55dp"-->
+            <!--android:paddingRight="26dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tip1_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="对智能批改结果不满意？"-->
+            <!--android:textColor="#ffa66200"-->
+            <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_toRightOf="@id/tip1_tv"-->
+            <!--android:gravity="center"-->
+            <!--android:text="试试人工批改"-->
+            <!--android:textColor="#ffffffff"-->
+            <!--android:textSize="16sp" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/common_20dp"-->
+            <!--android:layout_height="@dimen/common_20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="@dimen/common_dimens_30dp"-->
+            <!--android:background="@mipmap/mip_unselected"-->
+            <!--android:padding="@dimen/common_5dp"-->
+            <!--android:src="@drawable/teacher_jiantou" />-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.huatu.handheld_huatu.ui.CovertManulView
+        android:id="@+id/covert_mauel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_go_check" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/err_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:background="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

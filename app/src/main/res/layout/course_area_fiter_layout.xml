@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="88dp"
+
+        android:background="@mipmap/course_filter_bg"
+        android:id="@+id/area_listView"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="8dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/content_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

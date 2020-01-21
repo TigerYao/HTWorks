@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/whole_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="44dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/time_group_txt"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@mipmap/time_clock_icon"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="2019-12-23"
+        android:textColor="#ff4a4a4a"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/course_teacher_lession_bg"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+
+            android:background="@drawable/course_teacher_ring_bg"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="64dp"
+            android:text="13:00-14:00"
+            android:id="@+id/time_class_txt"
+            android:textColor="#ff4a4a4a"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+
+            android:text="主讲：牛叉叉"
+            android:id="@+id/techer_des_txt"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/course_teacher_room_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:id="@+id/room_des_txt"
+            android:text="教室：第一教室"
+            android:textColor="#ffd78b0f"
+            android:textSize="10sp" />
+    </FrameLayout>
+</LinearLayout>

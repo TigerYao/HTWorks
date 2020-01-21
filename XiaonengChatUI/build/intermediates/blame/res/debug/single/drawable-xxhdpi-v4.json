@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/dial.png",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/drawable-xxhdpi/dial.png"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/xn_play.png",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/drawable-xxhdpi/xn_play.png"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icon_arrow_left_black.png",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/drawable-xxhdpi/icon_arrow_left_black.png"
+    }
+]

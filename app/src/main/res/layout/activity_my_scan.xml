@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zxing_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.journeyapps.barcodescanner.CompoundBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        zxing_view:zxing_scanner_layout="@layout/activity_scan_border">
+    </com.journeyapps.barcodescanner.CompoundBarcodeView>
+
+    <RelativeLayout
+        android:id="@+id/top_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/scan_back_icon"
+                android:padding="2dp" />
+        </RelativeLayout>
+        <!--<Button-->
+        <!--android:id="@+id/saomiao_back"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_widthPercent="100%h"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:background="@drawable/arrow"-->
+
+        <!--android:paddingRight="25dp"-->
+        <!--android:textColor="@color/white" />-->
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="扫一扫"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <!--<com.zhy.android.percent.support.PercentRelativeLayout-->
+        <!--android:id="@+id/capture_containter"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/top_mask"-->
+        <!--android:visibility="visible"-->
+        <!--app:layout_marginTopPercent="15.33%w">-->
+
+        <!--扫描框-->
+        <!-- width:245dp height:245dp -->
+        <!--<com.zhy.android.percent.support.PercentRelativeLayout-->
+            <!--android:id="@+id/capture_crop_layout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/capture1"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--app:layout_heightPercent="68.06%w"-->
+            <!--app:layout_widthPercent="68.06%w">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/capture_scan_line"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:background="@drawable/scan_line1"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--app:layout_marginPercent="2.04%w" />-->
+        <!--</com.zhy.android.percent.support.PercentRelativeLayout>-->
+
+        <!-- 开始扫描时，提示当前扫描班次-->
+        <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+            <!--android:id="@+id/ll_scanInfo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/capture_crop_layout"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="vertical"-->
+            <!--app:layout_marginTopPercent="2.22%w">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_scanTip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="放"-->
+                <!--android:textColor="@color/white"-->
+                <!--app:layout_marginTopPercent="3.89%w"-->
+                <!--app:layout_textSizePercent="3.89%w" />-->
+        <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--</com.zhy.android.percent.support.PercentRelativeLayout>-->
+</RelativeLayout>

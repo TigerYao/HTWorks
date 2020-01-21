@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/show_first_view"
+        android:layout_gravity="bottom"
+        android:src="@mipmap/catalog_filter_btn_icon2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

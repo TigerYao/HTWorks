@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_top_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="#ffffff">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_left_top_bar"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_heightPercent="13.33%w">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_left"
+                android:layout_marginLeft="15dp"
+                android:padding="1.0dp" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="立即充值"
+            android:textColor="@color/blackF4"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_input_num"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_top_title_bar"
+        android:background="@color/white"
+        app:layout_heightPercent="11.5%w"
+        app:layout_marginTopPercent="4.78%w">
+
+        <TextView
+            android:id="@+id/tv_recharge_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="请输入充值金额"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_marginLeftPercent="3.78%w"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/et_recharge_num"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_border"
+            android:layout_toRightOf="@id/tv_recharge_num"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:lines="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="元"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_alignRight="@id/et_recharge_num"
+            android:layout_marginRight="8dp"
+            android:layout_alignTop="@id/et_recharge_num"/>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_choice_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择充值方式"
+        android:textColor="#666666"
+        android:layout_below="@id/rl_input_num"
+        android:layout_marginTop="@dimen/netschool_20dp"
+        app:layout_marginLeftPercent="3.78%w"
+        />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_aliPay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/tv_choice_pay"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        app:layout_heightPercent="12.22%w">
+
+        <TextView
+            android:id="@+id/tv_integration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_recharge_alipay"
+            android:drawablePadding="10dp"
+            android:text="支付宝"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            app:layout_marginLeftPercent="6.33%w"
+            app:layout_textSizePercent="3.89%w"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/jiantou_right"
+            app:layout_heightPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            app:layout_widthPercent="1.94%w"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rl_aliPay"
+        android:background="#dfdfdf"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_weChatPay"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/line2"
+        android:background="#ffffff"
+        android:visibility="visible"
+        app:layout_heightPercent="12.22%w">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_recharge_wechat"
+            android:drawablePadding="10dp"
+            android:text="微信"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            app:layout_marginLeftPercent="6.33%w"
+            app:layout_textSizePercent="3.89%w"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@mipmap/jiantou_right"
+            app:layout_heightPercent="3.33%w"
+            app:layout_marginRightPercent="3.33%w"
+            app:layout_widthPercent="1.94%w"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

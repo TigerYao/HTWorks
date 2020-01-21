@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_message"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:textColor="#6D7172"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_date"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/blackF4"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_circle"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_circle_red"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_content_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/iv_circle"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#6D7172"
+            android:textSize="14dp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/rl_message"
+        android:background="@color/gray011" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

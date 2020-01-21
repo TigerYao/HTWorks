@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/face_to_face_free_course_get_btn"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:background="@drawable/shape_rect_576069"
+        android:text="一键领取"
+        android:textSize="16sp"
+        android:textColor="#ffffff" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <com.huatu.handheld_huatu.base.SelectedLoadViewPager
+        android:id="@+id/xi_activity_type_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/icon_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_tiku_searh" />
+
+
+        <com.huatu.viewpagerindicator.PagerSlidingTabStrip
+            android:id="@+id/xi_activity_type_tab_strip"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+
+            android:layout_marginLeft="80dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/transparent"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabPaddingLeftRight="5dip"
+            app:pstsTextColor="@color/pink2gray_text_selector"
+            app:pstsTextSize="16sp"
+            app:pstsUnderlineColor="@color/transparent" />
+
+
+        <com.huatu.widget.CirclePointImageView
+            android:id="@+id/home_message_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icon_tiku_searh"
+            app:PointMarginRight="6dp"
+            app:PointMarginTop="1dp" />
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

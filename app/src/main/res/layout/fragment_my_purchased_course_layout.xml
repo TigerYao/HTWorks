@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="标题">
+    </com.huatu.handheld_huatu.view.TopActionBar>
+
+    <RelativeLayout
+        android:id="@+id/purchased_course_selector_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/common_list_view_toolbar_id">
+        <TextView
+            android:id="@+id/purchased_course_selector_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:drawableRight="@mipmap/record_normal"
+            android:drawablePadding="4dp"
+            android:text="全部"
+            android:textSize="16sp"
+            android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/purchased_course_calender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:includeFontPadding="false"
+            android:text="日历"
+            android:textSize="16sp"
+            android:textColor="#666666"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/common_list_view_bottom_button_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/base_list_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/common_list_view_bottom_button_layout_id"
+        android:layout_below="@id/purchased_course_selector_layout_id"
+        android:divider="#dfdfdf"
+        android:dividerHeight="1px"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+    </com.huatu.handheld_huatu.view.XListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/common_list_view_toolbar_id"
+        android:background="@color/title_dcolor_light" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/base_list_view_id"
+        android:background="#f1f1f1" />
+</RelativeLayout>

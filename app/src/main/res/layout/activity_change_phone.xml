@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_top_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@color/white">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_left_top_bar"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_left"
+                android:layout_marginLeft="15dp"
+                android:padding="3.0dp"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更改手机号"
+            android:textColor="@color/blackF4"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_wideLine1"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_below="@id/rl_top_title_bar"
+        android:background="#f1f1f1">
+
+        <TextView
+            android:id="@+id/tv_phone_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_input_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/rl_wideLine1"
+        android:background="@color/white"
+        >
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_chinaMobilePrefix"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="@string/chinaMobilePrefix"-->
+            <!--android:textColor="@color/black001"-->
+            <!--app:layout_marginLeftPercent="2.78%w"-->
+            <!--android:gravity="center"-->
+            <!--app:layout_marginRightPercent="2.78%w"-->
+            <!--app:layout_textSizePercent="4.44%w" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/v_interval"-->
+            <!--android:layout_width="@dimen/width_1"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@id/tv_chinaMobilePrefix"-->
+            <!--android:background="@color/gray002"-->
+            <!--app:layout_heightPercent="6.94%w" />-->
+
+        <com.huatu.handheld_huatu.view.ClearEditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/inputYourNewPhone"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="11"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black001"
+            android:textColorHint="@color/gray002"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/rl_input_mobile"
+        android:background="@color/gray005" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_confirm_code"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/line1"
+        android:background="@color/white"
+        android:visibility="visible"
+        >
+
+        <EditText
+            android:id="@+id/et_confirm_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/inputConfirmCode"
+            android:lines="1"
+            android:textColor="@color/black001"
+            android:textColorHint="@color/gray002"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_time_clock"
+            android:layout_width="85dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/getConfirmCode"
+            android:textSize="10sp"
+            android:textColor="@color/gray006"
+            android:background="@drawable/drawable_rectangle_bfbfbf"
+            android:layout_marginRight="15dp"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/rl_confirm_code"
+        android:background="@color/gray005" />
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/line2"
+        android:background="@drawable/drawable_rectangle_bfbfbf"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_complete"
+        android:text="更换后,原手机号将不能登录"
+        android:padding="10dp"
+        android:textSize="14dp"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

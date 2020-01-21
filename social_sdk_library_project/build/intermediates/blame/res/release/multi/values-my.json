@@ -1,0 +1,444 @@
+[
+    {
+        "outputFile": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/social_sdk_library_project/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-my/values-my.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 65,
+                    "endOffset": 116
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 121,
+                    "endColumn": 93,
+                    "endOffset": 210
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 121,
+                        "endColumn": 93,
+                        "endOffset": 210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 215,
+                    "endColumn": 326,
+                    "endOffset": 537
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 215,
+                        "endColumn": 326,
+                        "endOffset": 537
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 542,
+                    "endColumn": 67,
+                    "endOffset": 605
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 542,
+                        "endColumn": 67,
+                        "endOffset": 605
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 610,
+                    "endColumn": 120,
+                    "endOffset": 726
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 610,
+                        "endColumn": 120,
+                        "endOffset": 726
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 731,
+                    "endColumn": 121,
+                    "endOffset": 848
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 731,
+                        "endColumn": 121,
+                        "endOffset": 848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 853,
+                    "endColumn": 93,
+                    "endOffset": 942
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 853,
+                        "endColumn": 93,
+                        "endOffset": 942
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 947,
+                    "endColumn": 69,
+                    "endOffset": 1012
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 947,
+                        "endColumn": 69,
+                        "endOffset": 1012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1017,
+                    "endColumn": 152,
+                    "endOffset": 1165
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1017,
+                        "endColumn": 152,
+                        "endOffset": 1165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1170,
+                    "endColumn": 119,
+                    "endOffset": 1285
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1170,
+                        "endColumn": 119,
+                        "endOffset": 1285
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1290,
+                    "endColumn": 125,
+                    "endOffset": 1411
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1290,
+                        "endColumn": 125,
+                        "endOffset": 1411
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1416,
+                    "endColumn": 140,
+                    "endOffset": 1552
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1416,
+                        "endColumn": 140,
+                        "endOffset": 1552
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1557,
+                    "endColumn": 86,
+                    "endOffset": 1639
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1557,
+                        "endColumn": 86,
+                        "endOffset": 1639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1644,
+                    "endColumn": 92,
+                    "endOffset": 1732
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1644,
+                        "endColumn": 92,
+                        "endOffset": 1732
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1737,
+                    "endColumn": 78,
+                    "endOffset": 1811
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1737,
+                        "endColumn": 78,
+                        "endOffset": 1811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1816,
+                    "endColumn": 68,
+                    "endOffset": 1880
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1816,
+                        "endColumn": 68,
+                        "endOffset": 1880
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1885,
+                    "endColumn": 162,
+                    "endOffset": 2043
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1885,
+                        "endColumn": 162,
+                        "endOffset": 2043
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2048,
+                    "endColumn": 66,
+                    "endOffset": 2110
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/b874797974cd1b6a72e64c38de1ee3bd018e6d61/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 66,
+                        "endOffset": 117
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 2115,
+                    "endColumn": 74,
+                    "endOffset": 2185
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2048,
+                        "endColumn": 74,
+                        "endOffset": 2118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2190,
+                    "endColumn": 70,
+                    "endOffset": 2256
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2123,
+                        "endColumn": 70,
+                        "endOffset": 2189
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2261,
+                    "endColumn": 191,
+                    "endOffset": 2448
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2194,
+                        "endColumn": 191,
+                        "endOffset": 2381
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2453,
+                    "endColumn": 143,
+                    "endOffset": 2592
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2386,
+                        "endColumn": 143,
+                        "endOffset": 2525
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2597,
+                    "endColumn": 100,
+                    "endOffset": 2693
+                },
+                "from": {
+                    "file": "/Users/huatu/.android/build-cache/1bdee2914b477c741c43b3f8bfa30213967d817b/output/res/values-my/values-my.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2530,
+                        "endColumn": 100,
+                        "endOffset": 2626
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path path="Android/data/cn.xiaoneng.demo2016/" name="camera_photos" />
+        <external-path path="." name="external_storage_root" />
+        <external-path name="apk_update" path="Download/netschool/"/>
+        <external-path name="download_arena" path="Android/data/com.huatu.handheld_huatu/cache/download_arena"/>
+    </paths>
+</resources>

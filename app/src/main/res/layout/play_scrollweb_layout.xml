@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_blog_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/lay_nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scrollbars="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lay_webview_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <include
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" layout="@layout/play_course_webhead"/>
+
+
+            <!--           <FrameLayout
+                           android:id="@+id/lay_webview"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                            android:clickable="false"
+                           android:focusable="false" />-->
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.huatu.widget.WebProgressBar style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/progress_tip_bar"
+        android:visibility="gone"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar_rush_sale_horizontal"
+        android:layout_height="3dip" />
+    <ImageView
+        android:id="@+id/bt_dingbu"
+        android:visibility="gone"
+        android:tag="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/back_top_select"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+         />
+</FrameLayout>

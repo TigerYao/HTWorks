@@ -1,0 +1,40 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/ess_ex_materials_ques_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="#4A4A4A"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/div_title"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/gray001" />
+
+        <com.huatu.handheld_huatu.business.essay.cusview.AnswerListLinearlayout
+            android:id="@+id/ess_ex_answer_result_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray001" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

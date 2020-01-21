@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+
+<!--    <com.example.test.CustomAudioPlayerView
+        android:id="@+id/voice_playview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        ></com.example.test.CustomAudioPlayerView>-->
+
+
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.huatu.test.custom.EssayExerciseTextView
+                android:id="@+id/answer_analysis_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="8dp"
+
+                android:textColor="#ff4a4a4a"
+                android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/bigViewpic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="#ccc"
+                android:minHeight="20dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.huatu.test.drawimpl.ReverseWaveView
+
+        android:layout_height="52dp"
+        android:layout_width="match_parent"
+        ></com.huatu.test.drawimpl.ReverseWaveView>
+
+
+
+    <Button
+        android:id="@+id/show_next"
+        android:layout_width="50dp"
+        android:layout_gravity="bottom"
+        android:text="next"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/show_next2"
+        android:layout_width="50dp"
+        android:layout_gravity="bottom|right"
+        android:text="next"
+        android:layout_height="wrap_content" />
+</FrameLayout>
+
+

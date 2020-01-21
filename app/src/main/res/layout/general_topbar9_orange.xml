@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_heightPercent="14.03%w">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_titleContainer_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff8f8f9"
+        app:layout_heightPercent="13.89%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_main_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            app:layout_widthPercent="13.89%w">
+
+            <ImageView
+                android:id="@+id/ib_main_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zc_back"
+                app:layout_heightPercent="44%w"
+                app:layout_marginLeftPercent="20%h"
+                app:layout_widthPercent="44%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_main_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="#323232"
+            android:visibility="gone"
+            app:layout_textSizePercent="32%h"
+            app:layout_widthPercent="16.66%w" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_main_title"
+            android:layout_width="206dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            app:layout_heightPercent="7.78%w"
+            app:layout_widthPercent="57.22%w">
+
+            <TextView
+                android:id="@+id/tv_main_title_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_listpage_top_button_left_solid"
+                android:gravity="center"
+                android:text="录播"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_textSizePercent="53.57%h" />
+
+            <TextView
+                android:id="@+id/tv_main_title_middle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_listpage_top_button_center_hollow"
+                android:gravity="center"
+                android:text="大咖直播"
+                android:textColor="#ff5400"
+                android:textSize="15sp"
+                app:layout_textSizePercent="53.57%h" />
+
+            <TextView
+                android:id="@+id/tv_main_title_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-2dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_listpage_top_button_center_hollow"
+                android:gravity="center"
+                android:text="全国直播"
+                android:textColor="#ff5400"
+                android:textSize="15sp"
+                app:layout_textSizePercent="53.57%h" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_main_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ll_main_title">
+
+            <TextView
+                android:id="@+id/tv_main_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="多选"
+                android:textColor="#323232"
+                android:visibility="visible"
+                app:layout_textSizePercent="32%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:background="#dcdcdc" />
+</com.zhy.android.percent.support.PercentLinearLayout>

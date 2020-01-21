@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".business.essay.video.BJCheckVideoControlCenterView">
+
+    <LinearLayout
+        android:id="@+id/ll_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bjplayer_bg_radius_8"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_volume"
+            style="@style/bjplayer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bjplayer_ic_volume_up_white" />
+
+        <TextView
+            android:id="@+id/tv_volume"
+            style="@style/bjplayer_text_big"
+            tools:text="50%" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time_slide"
+        android:layout_width="208dp"
+        android:layout_height="54dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play_progress_text_selector"
+        android:gravity="center"
+        android:text="23:00/30:00"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_speed_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/play_ratechange_btn_bg"
+        android:gravity="center"
+        android:text="1.0x"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_speed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_speed_layout"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/play_pop_action_bg"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/speed_05"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="0.5"
+                android:text="0.5x" />
+
+            <TextView
+                android:id="@+id/speed_075"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="0.75"
+                android:text="0.75x" />
+
+            <TextView
+                android:id="@+id/speed_1"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="1.0"
+                android:text="1.0x" />
+
+            <TextView
+                android:id="@+id/speed_125"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="1.25"
+                android:text="1.25x" />
+
+            <TextView
+                android:id="@+id/speed_15"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="1.5"
+                android:text="@string/bjplayer_video_rate_1_5" />
+
+            <TextView
+                android:id="@+id/speed_175"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="1.75"
+                android:text="1.75x" />
+
+            <TextView
+                android:id="@+id/speed_2"
+                style="@style/bjplayer_speedtext_style"
+                android:layout_weight="1"
+                android:tag="2.0"
+                android:text="2.0x" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/bjplayer_text_big"
+            android:layout_marginTop="10dp"
+            android:text="视频正加载中..." />
+    </LinearLayout>
+</RelativeLayout>

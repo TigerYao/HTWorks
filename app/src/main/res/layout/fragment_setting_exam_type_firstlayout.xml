@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="" />
+
+    <LinearLayout
+        android:id="@+id/common_list_view_bottom_button_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/base_list_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/common_list_view_bottom_button_layout_id"
+        android:layout_below="@id/common_list_view_toolbar_id"
+        android:divider="@color/white"
+        android:dividerHeight="1px"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/common_list_view_toolbar_id"
+        android:background="@color/gray_divider" />
+
+    <TextView
+        android:id="@+id/jump_to"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_setting_exam_first_shape"
+        android:gravity="center"
+        android:text="跳过"
+        android:visibility="gone" />
+</RelativeLayout>

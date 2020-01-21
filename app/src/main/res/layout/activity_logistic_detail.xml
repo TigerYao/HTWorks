@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    android:id="@+id/rl_info"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_top_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="#ffffff">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_left_top_bar"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_left"
+                android:layout_marginLeft="15dp"
+                android:padding="3dp"
+                />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="物流信息"
+            android:textColor="@color/blackF4"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_logistic_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:layout_below="@id/rl_top_title_bar"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:drawableRight="@mipmap/icon_copy"
+            android:textColor="@color/blackF4"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_carrier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blackF4"
+            android:textSize="12dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_carrier_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/blackF4"
+            android:visibility="gone"
+            android:text="国内承运人电话："
+            android:textSize="12dp" />
+        <TextView
+            android:id="@+id/tv_carrier_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#37ADFF"
+            android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/ll_logistic_head"
+        android:background="@color/gray005"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/line1"
+        android:background="#f3f3f3"/>
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.refresh.RefreshListView
+        android:id="@+id/lv_logistic_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line2"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"/>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

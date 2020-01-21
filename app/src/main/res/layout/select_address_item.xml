@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="#fff"
+        app:layout_heightPercent="25.2%w">
+
+        <TextView
+            android:id="@+id/tv_shouhuoren"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="17dp"
+            android:ellipsize="end"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:text="aaaa"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_marginLeftPercent="3.6%w"
+            app:layout_marginTopPercent="4.7%w"
+            app:layout_textSizePercent="4.1%w"
+            app:layout_widthPercent="44.4%w" />
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/xuanze2x"
+            android:visibility="invisible"
+            app:layout_heightPercent="3.8%w"
+            app:layout_widthPercent="3.8%w" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/iv_address"
+            android:text="111111111111"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            app:layout_marginRightPercent="6.3%w"
+            app:layout_marginTopPercent="4.7%w"
+            app:layout_textSizePercent="4.1%w" />
+
+        <TextView
+            android:id="@+id/tv_morentv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone"
+            android:text="[默认地址]"
+            android:textColor="#e9304e"
+            app:layout_marginLeftPercent="3.6%w"
+            app:layout_marginTopPercent="3.6%w"
+            app:layout_textSizePercent="3.8%w" />
+
+        <TextView
+            android:id="@+id/tv_detail_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/tv_morentv"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="aaaaaaaaa"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_marginLeftPercent="3.6%w"
+            app:layout_marginRightPercent="6.3%w"
+            app:layout_marginTopPercent="3.6%w"
+            app:layout_textSizePercent="3.8%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/line_lesson_course"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl1"
+        android:background="#dcdcdc"
+        app:layout_marginLeftPercent="3.3%w" />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

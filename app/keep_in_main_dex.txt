@@ -1,0 +1,138 @@
+# you can copy the tinker keep rule at
+# build/intermediates/tinker_intermediates/tinker_multidexkeep.pro
+
+-keep class com.tencent.tinker.loader.** {
+    *;
+}
+
+-keep public class * implements com.tencent.tinker.loader.app.ApplicationLifeCycle {
+    *;
+}
+
+-keep public class * extends com.tencent.tinker.loader.TinkerLoader {
+    *;
+}
+
+-keep public class * extends com.tencent.tinker.loader.app.TinkerApplication {
+    *;
+}
+
+# here, it is your own keep rules.
+# you must be careful that the class name you write won't be proguard
+# but the tinker class above is OK, we have already keep for you!
+
+
+#your dex.loader patterns here
+
+-keep class com.huatu.handheld_huatu.UniApplication {
+    *;
+}
+-keep class com.huatu.handheld_huatu.UniApplicationLike {
+    *;
+}
+-keep class com.huatu.handheld_huatu.tinker.** {
+    *;
+}
+-keep class com.tencent.tinker.android.dex.** {
+    *;
+}
+-keep class com.tencent.tinker.android.dex.io.** {
+    *;
+}
+-keep class com.tencent.tinker.android.dex.util.** {
+    *;
+}
+-keep class com.tencent.tinker.android.dx.instruction.** {
+    *;
+}
+-keep class com.tencent.tinker.android.util.** {
+    *;
+}
+-keep class com.tencent.tinker.commons.dexpatcher.algorithms.patch.** {
+    *;
+}
+-keep class com.tencent.tinker.commons.dexpatcher.struct.** {
+    *;
+}
+-keep class com.tencent.tinker.commons.dexpatcher.** {
+    *;
+}
+-keep class com.tencent.tinker.commons.resutil.** {
+    *;
+}
+-keep class com.tencent.tinker.commons.ziputil.** {
+    *;
+}
+-keep class com.tencent.tinker.bsdiff.** {
+    *;
+}
+-keep class cn.xiaoneng.chatcore.** {
+    *;
+}
+-keep class com.tencent.tinker.lib.** {
+    *;
+}
+
+-keep class com.huatu.handheld_huatu.utils.LogUtils {
+    *;
+}
+-keep class com.huatu.handheld_huatu.utils.UserInfoUtil {
+    *;
+}
+-keep class com.umeng.analytics.MobclickAgent {
+    *;
+}
+-keep class com.umeng.message.PushAgent {
+    *;
+}
+-keep class com.umeng.socialize.PlatformConfig {
+    *;
+}
+
+-keep class com.umeng.message.UmengMessageHandler {
+    *;
+}
+
+-keep class com.huatu.handheld_huatu.base.NetResponse {
+    *;
+}
+-keep class com.huatu.handheld_huatu.base.BaseResponseModel {
+    *;
+}
+-keep class com.huatu.handheld_huatu.utils.SpUtils {
+    *;
+}
+-keep class com.huatu.handheld_huatu.utils.AppUtils {
+    *;
+}
+-keep class android.support.multidex.MultiDex {
+    *;
+}
+-keep class android.support.v4.app.NotificationCompat {
+    *;
+}
+-keep class android.support.v4.content.LocalBroadcastManager {
+    *;
+}
+-keep class com.huatu.handheld_huatu.mvpmodel.UpdateInfoBean {
+    *;
+}
+-keep class com.huatu.handheld_huatu.UmengMessageHandlerImpl {
+    *;
+}
+-keep class com.huatu.handheld_huatu.UniApplicationContext {
+    *;
+}
+-keep class com.meituan.android.walle.** {
+    *;
+}
+
+-keep class com.sensorsdata.analytics.android.** { *; }
+
+# ProGuard configurations for NetworkBench Lens
+-keep class com.networkbench.** { *; }
+-dontwarn com.networkbench.**
+-keepattributes Exceptions, Signature, InnerClasses
+# End NetworkBench Lens
+
+-keepattributes SourceFile,LineNumberTable

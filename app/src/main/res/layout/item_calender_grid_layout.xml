@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/calender_course_item_date"
+        android:layout_width="40dp"
+
+        android:layout_height="40dp"
+        android:includeFontPadding="false"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#ff4a4a4a"
+        android:textSize="16sp"/>
+    <View
+        android:id="@+id/calender_course_has_flag"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_my_course_has_flag_bg" />
+</RelativeLayout>

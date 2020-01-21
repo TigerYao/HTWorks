@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragement_sc_prepare_suggest_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        android:layout_alignParentTop="true"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="备考建议">
+    </com.huatu.handheld_huatu.view.TopActionBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="#ffffff"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center|left"
+                android:lineSpacingExtra="7dp"
+                android:text="      以下建议是综合您各项历史答题数据定制推荐的，可以帮助您更快更准确掌握知识点。"
+                android:textColor="#333333"
+                app:layout_textSizePercent="4%w"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="400dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal"
+                >
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <com.zhy.android.percent.support.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center|right"
+                            android:lineSpacingExtra="7dp"
+                            android:text="练习2013—\n2017年真题"
+                            android:textColor="#d78080"
+                            app:layout_textSizePercent="10%w"
+                            />
+                    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#cfcfcf"
+                        ></View>
+
+                    <com.zhy.android.percent.support.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginTop="25dp"
+                            android:gravity="center|right"
+                            android:lineSpacingExtra="7dp"
+                            android:text="针对自己错误较\n多的知识点每日\n特训50题"
+                            android:textColor="#e08534"
+                            app:layout_textSizePercent="10%w"
+                            />
+                    </com.zhy.android.percent.support.PercentRelativeLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#cfcfcf"
+                    ></View>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="22dp"
+                        android:gravity="center|left"
+                        android:lineSpacingExtra="7dp"
+                        android:layout_marginTop="85dp"
+                        android:text="竞技赛场\n拼速度看效果！"
+                        android:textColor="#4abaae"
+                        app:layout_textSizePercent="10%w"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#cfcfcf"
+                        ></View>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center|left"
+                        android:lineSpacingExtra="7dp"
+                        android:text="2018年国考小班\n密训营三期班"
+                        android:textColor="#666666"
+                        app:layout_textSizePercent="10%w"
+                        />
+
+                    <TextView
+                        android:id="@+id/buy_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center|left"
+                        android:lineSpacingExtra="7dp"
+                        android:text="点此购买"
+                        android:textColor="#438c44"
+                        android:textStyle="bold"
+                        app:layout_textSizePercent="10%w"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center|left"
+                        android:lineSpacingExtra="7dp"
+                        android:text="直播峰会之章坤\n老师带你学国考\n面试之前瞻"
+                        android:textColor="#666666"
+                        app:layout_textSizePercent="10%w"
+                        />
+
+                    <TextView
+                        android:id="@+id/buy_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginTop="7dp"
+                        android:gravity="center|left"
+                        android:lineSpacingExtra="7dp"
+                        android:text="点此购买"
+                        android:textColor="#438c44"
+                        android:textStyle="bold"
+                        app:layout_textSizePercent="10%w"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+</com.zhy.android.percent.support.PercentLinearLayout>

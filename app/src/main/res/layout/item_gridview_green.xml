@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_root">
+    <!-- width:85dp  height:33dp 父布局总宽度按170px计算-->
+    <TextView
+        android:id="@+id/tv_subjectitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="38.82%w"
+        app:layout_widthPercent="85%w"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="ssssss"
+        android:background="@drawable/shape_lesson_sort"
+        android:textColor="@color/text_color"
+        app:layout_textSizePercent="16.47%w"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

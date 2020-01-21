@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 答题报告页面 知识点 2级 -->
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_heightPercent="17.78%w">
+
+        <View
+            android:id="@+id/line_above"
+            android:layout_width="1dp"
+            android:layout_height="15.5dp"
+            app:layout_heightPercent="4.31%w"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19.5dp"
+            app:layout_marginLeftPercent="5.42%w"
+            android:background="@color/gray005"/>
+
+        <ImageView
+            android:id="@+id/iv_indicator"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            app:layout_widthPercent="3.61%w"
+            app:layout_heightPercent="3.61%w"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginLeft="13.5dp"
+            app:layout_marginTopPercent="4.31%w"
+            app:layout_marginLeftPercent="3.75%w"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/tree_indicator2_none"/>
+
+        <View
+            android:id="@+id/line_below"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_indicator"
+            android:layout_marginLeft="19.5dp"
+            app:layout_marginLeftPercent="5.42%w"
+            android:background="@color/gray005"/>
+
+        <TextView
+            android:id="@+id/tv_point_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_indicator"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="13.5dp"
+            app:layout_marginTopPercent="3.33%w"
+            app:layout_marginLeftPercent="3.75%w"
+            android:lines="1"
+            android:text="言语理解与表达"
+            android:textColor="@color/gray010"
+            android:textSize="16sp"
+            app:layout_textSizePercent="25%h"/>
+
+        <TextView
+            android:id="@+id/tv_point_specific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_point_name"
+            android:layout_alignLeft="@+id/tv_point_name"
+            android:layout_marginTop="8dp"
+            app:layout_marginTopPercent="2.22%w"
+            android:lines="1"
+            android:text="共10道，答对4道，正确率40%"
+            android:textColor="@color/gray006"
+            android:textSize="14sp"
+            app:layout_textSizePercent="3.89%w"/>
+
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_1"
+            android:background="@color/gray005"
+            android:layout_alignParentBottom="true"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

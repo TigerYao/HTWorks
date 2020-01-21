@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.matchsmall.activity.StageReportActivity">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@drawable/stage_report_top_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_statue"
+        android:background="@drawable/stage_report_top_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_white_white_new" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="阶段测评报告"
+            android:textColor="@color/stage_common_white_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/small_common_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stage_report_top_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/small_report_title_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="练习类型：阶段测评"
+                            android:textColor="@color/stage_common_white_text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_commit_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="交卷时间：2019.03.01. 08:00"
+                            android:textColor="@color/stage_common_white_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_no_show_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@mipmap/stage_no_commit_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="按时完成测评，报告更完善，下次准时约呦！"
+                            android:textColor="@color/stage_no_all_text" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="知道了"
+                            android:textColor="@color/stage_no_all_text" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@mipmap/stage_report_tip_bg"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="3dp"
+                        android:text="成绩"
+                        android:textColor="@color/stage_common_white_text" />
+
+                    <ImageView
+                        android:id="@+id/iv_explain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="15dp"
+                        android:src="@mipmap/stage_doubt" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.huatu.handheld_huatu.business.matchsmall.customview.ViewCircleBar
+                        android:id="@+id/view_circle_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:shadowColor="#35000000"
+                                android:shadowDy="10"
+                                android:shadowRadius="15"
+                                android:text="0"
+                                android:textColor="@color/stage_common_white_text"
+                                android:textSize="50sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="分"
+                                android:textColor="@color/stage_common_white_text"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_all_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="#60FFFFFF"
+                            android:shadowRadius="8"
+                            android:text="满分100分"
+                            android:textColor="@color/stage_deep_red_text"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/stage_report_card_bg"
+                    android:elevation="3dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/stage_red_text"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="分钟"
+                                android:textColor="#4A4A4A"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="总用时"
+                            android:textColor="@color/stage_common_black_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_top_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/stage_red_text"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="分"
+                                android:textColor="#4A4A4A"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="最高得分"
+                            android:textColor="@color/stage_common_black_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_ave_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/stage_red_text"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="分"
+                                android:textColor="#4A4A4A"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="平均得分"
+                            android:textColor="@color/stage_common_black_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="（统计数据更新于2019-03-01 08:00）"
+                    android:textColor="@color/stage_deep_red_2_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.huatu.handheld_huatu.business.matchsmall.customview.TriangleBg
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ll_teacher"
+                        android:layout_alignParentTop="true" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:layout_alignLeft="@+id/tv_teacher_remark"
+                        android:layout_alignRight="@+id/tv_teacher_remark"
+                        android:layout_alignBottom="@+id/tv_teacher_remark"
+                        android:background="#40FF6F8C" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="老师评语"
+                        android:textColor="@color/stage_black_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_teacher_remark"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/iv_header"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@mipmap/image11" />
+
+                        <TextView
+                            android:id="@+id/tv_nick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="同学："
+                            android:textColor="@color/stage_remark_text"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_header"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="本次测验考察了0个知识点。"
+                        android:textColor="@color/stage_remark_text"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_remark"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_teacher_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="刘有珍"
+                            android:textColor="#5D5D5D"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="老师评语"
+                            android:textColor="@color/stage_remark_text"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/stage_divider" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:layout_alignLeft="@+id/tv_statistics"
+                        android:layout_alignRight="@+id/tv_statistics"
+                        android:layout_alignBottom="@+id/tv_statistics"
+                        android:background="#40FF6F8C" />
+
+                    <TextView
+                        android:id="@+id/tv_statistics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="成绩统计"
+                        android:textColor="@color/stage_black_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.huatu.handheld_huatu.business.matchsmall.customview.ViewSmoothLine
+                    android:id="@+id/sl_statistics"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:layout_alignLeft="@+id/tv_top"
+                        android:layout_alignRight="@+id/tv_top"
+                        android:layout_alignBottom="@+id/tv_top"
+                        android:background="#40FF6F8C" />
+
+                    <TextView
+                        android:id="@+id/tv_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="优秀成绩排行"
+                        android:textColor="@color/stage_black_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_my_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/tv_top"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="我的排名 22名"
+                        android:textColor="#4A4A4A" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/stage_rank_card_bg"
+                    android:elevation="3dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="排名"
+                            android:textColor="#4A4A4A" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="40dp"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="学员"
+                            android:textColor="#4A4A4A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="成绩"
+                            android:textColor="#4A4A4A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="用时"
+                            android:textColor="#4A4A4A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp"
+                            android:text="提交时间"
+                            android:textColor="#4A4A4A" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/stage_divider" />
+
+                    <com.huatu.handheld_huatu.view.NoScrollListView
+                        android:id="@+id/rank_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/stage_common_bg"
+                        android:minHeight="120dp" />
+
+                    <TextView
+                        android:id="@+id/tv_rank_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:text="查看更多"
+                        android:textColor="#4A4A4A"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:layout_alignLeft="@+id/tv_survey"
+                        android:layout_alignRight="@+id/tv_survey"
+                        android:layout_alignBottom="@+id/tv_survey"
+                        android:background="#40FF6F8C" />
+
+                    <TextView
+                        android:id="@+id/tv_survey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="考试情况"
+                        android:textColor="@color/stage_black_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_survey_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="共15道题，答对5道，答错5道，未答5道，总计时11分22秒"
+                    android:textColor="#6D7172" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/small_divider" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:layout_alignLeft="@+id/tv_point"
+                    android:layout_alignRight="@+id/tv_point"
+                    android:layout_alignBottom="@+id/tv_point"
+                    android:background="#40FF6F8C" />
+
+                <TextView
+                    android:id="@+id/tv_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="知识点情况"
+                    android:textColor="@color/stage_black_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!--题类型、树列表-->
+            <com.huatu.handheld_huatu.view.ListViewForScroll
+                android:id="@+id/point_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/ll_attention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/small_divider" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"
+                        android:layout_alignLeft="@+id/tv_attention"
+                        android:layout_alignRight="@+id/tv_attention"
+                        android:layout_alignBottom="@+id/tv_attention"
+                        android:background="#40FF6F8C" />
+
+                    <TextView
+                        android:id="@+id/tv_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="需要重点关注"
+                        android:textColor="@color/stage_black_text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_attention_left"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/ll_no"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/stage_corner_left_bg"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="12dp"
+                        android:text="类型"
+                        android:textColor="@color/stage_attention_text"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/ll_no"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/tv_attention_left"
+                        android:background="@drawable/stage_corner_right_bg"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="12dp"
+                        android:text="题号"
+                        android:textColor="@color/stage_attention_left"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_overtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@mipmap/stage_attention_type_bg"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="用时超过50S"
+                            android:textColor="@color/stage_attention_text"
+                            android:textSize="13sp" />
+
+                        <com.huatu.handheld_huatu.business.matchsmall.customview.ExpandableCardView
+                            android:id="@+id/e_card_view_overtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_hard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_overtime"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@mipmap/stage_attention_type_bg"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="难度高于0.5"
+                            android:textColor="@color/stage_attention_text"
+                            android:textSize="13sp" />
+
+                        <com.huatu.handheld_huatu.business.matchsmall.customview.ExpandableCardView
+                            android:id="@+id/e_card_view_hard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_hard"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:background="@mipmap/stage_attention_type_bg"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="没做的题目"
+                            android:textColor="@color/stage_attention_text"
+                            android:textSize="13sp" />
+
+                        <com.huatu.handheld_huatu.business.matchsmall.customview.ExpandableCardView
+                            android:id="@+id/e_card_view_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/small_divider" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:layout_alignLeft="@+id/tv_card"
+                    android:layout_alignRight="@+id/tv_card"
+                    android:layout_alignBottom="@+id/tv_card"
+                    android:background="#40FF6F8C" />
+
+                <TextView
+                    android:id="@+id/tv_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="答题卡"
+                    android:textColor="@color/stage_black_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.huatu.handheld_huatu.business.arena.customview.ArenaAnswerCardViewNew
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/small_divider" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sc_report_bottom_bg">
+
+        <RelativeLayout
+            android:id="@+id/rl_wrong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/sc_report_wrong"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="错题解析"
+                android:textColor="@color/sc_report_pink"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sc_report_divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/sc_report_solve"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="全部解析"
+                android:textColor="@color/sc_report_common_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/view_err"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title"
+        android:background="#FFFFFF"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/white_round_eight_bg"
+                android:orientation="vertical"
+                android:paddingTop="40dp">
+
+                <TextView
+                    style="@style/basetxt_title_small"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="这节课有收获吗？有没有吐槽的地方？"
+                    android:textColor="#ff4a4a4a" />
+
+                <com.huatu.widget.CustomRatingBar
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    app:starCount="5"
+                    app:starEmpty="@mipmap/rate_star_uncheck"
+                    app:starFill="@mipmap/rate_star_check"
+                    app:starHalf="@mipmap/rate_star_check"
+                    app:starImageSize="23dp"
+                    app:starPadding="15dp"
+                    app:starStep="0"
+                    app:stepSize="Full" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/grey_round_four_bg"
+                    android:padding="8dp">
+
+                    <EditText
+                        android:id="@+id/course_judge_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="left|top"
+                        android:hint="课程内容如何？老师讲得怎么样？快来说说感受吧"
+                        android:imeOptions="flagNoExtractUi"
+                        android:maxLength="200"
+                        android:textColor="#333333"
+                        android:textColorHint="#9B9B9B"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/num_count_txt"
+                        style="@style/basetxt_content"
+                        android:layout_gravity="bottom|right"
+                        android:text="0/200"
+                        android:textColor="#9B9B9B" />
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/support_now"
+                 android:layout_gravity="bottom"
+                 android:layout_width="fill_parent"
+                 android:layout_height="44dp"
+
+                 android:background="@drawable/yellow_topround_eight_bg"
+                 android:gravity="center"
+                 android:orientation="horizontal">
+
+                 <ProgressBar
+                     android:id="@+id/xi_img_loading"
+                     style="@style/icon_loading_small"
+                     android:layout_gravity="center"
+                     android:visibility="gone" />
+
+                 <TextView
+                     android:id="@+id/course_judge_confirm_btn"
+                     android:layout_width="wrap_content"
+                     android:layout_height="44dp"
+                     android:layout_marginLeft="4dp"
+                     android:gravity="center"
+                     android:text="提交评价 "
+                     android:textColor="@android:color/white"
+                     android:textSize="16sp" />
+             </LinearLayout>
+
+
+             <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/course_flower_icon" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/course_evalute_head2" />
+
+            <LinearLayout
+                android:background="@mipmap/course_head_title_bg"
+                android:layout_width="441dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    style="@style/basetxt_title_small"
+                    android:gravity="center|top"
+                    android:paddingTop="2dp"
+                    android:text="哇！太棒啦！你已经完成了本节课的视频学习~"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@mipmap/course_evalute_close_icon" />
+
+    <TextView
+        android:id="@+id/close_tip_txt"
+        android:layout_marginTop="10dp"
+        style="@style/basetxt_title_small"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:text="不想评价 "
+        android:textColor="#9B9B9B" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/techer_grid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/teacher_tag_bg"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="1"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:text=""
+    android:textColor="#6d7172"
+    android:textSize="12sp" />

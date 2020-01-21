@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/common_20dp"
+    android:paddingTop="@dimen/common_5dp">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_10dp"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:gravity="center"
+        android:text="@string/active_title"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imv_dialog_dialog_clean"
+        android:layout_width="@dimen/common_dimens_50dp"
+        android:layout_height="@dimen/common_dimens_50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/netschool_dialog_cancel"
+        android:paddingBottom="@dimen/common_25dp"
+        android:paddingTop="@dimen/common_5dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/redbag_dialog_close_icon" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/common_dimens_180dp"
+        android:layout_below="@id/tv_dialog_title">
+
+        <com.huatu.handheld_huatu.view.SimpleLabelsLayout
+            android:id="@+id/rules_tips_container"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:lineMargin="@dimen/common_5dp"
+            app:singleLine= "true"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

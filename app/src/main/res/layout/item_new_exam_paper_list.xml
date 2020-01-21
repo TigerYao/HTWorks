@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".business.arena.adapter.ArenaZhentiYanlianAdapter">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/iv_paper_course"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="名师解析"
+            android:gravity="right|center"
+            android:paddingRight="15dp"
+            android:textStyle="bold"
+            android:textColor="#FF6D73"
+            android:textSize="14dp"
+            android:layout_alignBottom="@+id/line"
+            android:background="@drawable/sc_new_paper_course"/>
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iv_paper_course"
+            android:textColor="#4A4A4A"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_paper_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/text_name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_marginLeft="15dp"
+                android:textColor="#9B9B9B"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/rl_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="false"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:lines="1"
+                android:text="未完成"
+                android:textColor="#666666"
+                android:textSize="13dp"
+                android:visibility="gone"
+                android:background="@drawable/sc_new_paper"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/ll_paper_status"
+            android:background="@color/divider" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_down"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FF3F47"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arena_down_pdf" />
+
+            <TextView
+                android:id="@+id/tv_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载PDF"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.nalan.swipeitem.recyclerview.SwipeItemLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:drawable="@drawable/video_play_pop_qq_gray_icon" android:state_enabled="false"></item>
+    <item android:drawable="@drawable/video_play_pop_qq_icon"></item>
+</selector>

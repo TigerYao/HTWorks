@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_jinli" />
+    <ImageView
+        android:id="@+id/iv_bag"
+        android:layout_width="333dp"
+        android:layout_height="237dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/close_gift" />
+    <TextView
+        android:id="@+id/tv_open"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/iv_bag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="打开"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@drawable/drawable_change_color_for_gift" />
+</RelativeLayout>

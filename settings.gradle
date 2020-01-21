@@ -1,0 +1,2 @@
+include ':app', ':RtmpResourceLib', ':social_sdk_library_project', ':XiaonengChatUI', ':sobotsdk', ':liveplayer-sdk-ui', ':test', ':music','thirdlibrary'
+

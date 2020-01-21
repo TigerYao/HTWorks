@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="#717C9F" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:layout_below="@+id/view_statue"
+        android:background="#717C9F">
+
+        <RelativeLayout
+            android:id="@+id/rl_left_topbar"
+            android:layout_width="48dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@mipmap/icon_back_white_new" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top_titlebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#717C9F"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="35dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="尊敬的用户："
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:text="您好！是不是有什么疑问呢？为了给您提供更好的服务，我们竭诚期待您的建议哦~"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tel_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#717C9F">
+
+                <TextView
+                    android:id="@+id/tv_feed_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feed_header_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="15dp"
+                    android:text="反馈类型"
+                    android:textColor="#FF4A4A4A"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <GridView
+                    android:id="@+id/gview"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/tv_feed_type"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="20dp">
+
+                <com.huatu.shimmer.ShimmerTextView
+                    android:id="@+id/tip_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="为方便定位问题，尽量提供出错页截图"
+                    android:textColor="#a6a6a6"
+                    android:textSize="12sp"
+                    app:reflectionColor="#333333" />
+
+                <EditText
+                    android:id="@+id/et_feedback_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textview_round_corners2"
+                    android:gravity="top"
+                    android:hint="请将您的建议或您遇到的问题告诉我们，我们会认真的听取并及时反馈"
+                    android:padding="10dp"
+                    android:textColor="#333333"
+                    android:textColorHint="@color/black250"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="0/200"
+                    android:textColor="#b8b8b8"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.huatu.handheld_huatu.business.me.viewhelper.UploadImgView
+                android:id="@+id/upload_ll"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/rl_tel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/upload_ll"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/textview_round_corners2">
+
+                <EditText
+                    android:id="@+id/et_tel_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请填写您的联系方式：手机或邮箱（选填）"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#333333"
+                    android:textColorHint="@color/black250"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_commit"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D8D8D8">
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提交"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

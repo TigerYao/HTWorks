@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/main_bg"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/space_tip_txt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:gravity="center"
+        android:text="剩余可用"
+        android:textColor="#6D7172"
+        android:textSize="12sp" />
+
+    <TextView
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:paddingLeft="15dp"
+        android:id="@+id/downAction_btn"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/down_statuschange_selector"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="全部开始"
+        android:textColor="#ff000000"
+        android:textSize="14sp"  />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_downloaded"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:scrollbars="none" />
+    <include
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/down_action_bottom_layotu"/>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#bfbfbf"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_nodata"
+        layout="@layout/common_no_data_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_net_error"
+        layout="@layout/common_net_error_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_net_unconnected"
+        layout="@layout/common_net_unconnected_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@mipmap/single_essay_list_down"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="25dp"
+            android:text="全部"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_select"
+            android:background="@color/gray_divider" />
+
+    </RelativeLayout>
+
+    <com.huatu.handheld_huatu.view.XListViewNestedS
+        android:id="@+id/lv_my_single"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_select_type"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:divider="#F9F9F9"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="false" />
+
+    <FrameLayout
+        android:id="@+id/fl_bc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_select_type"
+        android:alpha="0.6"
+        android:background="#666666"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_son_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_select_type"
+        android:background="@color/white"
+        android:divider="@color/gray_divider"
+        android:dividerHeight="1px"
+        android:visibility="gone" />
+</RelativeLayout>

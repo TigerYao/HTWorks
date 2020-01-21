@@ -1,0 +1,7 @@
+com/netease/libs/auto_api/ApiBase.java;
+com/huatu/autoapi/auto_api/AddUtilApi.java;
+com/huatu/autoapi/auto_api/factory/AddUtilApiFactory.java;
+com/huatu/autoapi/auto_api/SobotChatHelper.java;
+com/huatu/autoapi/auto_api/factory/SobotChatHelperApiFactory.java;
+com/netease/libs/auto_api/ApiBase.java;
+com/netease/libs/auto_api/ApiBase.java;

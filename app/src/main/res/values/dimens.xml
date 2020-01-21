@@ -1,0 +1,125 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--       dp        -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="load_empty_padding">10dp</dimen>
+    <dimen name="load_error_padding">10dp</dimen>
+    <dimen name="looper_indicator_margin">6dp</dimen>
+    <dimen name="xd_toolbar_height">45dp</dimen>
+    <dimen name="xd_toolbar_title_size">17sp</dimen>
+    <!--global-->
+    <dimen name="button_corners">4dp</dimen>
+    <dimen name="common_toolbar_height">48dp</dimen>
+    <dimen name="common_bottom_button_height">48dp</dimen>
+    <dimen name="seekbar_point_radius">4dp</dimen>
+    <!--           sp             -->
+    <dimen name="top_distance">10dp</dimen>
+    <!--global-->
+    <dimen name="text_size_small10">10sp</dimen>
+    <dimen name="text_size_small11">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="edit_text_size">16sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+
+    <!--引导页-->
+    <dimen name="guide_start_text_size">20sp</dimen>
+
+    <!--登录页-->
+
+    <!--XiaoNengHomeActivity-->
+    <dimen name="home_predict_score">60sp</dimen>
+    <dimen name="home_text_large">15sp</dimen>
+
+    <dimen name="width_1">1px</dimen>
+    <dimen name="top_bar">48dp</dimen>
+    <!--课程中心-->
+    <dimen name="default_tv_size">14sp</dimen>
+    <dimen name="tv_size_18">16sp</dimen>
+    <dimen name="athletic_12dp">12sp</dimen>
+    <dimen name="tv_size_13">13sp</dimen>
+    <dimen name="athletic_exercise_8dp">8dp</dimen>
+    <dimen name="athletic_exercise_25dp">25dp</dimen>
+    <dimen name="titlebar_15dp">15dp</dimen>
+    <dimen name="netschool_20dp">20dp</dimen>
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    <dimen name="header_height">278dp</dimen>
+    <dimen name="min_header_height">230dp</dimen>
+    <dimen name="header_logo_size">100dp</dimen>
+    <dimen name="chat_select_self_width">150dp</dimen>
+    <dimen name="chat_select_name_size">14sp</dimen>
+    <dimen name="chat_select_person_left">5dp</dimen>
+    <dimen name="chat_padding_top">10dp</dimen>
+    <dimen name="chat_sendbutton_right">5dp</dimen>
+    <dimen name="chat_editview_context_left">4dp</dimen>
+    <dimen name="chat_editview_context">12sp</dimen>
+    <dimen name="chat_select_self">14sp</dimen>
+    <dimen name="chat_listview_name">14sp</dimen>
+    <dimen name="chat_listview_time">14sp</dimen>
+    <dimen name="chat_listview_context">14sp</dimen>
+    <dimen name="chat_listview_name_left">19dp</dimen>
+    <dimen name="chat_listview_time_right">19dp</dimen>
+    <dimen name="chat_listview_context_left">19dp</dimen>
+    <dimen name="chat_listview_context_bottom">15dp</dimen>
+    <dimen name="chat_listview_content_top">10dp</dimen>
+    <dimen name="chat_spinner">80dp</dimen>
+    <dimen name="chat_backwidth">20dp</dimen>
+    <dimen name="public_chat_title">16sp</dimen>
+    <dimen name="public_chat_title_height">43dp</dimen>
+    <dimen name="public_chat_other">14sp</dimen>
+    <dimen name="public_chat_margin_default">5dp</dimen>
+    <dimen name="public_chat_tip_margin_ver">20dp</dimen>
+    <dimen name="public_chat_content_margin_ver">12dp</dimen>
+    <dimen name="public_chat_bottom_height">58dp</dimen>
+    <dimen name="name_length">50dp</dimen>
+    <dimen name="chat_bottom_padding">5dp</dimen>
+    <dimen name="chat_bottom_hor_mar">4dp</dimen>
+    <dimen name="chat_bottom_left_width">80dp</dimen>
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">20sp</dimen>
+    <dimen name="pickerview_topbar_title_textsize">21sp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+    <dimen name="dp33">33dp</dimen>
+    <dimen name="dp44">44dp</dimen>
+    <dimen name="dp174">174dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="afc_30dp">30dp</dimen>
+
+    <dimen name="activity_live_room_margin">10dp</dimen>
+    <dimen name="activity_live_room_margin_big">12dp</dimen>
+    <dimen name="activity_live_room_dialog_margin">15dp</dimen>
+    <dimen name="activity_live_room_dialog_margin_big">20dp</dimen>
+    <dimen name="view_circle_wrapper">3dp</dimen>
+    <dimen name="distance_left_right">12dp</dimen>
+    <dimen name="distance_top_bottom">4dp</dimen>
+    <dimen name="distance_setting_big_margin">40dp</dimen>
+
+    <dimen name="xd_toast_y_offset">64dip</dimen>
+
+    <dimen name="xd_home_group_tab_host_indicator_height">2dp</dimen>
+    <dimen name="xd_home_group_tab_host_height">42dp</dimen>
+    <dimen name="xd_home_group_tab_host_text_size">14sp</dimen>
+    <dimen name="cd_module_line_height">0.1dp</dimen>
+
+    <dimen name="main_title_height">38dp</dimen>
+    <dimen name="progressbar_size_small">24.0dip</dimen>
+
+    <!--批改详情-->
+    <dimen name="check_12sp">12sp</dimen>
+    <dimen name="check_13sp">13sp</dimen>
+    <dimen name="check_14sp">14sp</dimen>
+    <dimen name="check_15sp">15sp</dimen>
+</resources>

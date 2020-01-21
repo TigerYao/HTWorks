@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="@drawable/course_bottom_line_bg"
+    android:id="@id/whole_content"
+    android:minHeight="44dp"
+    android:layout_height="wrap_content">
+  <TextView style="@style/basetxt_title"
+      android:textSize="15sp"
+      android:textStyle="bold"
+      android:layout_marginRight="15dp"
+
+      android:id="@+id/title_name_txt"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="10dp"
+      android:textColor="#4A4A4A"
+      android:text="@string/accountInformation" />
+
+    <TextView style="@style/basetxt_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:id="@+id/learn_time_txt"
+        android:layout_marginLeft="15dp"
+        android:text="@string/accountInformation"/>
+
+    <ImageView
+        android:id="@+id/right_open_img"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        style="@style/wrap_content"
+        android:src="@drawable/zf_icon_aa"/>
+
+    <TextView style="@style/basetxt_content"
+        android:id="@+id/course_num_txt"
+        android:visibility="gone"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="42dp"
+        android:text="@string/accountInformation"/>
+
+</FrameLayout>

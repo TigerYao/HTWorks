@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/common_list_view_toolbar_id"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/common_list_view_bottom_button_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/xi_comm_page_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/common_list_view_bottom_button_layout_id"
+        android:layout_below="@+id/divider"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+
+    <RelativeLayout
+        android:id="@+id/no_server_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_detail_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/no_server_service" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_detail_image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/xs_networkdata_failed1"
+            android:textColor="#9B9B9B"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <View
+            android:id="@+id/guide_tip_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A5000000"/>
+        <ImageView
+            android:id="@+id/iv_paper_down_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tip_down_real_paper"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tip_slide_left_down"
+            android:layout_below="@id/iv_paper_down_tip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:layout_marginRight="65dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:id="@id/whole_content"
+    android:background="#FFFFFF"
+    android:paddingTop="12dp">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_play_time"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="14:30-16:30"
+            android:textColor="#fffd4312"
+            android:textSize="14sp"
+            />
+        <com.huatu.handheld_huatu.ui.StatusbgTextView
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right"
+            android:text="进入教室"
+            android:id="@+id/tv_lession_status"
+            android:gravity="center"
+            app:qmui_backgroundColor="#FF3F47"
+            app:qmui_radiusBottomLeft="14dp"
+            app:qmui_radiusTopLeft="14dp"
+            app:qmui_radiusTopRight="14dp"
+            app:qmui_radiusBottomRight="14dp"
+            android:textColor="#ffffffff"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="申论高频考点回顾"
+        android:textColor="#ff4a4a4a"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统讲解5大模块，深度解读常考10大测评要素 共520课时"
+        android:textColor="#ff6c7172"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/tv_teacher"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主讲老师：刘有珍"
+        android:textColor="#ff6c7172"
+        android:textSize="14sp"
+        />
+
+
+
+</LinearLayout>

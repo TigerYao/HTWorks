@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bottom_download_delete"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_heightPercent="13.33%w">
+
+        <TextView
+            android:id="@+id/tv_download_delete"
+            android:layout_width="@dimen/afc_30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f4424e"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="29.16%h" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

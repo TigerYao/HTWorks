@@ -1,0 +1,209 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="select_tv">
+        <item name="android:layout_width">@dimen/vote_select_lenght</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/bottom_btn_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_vote_select_switch</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="bottom_btn">
+        <item name="android:layout_width">@dimen/bottom_btn_length</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/bottom_btn_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_vote_btn_commit</item>
+    </style>
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_fade_in_center</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_fade_out</item>
+<!--        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>-->
+      <!--  <item name="@android:windowEnterAnimation">@android:anim/grow_fade_in_center</item>
+        <item name="@android:windowExitAnimation">@android:anim/shrink_fade_out_center</item>-->
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+
+    <style name="QMUI.Animation" parent="@android:style/Animation"/>
+
+    <style name="QMUI.Animation.PopUpMenu"/>
+
+    <style name="QMUI.Animation.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="QMUI.Animation.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="QMUI.Animation.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="QMUI.Animation.PopDownMenu"/>
+
+    <style name="QMUI.Animation.PopDownMenu.Center">
+     <!--   <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>-->
+
+        <item name="@android:windowEnterAnimation">@anim/grow_fade_in_center</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_fade_out</item>
+    </style>
+
+    <style name="QMUI.Animation.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="QMUI.Animation.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog2" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SwitchButtonStyle_ios">
+        <item name="kswAnimationDuration">300</item>
+        <item name="kswBackDrawable">@drawable/ios_back_drawable</item>
+        <item name="kswBackMeasureRatio">1.6</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="kswThumbDrawable">@drawable/community_management_open</item>
+        <item name="kswThumbMarginBottom">-1dp</item>
+        <item name="kswThumbMarginLeft">0dp</item>
+        <item name="kswThumbMarginRight">0dp</item>
+        <item name="kswThumbMarginTop">-1dp</item>
+    </style>
+
+    <style name="QMUI.TipDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+<!--    <style name="qmui_tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">?attr/qmui_tip_dialog_min_width</item>
+        <item name="android:minHeight">?attr/qmui_tip_dialog_min_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">?attr/qmui_content_spacing_horizontal</item>
+        <item name="android:layout_marginRight">?attr/qmui_content_spacing_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">?attr/qmui_tip_dialog_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/qmui_tip_dialog_padding_horizontal</item>
+        <item name="android:paddingTop">?attr/qmui_tip_dialog_padding_vertical</item>
+        <item name="android:paddingBottom">?attr/qmui_tip_dialog_padding_vertical</item>
+        <item name="android:background">?attr/qmui_tip_dialog_bg</item>
+    </style>-->
+
+    <style name="qmui_tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@drawable/qmui_tip_dialog_bg</item>
+    </style>
+    <style name="AlertStyle" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alerter_alert_min_height</item>
+        <item name="android:maxHeight">@dimen/alerter_alert_max_height</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">top</item>
+        <item name="android:paddingTop">@dimen/alerter_alert_padding</item>
+    </style>
+    <style name="AlertTextAppearance">
+        <item name="android:textColor">@color/alert_default_text_color</item>
+    </style>
+    <style name="AlertTextAppearance.Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AlertTextAppearance.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TooltipDefaultStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

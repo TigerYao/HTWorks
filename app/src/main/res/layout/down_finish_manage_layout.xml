@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/space_tip_txt"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:gravity="center"
+        android:text="剩余可用"
+        android:textColor="#6D7172"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/downmore_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:drawableLeft="@mipmap/downlession_add_icon"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="缓存更多课时"
+        android:textColor="#ff000000"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_downloaded"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:scrollbars="none" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/view_err"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/down_action_bottom_layotu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp" />
+</LinearLayout>

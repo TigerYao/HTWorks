@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- width:260dp -->
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rectangle_f5ffffff"
+        android:orientation="vertical"
+        app:layout_widthPercent="85%w">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="发现新版本"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            app:layout_marginTopPercent="9.62%w"
+            app:layout_textSizePercent="6%w" />
+
+        <!-- width:214dp -->
+        <TextView
+            android:id="@+id/tv_updateinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:maxHeight="144dp"
+            android:scrollbars="vertical"
+            android:text="werfwesfwewe"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            app:layout_marginBottomPercent="6.15%w"
+            app:layout_marginLeftPercent="8.85%w"
+            app:layout_marginRightPercent="8.85%w"
+            app:layout_marginTopPercent="6.15%w"
+            app:layout_maxHeightPercent="55.38%w"
+            app:layout_textSizePercent="5.77%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_1"
+            android:background="@color/gray011" />
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            app:layout_heightPercent="16.54%w">
+
+            <TextView
+                android:id="@+id/tv_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="稍后再说"
+                android:textColor="@color/blue002"
+                android:textSize="15sp"
+                app:layout_textSizePercent="5.77%w" />
+
+            <View
+                android:layout_width="@dimen/width_1"
+                android:layout_height="match_parent"
+                android:background="@color/gray011" />
+
+            <TextView
+                android:id="@+id/tv_dialog_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="@color/blue002"
+                android:textSize="15sp"
+                app:layout_textSizePercent="5.77%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentFrameLayout>

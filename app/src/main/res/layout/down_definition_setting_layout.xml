@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <com.huatu.widget.MyRadioGroup
+        android:id="@+id/rate_radiogroup"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            style="@style/play_rate_text_style"
+            android:textColor="@color/down_definitiontext_selector"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:textStyle="normal"
+            android:layout_marginLeft="0dp"
+            android:tag="2"
+            android:text="高清480P" />
+
+        <RadioButton
+            style="@style/play_rate_text_style"
+            android:tag="1"
+            android:textStyle="normal"
+            android:textColor="@color/down_definitiontext_selector"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:text="流畅360P" />
+
+        <RadioButton
+            style="@style/play_rate_text_style"
+            android:textStyle="normal"
+            android:textColor="@color/down_definitiontext_selector"
+            android:tag="0"
+            android:layout_marginLeft="0dp"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:text="省流" />
+
+
+    </com.huatu.widget.MyRadioGroup>
+</LinearLayout>

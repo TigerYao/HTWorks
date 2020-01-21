@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray001">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="0.83%w"
+        android:id="@+id/progressBar_live"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_selector"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/topbar"/>
+
+    <com.huatu.widget.X5WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBar_live" />
+
+    <include layout="@layout/load_record_view"
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadview" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

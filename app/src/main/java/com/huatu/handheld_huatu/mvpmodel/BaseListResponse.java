@@ -1,0 +1,41 @@
+/**
+ * <pre>
+ * Copyright (C) 2015  Soulwolf XiaoDaoW3.0
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * </pre>
+ */
+package com.huatu.handheld_huatu.mvpmodel;
+
+import java.util.List;
+
+/**
+ * 数据模型列表的基类,这样写主要是为了实现页面的自动刷新和加载更多
+ *
+ * author : Soulwolf Create by 2015/6/16 14:09
+ * email  : ToakerQin@gmail.com.
+ */
+public abstract class BaseListResponse<MODE> extends BaseResponse{
+
+    public abstract void clearList();
+
+    public <RESPONSE extends BaseListResponse> void addAllData(RESPONSE response){
+        if(response != null){
+            processData(response);
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    protected abstract <RESPONSE extends BaseListResponse> void processData(RESPONSE response);
+
+    public abstract List<MODE> getListResponse();
+}

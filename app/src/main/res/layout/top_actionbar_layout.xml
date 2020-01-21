@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_toolbar_height"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/top_action_bar_left_layout"
+        layout="@layout/top_action_bar_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="200dp"
+        android:singleLine="true"
+        android:textColor="@color/text_color_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/top_action_bar_right_layout"
+        layout="@layout/top_action_bar_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/top_action_bar_right_layout2"
+        layout="@layout/top_action_bar_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/action_bar_title"
+        android:layout_toRightOf="@id/top_action_bar_right_layout"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/action_bar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_divider" />
+</RelativeLayout>

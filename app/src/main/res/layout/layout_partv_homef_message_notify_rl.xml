@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homef_message_notify_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/homef_message_notify_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:drawableLeft="@mipmap/homef_notify_left_light_icon"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="notify"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/text_size_small11"
+        app:layout_paddingLeftPercent="4.3%w"
+        app:layout_paddingRightPercent="4.3%w" />
+
+    <ImageView
+        android:id="@+id/homef_message_notify_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:src="@mipmap/homef_notify_close_icon" />
+</merge>

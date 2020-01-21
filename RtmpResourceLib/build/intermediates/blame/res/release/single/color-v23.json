@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/color-v23/abc_tint_btn_checkable.xml"
+    }
+]

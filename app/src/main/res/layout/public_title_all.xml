@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_TitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#f6f6f7" >
+
+        <ImageButton
+            android:id="@+id/button_TitleBar_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/zc_back" />
+
+        <TextView
+            android:id="@+id/textView_TitleBar_Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:maxLength="13"
+            android:singleLine="true"
+            android:text="@string/netschool_AnswerCard"
+            android:textColor="@color/new_default_tv"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_TitleBar_Operation"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/select_setting_home"
+            android:gravity="center"
+            android:textColor="@color/new_default_tv"
+            android:textSize="14sp" />
+
+</RelativeLayout>

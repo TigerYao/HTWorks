@@ -1,0 +1,20 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+        android:id="@+id/ess_ex_materials_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:lineSpacingExtra="6dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+</android.support.v4.widget.NestedScrollView>

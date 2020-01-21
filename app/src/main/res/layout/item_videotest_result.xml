@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="@dimen/common_5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/option_name"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@drawable/live_video_testresult_bg"
+        android:gravity="center"
+        android:textColor="@color/live_video_test__green_red_selector"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:max="100"
+        android:maxHeight="4dp"
+        android:minHeight="@dimen/common_2dp"
+        android:progressDrawable="@drawable/progress_livevideo_test_result" />
+
+    <TextView
+        android:id="@+id/option_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:textColor="#ffff3f47"
+        android:textSize="14sp" />
+</LinearLayout>

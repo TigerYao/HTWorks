@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_dialog_edit_nick"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="修改昵称"
+            android:textColor="@color/text_color_light"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/dialog_et_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#e7e7e7"
+            android:hint="昵称"
+            android:inputType="text"
+            android:padding="15sp"
+            android:text="@string/about"
+            android:textColorHint="@color/gray_333333"
+            android:textColor="@color/gray_333333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:text="2-12字符，可由中英文及下划线组成"
+            android:textColor="@color/text_color_light"
+            android:textSize="10sp"/>
+
+        <Button
+            android:id="@+id/dialog_bt_sure"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/common_style_text_color"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</FrameLayout>

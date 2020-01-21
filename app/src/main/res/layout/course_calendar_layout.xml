@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+    <com.huatu.widget.KitkatProfileRelaLayout
+        android:id="@+id/rl_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/left_back_btn"
+            android:layout_marginLeft="4dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:src="@drawable/icon_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/tv_month_day"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:ignore="RtlSymmetry" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="课程日历"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ff000000"
+            android:textSize="18sp"
+            />
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/fl_current"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" >
+
+            <ImageView
+                android:id="@+id/ib_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_current_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="13"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </com.huatu.widget.KitkatProfileRelaLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+             android:paddingTop="6dp"
+             android:id="@+id/show_pre_btn"
+             android:layout_marginRight="48dp"
+             android:paddingLeft="4dp"
+             android:paddingRight="4dp"
+             android:paddingBottom="0dp"
+             android:layout_gravity="right"
+             android:src="@mipmap/calendar_pre_icon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+       <ImageView
+            android:paddingTop="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="0dp"
+            android:id="@+id/show_next_btn"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/calendar_next_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="#ff000000"
+            android:textSize="18sp"  />
+    </FrameLayout>
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/calendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        app:calendar_content_view_id="@+id/recyclerView">
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:current_day_text_color="#4A4A4A"
+            app:current_month_text_color="#4A4A4A"
+            app:max_year="2020"
+            app:min_year="2004"
+            app:month_view="com.huatu.handheld_huatu.business.other.SolarMonthView"
+            app:month_view_show_mode="mode_only_current"
+            app:other_month_lunar_text_color="#4A4A4A"
+            app:other_month_text_color="#4A4A4A"
+            app:scheme_text="假"
+            app:scheme_text_color="#4A4A4A"
+            app:scheme_theme_color="#4A4A4A"
+            app:selected_lunar_text_color="#4A4A4A"
+            app:selected_text_color="@color/white"
+            app:selected_theme_color="#5D9AFF"
+            app:week_background="@color/white"
+            app:week_bar_view="com.huatu.handheld_huatu.business.other.SolarWeekBar"
+            app:week_text_color="#4A4A4A"
+            app:week_view="com.huatu.handheld_huatu.business.other.SolarWeekView"
+            app:year_view_day_text_color="#333333"
+            app:year_view_day_text_size="9sp"
+            app:year_view_month_text_color="#ff0000"
+            app:year_view_month_text_size="20sp"
+            app:year_view_scheme_color="#f17706" />
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="10dp"
+            android:background="@drawable/comm_top_space_bg"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+       />
+
+    </com.haibin.calendarview.CalendarLayout>
+
+
+</LinearLayout>

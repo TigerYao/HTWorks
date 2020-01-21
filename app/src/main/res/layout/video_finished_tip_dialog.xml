@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="30dp">
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/bg_rectangle_top_ffffff"></View>
+
+        <ImageView
+            android:id="@+id/tip_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:src="@mipmap/system_tip_cry_icon" />
+
+    </FrameLayout>
+    <View
+        android:id="@+id/custom_dialog_divider"
+        android:layout_width="250dp"
+        android:layout_height="1px"
+
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rectangle_bottom_ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/custom_dialog_title_view"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#323232"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/custom_dialog_message_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="本节直播课已结束，下次早点来哦"
+            android:textColor="#4a4a4a"
+            android:textSize="16sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/custom_dialog_cancel_btn"
+                android:layout_width="105dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#6D7172"
+                android:textSize="15sp" />
+
+
+            <View
+                android:id="@+id/custom_dialog_btn_divider"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/custom_dialog_confirm_btn"
+                android:layout_width="105dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="确定"
+                android:background="@drawable/eva_explain_btn_bg"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

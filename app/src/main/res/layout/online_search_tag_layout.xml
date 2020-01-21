@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_live_history_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hot" />
+
+            <com.huatu.handheld_huatu.view.FlowLayout
+                android:id="@+id/search_live_hot_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_hot"
+                android:layout_marginLeft="15dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/search_live_history_tips"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/gray001"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="搜索历史"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <com.huatu.handheld_huatu.view.ListViewForScroll
+                android:id="@+id/search_live_history_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:smoothScrollbar="true" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/loading_default_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"  />
+    </FrameLayout>
+
+</ScrollView>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.arena.activity.ArenaExamReportExActivity">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/arena_question_subject_layout_bg_color" />
+
+    <LinearLayout
+        android:id="@+id/arena_exam_answer_report_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_statue"
+        android:background="@color/arena_question_subject_layout_bg_color"
+        android:orientation="horizontal">
+
+        <!--返回键-->
+        <ImageView
+            android:id="@+id/arena_exam_answer_report_title_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_black_white_new" />
+
+        <!--title-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="成绩统计"
+            android:textColor="#666666"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--分享-->
+        <ImageView
+            android:id="@+id/arena_exam_answer_report_title_share"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/share_btn" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/arena_exam_answer_report_title_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/arena_report_item_bg_color"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/arena_exam_common_text_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <!--练习类型-->
+                <TextView
+                    android:id="@+id/arena_exam_answer_report_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:text="练习类型：智能匹配"
+                    android:textColor="@color/arena_report_item_text_color"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/arena_exam_answer_report_complete_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arena_exam_answer_report_type_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="交卷时间"
+                    android:textColor="@color/arena_exam_report_time_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/arena_exam_answer_report_practise_again_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@mipmap/jiantou_right"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="再来一套"
+                    android:textColor="@color/new_tv_night_font"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/arena_exam_answer_report_compare_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/arena_exam_answer_report_correct_number_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:text="答对"
+                        android:textColor="@color/arena_report_item_text_color"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/arena_exam_answer_report_correct_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="35dp"
+                        android:text="0"
+                        android:textColor="#46bb8c"
+                        android:textSize="27sp" />
+
+                    <TextView
+                        android:id="@+id/arena_exam_answer_report_total_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/arena_exam_answer_report_correct_tv"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/arena_exam_answer_report_correct_tv"
+                        android:paddingBottom="5dp"
+                        android:text="道/10道"
+                        android:textColor="@color/arena_report_item_text_color"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/arena_exam_common_gray_bg2" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/arena_exam_answer_report_used_time_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="15dp"
+                        android:text="用时"
+                        android:textColor="@color/arena_report_item_text_color"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/arena_exam_answer_report_used_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0"
+                        android:textColor="@color/common_style_text_color"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/arena_exam_common_text_bg"
+                android:gravity="center|left"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:text="答题卡"
+                android:textColor="@color/arena_report_item_text_color"
+                android:textSize="12sp" />
+
+            <com.huatu.handheld_huatu.business.arena.customview.ArenaAnswerCardViewNew
+                android:id="@+id/arena_exam_answer_report_answer_card_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/arena_exam_common_text_bg"
+                android:gravity="center|left"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:text="知识点情况"
+                android:textColor="@color/arena_report_item_text_color"
+                android:textSize="12sp" />
+
+            <com.huatu.handheld_huatu.view.ListViewForScroll
+                android:id="@+id/arena_exam_answer_report_knowledge_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:padding="15dp"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/arena_report_item_bg_color" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/arena_exam_answer_report_analysis_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sc_report_bottom_bg">
+
+        <RelativeLayout
+            android:id="@+id/arena_exam_answer_report_analysis_wrong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/sc_report_wrong"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="错题解析"
+                android:textColor="@color/sc_report_pink"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sc_report_divider" />
+
+        <RelativeLayout
+            android:id="@+id/arena_exam_answer_report_analysis_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/sc_report_solve"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="全部解析"
+                android:textColor="@color/sc_report_common_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/arena_exam_main_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/arena_exam_answer_report_title_layout"
+        android:background="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

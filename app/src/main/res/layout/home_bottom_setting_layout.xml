@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/err_setting_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="刷题设置"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@mipmap/essay_ans_hide_materil" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@mipmap/arena_clear_record"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:text="清空重做"
+        android:textStyle="bold"
+        android:textColor="#FF3F47"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="设置出题数量" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gl_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2">
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="10"
+            android:text="每次刷10道题"
+            app:layout_columnWeight="1" />
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="15"
+            android:text="每次刷15道题"
+            app:layout_columnWeight="1" />
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="20"
+            android:text="每次刷20道题"
+            app:layout_columnWeight="1" />
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="30"
+            android:text="每次刷30道题"
+            app:layout_columnWeight="1" />
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="40"
+            android:text="每次刷40道题"
+            app:layout_columnWeight="1" />
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="50"
+            android:text="每次刷50道题"
+            app:layout_columnWeight="1" />
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="设置出题模式" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gl_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2">
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="0"
+            android:text="做题模式"
+            app:layout_columnWeight="1" />
+
+        <RadioButton
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/radio_bg"
+            android:padding="5dp"
+            android:tag="1"
+            android:text="背题模式"
+            app:layout_columnWeight="1" />
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FF3F47"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>

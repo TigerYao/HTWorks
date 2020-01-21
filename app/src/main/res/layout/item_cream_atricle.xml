@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:minHeight="104dp">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="113dp"
+        android:layout_height="74dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"/>
+<TextView
+    android:id="@+id/tv_article_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/iv_img"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:textSize="16dp"
+    android:textColor="@color/blackF4"/>
+    <TextView
+        android:id="@+id/tv_top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="置顶"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginLeft="15dp"
+        android:background="#FFFFF5E4"
+        android:textColor="#FFF5A623"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/tv_type_img"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black250"
+        android:textSize="12dp"
+        android:text="备考攻略"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_top_img"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp" />
+    <TextView
+        android:id="@+id/tv_scan_num_img"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black250"
+        android:textSize="12dp"
+        android:text="123"
+        android:drawableLeft="@mipmap/mip_scan_eye"
+        android:layout_toRightOf="@id/tv_type_img"
+        android:visibility="gone"
+        android:drawablePadding="5dp"/>
+
+
+
+<RelativeLayout
+    android:id="@+id/rl_no_img"
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_height="17dp"
+    android:visibility="gone">
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="置顶"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginLeft="15dp"
+        android:background="#FFFFF5E4"
+        android:textColor="#FFF5A623"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black250"
+        android:textSize="11dp"
+        android:text="备考攻略"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/tv_top"/>
+
+    <TextView
+        android:id="@+id/tv_scan_num"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_toRightOf="@id/tv_type"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black250"
+        android:textSize="11dp"
+        android:drawableLeft="@mipmap/mip_scan_eye"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/tv_scan_num"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:textColor="@color/black250"
+        android:textSize="11dp"
+        android:drawableLeft="@mipmap/mip_like1"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_add_time"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_like_num"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black250"
+        android:textSize="11dp"/>
+</RelativeLayout>
+
+</RelativeLayout>

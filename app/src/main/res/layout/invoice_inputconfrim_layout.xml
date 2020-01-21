@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开具电子发票"
+            android:textColor="#ff4a4a4a"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_marginTop="6dp"
+            android:id="@+id/cancel_action_btn"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/small_close_icon"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/common_10dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/bill_img_bg" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="17dp"
+            android:text="抬头类型："
+            android:textColor="#ff9b9b9b"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人"
+            android:id="@+id/headType"
+            android:textColor="#ff4a4a4a"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/taxnum_layout"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="纳税人识别号："
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ff9b9b9b"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_taxNum"
+            android:textColor="#ff4a4a4a"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:layout_width="60dp"
+        android:layout_height="17dp"
+        android:text="发票抬头："
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#ff9b9b9b"
+        android:textSize="12sp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人"
+            android:id="@+id/invoichead"
+            android:textColor="#ff4a4a4a"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+
+        android:layout_width="60dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:text="发票内容："
+        android:textColor="#ff9b9b9b"
+        android:textSize="12sp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咨询费"
+            android:textColor="#ff4a4a4a"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.ui.RoundbgTextView
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="315dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:text="确认提交"
+        android:id="@+id/submit_btn"
+        android:textColor="#ffffffff"
+        android:textSize="18sp"
+        app:qmui_backgroundColor="#FF6D73"
+        app:qmui_radiusBottomLeft="22dp"
+        app:qmui_radiusTopLeft="22dp"
+        app:qmui_radiusBottomRight="22dp"
+        app:qmui_radiusTopRight="22dp"
+        />
+
+
+</LinearLayout>

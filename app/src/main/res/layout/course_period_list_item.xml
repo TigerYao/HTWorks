@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@id/whole_content"
+    android:background="@drawable/white_list_default_bg"
+     android:layout_height="70dp">
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/learn_status_img"
+            android:src="@drawable/layer_imglock_selector"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView style="@style/basetxt_content"
+            android:singleLine="true"
+            android:id="@+id/title_name_txt"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="@string/accountInformation" />
+
+    </LinearLayout>
+    <TextView style="@style/basetxt_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/learn_time_txt"
+        android:layout_marginLeft="51dp"
+        android:text="视频 - 剩余00:20分钟"
+        android:textColor="#ff6d7172" />
+    <TextView style="@style/basetxt_content"
+        android:id="@+id/lession_teacher_txt"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="15dp"
+        android:text="考试报告"
+        android:layout_marginBottom="10dp"
+        android:textColor="#EC74A0" />
+
+<View android:background="#f3f3f3" android:layout_gravity="bottom" style="@style/comm_split_line"></View>
+</FrameLayout>

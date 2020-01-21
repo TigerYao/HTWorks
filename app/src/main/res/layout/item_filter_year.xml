@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- width:82.5dp height: 36dp -->
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        app:layout_heightPercent="43.6364%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_year_value"
+            android:layout_width="67dp"
+            android:layout_height="24dp"
+            app:layout_widthPercent="81.2121%w"
+            app:layout_heightPercent="29.0909%w"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_change_gray">
+            <TextView
+                android:id="@+id/tv_year_value"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="2006"
+                android:textColor="@color/black001"
+                android:textSize="11.5sp"
+                app:layout_textSizePercent="13.9394%w"
+                android:clickable="true"
+                android:background="?selectableItemBackground"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

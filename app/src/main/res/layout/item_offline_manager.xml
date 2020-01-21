@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp" >
+
+    <ImageView
+        android:id="@+id/img_select_status"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/img_down_select"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_offline_course"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_select_status"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_default" />
+
+    <TextView
+        android:id="@+id/tv_downed_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_offline_course"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="江苏考前训练营第二期江苏考前训练营第二期江苏考前训练营第二期"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_downed_subject"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_offline_course"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_offline_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="已观看至10%"
+            android:textColor="@color/new_bc_green"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/tv_offline_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="90.8M"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/img_offline_course"
+        android:layout_below="@id/img_offline_course"
+        android:background="#dcdcdc" />
+
+</RelativeLayout>

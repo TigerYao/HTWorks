@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.huatu.widget.KitkatProfileFramLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="#FF3F47">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/icon_back_white_white_new" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="红包提现"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/iv_bg_reb_pocket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:src="@drawable/bg_red_pocket" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_red_packet_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="bottom"
+                        android:text="0"
+                        android:textColor="#FCE9A7"
+                        android:textSize="46dp" />
+
+                    <TextView
+                        android:id="@+id/tv_red_packet_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@id/tv_red_packet_num"
+                        android:text="元"
+                        android:textColor="#FCE9A7"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_red_packet_num"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#FCE9A7"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:text="可提现金额"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_received_rabbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:src="@drawable/icon_pig_rabit"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_not_receive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:src="@mipmap/icon_tip_red_packet" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_tip"
+                        android:src="@mipmap/icon_tip_rabbit" />
+                </RelativeLayout>
+            </com.huatu.widget.KitkatProfileFramLayout>
+
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="悄悄告诉你，发出的红包自己也能领呢！"
+                android:textColor="#6D7172"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_red_pocket_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_get_forward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_for_textview_red"
+                android:gravity="center"
+                android:text="立即提现"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_red_pocket_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="9dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.huatu.handheld_huatu.ui.RoundbgTextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:gravity="center"
+        android:text="1"
+        android:id="@+id/tag_txt"
+        android:textColor="#ffffffff"
+        android:textSize="13sp"
+        app:qmui_backgroundColor="#E4A03F"
+        app:qmui_radiusBottomRight="6dp"
+        app:qmui_radiusTopRight="6dp" />
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表达通畅，论点准确，论证结构合理，关键词“中华儿女”准确，+3分"
+        android:textColor="#ff757575"
+        android:textSize="15sp"
+        />
+</FrameLayout>

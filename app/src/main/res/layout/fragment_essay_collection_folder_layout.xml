@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_title_bar"
+        android:layout_width="match_parent"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRightShow="false"
+        app:topbarIsRight2Show="false"
+        android:layout_height="50dp"/>
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/collection_viewpager_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        app:stl_customTabTextLayoutId="@layout/custom_tab3"
+        app:stl_customTabTextViewId="@+id/custom_text3"
+        app:stl_indicatorColor="@color/red250"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorGravity="below_text"
+        app:stl_indicatorThickness="6dp"
+        app:stl_underlineThickness="0dp"
+        />
+       <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_divider"
+            />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/collection_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

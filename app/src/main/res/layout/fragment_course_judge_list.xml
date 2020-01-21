@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/course_judge_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:includeFontPadding="false"
+            android:text="全部评价"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/course_judge_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/course_judge_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/course_judge_top"
+        android:divider="#dfdfdf"
+        android:dividerHeight="1px"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+    </com.huatu.handheld_huatu.view.XListView>
+
+    <RelativeLayout
+        android:id="@+id/course_judge_zero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/course_judge_top"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/no_comment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/nonet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/no_comment_image"
+            android:layout_centerHorizontal="true"
+            android:text="暂无评价哦~"
+            android:textSize="14sp"
+            android:textColor="#9B9B9B"/>
+    </RelativeLayout>
+
+</RelativeLayout>

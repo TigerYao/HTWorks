@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/my_alpha_action_out.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/my_alpha_action_out.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/blacklist_anim.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/blacklist_anim.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/scale_out.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/scale_out.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/my_alpha_action_in.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/my_alpha_action_in.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/sdk_loading_animation.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/sdk_loading_animation.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/scale_in.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/scale_in.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/release/anim/progress_smallround.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/anim/progress_smallround.xml"
+    }
+]

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="270dp">
+
+    <HorizontalScrollView
+        android:id="@+id/record_sc_report_graphView_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:paddingLeft="55dp"
+        android:paddingRight="35dp"
+        android:scrollbars="none">
+
+        <com.huatu.handheld_huatu.view.custom.NewSimulationContestGraphView
+            android:id="@+id/record_sc_report_graphView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:spaceVertical="35dp"
+            app:textSizeHorizontal="10sp"
+            app:textSizeVertical="10sp" />
+    </HorizontalScrollView>
+
+    <com.huatu.handheld_huatu.view.custom.NewScDesTipGraphView
+        android:id="@+id/record_sc_report_graphView_des"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="-1dp"
+        app:spaceHorizontal="45dp"
+        app:spaceVertical="35dp"
+        app:textSizeHorizontal="10dp"
+        app:textSizeVertical="10dp" />
+</RelativeLayout>

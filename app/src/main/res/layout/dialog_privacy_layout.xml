@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rectangle_f5ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/custom_dialog_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.5"
+        android:background="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:text="温馨提示"
+        android:textStyle="bold"
+        android:paddingRight="10dp"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/custom_dialog_message_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#4A4A4A"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/custom_dialog_divider"
+        android:layout_width="280dp"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginBottom="14dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.huatu.handheld_huatu.ui.RoundbgTextView
+            android:id="@+id/custom_dialog_cancel_btn"
+            android:layout_width="105dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="拒绝并退出"
+            android:background="@android:color/transparent"
+            android:textColor="#6D7172"
+            android:textSize="15sp"
+            app:qmui_backgroundColor="#F3F3F3"
+            app:qmui_radiusBottomLeft="19dp"
+            app:qmui_radiusBottomRight="19dp"
+            app:qmui_radiusTopLeft="19dp"
+            app:qmui_radiusTopRight="19dp" />
+
+        <View
+            android:id="@+id/custom_dialog_btn_divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/custom_dialog_confirm_btn"
+            android:layout_width="105dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/yellow_btn_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

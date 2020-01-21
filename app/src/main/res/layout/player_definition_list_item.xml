@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="208dp"
+    android:layout_height="52dp"
+    android:background="@drawable/playing_lession_bg_selector"
+    android:gravity="center|left"
+    android:layout_gravity="right"
+    android:orientation="horizontal">
+    <TextView style="@style/basetxt_title"
+        android:text="流畅"
+        android:layout_marginLeft="59dp"
+        android:id="@+id/definition_type_txt"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_bjplayer_item_center_definition"
+        style="@style/basetxt_title"
+        android:text="360p"
+        android:layout_marginLeft="5dp"
+        android:textStyle="italic|bold"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+         />
+
+
+</LinearLayout>

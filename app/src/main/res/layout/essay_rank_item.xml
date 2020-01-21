@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_5dp">
+
+    <com.huatu.handheld_huatu.ui.RankTagTextView
+        android:id="@+id/order_txt"
+        android:layout_width="@dimen/common_dimens_30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#ff7e7e7e"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="left|center_vertical">
+
+        <com.huatu.handheld_huatu.ui.CenterImageView
+            android:id="@+id/user_avater_img"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/user_default_avater" />
+
+        <TextView
+            android:id="@+id/username_txt"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColor="#fff5a623"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="100分"
+        android:textColor="#fff5a623"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_costtime"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2295分钟"
+        android:textColor="#fff5a623"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_time_tip"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1月6日"
+        android:textColor="#fff5a623"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <!--问题材料-->
+    <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+        android:id="@+id/tv_question_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:lineSpacingMultiplier="1.03"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="16dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/arena_exam_common_text"
+        android:textSize="16sp" />
+
+    <!--注意事项、要求-->
+    <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+        android:id="@+id/tv_question_material_requirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.25"
+        android:textColor="@color/arena_exam_common_text"
+        android:textSize="16sp" />
+</LinearLayout>
+

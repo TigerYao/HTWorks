@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f7"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="true"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="标题" />
+
+    <LinearLayout
+        android:id="@+id/ll_downing_manager"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_down_manager" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_down_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在缓存  (2)"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_downing_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="江苏考前训练营"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_space"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0M/90M"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sb_downing_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="4dp"
+                android:maxHeight="1dp"
+                android:minHeight="1dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seek_down_out"
+                android:thumb="@null"
+                android:thumbOffset="0dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/forward_downing" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_down_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_down_finished"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <FrameLayout
+                android:id="@+id/fl_unedit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/new_bc_green" />
+
+                <TextView
+                    android:id="@+id/tv_down_finished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:text="已缓存  (2)"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="#dcdcdc" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_select_all"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/img_down_unselect" />
+
+                <TextView
+                    android:id="@+id/tv_cancel_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="46dp"
+                    android:gravity="center_vertical"
+                    android:text="全选"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="46dp"
+                    android:background="#dcdcdc" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/lv_downloaded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:background="#ffffff"
+            android:cacheColorHint="#000000"
+            android:divider="@null"
+            android:listSelector="@drawable/select_list_select"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_down_no"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_no_num" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="无缓存完成或正在缓课程"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_down_delete"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ff3b2f"
+        android:text="删除"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/v_fill_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_downmanager_space"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:text="已用空间3M，可用空间13.2M"
+        android:textColor="#c1c1c1"
+        android:textSize="12sp" />
+
+</LinearLayout>

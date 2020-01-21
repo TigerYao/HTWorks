@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/common_20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本题答题情况"
+        android:paddingTop="@dimen/common_10dp"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/user_count"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginRight="@dimen/common_20dp"
+            android:text="参加人数：3000人"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/right_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginLeft="@dimen/common_20dp"
+            android:text="正确率：90%"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_detail_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:padding="@dimen/common_10dp"/>
+</LinearLayout>

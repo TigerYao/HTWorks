@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+    <TextView
+        android:id="@+id/tv_time_logistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/black250"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_title_logistic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false"
+        android:layout_below="@+id/tv_time_logistic"
+        android:textColor="@color/black250"
+        android:textSize="14dp"/>
+
+
+    <!--<View-->
+        <!--android:id="@+id/line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@+id/tv_time_logistic"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@color/gray005"/>-->
+
+    <View
+        android:id="@+id/line_no_arri"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_title_logistic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_time_logistic"
+        android:layout_marginLeft="20dp"
+        android:background="#F3F3F3"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/dian_no_arri"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_time_logistic"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/logistic_left_icon_bg"
+        android:visibility="gone"
+        />
+
+
+    <View
+        android:id="@+id/line_arri"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_title_logistic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_time_logistic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#F3F3F3"
+        />
+
+    <View
+        android:id="@+id/dian_arri"
+        android:layout_width="18dp"
+        android:layout_height="22dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_time_logistic"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:background="@drawable/logistic_top_point" />
+
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_vod_play"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/rl_progress"
+        android:layout_toRightOf="@+id/rl_progress"
+        app:layout_heightPercent="72%w">
+
+        <com.baijiahulian.player.BJPlayerView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:aspect_ratio="fit_parent"
+            app:bottom_controller="@layout/bjplayer_layout_bottom"
+            app:center_controller="@layout/player_center_controller"
+            app:top_controller="@layout/bjplayer_layout_top">
+
+        </com.baijiahulian.player.BJPlayerView>
+
+
+    <!--    <LinearLayout
+            android:layout_centerInParent="true"
+
+            android:layout_width="120dp"
+            android:layout_height="36dp">
+
+
+
+        </LinearLayout>-->
+
+
+        <ImageView
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:id="@+id/image_vod_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/loading" />
+
+<!--        <ImageView
+            android:id="@+id/rl_start_play_vod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/video_play_btn_icon" />-->
+
+        <Button
+            android:id="@+id/rl_start_play_vod"
+            android:background="@drawable/play_btn_bg_selector"
+            android:text="19M流量"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            android:drawableRight="@mipmap/day_sliding_handle"
+            android:paddingRight="10dp"
+            android:layout_width="120dp"
+            android:layout_height="36dp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/hide_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/hide_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/video_play_title_back"
+            app:layout_marginLeftPercent="3.3%w" />
+
+        <TextView
+            android:id="@+id/textView_TitleBar_Info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+        <ImageView
+            android:id="@+id/hide_titlebt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:paddingRight="12dp"
+            android:src="@drawable/video_play_title_more"
+            app:layout_paddingRightPercent="3.3%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_tab_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_vod_play"
+        android:background="@color/arena_exam_common_text_bg"
+        app:layout_heightPercent="12.2%w">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            app:layout_marginLeftPercent="4.1%w">
+
+            <TextView
+                android:id="@+id/tv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="课表"
+                android:textColor="#e9304e"
+                android:textSize="16sp"
+                app:layout_paddingLeftPercent="4.1%w"
+                app:layout_paddingRightPercent="4.1%w"
+                app:layout_textSizePercent="4.4%w" />
+
+            <View
+                android:id="@+id/textview_schedule_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/main_color" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/vod_xiazai"
+            app:layout_marginRightPercent="3.3%w" />
+
+        <ImageButton
+            android:id="@+id/ib_jiangyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59dp"
+            android:background="@drawable/vod_jiangyi"
+            app:layout_marginRightPercent="16.3%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#bfbfbf" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_kebiao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_tab_info"
+        android:background="#ffffff"
+        android:divider="@null" />
+
+    <TextView
+        android:id="@+id/tv_no_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_tab_info"
+        android:gravity="center"
+        android:text="暂无课表"
+        android:textColor="@color/common_error_view_text_color"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_textSizePercent="4.4%w" />
+
+    <ListView
+        android:id="@+id/listview_ml"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#CC222222"
+        android:visibility="gone"
+        app:layout_widthPercent="41.67%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

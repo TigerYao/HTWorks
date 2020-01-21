@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray001">
+
+    <include
+        android:id="@+id/rl_topbar"
+        layout="@layout/topbar_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_confirmcode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/rl_topbar"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/et_confirmcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/inputConfirmCode"
+            android:lines="1"
+            android:textColor="@color/black001"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_timeclock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/getConfirmCode"
+            android:layout_marginRight="15dp"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nextstep"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/rl_confirmcode"
+        android:background="@drawable/drawable_rectangle_bfbfbf"
+        android:gravity="center"
+        android:text="@string/nextStep"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

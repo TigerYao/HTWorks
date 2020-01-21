@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f4f5"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_shopping_title_bar"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingRight="10dp">
+
+            <com.huatu.handheld_huatu.business.lessons.view.HorizontalListView
+                android:id="@+id/vodcourse_category_list_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingRight="10dp" />
+
+            <ImageView
+                android:id="@+id/vodcourse_category_setting_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/course_category_setting" />
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:id="@+id/vodcourse_child_category_divider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/gray005" />-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/vodcourse_child_category_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="39dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:background="@color/white"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:visibility="gone">-->
+
+            <!--<com.huatu.handheld_huatu.business.lessons.view.HorizontalListView-->
+                <!--android:id="@+id/vodcourse_sub_category_list_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/arena_exam_common_text_bg"
+        android:visibility="gone"
+        />
+
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/fg_vc_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:divider="#f2f4f5"
+        android:dividerHeight="10dp" />
+</LinearLayout>

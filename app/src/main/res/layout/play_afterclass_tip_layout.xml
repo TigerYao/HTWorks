@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/start_play_btn"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/play_btn_bg_selector"
+        android:drawableRight="@mipmap/play_afterclass_start_icon"
+        android:paddingRight="10dp"
+        android:text="开始练习"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_marginTop="25dp"
+        android:background="@drawable/play_nextbtn_bg_selector"
+        android:text="@string/play_next_tip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_width="120dp"
+        android:layout_height="36dp"/>
+</LinearLayout>

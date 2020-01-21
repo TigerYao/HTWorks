@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="269dp"
+        android:layout_height="91dp"
+        android:layout_centerInParent="true"
+        app:layout_widthPercent="74.7%w"
+        app:layout_heightPercent="27%w"
+        android:background="@drawable/bj">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:layout_widthPercent="9.6%w"
+            app:layout_heightPercent="9.6%w"
+            android:layout_marginTop="11dp"
+            app:layout_marginTopPercent="4%w"
+            android:background="@drawable/zb_yc_icon"/>
+    <TextView
+        android:id="@+id/tv_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:layout_marginTop="10dp"
+        app:layout_marginTopPercent="4%w"
+        app:layout_marginLeftPercent="5.5%w"
+        android:layout_marginLeft="15dp"
+        android:text="隐藏成功。进入我的课程-已隐藏课程，可恢复课程"
+        android:layout_centerHorizontal="true"
+        android:textSize="13sp"
+        app:layout_textSizePercent="4.8%w"
+        android:textColor="#ffffff"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

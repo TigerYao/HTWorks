@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.66"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/sc_main_card_bg">
+
+        <TextView
+            android:id="@+id/cd_sc_succcard_title_view"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="你已交卷成功！"
+            android:textColor="@color/common_style_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/custom_dialog_message_view"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cd_sc_succcard_title_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="模考结束（11:00）后出成绩报告,请及时关注。"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/close_sc_card_dialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="13dp"
+            android:src="@mipmap/dialog_close"
+            />
+    </RelativeLayout>
+</RelativeLayout>

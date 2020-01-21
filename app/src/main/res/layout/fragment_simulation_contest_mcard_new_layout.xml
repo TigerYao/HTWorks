@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mock_card_bg">
+
+    <LinearLayout
+        android:id="@+id/layout_sc_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sc_main_card_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--title-->
+        <TextView
+            android:id="@+id/tv_sc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="2019国考万人模考行测-第一季"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!--考试时间-->
+        <TextView
+            android:id="@+id/tv_sc_exam_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:text="考试时间：2018年6月3日（周日）09:00-11:00"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <!--报考地区相关，点击可报名-->
+        <RelativeLayout
+            android:id="@+id/tv_sc_sign_up_job_rlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_sc_sign_up_job_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="报考地区:"
+                android:textColor="#FF6D73"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_sc_sign_up_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_sc_sign_up_job_tip"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:text="上海"
+                android:textColor="#FF6D73"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_sc_sign_up_job"
+                android:src="@mipmap/sc_area_more" />
+        </RelativeLayout>
+
+        <!--我要报名-->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/tv_sc_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sc_btn_sign_red"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="我要报名"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/add_calend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius_border"
+            android:drawableLeft="@mipmap/calendar_ding_ic"
+            android:drawablePadding="@dimen/common_10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="@dimen/common_5dp"
+            android:paddingRight="@dimen/common_10dp"
+            android:paddingBottom="@dimen/common_5dp"
+            android:text="日历提醒"
+            android:textColor="#ffff6d73"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sc_main_card_bg_radius_bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--深度解释时间-->
+            <TextView
+                android:id="@+id/tv_sc_parse_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="深度解析：考试当天19:00准时开讲！"
+                android:textColor="#EC74A0"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!--点此购买-->
+            <TextView
+                android:id="@+id/tv_sc_parse_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/mock_right_more"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="查看详情"
+                android:textColor="#EC74A0"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sc_main_card_has_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
+
+        <!--988-->
+        <TextView
+            android:id="@+id/tv_sc_sign_up_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:maxLength="10"
+            android:text="8888"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!--人报名-->
+        <TextView
+            android:id="@+id/tv_has_peo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人已报名"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.business.matches.customview.ShakeImageView
+        android:id="@+id/iv_shake"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="3dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/gift_box" />
+</RelativeLayout>

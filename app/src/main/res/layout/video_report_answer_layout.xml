@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huatu.handheld_huatu.ui.AnswerCardView
+        android:id="@+id/answerCard_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_video_report_result"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/right_answer_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="2.3秒/题"
+            android:textSize="@dimen/common_textsize_12sp" />
+
+        <TextView
+            android:id="@+id/one_answer_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="78秒/题"
+            android:textSize="@dimen/common_textsize_12sp" />
+
+        <TextView
+            android:id="@+id/all_right_answer_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="2.3秒/题"
+            android:textSize="@dimen/common_textsize_12sp" />
+
+        <TextView
+            android:id="@+id/all_answer_time_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="78秒/题"
+            android:textSize="@dimen/common_textsize_12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/all_parse_btn_in"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="@dimen/common_dimens_30dp"
+        android:background="@drawable/bg_radius_border"
+        android:gravity="center"
+        android:text="全部解析"
+        android:textColor="#ffff6d73"
+        android:textSize="18sp" />
+</LinearLayout>

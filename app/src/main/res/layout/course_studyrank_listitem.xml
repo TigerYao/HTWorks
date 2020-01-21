@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:layout_height="wrap_content">
+    <com.huatu.handheld_huatu.ui.RankTagTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="10dp"
+        android:paddingLeft= "10dp"
+        android:id="@+id/order_txt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="23dp"
+        android:textColor="#ff7e7e7e"
+        android:textSize="12sp"
+        />
+
+
+
+    <com.huatu.handheld_huatu.ui.CenterImageView
+        android:layout_width="42dp"
+        android:layout_marginTop="2dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="6dp"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        android:id="@+id/user_avater_img"
+        android:layout_marginLeft="60dp"
+        android:src="@mipmap/user_default_avater"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/username_txt"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="101dp"
+        android:layout_marginRight="163dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:text="用户名4"
+        android:singleLine="true"
+        android:maxLength="12"
+        android:ellipsize="end"
+        android:textColor="#fff5a623"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="138dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:text="90分"
+        android:textColor="#fff5a623"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="83dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90分钟"
+        android:id="@+id/tv_costtime"
+        android:textColor="#fff5a623"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time_tip"
+        android:layout_gravity="right|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1月6日 22:10"
+        android:textColor="#fff5a623"
+        android:textSize="12sp"
+        />
+</FrameLayout>

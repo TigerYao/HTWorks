@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Google Apps Color -->
+    <color name="app_blue">#4285F4</color>
+    <color name="app_blue_dark">#3367D6</color>
+    <color name="app_green">#05b962</color>
+    <color name="app_green_dark">#0B8043</color>
+    <color name="app_yellow">#F4B400</color>
+    <color name="app_yellow_dark">#F09300</color>
+    <color name="app_red">#DB4437</color>
+
+    <color name="translucent">#00FFFFFF</color>
+    <color name="translucent_white">#80FFFFFF</color>
+    <color name="translucent_black">#bb000000</color>
+    <color name="translucent_grey">#809E9E9E</color>
+    <color name="translucent_white_8p">#14FFFFFF</color>
+    <color name="translucent_white_16p">#29FFFFFF</color>
+    <color name="translucent_white_24p">#3DFFFFFF</color>
+    <!--play bar-->
+    <color name="translucent_white_96p">#F5FFFFFF</color>
+    <color name="translucent_grey_300_96p">#F5E0E0E0</color>
+    <color name="translucent_grey_900_96p">#F5212121</color>
+    <color name="translucent_grey_700_96p">#F5616161</color>
+
+</resources>

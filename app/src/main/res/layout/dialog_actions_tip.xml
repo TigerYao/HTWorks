@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/share_ver_bg"
+    android:paddingLeft="@dimen/common_20dp"
+    android:paddingRight="@dimen/common_20dp"
+    android:paddingTop="@dimen/common_5dp">
+
+    <ImageView
+        android:id="@+id/imv_dialog_dialog_clean"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="13dp"
+        android:paddingLeft="@dimen/common_8dp"
+        android:paddingRight="@dimen/common_8dp"
+        android:paddingBottom="13dp"
+        android:src="@drawable/gray_btn_bg"
+        android:gravity="center"  />
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_dialog_dialog_clean"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_10dp"
+        android:gravity="center"
+        android:text="@string/active_title"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_title"
+        android:minHeight="@dimen/common_dimens_180dp">
+
+        <com.huatu.handheld_huatu.view.SimpleLabelsLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rules_tips_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lineMargin="@dimen/common_5dp"
+            app:singleLine="true" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:layout_below="@id/scrollview"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:layout_marginBottom="@dimen/common_25dp"
+        android:layout_marginLeft="@dimen/common_10dp"
+        android:layout_marginTop="@dimen/common_15dp"
+        android:background="@drawable/red_btn_bg"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_textsize_16sp" />
+</RelativeLayout>

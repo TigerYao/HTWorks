@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerVertical="true"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_select"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blackF4"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/title"
+        android:gravity="center|left"
+        android:textColor="@color/red250"
+        android:textStyle="bold"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/price"
+        android:layout_below="@id/title"
+        android:layout_marginTop="15dp"
+        android:gravity="center|left"
+        android:textStyle="bold"
+        android:textSize="13dp" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:id="@+id/order_count"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_toLeftOf="@id/add"
+        android:layout_marginRight="-1dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/check_order_count_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="4"
+        android:hint="0"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray250"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/reduce"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/order_count"
+        android:layout_marginRight="-1dp"/>
+
+<TextView
+    android:id="@+id/tv_validity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/order_count"
+    android:layout_alignParentRight="true"
+    android:textSize="10dp"/>
+</RelativeLayout>
+
+</RelativeLayout>

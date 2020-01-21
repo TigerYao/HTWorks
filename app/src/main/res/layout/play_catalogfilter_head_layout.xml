@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"
+            android:text="课后作业"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/afterclass_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/play_filterbg_gray"
+            android:gravity="center"
+            android:text="隐藏课后作业"
+            android:textColor="@color/gray2write_text_selector"
+            android:textSize="12sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="缓存课程"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/localclass_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/play_filterbg_gray"
+            android:gravity="center"
+            android:text="只看缓存课程"
+            android:textColor="@color/gray2write_text_selector"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_bar_txt"
+            android:text="主讲老师"
+            android:tag="0"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <com.huatu.handheld_huatu.ui.MostGridView
+            android:id="@+id/teach_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" />
+
+        <FrameLayout
+            android:id="@+id/catalog_explandlayout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="学习阶段"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+           <ImageView
+                android:tag="1"
+                android:id="@+id/right_open_img"
+                style="@style/wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:rotation="180"
+                android:src="@drawable/zf_icon_aa" />
+        </FrameLayout>
+    </LinearLayout>

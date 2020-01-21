@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.ui.CommloadingView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/xi_layout_loading"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="top|center"
+    android:paddingTop="100dp"
+
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+     <!--   <ImageView
+            android:id="@+id/xi_loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"  />-->
+
+        <com.huatu.Indicator.AVLoadingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicator="BallPulse"
+            app:indicator_color="#cccccc"
+            android:id="@+id/xi_loading_img" />
+
+        <ImageView
+            android:id="@+id/xi_hite_img"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/down_no_num" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/xi_hite_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/xs_loading_text"
+        android:textColor="#9B9B9B"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/xi_tv_tips"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/round_red_bg"
+        android:text="去看看课程"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+         />
+</com.huatu.handheld_huatu.ui.CommloadingView>

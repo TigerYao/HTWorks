@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/ll_image"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_top"
+                android:layout_width="1dp"
+                android:layout_height="24.5dp"
+                android:layout_centerHorizontal="true"
+                android:background="#f1f1f1" />
+
+            <ImageView
+                android:id="@+id/image_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_top"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/tree_indicator1_none" />
+
+            <ImageView
+                android:id="@+id/image_bottom"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/image_select"
+                android:layout_centerHorizontal="true"
+                android:background="#f1f1f1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/ll_image"
+            android:text="常识判断"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_err_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/ll_image"
+            android:text="6道错题"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+        <CheckBox
+            android:id="@+id/select_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/common_5dp"
+            android:focusable="false"
+            android:button="@drawable/arena_download_checkbox_bg"
+            android:visibility="gone"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_redo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/select_radio"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:text="重做"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/text_redo"
+            android:padding="15dp"
+            android:text="查看"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="#dcdcdc" />
+    </RelativeLayout>
+</LinearLayout>

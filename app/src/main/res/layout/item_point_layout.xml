@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/class_name"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/icon_points_red"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/common_5dp"
+        android:layout_margin="@dimen/common_20dp"
+        android:textSize="@dimen/common_textsize_16sp"
+        android:textColor="#ff4a4a4a"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/class_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/common_20dp"
+        android:background="@drawable/report_red_btn_bg"
+        android:paddingLeft="@dimen/common_15dp"
+        android:paddingTop="@dimen/common_5dp"
+        android:paddingRight="@dimen/common_15dp"
+        android:paddingBottom="@dimen/common_5dp"
+        android:text="练一下"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

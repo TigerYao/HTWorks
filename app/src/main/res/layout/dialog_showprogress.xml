@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="135dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:background="@drawable/bg_rectangle_dfffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/id_tv_loadingmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="正在更新中"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <ProgressBar
+            android:id="@+id/pb_update"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@drawable/bg_rectangle_c6c6c6"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_selector"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1%"
+            android:layout_below="@id/pb_update"
+            android:textColor="@color/black"
+            android:id="@+id/tv_update_percent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="0/0"
+            android:layout_below="@id/pb_update"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_update_info"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

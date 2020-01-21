@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/arena_sc_start_five_tip_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_sc_five_tips_shape"
+    android:gravity="center_horizontal"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/arena_sc_start_five_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="12:04:30"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/arena_sc_start_five_tip_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="距离考试"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+</LinearLayout>

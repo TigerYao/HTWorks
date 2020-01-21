@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/tv_redo"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="重做"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/black250" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:text="删除"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#FF3F47" />
+</LinearLayout>

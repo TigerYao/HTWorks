@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/try_manual_check_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@mipmap/switch_manual_check_bg"
+    android:paddingLeft="55dp"
+    android:paddingRight="26dp">
+
+    <TextView
+        android:id="@+id/tip1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/common_15dp"
+        android:text="对智能批改结果不满意？"
+        android:textColor="#ffa66200"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tip2_tv"
+        android:paddingBottom="@dimen/common_15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@id/tip1_tv"
+        android:gravity="center"
+        android:text="试试人工批改"
+        android:textColor="#ffffffff"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:layout_width="@dimen/common_20dp"
+        android:layout_height="@dimen/common_20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="22dp"
+        android:background="@mipmap/mip_unselected"
+        android:padding="@dimen/common_5dp"
+        android:src="@drawable/teacher_jiantou" />
+</RelativeLayout>

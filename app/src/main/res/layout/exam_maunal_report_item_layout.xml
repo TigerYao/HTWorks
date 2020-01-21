@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2dp"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/type_name"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="#ffffd99f" />
+
+    <TextView
+        android:id="@+id/sc_essay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="得分"
+        android:textColor="#7E7E7E"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/sc_essay_content"
+        android:layout_toRightOf="@+id/view"
+        android:gravity="left"
+        android:paddingLeft="@dimen/common_5dp"
+        android:paddingTop="@dimen/common_2dp"
+        android:text="问题1"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/type_detail"-->
+        <!--android:layout_below="@id/type_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/common_5dp"-->
+        <!--android:textColor="#ff7e7e7e"-->
+        <!--android:visibility="gone"-->
+        <!--android:textSize="12sp" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/type_name"
+        android:layout_marginTop="10dp"
+        android:background="#F3F3F3" />
+
+</RelativeLayout>

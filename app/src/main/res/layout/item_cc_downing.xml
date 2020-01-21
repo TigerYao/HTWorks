@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/img_down_unselect" />
+
+    <FrameLayout
+        android:id="@+id/fl_item_downing"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_select">
+
+        <ImageView
+            android:id="@+id/img_offline_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_default" />
+
+        <ImageView
+            android:id="@+id/img_course_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/course_cover"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_downing_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/fl_item_downing"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="江苏考前训练营第二期江苏考前训练营第二期江苏考前训练营第二期"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <SeekBar
+        android:id="@+id/sb_downing_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fl_item_downing"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/fl_item_downing"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_downloading"
+        android:thumb="@null"
+        android:thumbOffset="0dp" />
+
+    <SeekBar
+        android:id="@+id/cc_sb_downing_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/fl_item_downing"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/fl_item_downing"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_downloading"
+        android:thumb="@null"
+        android:thumbOffset="0dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_offline_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_downing_subject"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/fl_item_downing"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="缓存暂停"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_downing_subject"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_offline_status"
+        android:gravity="right"
+        android:text=""
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/fl_item_downing"
+        android:layout_below="@id/fl_item_downing"
+        android:background="#dcdcdc" />
+
+</RelativeLayout>

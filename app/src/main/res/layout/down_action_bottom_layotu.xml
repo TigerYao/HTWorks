@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_action_layout"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    app:qmui_borderColor="@color/qmui_config_color_separator"
+    app:qmui_outerNormalColor="@color/qmui_config_color_background"
+    app:qmui_radius="15dp"
+    app:qmui_shadowAlpha="0.25"
+    app:qmui_shadowElevation="14dp"
+    app:qmui_showBorderOnlyBeforeL="true">
+
+    <TextView
+        android:id="@+id/selAll_btn"
+        style="@style/width_weight"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="全选"
+        android:textColor="#ff4a4a4a"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/right_btn"
+        style="@style/width_weight"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bt_down_delete"
+            style="@style/basetxt_title"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="删除"
+            android:textColor="#5163F1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/delNum_txt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bt_down_delete"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</com.qmuiteam.qmui.layout.QMUILinearLayout>

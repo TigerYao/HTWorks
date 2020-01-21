@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top">
+        <ProgressBar
+            android:id="@+id/audio_loading_bar"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:indeterminate="false"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/audio_loading_ring"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/start_play_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@mipmap/music_player_start_btn" />
+    </FrameLayout>
+
+    <SeekBar
+        android:visibility="invisible"
+        android:id="@+id/timeline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:maxHeight="4.0dip"
+        android:minHeight="4.0dip"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip"
+        android:progress="0"
+        android:progressDrawable="@drawable/musice_seekbar_drawable"
+        android:thumb="@drawable/musice_seekbar_thum_shape" />
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip">
+
+        <TextView
+            android:id="@+id/current_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:text="--:--"
+            android:textColor="#ff000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="--:--"
+            android:textColor="#ff000000"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

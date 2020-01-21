@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_black_new" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.huatu.handheld_huatu.business.essay.cusview.TextSizeControlImageView
+            android:id="@+id/iv_text_size"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/action_bar_text_size_small" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/action_bar"
+        android:background="@color/gray005" />
+
+    <FrameLayout
+        android:id="@+id/ess_ex_materials_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ess_ex_question_content_fl"
+        android:layout_below="@+id/view_divider" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.QuestionDragViewLayout
+        android:id="@+id/ess_ex_question_content_fl"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_above="@+id/bottom_operator_llayout" />
+
+    <RelativeLayout
+        android:id="@+id/drag_view"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/ess_ex_question_content_fl">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/essay_material_drag_bg" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/essay_material_drag_icon" />
+    </RelativeLayout>
+
+    <com.huatu.handheld_huatu.business.essay.cusview.MaterialsOperatorView
+        android:id="@+id/bottom_operator_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.RightOperatorTextView
+        android:id="@+id/right_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_essay_material_drag_btn"
+        android:gravity="center"
+        android:text="答题"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <com.huatu.handheld_huatu.business.essay.cusview.ProvPaperLView
+        android:id="@+id/province_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_divider"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_divider"
+        android:background="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

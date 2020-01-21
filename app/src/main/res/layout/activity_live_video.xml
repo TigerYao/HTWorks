@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_video_play_root_view"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<ImageView-->
+        <!--android:id="@+id/image_live_detail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:background="@drawable/icon_default"-->
+        <!--android:scaleType="fitXY" />-->
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoCenterView
+        android:id="@+id/layout_live_video_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!-- 倒计时-->
+    <RelativeLayout
+        android:id="@+id/ll_counttime_bottom"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_alignBottom="@id/layout_live_video_center"
+        android:layout_height="36dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_tips_datas"
+                android:textColor="@color/live_tip_color"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_counttime_string"
+                android:textColor="@color/live_tip_color"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:id="@+id/tv_counttime_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--  标题控制栏 -->
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoHeaderView
+        android:id="@+id/live_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/video_play_title_bg" />
+    <!--  tab控制栏 -->
+
+
+    <com.huatu.scrollablelayoutlib.ScrollableLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_live_video_center"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/play_vod_title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicator2"
+                android:layout_width="180dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/filter_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="80dp"
+                android:src="@mipmap/course_filter_icon" />
+
+            <ImageView
+                android:id="@+id/down_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/course_down_icon" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cd_module_line_height"
+            android:background="@color/cc_default_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.huatu.scrollablelayoutlib.ScrollableLayout>
+</RelativeLayout>
+
+

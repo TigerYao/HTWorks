@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <com.huatu.handheld_huatu.business.essay.cusview.TipTextView
+        android:id="@+id/tip_one"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@+id/div1"
+        android:layout_weight="0"
+        android:background="#fceef0"
+        android:drawableRight="@mipmap/homef_notify_close_icon"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:text="同一单题或套题仅可批改2次"
+        android:textColor="@color/common_style_text_color"
+        android:textSize="13sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_person_check_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_essay_person_check">
+
+
+                <com.huatu.handheld_huatu.view.ListViewForScroll
+                    android:id="@+id/person_check_count_listv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/gray_divider"
+                    android:dividerHeight="0dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ai_check_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_person_check_count"
+                android:background="@drawable/bg_essay_ai_check">
+
+
+                <com.huatu.handheld_huatu.view.ListViewForScroll
+                    android:id="@+id/check_count_listv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/gray_divider"
+                    android:dividerHeight="0dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/go_buy_check"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@id/rl_ai_check_count"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_go_buy_essay_correct"
+                android:gravity="center"
+                android:text="购买批改次数"
+                android:textColor="@color/goldA96"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/go_buy_check"
+                android:layout_marginTop="15dp"
+                android:lineSpacingMultiplier="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_tip4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tips"
+                android:lineSpacingMultiplier="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

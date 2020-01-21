@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:paddingBottom="52dp">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:layout_behavior=".view.FixAppBarLayoutBehavior">
+
+            <RelativeLayout
+                android:id="@+id/video_show"
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:layout_alignParentTop="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/play_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/play_default_cover"
+                    android:scaleType="fitXY" />
+
+
+                <!--//视频信息显示-->
+                <ViewStub
+                    android:id="@+id/video_info_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout="@layout/viewstub_course_video_info_layout"
+                    android:orientation="vertical" />
+                <!--//视频控件-->
+
+                <ViewStub
+                    android:id="@+id/video_player_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout="@layout/viewstub_course_video_player_layout" />
+                <!--//优惠控件-->
+                <ViewStub
+                    android:id="@+id/course_active_vs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    android:layout="@layout/viewstub_course_active_layout" />
+
+                <TextView
+                    android:id="@+id/activte_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|right"
+                    android:background="@drawable/bg_time_countdown"
+                    android:gravity="center_vertical"
+                    android:text="距离活动开始还有2天00：00：00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize_12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/presale_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/presale_magic_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp" />
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/withLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/presale_indicator"
+                android:background="@color/gray001" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/presale_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ViewStub
+        android:id="@+id/multi_option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_show"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/common_dimens_50dp"
+        android:background="#FFFCE3"
+        android:gravity="center_vertical"
+        android:layout="@layout/viewstub_course_options_layout"
+        android:padding="@dimen/common_10dp" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_show"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/common_8dp">
+
+        <TextView
+            android:id="@+id/buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="¥1280.00"
+            android:textColor="#ffff3f47"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/athletic_exercise_25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/service_icon"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingTop="@dimen/common_5dp"
+            android:text="咨询"
+            android:textColor="#ff4a4a4a"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/athletic_exercise_25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawableTop="@drawable/icon_course_collect_selector"
+            android:drawablePadding="@dimen/common_2dp"
+            android:gravity="center"
+            android:minWidth="@dimen/common_dimens_60dp"
+            android:paddingTop="@dimen/common_8dp"
+            android:text="收藏"
+            android:textColor="#ff4a4a4a"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/athletic_exercise_25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider" />
+
+        <ViewStub
+            android:id="@+id/group_buy_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout="@layout/stub_gourp_buy_layout" />
+
+        <LinearLayout
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_red_rightcorner_bg"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_20dp"
+            android:paddingRight="@dimen/common_20dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/buy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/redbag_tip_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_dimens_35dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/redbag_icon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@mipmap/redbag_icon" />
+
+        <TextView
+            android:id="@+id/redbag_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/common_15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fullvideoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/presale_video_tab_back"
+        android:layout_width="@dimen/dp44"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="7dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/video_play_title_back" />
+
+    <ImageView
+        android:id="@+id/presale_show_more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="7dp"
+        android:src="@drawable/video_play_title_more_land" />
+
+</RelativeLayout>

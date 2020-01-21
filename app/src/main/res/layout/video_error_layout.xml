@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bjplayer_center_video_progress_dialog_buttons_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bjplayer_bg_radius_8"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bjplayer_center_video_progress_dialog_message_tv"
+        style="@style/bjplayer_text_big"
+        android:text="视频信息加载失败，请重试\n[1]" />
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bjplayer_center_video_progress_dialog_button2_tv"
+        style="@style/bjplayer_text_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bjplayer_bg_radius_12"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="刷新重试" />
+
+</LinearLayout>
+

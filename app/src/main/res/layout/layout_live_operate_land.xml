@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|center"
+    android:padding="@dimen/common_5dp">
+
+    <TextView
+        android:id="@+id/video_play_interaction_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/teacher_note"
+        android:drawablePadding="@dimen/common_5dp"
+        android:text="助教笔记"
+        android:background="@drawable/bg_live_grey_round_select"
+        android:padding="@dimen/common_5dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/open_live_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:background="@drawable/bg_live_grey_round_select"
+        android:drawableLeft="@mipmap/teacher_video_icon"
+        android:drawablePadding="@dimen/common_5dp"
+        android:paddingLeft="@dimen/common_10dp"
+        android:paddingRight="@dimen/common_10dp"
+        android:paddingTop="@dimen/common_5dp"
+        android:paddingBottom="@dimen/common_5dp"
+        android:text="老师视频"
+        android:onClick="onClick"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/live_video_view_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20dp"
+        android:drawableLeft="@mipmap/talk_icon"
+        android:drawablePadding="@dimen/common_5dp"
+        android:background="@drawable/bg_live_grey_round_select"
+        android:paddingLeft="@dimen/common_10dp"
+        android:paddingRight="@dimen/common_10dp"
+        android:paddingTop="@dimen/common_5dp"
+        android:paddingBottom="@dimen/common_5dp"
+        android:text="讨论区"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+</LinearLayout>

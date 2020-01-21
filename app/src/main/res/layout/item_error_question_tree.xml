@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/ll_image"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_top"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/image_select"
+                android:layout_centerHorizontal="true"
+                android:background="#FF6D73" />
+
+            <ImageView
+                android:id="@+id/image_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/tree_indicator1_none" />
+
+            <ImageView
+                android:id="@+id/image_bottom"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/image_select"
+                android:layout_centerHorizontal="true"
+                android:background="#FF6D73" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/ll_image"
+            android:text="常识判断"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_go"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/text_name">
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@mipmap/jiantou_new" />
+
+            <TextView
+                android:id="@+id/text_err_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_more"
+                android:text="6道错题"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/text_redo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:padding="15dp"-->
+        <!--android:text="重做"-->
+        <!--android:textColor="#666666"-->
+        <!--android:textSize="14dp"-->
+        <!--android:visibility="gone" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/text_look"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@+id/text_redo"-->
+        <!--android:padding="15dp"-->
+        <!--android:text="查看"-->
+        <!--android:textColor="#666666"-->
+        <!--android:textSize="14dp"-->
+        <!--android:visibility="gone" />-->
+
+        <!--<View-->
+        <!--android:id="@+id/view_line"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="#dcdcdc"-->
+        <!--android:visibility="gone" />-->
+    </RelativeLayout>
+</LinearLayout>

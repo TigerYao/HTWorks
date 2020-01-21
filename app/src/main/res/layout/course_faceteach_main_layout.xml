@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.levylin.detailscrollview.views.DetailSingleScrollView
+    android:background="@color/white"
+    android:id="@id/whole_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:clickable="true"
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:id="@+id/top_layout"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_filter_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <com.huatu.widget.DrawableRightCenterRadioButton
+                android:id="@+id/rb_area_filter"
+                style="@style/goods_filter_radio_button"
+                android:drawableRight="@drawable/face_dropdown_selector"
+                android:drawablePadding="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="牡丹园" />
+
+            <com.huatu.widget.DrawableRightCenterRadioButton
+                android:id="@+id/rb_cate_filter"
+                style="@style/goods_filter_radio_button"
+                android:drawablePadding="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:drawableRight="@drawable/face_dropdown_selector"
+                android:text="国考" />
+
+            <com.huatu.widget.DrawableRightCenterRadioButton
+                android:id="@+id/rb_type_filter"
+                style="@style/goods_filter_radio_button"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/face_dropdown_selector"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="笔试" />
+        </RadioGroup>
+        <com.huatu.widget.WebProgressBar style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:id="@+id/progress_tip_bar"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_rush_sale_horizontal"
+            android:layout_height="2dip" />
+    </FrameLayout>
+
+    <com.levylin.detailscrollview.views.DetailSingleWebView
+        android:id="@+id/detail_webview"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</com.levylin.detailscrollview.views.DetailSingleScrollView>

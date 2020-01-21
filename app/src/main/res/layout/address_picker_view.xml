@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_round_eight_bg">
+
+        <TextView
+            android:id="@+id/tvSure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/drawable_change_color"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="配送至"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@mipmap/close" />
+
+        <View
+            android:id="@+id/iv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/iv_close"
+            android:background="#eeeeee" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tlTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/iv_line"
+            android:background="@color/white"
+            app:tabBackground="@drawable/selector_area"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/red250"
+            app:tabTextColor="@color/black" />
+
+        <View
+            android:id="@+id/iv_devide"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tlTabLayout"
+            android:background="#DDDDDD" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_devide"
+            android:layout_marginBottom="60dp"
+            android:background="#FFFFFF" />
+    </RelativeLayout>
+</RelativeLayout>

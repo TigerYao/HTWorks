@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_divider"
+    android:orientation="vertical">
+    <com.huatu.widget.KitkatProfileFramLayout
+        android:id="@+id/fragment_shopping_title_bar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_change_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/homef_title_right" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/search_bar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/drawable_rectangle_e3e3e3"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:text="国考菁英智胜班"
+            android:textColorHint="#9b9b9b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:src="@mipmap/mip_message_icon" />
+        <TextView
+            android:id="@+id/tv_message_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/textview_oval_border"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textSize="9dp" />
+    </com.huatu.widget.KitkatProfileFramLayout>
+
+    <FrameLayout
+        android:id="@+id/tabstrip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fragment_shopping_title_bar"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.huatu.viewpagerindicator.PagerSlidingArrayTabStrip
+            android:id="@+id/xi_activity_type_tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="45dp"
+            android:background="@color/white"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/indicator_color"
+            app:pstsIndicatorHeight="@dimen/xd_home_group_tab_host_indicator_height"
+            app:pstsIndicatorWidth="20dp"
+            app:pstsShouldExpand="false"
+            app:pstsTabPaddingLeftRight="8dp"
+            app:pstsTextColor="@color/black2gray_text_selector"
+            app:pstsTextSize="@dimen/text_size_large"
+            app:pstsUnderlineColor="@color/transparent"
+            app:pstsUnderlineHeight="@dimen/cd_module_line_height" />
+
+        <ImageView
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/shopping_category_setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/course_category_setting" />
+        <View android:layout_gravity="bottom"  style="@style/comm_split_line"/>
+    </FrameLayout>
+
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/xi_comm_page_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabstrip_layout"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+
+
+    <FrameLayout
+        android:id="@+id/webview_container"
+        android:layout_below="@+id/tabstrip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include
+        layout="@layout/loading_default_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabstrip_layout" />
+
+
+</RelativeLayout>
+

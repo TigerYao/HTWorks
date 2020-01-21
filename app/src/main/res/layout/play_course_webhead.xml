@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/course_detail_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+
+        android:includeFontPadding="false"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/course_detail_description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+
+        android:includeFontPadding="false"
+        android:textSize="13sp"
+        android:textColor="#6C7172"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/course_detail_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textSize="18sp"
+
+            android:textColor="#1CE28D"/>
+        <TextView
+            android:id="@+id/course_detail_origin_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="2dp"
+
+            android:gravity="bottom"
+            android:textSize="14sp"
+            android:textColor="#9b9b9b"/>
+        <TextView
+            android:id="@+id/course_detail_buy_num_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+
+            android:includeFontPadding="false"
+            android:textSize="13sp"
+            android:textColor="#6D7172"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="2dp"
+        android:background="@drawable/shape_rect_f3f3f3"
+        android:orientation="vertical">
+
+        <com.huatu.handheld_huatu.view.NoScrollListView
+            android:id="@+id/course_teacher_detail_judge_lv"
+            android:layout_width="match_parent"
+            android:minHeight="120dp"
+            android:layout_height="wrap_content"
+            android:divider="#f3f3f3"
+            android:dividerHeight="1px">
+        </com.huatu.handheld_huatu.view.NoScrollListView>
+
+        <ImageView
+            android:id="@+id/list_expland_img"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/homef_title_pop_down_v62"
+            android:layout_width="wrap_content"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:layout_height="22dp" />
+
+    </LinearLayout>
+</merge>

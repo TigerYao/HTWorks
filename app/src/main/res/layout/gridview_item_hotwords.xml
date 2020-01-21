@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/bt_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:background="@drawable/shape_yuanjiao"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

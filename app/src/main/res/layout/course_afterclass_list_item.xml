@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+    <FrameLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:id="@id/whole_content"
+        android:background="@drawable/white_list_default_bg"
+        android:minHeight="70dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="24dp">
+                <com.huatu.handheld_huatu.ui.WaveView
+                    android:id="@+id/onlive_bg"
+                    android:visibility="gone"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"></com.huatu.handheld_huatu.ui.WaveView>
+
+               <com.huatu.handheld_huatu.ui.PieProgressView
+                    android:id="@+id/learn_status_img"
+                    android:layout_gravity="center"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"/>
+
+            </FrameLayout>
+            <TextView style="@style/basetxt_content"
+                android:id="@+id/title_name_txt"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:ellipsize="end"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="@string/accountInformation" />
+
+        </LinearLayout>
+        <TextView style="@style/basetxt_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/learn_time_txt"
+            android:layout_marginLeft="51dp"
+            android:text="视频 - 剩余00:20分钟"
+            android:textColor="#ff6d7172" />
+        <TextView style="@style/basetxt_content"
+            android:id="@+id/lession_teacher_txt"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="15dp"
+            android:text="主讲老师：刘有珍"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ff6d7172" />
+        <com.huatu.handheld_huatu.ui.DownBtnLayout
+            android:layout_marginRight="1dp"
+            android:layout_width="45dp"
+            android:layout_gravity="right"
+            android:id="@+id/down_status_layout"
+            android:layout_height="45dp">
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/loading_progress"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:indeterminateDrawable="@drawable/down_loading_progress" />
+            <ImageView
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/course_start_down_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.huatu.handheld_huatu.ui.DownBtnLayout>
+        <View android:background="#f3f3f3" android:layout_gravity="bottom" style="@style/comm_split_line"></View>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="35dp"
+        android:id="@+id/after_layout"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+           android:layout_marginRight="10dp"
+            android:id="@+id/after_work_layout"
+            android:orientation="vertical" android:layout_width="125dp"
+            android:background="@drawable/bg_rectangle_f6f6f6"
+            android:layout_height="50dp">
+            <TextView style="@style/basetxt_content"
+                android:id="@+id/title_after_txt"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@mipmap/course_after_tag_icon"
+                android:drawablePadding="6dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="@string/course_afterclass" />
+             <com.huatu.handheld_huatu.ui.RoundbgTextView
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                app:qmui_backgroundColor="#E0E0E0"
+                app:qmui_radiusBottomLeft="0dp"
+                app:qmui_radiusTopLeft="4dp"
+                app:qmui_radiusBottomRight="4dp"
+                app:qmui_radiusTopRight="0dp"
+                android:tag="1"
+                android:id="@+id/after_learn_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余2题"
+                android:layout_gravity="bottom|right"
+                android:textColor="#4A4A4A"
+                android:textSize="10sp"
+                />
+       </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/after_report_layout"
+
+            android:orientation="vertical" android:layout_width="125dp"
+            android:background="@drawable/bg_rectangle_f6f6f6"
+            android:layout_height="50dp">
+            <TextView style="@style/basetxt_content"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@mipmap/course_report_tag_icon"
+                android:drawablePadding="6dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="学习报告" />
+            <com.huatu.handheld_huatu.ui.RoundbgTextView
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:id="@+id/after_report_txt"
+                app:qmui_backgroundColor="#E0E0E0"
+                app:qmui_radiusBottomLeft="0dp"
+                app:qmui_radiusTopLeft="4dp"
+                app:qmui_radiusBottomRight="4dp"
+                app:qmui_radiusTopRight="0dp"
+                android:tag="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未生成"
+
+                android:layout_gravity="bottom|right"
+                android:textColor="#4A4A4A"
+                android:textSize="10sp"
+                />
+
+            <View
+                android:visibility="gone"
+                android:layout_gravity="right|top"
+                android:background="@drawable/red_oval_bg"
+                android:id="@+id/after_report_status"
+                android:layout_width="6dp"
+                android:layout_height="6dp"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <View android:background="#f3f3f3" android:layout_gravity="bottom" style="@style/comm_split_line"></View>
+</LinearLayout>

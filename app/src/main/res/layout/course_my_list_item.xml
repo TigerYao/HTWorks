@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/comm_bottom_line_bg2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/whole_content"
+            android:layout_marginBottom="1px"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:id="@+id/left_layout"
+                android:layout_width="140dp"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:id="@+id/iv_item_course_mine_scaleimg"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/load_default"
+                    android:scaleType="fitXY"  />
+
+
+                <LinearLayout
+                    android:id="@+id/onlive_layout"
+                    android:visibility="gone"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="#bfED1C24"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp">
+                    <ImageView
+                        android:id="@+id/onlive_img"
+                        android:layout_width="11dp"
+                        android:layout_height="9dp"
+                          />
+                    <TextView style="@style/basetxt_title_small"
+                        android:text="直播中"
+                        android:id="@+id/onlive_status_txt"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_item_course_mine_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/left_layout"
+                android:ellipsize="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:maxLines="2"
+                android:textSize="14sp"
+                android:textColor="#333333"  />
+
+
+            <com.huatu.widget.IncreaseProgressBar
+                android:id="@+id/rush_sale_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginBottom="26dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/left_layout"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_rush_sale_horizontal" />
+
+            <TextView
+                style="@style/basetxt_title"
+                android:text="已学25%"
+                android:layout_marginRight="8dp"
+                android:textColor="#ffed1c24"
+                android:id="@+id/learn_tip_txt"
+                android:layout_alignParentRight="true"
+                android:textSize="10sp"
+                android:layout_marginBottom="22dp"
+                android:layout_alignParentBottom="true"
+                />
+            <TextView
+                android:id="@+id/tv_item_course_mine_one_to_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="填写信息卡 "
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:textColor="@color/course_center_content" />
+
+            <TextView
+                android:id="@+id/tv_item_course_mine_timelength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/left_layout"
+                android:layout_toRightOf="@+id/left_layout"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="150课时"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/course_center_content" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+   <LinearLayout
+        android:layout_marginBottom="1px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/stick"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_mark"
+            android:text="置顶"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</com.nalan.swipeitem.recyclerview.SwipeItemLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="34.4%w">
+		<View
+		    android:id="@+id/view"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+            app:layout_heightPercent="2.7%w"
+		    android:background="@color/divider"
+		    />
+        <ImageView
+            android:id="@+id/iv_logistics"
+            android:layout_width="0dp"
+            app:layout_widthPercent="33.6%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="24.1%w"
+            android:layout_below="@+id/view"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_marginTopPercent="3%w"
+            app:layout_marginRightPercent="3%w"
+            android:src="@drawable/loading" />
+        <TextView
+            android:id="@+id/title_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_logistics"
+            android:layout_below="@+id/view"
+            app:layout_marginTopPercent="5%w"
+            app:layout_marginLeftPercent="3.3%w"
+             android:ellipsize="end"
+            android:gravity="center|left"
+            android:singleLine="true"
+            app:layout_textSizePercent="4.1%w"
+            android:textColor="#333333"
+            android:text="公务员面试真功夫公务员aaaaa"
+            />
+        <TextView
+            android:id="@+id/status_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_logistics"
+            android:layout_toRightOf="@+id/iv_logistics"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_marginTopPercent="11.1%w"
+            app:layout_textSizePercent="3.8%w"
+            android:textColor="#999999"
+            android:text="未发货"
+            />
+        <ImageView
+            android:id="@+id/bt_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_marginTopPercent="13%w"
+            android:background="@drawable/logistics"
+            />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

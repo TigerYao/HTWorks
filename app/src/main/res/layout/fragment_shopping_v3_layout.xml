@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f4f5">
+<!--    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_shopping_title_bar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"/>-->
+
+    <com.huatu.widget.KitkatProfileFramLayout
+        android:id="@+id/fragment_shopping_title_bar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="直播"
+            android:textColor="@color/text_color_dark"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:text="我的课程"
+            android:textColor="@color/text_color_light"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/icon_tiku_searh" />
+
+    </com.huatu.widget.KitkatProfileFramLayout>
+    <LinearLayout
+        android:layout_marginTop="-10dp"
+        android:id="@+id/fragment_shopping_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.huatu.handheld_huatu.business.lessons.view.HorizontalListView
+                android:id="@+id/shopping_category_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="45dp"
+                 />
+            <ImageView
+                android:layout_gravity="right|center_vertical"
+                android:id="@+id/shopping_category_setting_btn"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/course_category_setting"/>
+        </FrameLayout>
+        <View android:layout_gravity="bottom"  style="@style/comm_split_line"/>
+    </LinearLayout>
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/fragment_shopping_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f2f4f5"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:headerDividersEnabled="true"/>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp">
+
+        <View
+            android:id="@+id/v_dialog_center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/v_dialog_center"
+            android:layout_centerHorizontal="true"
+            android:text="提示"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/v_dialog_center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="当前城市是北京市,是否切换？"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/width_1"
+        android:background="#c8c7cc" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是"
+            android:textColor="#1bacf5"
+            android:textSize="22dp" />
+
+        <View
+            android:layout_width="@dimen/width_1"
+            android:layout_height="fill_parent"
+            android:background="#c8c7cc" />
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="否"
+            android:textColor="#1bacf5"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>

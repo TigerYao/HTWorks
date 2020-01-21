@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_title_bar"
+        android:layout_width="match_parent"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRightShow="false"
+        app:topbarIsRight2Show="false"
+        android:layout_height="50dp"/>
+    <include
+        android:id="@+id/layout_net_unconnected"
+        layout="@layout/common_net_unconnected_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_title_bar"
+        android:visibility="gone"
+        />
+    <include
+        android:id="@+id/layout_net_error"
+        layout="@layout/common_net_error_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_title_bar"
+        android:visibility="gone"
+        />
+    <include
+        android:id="@+id/layout_nodata"
+        layout="@layout/common_no_data_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_title_bar"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_smart_tab"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/fragment_title_bar"
+        android:layout_height="wrap_content">
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cream_viewpager_tab"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            app:stl_customTabTextLayoutId="@layout/cream_tab"
+            app:stl_customTabTextViewId="@id/custom_text"
+            app:stl_indicatorColor="@color/red250"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorThickness="3dp"
+            app:stl_underlineThickness="0dp" />
+
+        <View
+            android:id="@+id/div2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray001"
+            android:layout_below="@id/cream_viewpager_tab"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/cream_article_viewpager"
+        android:layout_below="@id/rl_smart_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>

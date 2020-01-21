@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_customNotification"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#3D6b6a6a"
+    android:gravity="center|left"
+    android:orientation="horizontal"
+    android:padding="@dimen/common_10dp">
+
+    <ImageView
+        android:id="@+id/notify_img"
+        android:layout_width="@dimen/common_dimens_80dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/video_default_bg" />
+
+    <ImageView
+        android:id="@+id/notify_play"
+        android:layout_width="50dp"
+        android:scaleType="center"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/notify_clear"
+        android:layout_width="50dp"
+        android:scaleType="center"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_clear" />
+
+    <TextView
+        android:id="@+id/notify_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_10dp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:layout_gravity="left|center"
+        android:textSize="@dimen/common_textsize_14sp" />
+
+</LinearLayout>

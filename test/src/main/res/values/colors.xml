@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--global-->
+    <color name="xc_gray$FFEFEFEF">#FFEFEFEF</color>
+    <color name="grey_white">#F9F9FA</color>
+    <color name="main_color">#e9304e</color>
+
+    <color name="security_code">#fddddf</color>
+    <color name="security_code_stroke">#fe404b</color>
+    <color name="assist_color">#ff7077</color>
+
+    <color name="indicator_color">#FF3F47</color>
+    <color name="gray_333333">#333333</color>
+    <color name="gray_666666">#666666</color>
+    <color name="gray_999999">#999999</color>
+    <color name="button_bg_un_click">#f2f2f2</color>
+    <color name="button_bg_click">#438c44</color>
+    <color name="text_bg_un_click">#438c44</color>
+    <color name="text_bg_click">#999999</color>
+    <color name="edit_hint_color">#b8b8b8</color>
+    <color name="background_color">#f1f1f1</color>
+    <color name="cut_line">#dcdcdc</color>
+    <color name="text_color_dark">#333333</color>
+    <color name="text_color">#666666</color>
+    <color name="text_color_light">#999999</color>
+    <color name="title_dcolor_light">#fbfbfb</color>
+
+    <color name="zxing_custom_possible_result_points">#000000</color>
+    <color name="zxing_custom_result_view">#b0000000</color>
+    <color name="zxing_custom_viewfinder_laser">#ffffff</color>
+    <color name="zxing_custom_viewfinder_mask">#60000000</color>
+    <color name="zxing_possible_result_points">#c0ffbd21</color>
+    <color name="zxing_result_view">#b0000000</color>
+    <color name="zxing_status_text">#ffffffff</color>
+    <color name="zxing_transparent">#00000000</color>
+    <color name="zxing_viewfinder_laser">#ffcc0000</color>
+    <color name="zxing_viewfinder_mask">#60000000</color>
+
+    <!--    <color name="main_bg">#F3F3F3</color>-->
+    <color name="main_bg">#f2f4f5</color>
+
+    <color name="theme_gray">#888888</color>
+    <color name="theme_white">#F1F1F1</color>
+    <color name="theme_black">#333333</color>
+    <color name="color_00">#8A000000</color>
+    <!--引导页-->
+    <color name="guide_button_start">#0f8c17</color>
+
+    <!--登陆-->
+    <color name="main_line">#e0e0e0</color>
+
+    <color name="gray001">#f1f1f1</color>
+    <color name="gray002">#b8b8b8</color>
+    <color name="gray003">#bfbfbf</color>
+    <color name="gray004">#f6f6f7</color>
+    <color name="gray005">#dcdcdc</color>
+    <color name="gray006">#999999</color>
+    <color name="gray007">#787878</color>
+    <color name="gray008">#d8333333</color> <!-- 做题页面 弹出右上角更多时的背景色 日间 -->
+    <color name="gray009">#d8444444</color> <!-- 做题页面 弹出右上角更多时的背景色 夜间 -->
+    <color name="gray010">#666666</color>
+    <color name="gray011">#d1d1d1</color>
+    <color name="gray012">#a0a0a0</color>
+    <color name="gray013">#e3e3e3</color>
+    <color name="gray_divider">#f3f3f3</color>
+    <color name="gray250">#E1E1E1</color>
+    <color name="green">#00ff00</color>
+    <color name="green4d">#49CF9E</color>
+    <color name="blue250">#FF37ADFF</color>
+    <color name="green001">#438c44</color>
+    <color name="green002">#9dbb5b</color>
+    <color name="green003">#00bd9c</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black001">#333333</color>
+    <color name="black250">#9B9B9B</color>
+    <color name="blackF4">#4A4A4A</color>
+    <color name="grayC4">#C4C4C4</color>
+    <color name="red">#ff0000</color>
+    <color name="red120">#ff3f47</color>
+    <color name="red250">#FF6D73</color>
+    <color name="yellowA6d">#FFAA6D</color>
+    <color name="yellowFBB">#FBBE62</color>
+    <color name="goldA96">#A96700</color>
+    <color name="goldD49">#D49439</color>
+    <color name="blue057">#0574A7</color>
+    <color name="blue3FB">#3FB5DC</color>
+    <color name="blue116">#116D8B</color>
+    <color name="blue0B7">#0B7EA5</color>
+    <color name="redF3">#FFFF3F47</color>
+    <color name="pink250">#EC74A0</color>
+    <color name="red002">#e94b35</color>
+    <color name="red003">#33f4348a</color>
+    <color name="red004">#f4348a</color>
+    <color name="red005">#f43531</color>
+    <color name="orange001">#ff6c00</color>
+    <color name="orange002">#f2c500</color>
+    <color name="orange003">#f67c33</color>
+    <color name="purple">#9c56b8</color>
+    <color name="blue">#0000ff</color>
+    <color name="blue002">#6a7ed9</color>
+    <color name="orange">#FFB23C</color>
+
+    <!-- 日间模式 start -->
+    <color name="bg_day_001">#19f1f1f1</color>
+    <color name="bg_day_002">#ffffff</color>
+    <color name="bg_day_003">#f6f6f7</color>
+    <color name="bg_day_004">#19000000</color>
+    <color name="bg_day_popup_window">#d8333333</color>
+    <color name="green_day_001">#438c44</color>
+    <color name="text_day_001">#333333</color>
+    <color name="text_day_002">#999999</color>
+    <color name="draft_paper_day">#19000000</color>
+    <!-- 日间模式 finish -->
+    <!-- 夜间模式 start -->
+    <color name="bg_night_001">#992a2b2d</color>
+    <color name="bg_night_002">#353638</color>
+    <color name="bg_night_003">#2a2b2d</color>
+    <color name="bg_night_004">#66000000</color>
+    <color name="bg_night_popup_window">#d8444444</color>
+    <color name="green_night_001">#346e35</color>
+    <color name="text_night_001">#bfbfbf</color>
+    <color name="text_night_002">#bfbfbf</color>
+    <color name="draft_paper_night">#66000000</color>
+    <!-- 夜间模式 finish -->
+
+    <!-- 课程中心 -->
+    <color name="greendeep">#00A780</color>
+    <color name="greensmall">#B3E6DB</color>
+    <color name="blue_deep">#0961B8</color>
+    <color name="white_common">#FFFFFF</color>
+    <color name="gray">#DCDCDC</color>
+    <color name="answer_gray">#C29B86</color>
+    <color name="deepgray">#BCBCBC</color>
+    <color name="background_gray">#edf1f4</color>
+    <color name="normal_gray">#eeeeee</color>
+    <!-- 排行三种颜色 -->
+    <color name="ranklist_bigred">#FF3333</color>
+    <color name="ranklist_orange">#FF9933</color>
+    <color name="ranklist_simall_orange">#FFCC99</color>
+    <color name="ranklist_gray">#949494</color>
+    <!-- 竞技练习 -->
+    <color name="exercise_word">#f67c33</color>
+
+    <!-- 掌握状况 -->
+    <color name="master_refine">#f18e00</color>
+    <color name="master_strengthern">#ffc730</color>
+    <color name="master_training">#abaeaf</color>
+    <!-- 协议 -->
+    <color name="black_gray">#414445</color>
+    <color name="deep_orange">#ff8f34</color>
+    <!-- 日常训练listitem不同颜色 -->
+    <color name="light_red">#00c5a2</color>
+    <color name="mid_gray">#515253</color>
+    <color name="red_green">#f18e00</color>
+    <!-- 预测页面 -->
+    <color name="gray_orange">#ff6969</color>
+    <color name="light_green">#00c5a2</color>
+    <!-- 详情报告页面 -->
+    <color name="text_gray">#696969</color>
+    <color name="number_yellow">#f18e00</color>
+    <color name="number_gray">#8c8c8c</color>
+    <color name="line_gray">#b6b6bf</color>
+    <!-- 消息详情页 -->
+    <color name="message_info_text_gray">#b4b4b4</color>
+    <color name="message_info_line_color">#c1c5c7</color>
+    <color name="message_info_text_color">#767676</color>
+    <!--  -->
+    <color name="mode_background">#2b2d32</color>
+    <color name="mode_background_t">#E02b2d32</color>
+    <color name="mode_tv">#79797b</color>
+    <color name="webview_night">#2B2D32</color>
+    <color name="list_select">#d8deec</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_selected">#fe8f35</color>
+    <color name="gray_unselected">#abb1b1</color>
+    <color name="activity_processing">#7ad6c2</color>
+    <color name="superresult_con">#a2dfd2</color>
+
+    <!-- 二维码 -->
+    <color name="color1">#88000000</color>
+    <color name="viewfinder_laser">#00b2ff</color>
+    <color name="backgroud">#ffffffff</color>
+    <color name="title_tv_color">#ffffffff</color>
+    <color name="viewfinder_frame">#00b2ff</color>
+    <color name="scan_backgroud">#808080</color>
+    <color name="textcolor">#00BFFF</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="test">#99000000</color>
+    <color name="GREEN2">#9cc83d</color>
+    <color name="WHITE">#000000</color>
+    <!-- 课程中心 -->
+    <color name="course_center_title">#333</color>
+    <color name="course_center_content">#9d9d9d</color>
+    <color name="course_center_price">#f67c33</color>
+    <color name="course_center_sold_out">#CC0000</color>
+    <color name="course_center_dialog_bg">#EEF3FA</color>
+    <color name="course_center_item_pressed">#A0A0A0</color>
+    <color name="course_center_item_normal">#FFFFFF</color>
+    <color name="new_default_tv_content">#fff</color>
+    <color name="new_default_tv">#414445</color>
+    <color name="new_default_tv_pm">#FFFFFF</color>
+    <color name="new_home_tv_background">#d8d9da</color>
+    <color name="new_default_blue">#00B4FF</color>
+    <color name="new_default_transparent">#00000000</color>
+    <color name="new_default_background">#F3F3F7</color>
+    <color name="new_default_orange">#FF703E</color>
+    <color name="new_default_grey">#BFBEC4</color>
+    <color name="new_athletic_basichave">#FFC730</color>
+    <color name="new_athletic_master">#F18E00</color>
+    <color name="new_tabs_underlineColor">#6e8c2c</color>
+    <color name="new_default_green">#00C5A2</color>
+    <color name="new_tv_grey">#96989A</color>
+    <color name="new_tv_listtitle">#636363</color>
+    <color name="new_default_red">#fc923c</color>
+    <color name="new_default_link">#91d7fa</color>
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    <color name="chat_view_bg">#f5f5f5</color>
+    <color name="chat_select_self">#626262</color>
+    <color name="chat_time_display">#999999</color>
+    <color name="chat_divide_line">#ededed</color>
+    <color name="chat_name_i">#b6322c</color>
+    <color name="chat_name_system">#999999</color>
+    <color name="chat_edit_view">#aaaaaa</color>
+    <color name="chat_name_other_people">#333333</color>
+    <color name="chat_hint_talking_peplore">#aaaaaa</color>
+
+    <!-- 精准估分 -->
+    <color name="new_bc_green">#41790c</color>
+    <color name="new_bc_dark_green">#37660a</color>
+    <color name="new_bg_dark_subject">#273037</color>
+    <color name="new_bg_night_card">#20272d</color>
+    <color name="new_bg_night_subject">#32404b</color>
+    <color name="new_tv_night_font">#666666</color>
+    <color name="subject_bg_night_item">#29323b</color>
+    <color name="subject_tv_night">#b3bcae</color>
+    <color name="share_tv_color">#72a009</color>
+
+    <!-- 活动中心 -->
+    <color name="activity_bg">#ededed</color>
+    <color name="supper_bg">#ecf4f6</color>
+    <color name="supper_button">#8acd01</color>
+    <color name="supper_button_text">#78b83b</color>
+    <color name="supper_status_color">#ff5400</color>
+    <color name="supper_hint_color">#728083</color>
+    <color name="supper_item_color">#e9e9e9</color>
+    <color name="supper_item_match">#01b5e6</color>
+    <color name="supper_result_text_color">#333333</color>
+    <color name="underline_textcolor">#5a9522</color>
+    <color name="advertise_green">#7ec636</color>
+    <color name="background_tab_color">#f0f0f0</color>
+    <color name="public_chat_content">#5e5e5e</color>
+    <color name="public_chat_item_line">#e8e8eb</color>
+    <color name="public_chat_bg">#fcfcfc</color>
+    <color name="public_chat_bar">#efefef</color>
+    <color name="public_chat_other_tip">#252525</color>
+    <color name="public_chat_host_name">#24a4bb</color>
+    <color name="public_chat_self_name">#da5744</color>
+    <color name="public_chat_other_name">#252525</color>
+    <color name="system_message_content">#da5744</color>
+    <color name="system_message_bg">#fff1e5</color>
+    <color name="vote_lv_divide">#e8e8e8</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!-- 覆盖颜色 -->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="textcolor_mine_green">#5A9522</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="netschool_result_textcolor">#9cc83d</color>
+    <color name="divider">#ebebeb</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">
+        @color/vpi__bright_foreground_holo_light
+    </color>
+    <color name="vpi__bright_foreground_inverse_holo_light">
+        @color/vpi__bright_foreground_holo_dark
+    </color>
+    <color name="night_text">#555555</color>
+
+    <color name="arena_exam_subject_name_text">#9B9B9B</color>
+    <color name="arena_exam_subject_name_text_night">#4A4A4A</color>
+    <color name="arena_exam_common_text">#4A4A4A</color>
+    <color name="arena_exam_common_text_night">#4A4A4A</color>
+    <color name="arena_exam_common_text_bg">#f1f1f1</color>
+    <color name="arena_exam_common_bg">#FAFAFA</color>
+    <color name="arena_exam_common_bg_night">#191919</color>
+    <color name="arena_exam_green_text_bg">#438c44</color>
+    <color name="arena_exam_report_time_text">#999999</color>
+    <color name="arena_exam_common_green_text">#438c44</color>
+    <color name="arena_exam_common_gray_text">#666666</color>
+    <color name="arena_exam_common_gray_bg2">#dcdcdc</color>
+    <color name="arena_exam_analysis_time_bg">#FFFFFF</color>
+    <color name="arena_exam_analysis_time_bg_night">#1D1D1D</color>
+    <color name="arena_exam_analysis_time_text">#F5A623</color>
+    <color name="arena_exam_analysis_time_text_night">#52353F</color>
+    <color name="arena_exam_analysis_correct_text">#49CF9E</color>
+    <color name="arena_exam_analysis_correct_text_night">#2A5243</color>
+    <color name="arena_exam_analysis_easy_wrong_text">#FF6D73</color>
+    <color name="arena_exam_analysis_easy_wrong_text_night">#6B3132</color>
+    <color name="arena_exam_statistic_item_bg_color">#fff8dd</color>
+    <color name="arena_exam_statistic_item_orange_color">#ff9421</color>
+    <color name="arena_exam_statistic_success_text_color">#ff3c1e</color>
+    <color name="arena_exam_statistic_fail_text_color">#1C97F5</color>
+    <color name="arena_exam_green_night_bg">#2F3E34</color>
+    <color name="arena_exam_green_night_text">#366953</color>
+    <color name="arena_exam_red_night_bg">#5F3738</color>
+    <color name="arena_exam_red_night_text">#975556</color>
+    <color name="arena_exam_title_green_light_bg">#E3FFED</color>
+    <color name="arena_exam_title_green_light_text">#50B674</color>
+    <color name="arena_exam_title_red_light_bg">#FFC7C9</color>
+    <color name="arena_exam_title_red_light_text">#FF3F47</color>
+    <color name="arena_question_subject_layout_bg_color">#ffffff</color>
+    <color name="arena_question_subject_layout_bg_color_night">#191919</color>
+    <color name="arena_tree_bg_color_night">#353638</color>
+    <color name="arena_report_item_bg_color">#ffffff</color>
+    <color name="arena_report_item_text_color">#333333</color>
+    <color name="common_error_view_text_color">#333333</color>
+    <color name="draft_paper_bg">#15000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_Day">#FFFFFF</color>
+    <color name="colorPrimary">#f6f6f7</color>
+    <color name="colorPrimaryDark">#DD000000</color>
+    <color name="toolbar_Menu_Text_Color_Day">#DD000000</color>
+    <color name="toolbar_Text_Color_Day">#DDFFFFFF</color>
+    <color name="item_background_Day">#FFFFFF</color>
+    <color name="textColorFirst_Day">#DD000000</color>
+    <color name="textColorFirst_Night">#DDFFFFFF</color>
+    <color name="textColorSecond_Day">#89000000</color>
+    <color name="textColorSecond_Night">#89FFFFFF</color>
+    <color name="textColorThird_Day">#42000000</color>
+    <color name="textColorThird_Night">#42FFFFFF</color>
+    <color name="colorPrimaryDark_Night">@color/colorPrimaryDark</color>
+    <color name="colorPrimary_Night">@color/toolbar_background_Night</color>
+    <color name="toolbar_background_Night">#212121</color>
+    <color name="background_Night">#FF424242</color>
+    <color name="item_background_Night">#616161</color>
+    <color name="toolbar_Menu_Text_Color_Night">#DD000000</color>
+    <color name="toolbar_Text_Color_Night">#DDFFFFFF</color>
+
+    <!--新做题页面的颜色-->
+    <!--题型描述bg-->
+    <color name="arena_top_title_bg">#FFFFFF</color>
+    <color name="arena_top_title_bg_night">#191919</color>
+    <color name="arena_subject_name_text">#9B9B9B</color>
+    <color name="arena_subject_name_text_night">#4A4A4A</color>
+    <color name="arena_red_index_text">#e9304e</color>
+    <color name="arena_analysis_time_bg">#FFFFFF</color>
+    <color name="arena_analysis_time_bg_night">#1D1D1D</color>
+    <color name="arena_analysis_option_green">#46bd8f</color>
+    <color name="arena_analysis_option_green_night">#366953</color>
+    <color name="arena_analysis_time_text">#F5A623</color>
+    <color name="arena_analysis_time_text_night">#52353F</color>
+    <color name="arena_analysis_correct_text">#49CF9E</color>
+    <color name="arena_analysis_correct_text_night">#2A5243</color>
+    <color name="arena_analysis_easy_wrong_text">#FF6D73</color>
+    <color name="arena_analysis_easy_wrong_text_night">#6B3132</color>
+    <color name="arena_mutl_commit_btn_bg_light">#FF6D73</color>
+    <color name="arena_mutl_commit_btn_bg_night">#6B3132</color>
+    <color name="arena_mutl_commit_btn_text_light">#FFFFFF</color>
+    <color name="arena_mutl_commit_btn_text_night">#B29696</color>
+
+    <!--主要背景颜色-->
+    <color name="arena_common_bg">#FAFAFA</color>
+    <color name="arena_common_bg_night">#191919</color>
+    <color name="arena_common_text">#4A4A4A</color>
+    <color name="arena_material_bg">#FFFFFF</color>
+    <color name="arena_material_bg_night">#191919</color>
+    <color name="arena_drag_bar_text">#000000</color>
+    <color name="arena_drag_bar_text_night">#4A4A4A</color>
+
+    <!--答题卡-->
+    <color name="arena_answer_card_submit_bg">#EC74A0</color>
+    <color name="arena_answer_card_submit_text">#FFFFFF</color>
+
+    <!--错题反馈颜色-->
+    <color name="correct_common_title_text">#000000</color>
+    <color name="correct_common_bg">#FFFFFF</color>
+    <color name="correct_bg">#F3F3F3</color>
+    <color name="correct_text_tip">#4A4A4A</color>
+    <color name="correct_text_edit">#4A4A4A</color>
+    <color name="correct_text_edit_hint">#9B9B9B</color>
+    <color name="correct_text_edit_hint_night">#4A4A4A</color>
+    <color name="correct_text_commit_empty">#6D7172</color>
+    <color name="correct_text_commit_empty_night">#000000</color>
+    <color name="correct_text_commit_full">#FFFFFF</color>
+    <color name="correct_text_commit_full_night">#9B9B9B</color>
+
+    <!--模考报告-->
+    <color name="sc_report_common_bg">#FFFFFF</color>
+    <color name="sc_report_common_text">#000000</color>
+    <color name="sc_report_text_gray">#6D7172</color>
+    <color name="sc_report_title">#FFFFFF</color>
+    <color name="sc_report_pink">#EC74A0</color>
+    <color name="sc_report_bottom_space">#F3F3F3</color>
+    <color name="sc_report_bottom_stroke">#BEBEBE</color>
+    <color name="sc_report_pink_line">#FFCCDF</color>
+    <color name="sc_report_divider">#F3F3F3</color>
+    <color name="sc_report_average">#FF669DBC</color>
+
+    <!-- Lesson-->
+    <color name="lesson_buy_status_color">#f25a07</color>
+    <color name="efefefr">#efefef</color>
+    <color name="dddddd">#dddddd</color>
+    <color name="sc_score_line">#9cc83d</color>
+    <color name="sc_score_average_line">#e2752b</color>
+    <color name="sc_tip_dialog_txt">#f25a07</color>
+    <color name="bg_uniform">#f4f4f4</color>
+    <color name="btn_green007">#ff00b28a</color>
+    <color name="lesson_buy_status_price">#e9304e</color>
+
+    <color name="common_style_text_color">#e9304e</color>
+    <color name="common_part_style_red_color">#ef4665</color>
+    <color name="sc_report_char_red">#EC74A0</color>
+    <color name="sc_report_change_start">#FFFF999D</color>
+    <color name="sc_report_change_end">#FFFFE9CF</color>
+    <color name="common_part_style_green_color">#46bd8f</color>
+    <color name="item_sc_status_color">#f16140</color>
+    <color name="essay_height_light_color">#FFF600</color>
+    <color name="essay_height_light_color_txt">#E6E602</color>
+    <color name="item_sc_bg_color">#fbf7f6</color>
+    <color name="report_card_time_out">#FF6D73</color>
+    <color name="ht_txt_style_color">#e9304e</color>
+    <color name="bg_green003">#00b38a</color>
+    <color name="tv_ordercommit">#787878</color>
+    <color name="divider_above_tab_index">#dadada</color>
+    <color name="divider_list">#cccccc</color>
+
+    <color name="common_arena_gray_color">#576069</color>
+    <color name="common_style_text_color_n">#a12337</color>
+
+    <color name="homef_notify_bg">#fbf4f5</color>
+    <color name="bg_listpage_top_button_orange">#ff5400</color>
+
+    <color name="logistic_green_color">#3aba8c</color>
+
+    <color name="essay_problem">#fff6f6</color>
+    <color name="essay_content">#f7f7f7</color>
+
+    <color name="primary">#1D1D1E</color>
+    <color name="primary_dark">#0D0D0E</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="accent">#FFC107</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="live_color_bg">#DDDDDE</color>
+
+    <color name="live_text_color">#3D3D3E</color>
+    <color name="live_text_color_mid_light">#6D6D6E</color>
+    <color name="live_text_color_light">#9D9D9E</color>
+
+    <color name="live_white">#FFFFFF</color>
+    <color name="live_red">#FF5850</color>
+    <color name="live_red_press">#EF4840</color>
+    <color name="live_fail">#EDEDEE</color>
+    <color name="live_fail_dark">#BDBDBD</color>
+
+    <color name="live_top_bar_gradient_start">#CC000000</color>
+    <color name="live_top_bar_gradient_end">#00000000</color>
+    <color name="live_half_transparent">#88000000</color>
+    <color name="live_half_transparent_white">#88FFFFFF</color>
+    <color name="live_half_transparent_mask">#33000000</color>
+
+    <color name="live_blue">#37A4F5</color>
+    <color name="live_blue_half_transparent">#7737A4F5</color>
+    <color name="live_blue_press">#2794E5</color>
+    <color name="live_yellow">#FF9100</color>
+    <color name="live_transparent">#00000000</color>
+    <color name="live_transparent_opacity_02">#33000000</color>
+    <color name="live_transparent_opacity_04">#66000000</color>
+    <color name="live_transparent_opacity_06">#99000000</color>
+    <color name="live_selector_not_pressed">#dedede</color>
+    <color name="live_grey_tech_support">#CDCDCE</color>
+    <color name="draft_color">#ffbc86</color>
+    <color name="new_draft_color">#000000</color>
+    <color name="new_draft_color_night">#2B383E</color>
+
+    <color name="text_dark">#454545</color>
+
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+
+    <color name="essay_sel_color">#ffd1db</color>
+    <color name="essay_sel_color_txt">#F97794</color>
+
+    <color name="cc_default_line">#FFDCDCDC</color>
+
+    <!--售前页中下面按钮颜色 -->
+    <color name="presale_buy">#FF3300</color>
+    <color name="presale_not">#F50000</color>
+    <color name="presale_tab_unselect">#4A4A4A</color>
+    <color name="presale_tab_select">#000000</color>
+    <color name="outline_last_layer">#F9F9F9</color>
+    <color name="outline_last_layer_text">#6D7172</color>
+    <color name="onsale_color">#FFE535</color>
+    <color name="free_color">#61000C</color>
+    <color name="sold_out">#d8d8d8</color>
+
+
+    <color name="ans_card_right">#1CE28D</color>
+    <color name="ans_card_no_ans">#4A4A4A</color>
+    <!-- 直播 -->
+    <color name="live_chat_bg">#6fff</color>
+    <color name="live_tip_color">#f9f9f9</color>
+
+    <color name="arena_option_bg_pressed">#FFFFFF</color>
+    <color name="arena_option_click_bg">#E2E2E2</color>
+    <color name="arena_option_bg_night">#2a2b2d</color>
+    <color name="arena_option_bg_night_pressed">#404144</color>
+    <color name="arena_option_bg_click_night">#424242</color>
+    <color name="arena_option_delete_bg">#FAFAFA</color>
+    <color name="arena_option_delete_bg_night">#191919</color>
+
+
+    <color name="arena_option_text">#333333</color>
+    <color name="arena_option_delete_text">#9B9B9B</color>
+    <color name="arena_option_delete_text_night">#4A4A4A</color>
+
+    <color name="teacher_detail_margin_color">#f3f3f3</color>
+
+    <color name="sc_report_header_bg_left">#FFB7D2</color>
+    <color name="sc_report_header_bg_right">#EC74A0</color>
+
+
+    <!--智齿 头部背景 -->
+    <color name="sobot_color_title_bar_bg">@color/white</color>
+
+    <color name="sobot_robot_msg_text_color">#464646</color>
+
+    <!-- 头部中间昵称颜色 -->
+    <color name="sobot_color_title_bar_title">@color/black</color>
+
+
+    <!-- 头部菜单字体颜色 -->
+    <color name="sobot_color_title_bar_menu_text">@color/black</color>
+
+    <!-- XListView的背景颜色 -->
+    <color name="sobot_lv_message_bg">@color/white</color>
+
+    <!-- 状态栏的颜色设置 -->
+    <color name="sobot_status_bar_color">#BCBCBD</color>
+
+    <color name="sobot_text_btn_bg">#FF6D73</color>
+    <color name="sobot_text_btn_bg_press">#bfFF6D73</color>
+
+    <!-- 普通button背景 -->
+    <color name="sobot_btn_normal_color">#FF6D73</color>
+    <!-- 聊天界面发送按钮的背景颜色 -->
+    <color name="sobot_btn_bg_send">#FF6D73</color>
+    <color name="sobot_btn_bg_send_pressed">#bfFF6D73</color>
+
+    <color name="sobot_goods_info_btn_bgcolor">#FF6D73</color>
+
+    <!--<color name="maincolor">#FF6D73</color>-->
+
+    <!--小模考报告颜色-->
+    <color name="small_top_title_bg_left">#FF6D73</color>
+    <color name="small_top_title_bg_right">#FF4F8F</color>
+    <color name="small_top_two_bg">#FF6F8C</color>
+    <color name="small_common_white_text">#FFFFFF</color>
+    <color name="small_common_black_text">#000000</color>
+    <color name="small_black_text">#000000</color>
+    <color name="small_common_bg">#FFFFFF</color>
+    <color name="small_deep_red_text">#B3122D</color>
+    <color name="small_red_text">#FF6D73</color>
+    <color name="small_deep_red_2_text">#820C25</color>
+    <color name="small_divider">#F3F3F3</color>
+    <color name="small_line_start">#FFFFFF</color>
+    <color name="small_line_end">#00FFFFFF</color>
+
+    <!--阶段性测试报告颜色-->
+    <color name="stage_top_title_bg_left">#FF3F3F</color>
+    <color name="stage_top_title_bg_right">#FF934A</color>
+    <color name="stage_common_white_text">#FFFFFF</color>
+    <color name="stage_common_black_text">#000000</color>
+    <color name="stage_no_all_text">#8C4D00</color>
+    <color name="stage_black_text">#000000</color>
+    <color name="stage_common_bg">#FFFFFF</color>
+    <color name="stage_deep_red_text">#DA2846</color>
+    <color name="stage_red_text">#FF6D73</color>
+    <color name="stage_deep_red_2_text">#8A0017</color>
+    <color name="stage_remark_text">#6D7172</color>
+    <color name="stage_divider">#F3F3F3</color>
+    <color name="stage_attention_left">#FF6D73</color>
+    <color name="stage_attention_right">#FFF2ED</color>
+    <color name="stage_attention_text">#FFFFFF</color>
+
+    <!--行测休息页面-->
+    <color name="arena_rest_com_text">#FFFFFF</color>
+    <color name="arena_rest_any_text">#A0A0A0</color>
+</resources>

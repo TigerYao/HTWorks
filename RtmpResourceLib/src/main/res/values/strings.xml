@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- chat -->
+    <string name="brow_nh_cn">【emotion.smile.gif】</string>
+    <string name="brow_zj_cn">【emotion.goodbye.gif】</string>
+    <string name="brow_gx_cn">【emotion.laugh.gif】</string>
+    <string name="brow_sx_cn">【emotion.cry.gif】</string>
+    <string name="brow_tkl_cn">【feedback.quickly.png】</string>
+    <string name="brow_tml_cn">【feedback.slowly.png】</string>
+    <string name="brow_zt_cn">【feedback.agreed.png】</string>
+    <string name="brow_fd_cn">【feedback.against.gif】</string>
+    <string name="brow_gz_cn">【feedback.applaud.png】</string>
+    <string name="brow_fn_cn">【emotion.angerly.gif】</string>
+    <string name="brow_zdsk_cn">【feedback.think.png】</string>
+    <string name="brow_wl_cn">【emotion.nod.gif】</string>
+    <string name="brow_lh_cn">【emotion.lh.gif】</string>
+    <string name="brow_bs_cn">【emotion.bs.gif】</string>
+    <string name="brow_yw_cn">【emotion.question.gif】</string>
+    <string name="brow_dx_cn">【rose.down.png】</string>
+    <string name="brow_xh_cn">【rose.up.png】</string>
+    <string name="brow_lw_cn">【chat.gift.png】</string>
+    <string name="emotion_bz_cn">【emotion.bz.gif】</string>
+    <string name="emotion_fd_cn">【emotion.fd.gif】</string>
+    <string name="emotion_gg_cn">【emotion.gg.gif】</string>
+    <string name="emotion_gz_cn">【emotion.gz.gif】</string>
+    <string name="emotion_hx_cn">【emotion.hx.gif】</string>
+    <string name="emotion_jk_cn">【emotion.jk.gif】</string>
+    <string name="emotion_jy_cn">【emotion.jy.gif】</string>
+    <string name="emotion_kb_cn">【emotion.kb.gif】</string>
+    <string name="emotion_kl_cn">【emotion.kl.gif】</string>
+    <string name="emotion_ll_cn">【emotion.ll.gif】</string>
+    <string name="emotion_qd_cn">【emotion.qd.gif】</string>
+    <string name="emotion_qh_cn">【emotion.qh.gif】</string>
+    <string name="emotion_qq_cn">【emotion.qq.gif】</string>
+    <string name="emotion_rb_cn">【emotion.rb.gif】</string>
+    <string name="emotion_se_cn">【emotion.se.gif】</string>
+    <string name="emotion_tx_cn">【emotion.tx.gif】</string>
+    <string name="emotion_xu_cn">【emotion.xu.gif】</string>
+    <string name="emotion_yun_cn">【emotion.yun.gif】</string>
+
+    <!-- chat -->
+    <string name="allname">所有人</string>
+    <string name="justlookmyname">只看我的聊天</string>
+    <string name="justlookmyqa">只看我的提问</string>
+    <string name="sytsemmesg">系统消息</string>
+    <string name="displaytime">00:00:00</string>
+    <string name="chat_system_msg_colon">系统消息:</string>
+    <string name="chat_to">对</string>
+    <string name="chat_say">说</string>
+    <string name="chat_me">我</string>
+    <string name="chat_msg_not_null">聊天信息不能为空</string>
+    <string name="chat_self_null">自己的用户信息为空</string>
+    <string name="chat_not_to_self">不能和自己聊天</string>
+    <string name="query_self_tip">查询中,请稍候....</string>
+    <string name="live_pause">直播暂停</string>
+    <string name="live_playing">直播中</string>
+    <string name="chat_disable">禁止聊天</string>
+    <string name="chat_enable">允许聊天</string>
+    <!-- xlistview -->
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- vote -->
+    <string name="vote_have_commit">已提交</string>
+    <string name="commit">提交</string>
+    <string name="vote_qiangzhi_tip">当前为强制投票，需要提交后才能关闭</string>
+    <string name="single_choice">【单选】</string>
+    <string name="multi_choice">【多选】</string>
+    <string name="text_wd">【问答】</string>
+    <string name="vote_total_person_join">共(%d人)参与</string>
+    <string name="vote_question_fenshu">, 分数：%d</string>
+    <string name="vote_count">%d份</string>
+    <string name="vote_not_exist">试卷不存在</string>
+    <string name="vote_deadline_tip">抱歉! 本试卷已被终止，不能提交了。</string>
+    <string name="vote_please_dawan">请先答题再提交</string>
+    <string name="vote_please_dawan_all">请回答完所有问题</string>
+    <!-- chat -->
+    <string name="brow_nh_cn_text">【你好】</string>
+    <string name="brow_zj_cn_text">【再见】</string>
+    <string name="brow_gx_cn_text">【高兴】</string>
+    <string name="brow_sx_cn_text">【伤心】</string>
+    <string name="brow_tkl_cn_text">【太快了】</string>
+    <string name="brow_tml_cn_text">【太慢了】</string>
+    <string name="brow_zt_cn_text">【赞同】</string>
+    <string name="brow_fd_cn_text">【反对】</string>
+    <string name="brow_gz_cn_text">【鼓掌】</string>
+    <string name="brow_fn_cn_text">【愤怒】</string>
+    <string name="brow_zdsk_cn_text">【值得思考】</string>
+    <string name="brow_wl_cn_text">【无聊】</string>
+    <string name="brow_lh_cn_text">【流汗】</string>
+    <string name="brow_bs_cn_text">【鄙视】</string>
+    <string name="brow_yw_cn_text">【疑问】</string>
+    <string name="brow_dx_cn_text">【凋谢】</string>
+    <string name="brow_xh_cn_text">【鲜花】</string>
+    <string name="brow_lw_cn_text">【礼物】</string>
+    <string name="emotion_bz_cn_text">【闭嘴】</string>
+    <string name="emotion_fd_cn_text">【奋斗】</string>
+    <string name="emotion_gg_cn_text">【尴尬】</string>
+    <string name="emotion_gz_cn_text">【鼓掌】</string>
+    <string name="emotion_hx_cn_text">【害羞】</string>
+    <string name="emotion_jk_cn_text">【惊恐】</string>
+    <string name="emotion_jy_cn_text">【惊讶】</string>
+    <string name="emotion_kb_cn_text">【抠鼻】</string>
+    <string name="emotion_kl_cn_text">【可怜】</string>
+    <string name="emotion_ll_cn_text">【流泪】</string>
+    <string name="emotion_qd_cn_text">【敲打】</string>
+    <string name="emotion_qh_cn_text">【强悍】</string>
+    <string name="emotion_qq_cn_text">【亲亲】</string>
+    <string name="emotion_rb_cn_text">【弱爆】</string>
+    <string name="emotion_se_cn_text">【色】</string>
+    <string name="emotion_tx_cn_text">【偷笑】</string>
+    <string name="emotion_xu_cn_text">【嘘】</string>
+    <string name="emotion_yun_cn_text">【晕】</string>
+    <string name="chat_context_max">聊天内容总数不能大于512个</string>
+    <string name="chat_context_avatar_max">聊天内容表情数不能大于20个</string>
+
+
+    <string name="ptr_pull_label">下拉刷新</string>
+    <string name="ptr_release_label">松开刷新数据</string>
+    <string name="ptr_refreshing_label">正在加载</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="ptr_from_bottom_pull_label">@string/ptr_pull_label</string>
+    <string name="ptr_from_bottom_release_label">@string/ptr_release_label</string>
+    <string name="ptr_from_bottom_refreshing_label">@string/ptr_refreshing_label</string>
+
+
+    <string-array name="lunar_first_of_month">
+        <item>春节</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </string-array>
+
+    <string-array name="tradition_festival">
+        <item>除夕</item>
+        <item>0101春节</item>
+        <item>0115元宵</item>
+        <item>0505端午</item>
+        <item>0707七夕</item>
+        <item>0815中秋</item>
+        <item>0909重阳</item>
+    </string-array>
+
+    <string-array name="lunar_str">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </string-array>
+
+    <string-array name="solar_festival">
+        <item>0101元旦</item>
+        <item>0214情人节</item>
+        <item>0308妇女节</item>
+        <item>0312植树节</item>
+        <item>0315消权日</item>
+        <item>0401愚人节</item>
+        <item>0422地球日</item>
+        <item>0501劳动节</item>
+        <item>0504青年节</item>
+        <item>0601儿童节</item>
+        <item>0701建党节</item>
+        <item>0801建军节</item>
+        <item>0910教师节</item>
+        <item>1001国庆节</item>
+        <item>1031万圣节</item>
+        <item>1111光棍节</item>
+        <item>1224平安夜</item>
+        <item>1225圣诞节</item>
+    </string-array>
+
+    <string-array name="solar_term">
+        <item>春分</item>
+        <item>清明</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+    </string-array>
+
+    <string-array name="special_festivals">
+        <item>母亲节</item>
+        <item>父亲节</item>
+        <item>感恩节</item>
+    </string-array>
+
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string-array name="english_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="week_string_array">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string-array name="month_string_array">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+</resources>

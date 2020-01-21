@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+
+        <shape>
+
+            <corners android:radius="5dip" />
+
+            <gradient
+                android:angle="0"
+                android:centerColor="#ebebeb"
+                android:centerY="0.75"
+                android:endColor="#ebebeb"
+                android:startColor="#ebebeb" />
+        </shape>
+    </item>
+
+    <!-- 缓冲的进度 -->
+    <!--<item android:id="@android:id/secondaryProgress">-->
+
+        <!--<clip>-->
+
+            <!--<shape>-->
+
+                <!--<corners android:radius="5dip" />-->
+
+                <!--<gradient-->
+                    <!--android:angle="0"-->
+                    <!--android:centerColor="#f5c607"-->
+                    <!--android:centerY="0.75"-->
+                    <!--android:endColor="#f5c607"-->
+                    <!--android:startColor="#f5c607" />-->
+            <!--</shape>-->
+        <!--</clip>-->
+    <!--</item>-->
+
+    <!-- 实际加载的进度 -->
+
+    <item android:id="@android:id/progress">
+
+        <clip>
+
+            <shape>
+
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="0"
+                    android:endColor="#f5c607"
+                    android:startColor="#f5c607" />
+            </shape>
+        </clip>
+        <scale android:scaleWidth="100%"
+               android:drawable="@drawable/progress_bar_ct"   />
+    </item>
+
+</layer-list>

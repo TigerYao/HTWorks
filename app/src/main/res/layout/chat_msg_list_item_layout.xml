@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.chat.ChatMsgTextView
+        android:id="@+id/chat_msg_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="5dp"
+        android:textIsSelectable="true"
+        android:paddingBottom="5dp"
+        android:background="@null"
+        android:editable="false"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+    <!--<View-->
+        <!--android:id="@+id/bottom_line"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/gray_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"></View>-->
+</FrameLayout>

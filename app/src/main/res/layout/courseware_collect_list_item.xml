@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@id/whole_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chk_btn"
+            style="@style/deleteCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/title_layout"
+            android:layout_toRightOf="@+id/chk_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_course_mine_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginBottom="28dp"
+                android:maxLines="2"
+                android:text="2018江苏省面试特 "
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:text="5月19日 - 4月20日 (520课时)"
+                android:textColor="#ff6c7172"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_gravity="right"
+                android:id="@+id/techer_img"
+                android:src="@mipmap/image11"
+                android:layout_marginRight="15dp"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+            <TextView
+                android:id="@+id/techer_des_txt"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="姚艺伟"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="40dp"
+                android:textColor="#ff4a4a4a"
+                android:textSize="10sp"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+
+            android:layout_below="@+id/title_layout"
+            android:layout_toRightOf="@+id/chk_btn"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="70dp"
+                android:id="@+id/content_txt"
+                android:layout_height="wrap_content"
+                android:text="省考60天大礼包（限量发售，名师团精讲，60天高分突破）"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                />
+
+            <FrameLayout
+                android:layout_gravity="right"
+                android:layout_marginRight="14dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <com.qmuiteam.qmui.widget.QMUIProgressBar
+                    android:id="@+id/circleProgressBar"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:textColor="#4A4A4A"
+                    android:textSize="10sp"
+                    app:qmui_stroke_round_cap="true"
+                    app:qmui_background_color="#F3F3F3"
+                    app:qmui_progress_color="#FF6D73"
+                    app:qmui_stroke_width="3dp"
+                    app:qmui_type="type_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="75%"
+                    android:id="@+id/tv_progress"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="7dp"
+                    android:textColor="#FF6D73"
+                    android:textSize="8sp"
+
+                    />
+
+
+            </FrameLayout>
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="取消收藏"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</com.nalan.swipeitem.recyclerview.SwipeItemLayout>

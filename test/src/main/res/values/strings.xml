@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="warn_network_traffic">当前2G/3G/4G环境下载\n是否允许开启流量确定下载?</string>
+</resources>

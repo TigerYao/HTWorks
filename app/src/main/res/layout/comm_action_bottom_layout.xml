@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_action_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@mipmap/comm_bottom_bg"
+    android:gravity="center"
+    android:visibility="gone"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/selAll_btn"
+        style="@style/width_weight"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="全选"
+        android:textStyle="bold"
+        android:textColor="#ff4a4a4a"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/deleteAll_btn"
+        style="@style/width_weight"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

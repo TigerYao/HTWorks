@@ -1,0 +1,503 @@
+<resources>
+    <string name="title_activity_take_phote">TakePhoteActivity</string>
+    <string name="title_activity_show_croppered">ShowCropperedActivity</string>
+    <!-- <string name="app_name">华图在线</string>-->
+    <string name="app_nameb">华图在线-公务员考试</string>
+    <string name="app_nameh">华图在线公务员</string>
+
+    <string name="load_empty">没有内容,请重试</string>
+    <string name="load_error">加载失败,请重试</string>
+    <string name="img_content_desc">图片</string>
+    <!--引导页-->
+    <string name="guide_button_start">立即体验</string>
+
+    <!--主页-->
+    <string name="main_tab_name_one">练习</string>
+    <string name="main_tab_name_two">听课</string>
+    <string name="main_tab_name_three">我的</string>
+
+    <!--XiaoNengHomeActivity-->
+    <string name="home_evaluate_report_name">评估报告</string>
+    <string name="home_special_excise_name">专项练习</string>
+    <string name="home_special_daily_name">每日特训</string>
+    <string name="home_real_excise_name">真题演练</string>
+    <string name="home_predict_exam_name">模考估分</string>
+    <string name="home_athletic_excise_name">竞技赛场</string>
+    <string name="home_done_num">已做</string>
+    <string name="home_exam_point">考点</string>
+    <string name="home_accuracy">正确率</string>
+    <string name="home_predict_score_name">预测分</string>
+    <string name="home_item_accuracy">正确率%d%%</string>
+    <string name="home_item_scale">%1$d/%2$d</string>
+    <string name="home_predict_score">100</string>
+    <string name="home_done_value">100</string>
+    <string name="home_exam_point_value">%1$d/%2$d</string>
+    <string name="home_accuracy_value">%3.0f%%</string>
+
+    <!--首页广告页-->
+    <string name="advertise_title">推荐</string>
+    <string name="advertise_click">点击查看</string>
+
+    <!-- /////////////// /////////////////////////-->
+    <string name="loginByMobile">手机号快速登录</string>
+    <string name="login">登录账号</string>
+    <string name="login_sug">华图网校/砖题库账号登录</string>
+    <string name="login_sug1">华图教育/华图网校/砖题库账号均可登录</string>
+    <string name="chinaMobilePrefix">+86</string>
+    <string name="inputYourMobileNum">请输入您的手机号</string>
+    <string name="inputYourPassword">请输入您的密码</string>
+    <string name="inputYourNewPhone">请输入新的手机号</string>
+    <string name="nextStep">下一步</string>
+    <string name="register">注册</string>
+    <string name="register_info">*未注册的手机号将自动注册</string>
+    <string name="loginByPassword">使用密码登录</string>
+    <string name="inputConfirmCode">请输入验证码</string>
+    <string name="getConfirmCode">获取验证码</string>
+    <string name="getConfirmCode1">点击获取验证码</string>
+    <string name="goIntoMainPage">进入华图在线</string>
+    <string name="networkerror">网络异常,请重新尝试</string>
+    <string name="mobileNumIllegal">非法的手机号</string>
+    <string name="mobileNoUser">该手机号未注册</string>
+    <string name="accountHint">邮箱/用户名/手机号</string>
+    <string name="loginconfirm">登录</string>
+    <string name="forgetPasswordwithwhy">忘记密码?</string>
+    <string name="forgetPassword">忘记密码</string>
+    <string name="confirmPasswordAgain">再次输入密码</string>
+    <string name="passwordHint">请输入6-20位数字或字母组合</string>
+    <string name="passwordCannotShortBy6">密码不能少于6位字符</string>
+    <string name="passwordDifferentTwoTimes">两次输入密码不同</string>
+    <string name="complete">完成</string>
+    <string name="resetPassword">重置密码</string>
+    <string name="resetPasswordSuccess">密码重置成功</string>
+    <string name="inputConfirmCodeTitle">输入验证码</string>
+    <string name="confirmCodeError">验证码错误</string>
+    <string name="userAccountOrPwdError">用户名或密码错误</string>
+    <string name="userAccountNotExit">用户名不存在</string>
+    <string name="loginFailure">登录失败</string>
+    <string name="resetFailure">重置失败</string>
+    <string name="inputNickHint">设置昵称</string>
+    <string name="inputPwdHint">密码 (请输入6-20位数字或字母组合)</string>
+    <string name="userAccountAlreadyExit">用户已存在</string>
+    <string name="completeUserAccount">完善个人资料</string>
+    <string name="loginTimeOut">登录过期,请重新登录</string>
+    <string name="paramsIllegal">非法参数</string>
+    <string name="data">数据</string>
+    <string name="dataEvery">各项得分</string>
+    <string name="numMock">78</string>
+    <string name="dataMock">你的账号于7月1日15:20在其他客户端登陆，请重新登陆。</string>
+    <string name="dataMock2">如非本人操作，则密码可能已泄露，请及时修改密码。</string>
+    <string name="dataMockShort">天上一个月亮</string>
+    <string name="data3Mock">不定项</string>
+    <string name="dateMock">2017-6-29</string>
+    <string name="socrePredict">你的预测分数</string>
+    <string name="joinedTest">参加的测试</string>
+    <string name="freshman">新手</string>
+    <string name="master">大师</string>
+    <string name="youDefeatLostsUsers">你超越了35%的华图在线用户!</string>
+    <string name="evaluatorReport">评估报告</string>
+    <string name="continueLabel">继续</string>
+    <string name="noMoreData">没有更多数据</string>
+    <string name="sessionOutOfDateInfo">回话过期,请重新登录</string>
+    <string name="report">报告</string>
+    <string name="registerInfo">收到验证码即可完成注册\n确定离开吗?</string>
+    <string name="continueRegister">继续注册</string>
+    <string name="back">返回</string>
+    <string name="edit">编辑</string>
+    <string name="message">消息</string>
+    <!--课程中心-->
+    <string name="play_next_tip">跳转至下一节课</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="dialog_loading">加载中&#8230;</string>
+    <string name="netschool_dialog_cancel">取消</string>
+    <string name="other">其他</string>
+    <string name="netschool_AnswerCard">答题卡</string>
+    <string name="downing_space">%1$dM/%2$dM</string>
+    <string name="record_down_lesson_order">第%d讲</string>
+    <string name="record_down_memory_size">已用空间%1$s,可用空间%2$s</string>
+    <string name="downing_size">正在缓存&#160;(%d)</string>
+    <string name="downing_finished">已缓存&#160;(%d)</string>
+    <string name="down_finished_num">已缓存%d课时</string>
+    <string name="down_finished_total">共%d课时</string>
+
+
+    <string name="moveview">数据加载中&#8230;</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <!-- chat -->
+    <string name="allname">所有人</string>
+    <string name="justlookmyname">只看的我的聊天</string>
+    <string name="displaytime">00:00:00</string>
+    <string name="sytsemmesg">系统消息</string>
+    <string name="notalkingyourself">禁止你和自己聊天</string>
+    <string name="notalkingwithothers">禁止你和其他人聊天</string>
+    <string name="noonetalking">禁止所以人聊天</string>
+    <string name="chat_system_msg">系统消息</string>
+    <string name="chat_system_msg_vodbegin">直播没有开始</string>
+    <string name="chat_system_msg_vodpause">直播暂停</string>
+    <string name="chat_system_msg_voding">直播中</string>
+    <string name="chat_system_msg_vodstop">直播停止</string>
+    <string name="title_activity_chat_">Chat_Activity</string>
+    <string name="chat_expression">表情</string>
+    <string name="chat_sendmsg">发送</string>
+    <string name="public_chat">公聊</string>
+    <string name="netschool_counterdown" formatted="false">%s:%s</string>
+    <string name="netschool_pause">暂停</string>
+    <string name="netschool_dailytraining_hint">提示</string>
+    <string name="netschool_warning_asking_giveup">是否放弃本次练习？</string>
+    <string name="netschool_warning_giveup">放弃</string>
+    <string name="netschool_warning_continue">继续答题</string>
+    <string name="netschool_warning_creating">正在组卷&#8230;</string>
+    <string name="netschool_dialog_flowcharge">&#160;&#160;&#160;&#160;您正在使用（2G/3G）网络下载离线试题包，继续下载将造成流量损失。建议在网络环境较好的Wi-Fi环境下进行下载操作。</string>
+    <!-- 课程中心 -->
+    <string name="netschool_buy_num">/%s&#160;人</string>
+    <string name="netschool_course_center">课程中心</string>
+    <string name="netschool_course_center_settings">设置</string>
+    <string name="netschool_course_center_progress">加载中&#8230;</string>
+    <string name="setting">设置</string>
+    <string name="apprecommend">应用推荐</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于</string>
+    <string name="accountInformation">账户信息</string>
+    <string name="course_afterclass">课后作业</string>
+
+    <string name="currentAccount">当前账号</string>
+    <string name="targetTest">目标考试</string>
+    <string name="feedBackMess">意见反馈欢迎您提出宝贵的意见和反馈，您留下的每个字都将用来改善我们的应用。</string>
+    <string name="noinfomessage">暂无消息</string>
+    <string name="network_err">网络异常</string>
+    <string name="about_hotline">客 服 热 线:</string>
+    <string name="about_telephone">4006&#8211;01&#8211;9999</string>
+    <string name="feedbackEmail">联系方式：邮箱/手机号</string>
+    <string name="share_info_report">#华图在线公务员行测#我正在使用华图在线公务员行测Android客户端。通过智能评估算法预测，我参加“行测”考试能得%s</string>
+    <string name="share_info_result">#华图在线公务员行测#我正在使用华图在线公务员行测Android客户端。在竞技考场中,我凭借优秀的个人能力，击败对手获得%s</string>
+    <string name="home_DailyTraining">每日特训\n</string>
+    <string name="home_PredictedExercises">我猜你练\n</string>
+    <string name="home_AthleticExercise">竞技练习\n</string>
+    <string name="home_KnowledgeStrengthen">考点直击\n</string>
+    <string name="home_expected">敬请期待\n</string>
+    <string name="predicte_five_road_kill">赶紧来5道，我要立刻消灭他们</string>
+    <string name="predicte_predictedExercise_Verify">真的吗？来五道验证一下</string>
+    <string name="onclick_again">点击重试</string>
+    <string name="new_rule">&#160;&#160;&#160;&#160;规则&#160;&#160;&#160;&#160;</string>
+    <string name="new_nohave">&#160;未掌握</string>
+    <string name="new_basichave">&#160;基本掌握</string>
+    <string name="new_master">&#160;熟练掌握</string>
+    <string name="athletic_refine">精炼</string>
+    <string name="athletic_strengthen">强化</string>
+    <string name="athletic_training">训练</string>
+    <string name="errdata_2ten">来10道</string>
+    <string name="page_up">上一页</string>
+    <string name="page_down">下一页</string>
+    <string name="my_ranking">我的排行</string>
+    <string name="join">加入</string>
+    <string name="full">满员</string>
+    <string name="practice_test_chart">模考分数趋势图</string>
+    <string name="input_phone_num">请输入手机号</string>
+    <string name="phone_num">手机号：</string>
+    <string name="get_verification_code">获取短信验证码</string>
+    <string name="phone_register_info">您也可以通过</string>
+    <string name="email_register">切换邮箱注册&gt;&gt;</string>
+    <string name="gufen_report_wait_hint">该考试时间未结束，暂无成绩统计。</string>
+    <string name="gufen_report_wait_hint2">考试结束后再来查看吧。</string>
+
+    <!-- 我的学习详情页 -->
+    <string name="direct_time">直播时间：</string>
+
+    <string name="user_suggest">请填写建议或内容</string>
+    <string name="user_live">是否要退出?</string>
+    <string name="user_delete_message">是否删除本条消息?</string>
+    <string name="user_delete_sure">选择退出后，答题记录将无法保存，确定退出？</string>
+    <string name="user_submit">试卷正在提交中，请稍后在答题记录中查看成绩！</string>
+    <string name="user_unfinish_live">您的试卷还未答完是否要退出？</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="search">搜索</string>
+    <string name="ok_info">好的, 知道了</string>
+    <string name="date">日期</string>
+    <string name="predictLine">预测分趋势</string>
+    <string name="search_noresult">搜索无结果...</string>
+    <string name="download_error">下载失败...</string>
+    <string name="athletic_win_num">胜%d场</string>
+
+    <!--竞技场-->
+    <string name="athletic_rule">出题规则:%1$d道题%2$d分钟</string>
+    <string name="theme_mode_name_Day">日间模式</string>
+
+    <string name="theme_mode_name_Night">夜间模式</string>
+    <string name="toast_error_unknown">未知错误</string>
+    <string name="lesson_tv_buy_now">正在热抢</string>
+
+
+    <!--Lesson-->
+    <string name="lesson_tv_time_end">距停售&#160;</string>
+    <string name="lesson_tv_time_start">距开抢&#160;</string>
+    <string name="lesson_tv_free">免费</string>
+    <string name="lesson_tv_content">公务员面试真功公务员面试真功公务员面试真功公务员面试真功</string>
+    <string name="lesson_tv_title_short">短标题</string>
+    <string name="lesson_tv_short_title">2017年省考集训营班</string>
+    <string name="lesson_tv_buy_begin_time">%s 开抢</string>
+    <string name="lesson_tv_buy_grab">人已抢</string>
+    <string name="lesson_tv_buy_robbed">已抢</string>
+    <string name="lesson_tv_limit_left">限招&#160;</string>
+    <string name="lesson_tv_limit_remain">仅剩&#160;</string>
+    <string name="lesson_tv_limit_right">/%s&#160;人</string>
+    <string name="lesson_tv_limit_bottom">&#160;人</string>
+    <string name="lesson_tv_search">搜索</string>
+    <string name="qq_header_reset">下拉刷新</string>
+    <string name="qq_header_pull">下拉刷新</string>
+    <string name="qq_header_pull_over">松开刷新数据</string>
+    <string name="qq_header_refreshing">正在刷新中...</string>
+    <string name="infoRealList">共%1$d题，总时间%2$d分钟</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="useMobileData">您正在使用2G/3G/4G网络</string>
+    <string name="useMobileDataInfo_watchvideo">观看视频会产生额外流量，可能导致运营商向您收取更多额外费用，
+        建议您连接Wi-Fi后再继续使用。</string>
+    <string name="continuePlay">继续进行</string>
+    <string name="live_on_line_user_count">%1$d人在线</string>
+
+    <string name="live_enter_live_room">进入直播教室</string>
+    <string name="live_loading">加载中…</string>
+    <string name="live_on_line_user_count_dialog">在线人数（%1$d人）</string>
+    <string name="live_speaker_dialog">发言用户</string>
+    <string name="live_video_on">视频中</string>
+    <string name="live_close_speaking">结束发言</string>
+    <string name="live_open_video">打开视频</string>
+    <string name="live_close_video">关闭视频</string>
+    <string name="live_agree">同意</string>
+    <string name="live_teacher">老师</string>
+    <string name="live_disagree">拒绝</string>
+    <string name="live_publish">发布</string>
+    <string name="live_edit">编辑</string>
+    <string name="live_cancel">取消</string>
+    <string name="live_mic">麦克风</string>
+    <string name="live_camera">摄像头</string>
+    <string name="live_beauty_filter">美颜</string>
+    <string name="live_setting">设置</string>
+    <string name="live_full_screen">全屏</string>
+    <string name="live_send_message">发送</string>
+    <string name="live_overspread">铺满</string>
+    <string name="live_setting_ppt">课件展示：</string>
+    <string name="live_setting_definition">画质设置：</string>
+    <string name="live_setting_definition_low">流畅</string>
+    <string name="live_setting_definition_high">高清</string>
+    <string name="live_setting_link_type">线路选择：</string>
+    <string name="live_setting_link_type_up1">发送1</string>
+    <string name="live_setting_link_type_up2">发送2</string>
+    <string name="live_setting_link_type_down1">接收1</string>
+    <string name="live_setting_link_type_down2">接收2</string>
+    <string name="live_setting_camera_switch">摄像头切换：</string>
+    <string name="live_setting_camera_switch_front">前</string>
+    <string name="live_setting_camera_switch_back">后</string>
+    <string name="live_setting_camera_forbid_all">全体禁言</string>
+    <string name="live_setting_camera_forbid_raise_hand">禁止举手</string>
+    <string name="live_media_visitor_fail">游客不能举手发言</string>
+    <string name="live_media_speak_applying">举手中</string>
+    <string name="live_media_student_fail">请先举手发言，并等待老师同意</string>
+    <string name="live_loading_more">正在加载…</string>
+    <string name="live_media_speak_apply_agree">老师同意了您的发言请求</string>
+    <string name="live_media_speak_apply_disagree">老师拒绝了您的发言请求</string>
+    <string name="live_media_speak_closed_by_teacher">老师结束了您的发言</string>
+    <string name="live_announcement">公告</string>
+    <string name="live_cloud_record">录课</string>
+    <string name="live_cloud_recording">录课中</string>
+    <string name="live_help">求助</string>
+    <string name="live_ppt">PPT</string>
+    <string name="live_optional_input">选填</string>
+    <string name="live_save">保存</string>
+    <string name="live_uploading">上传中</string>
+    <string name="live_queueing">等待添加</string>
+    <string name="live_upload_fail">上传失败</string>
+    <string name="live_ppt_empty">课件都不给，上课全靠嘴？</string>
+    <string name="live_saved">已保存</string>
+    <string name="live_upload_new_file">上传新文件</string>
+    <string name="live_announcement_hint">输入公告内容</string>
+    <string name="live_announcement_none">暂无公告</string>
+    <string name="live_announcement_url_hint">为公告添加链接</string>
+    <string name="live_announcement_view_url_hint">点击公告可以跳转</string>
+    <string name="live_recorder_title">采集视频</string>
+    <string name="live_recorder_switch_camera">切换摄像头</string>
+    <string name="live_recorder_pretty_filter_on">开启美颜</string>
+    <string name="live_recorder_pretty_filter_off">关闭美颜</string>
+    <string name="live_recorder_camera_switch_off">关闭摄像头</string>
+    <string name="live_ppt_manage">管理课件</string>
+    <string name="live_hand_up_error">课程未开始，还不能举手</string>
+    <string name="live_hand_up_forbid">老师禁止了举手</string>
+    <string name="live_ppt_title">PPT</string>
+    <string name="live_forbid_raise_hand">禁止举手</string>
+    <string name="live_forbid_send_message">老师已禁止了发言</string>
+    <string name="live_ppt_clear_all">清除</string>
+    <string name="live_remove">移除</string>
+    <string name="live_image_loading">图片加载中…</string>
+    <string name="live_image_uploading">上传中…</string>
+    <string name="live_image_loading_fail">图片加载失败</string>
+    <string name="live_frequent_error">请勿频繁点击</string>
+    <string name="live_frequent_error_line">请勿频繁切换线路</string>
+    <string name="live_frequent_error_camera">请勿频繁切换前后摄像头</string>
+    <string name="live_frequent_error_resolution">请勿频繁切换清晰度</string>
+    <string name="live_retry">刷新重试</string>
+    <string name="live_retry_suggestion">可添加技术支持 QQ %1$s 获得帮助</string>
+    <string name="live_image_save">保存图片</string>
+    <string name="live_cant_draw">您与老师不在同一页面，不能使用画笔模式</string>
+    <string name="live_cant_draw_class_not_start">上课中才能使用画笔</string>
+    <string name="live_not_support_beauty_filter">抱歉，系统版本低于4.3的手机暂不支持美颜功能</string>
+    <string name="live_waiting_speak_apply_agree">正在举手发言，请等待老师同意</string>
+    <string name="live_camera_on">摄像头已打开</string>
+    <string name="live_camera_off">摄像头已关闭</string>
+    <string name="live_mic_off_by_teacher">老师关闭了你的麦克风</string>
+    <string name="live_mic_on_by_teacher">老师打开了你的麦克风</string>
+    <string name="live_mic_on">麦克风已打开</string>
+    <string name="live_mic_off">麦克风已关闭</string>
+    <string name="live_override_error">哎呀出错了</string>
+    <string name="live_teacher_not_in">老师未在教室</string>
+    <string name="live_message_le">%1$s了</string>
+    <string name="live_roll_call_count_down">老师要求您在%1$s秒内响应点名</string>
+    <string name="live_roll_call_answer">答到</string>
+    <string name="live_quiz_title">测验</string>
+    <string name="live_quiz_close">关闭</string>
+    <string name="live_quiz_dialog_tip">确认关闭？</string>
+    <string name="live_quiz_dialog_cancel">再等等</string>
+    <string name="live_quiz_dialog_confirm">确认</string>
+    <string name="live_speakers_max_video_exceed">请先关闭一路学生视频</string>
+    <string name="live_cloud_record_setting">录课设置</string>
+    <string name="live_cloud_record_setting_end">结束录课</string>
+    <string name="live_cloud_record_setting_content">直播正在录制中</string>
+    <string name="live_exit_hint_title">提示</string>
+    <string name="live_exit_hint_confirm">确定退出</string>
+    <string name="live_exit_hint_content">确定要退出直播教室吗？</string>
+    <string name="live_audio_room_error">音频课不能开启摄像头</string>
+    <string name="live_sweet_hint">温馨提示</string>
+    <string name="live_mobile_network_hint">正在使用3G/4G网络，可手动关闭视频以减少流量</string>
+    <string name="live_mobile_network_hint_less">正在使用3G/4G网络</string>
+    <string name="live_mobile_network_confirm">知道了</string>
+    <string name="live_switch_link_type_error">该房间不能切换链路类型</string>
+    <string name="live_presenter_hint">(主讲)</string>
+    <string name="live_no_camera_permission">摄像头权限获取失败，请前往系统设置中允许访问摄像头</string>
+    <string name="live_no_mic_permission">麦克风权限获取失败，请前往系统设置中允许访问麦克风</string>
+    <string name="live_i_got_it">知道了</string>
+    <string name="live_force_speak_tip_all">老师开启了你的摄像头和麦克风，现在可以发言了</string>
+    <string name="live_force_speak_tip_audio">老师开启了你的麦克风，现在可以发言了</string>
+    <string name="live_force_speak_tip_video">老师开启了你的摄像头，现在可以发言了</string>
+    <string name="live_invite_speak_tip">老师邀请你上麦发言</string>
+    <string name="live_media_speak_apply_timeout">老师未同意发言，请稍后再试</string>
+    <string name="live_room_switch">正在切换教室，请等候…</string>
+    <string name="copy">复制</string>
+
+    <string name="share">分享</string>
+    <string name="suggest">反馈</string>
+    <string name="select_all">全选</string>
+    <string name="warn_disk_space">空间已满，需清理出部分空间才能继续下载</string>
+    <string name="warn_network_traffic">当前2G/3G/4G环境下载\n是否允许开启流量确定下载?</string>
+    <string name="no_lessiondown_tip">该课程暂时没有视频可以缓存</string>
+
+    <string name="xs_none_related_partner">需要的时候来这里看看</string>
+
+
+    <string name="xs_no_network_title">请检查您的网络</string>
+    <string name="xs_none_related_organize">没有找到相关数据</string>
+    <string name="xs_none_related_data">没有找到相关数据</string>
+    <string name="xs_none_activity_end">活动已经结束</string>
+    <string name="xs_loading_text">加载中...</string>
+    <string name="xs_networkdata_failed1">页面找不到...请稍后重试~</string>
+    <string name="xs_no_networkdata"> 网络不太好，点击屏幕，刷新看看</string>
+    <string name="xs_networkdata_failed">网络请求失败</string>
+
+    <string name="xs_my_empty"></string>
+    <string name="xs_no_catalog_data">暂无课程目录，了解下课程介绍吧</string>
+    <string name="list_footer_loading">正在加载中…</string>
+
+
+    <string name="list_footer_end">我是有底线的</string>
+    <string name="list_footer_network_error">网络加载出错,点击刷新</string>
+    <string name="xs_none_calendercourse">当前无课程</string>
+
+    <string name="xs_none_date">什么都没有</string>
+    <string name="xs_none_handout">暂无讲义</string>
+    <string name="xs_none_record_course">暂无录播课程，敬请期待！</string>
+
+    <string name="xs_none_course">你还没有买过课，快去选课看看吧</string>
+    <string name="xs_none_net_down">无网络连接，请检查网络后下载</string>
+    <string name="xs_none_studycourse">暂无课程</string>
+
+    <string name="xs_choose_studycourse">去选课</string>
+    <string name="xs_choose_collectcourse">去看看课程</string>
+    <string name="xs_choose_collectarticle">去看看乐见</string>
+    <string name="xs_none_collectcourse">暂时没有任何收藏</string>
+    <string name="xs_none_message">您还木有收到消息哦</string>
+    <string name="xs_error_message">加载失败，请重新加载</string>
+    <string name="xs_retry_message">重新加载</string>
+    <string name="xs_filter_studycourse">没有符合要求课程\n 可以减少筛选条件试试</string>
+
+
+    <string name="state_network_error">网络错误</string>
+
+
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+    <string name="state_loading_error">数据加载中&#8230;</string>
+    <string name="no_commnet">暂无评价哦~</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+
+    <string name="listview_header_hint_release">松开加载数据</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">没有更多了</string>
+    <string name="refreshing">正在加载...</string>
+    <string name="refresh_done">刷新成功</string>
+    <string name="listview_header_last_time">last update：</string>
+    <string name="active_title">活动</string>
+
+    <string name="live_video_open_chat_tip">互动区已关闭，打开请点击左侧互动按钮</string>
+
+
+    <string name="xs_$s_second_re_get2">%sS</string>
+    <string name="sobot_back"></string>
+    <string name="sys_server_phone">400-898-9766</string>
+
+    <string name="report_no_exerc_des">还未练习过，继续听课完成随堂练吧。</string>
+
+    <string name="report_no_exerc_live_des">未参加此次练习，下次继续努力吧。</string>
+
+    <string name="report_no_exerc_btn">继续听课</string>
+
+    <string name="report_no_after_exerc_des">检验下听课结果吧</string>
+    <string name="report_no_after_exerc_btn">完成课后作业</string>
+    <string name="no_report">你偷懒不做作业，我偷懒不给学习报告</string>
+    <string name="live_room_ppt_load_error">动态PPT加载出错,错误码：%1$d</string>
+    <string name="live_room_ppt_switch_confirm">确定切换</string>
+    <string name="live_room_ppt_switch">是否切换到静态PPT?</string>
+    <string name="manual_check_myscore">%1$s分/%2$s分</string>
+    <string name="manual__exam_info">共%1$s道，未答%2$s道，总计共用时%3$s</string>
+    <string name="buy_now">立即购买</string>
+    <string name="ok">确认</string>
+    <string-array name="buy_detail_info">
+        <item>简介</item>
+        <item>详情</item>
+        <item>直播</item>
+    </string-array>
+
+    <string-array name="video_qualities">
+        <item>超清 1080p</item>
+        <item>高清 720p</item>
+        <item>清晰 480p</item>
+        <item>流畅 360p</item>
+    </string-array>
+    <string-array name="video_more_menu">
+        <item>分享</item>
+        <item>反馈</item>
+    </string-array>
+</resources>

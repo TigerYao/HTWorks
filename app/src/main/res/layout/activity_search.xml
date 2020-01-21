@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray001">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/topbar_general_type4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.huatu.handheld_huatu.view.LoadMoreRecyclerView
+        android:id="@+id/rcv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:background="@color/white" />
+
+    <include
+        android:id="@+id/layout_nodata"
+        layout="@layout/common_no_data_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/layout_net_unconnected"
+        layout="@layout/common_net_unconnected_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:visibility="gone" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

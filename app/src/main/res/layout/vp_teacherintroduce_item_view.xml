@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    android:id="@+id/nestedScrollingView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_teacher_kemu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/teacher_kemu"
+        app:layout_marginLeftPercent="4.1%w"
+        app:layout_marginTopPercent="5.5%w"/>
+
+    <TextView
+        android:id="@+id/tv_kemu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_teacher_kemu"
+        android:paddingLeft="8dp"
+        android:text="科目"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5%w"
+        app:layout_paddingLeftPercent="2.2%w"
+        app:layout_textSizePercent="4.1%w"/>
+
+    <TextView
+        android:id="@+id/tv_teacher_kemu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_teacher_kemu"
+        android:layout_below="@+id/iv_teacher_kemu"
+        android:layout_marginTop="20dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5.5%w"
+        app:layout_textSizePercent="4.1%w"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/tv_teacher_kemu"
+        android:layout_below="@+id/tv_teacher_kemu"
+        android:layout_marginTop="20dp"
+        android:background="#dfdfdf"
+        app:layout_marginTopPercent="5.5%w"/>
+
+    <ImageView
+        android:id="@+id/iv_teacher_fengge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/teacher_fengge"
+        app:layout_marginLeftPercent="4.1%w"
+        app:layout_marginTopPercent="5.5%w"
+        />
+
+    <TextView
+        android:id="@+id/tv_fengge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_teacher_fengge"
+        android:paddingLeft="8dp"
+        android:text="教学风格"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5%w"
+        app:layout_paddingLeftPercent="2.2%w"
+        app:layout_textSizePercent="4.1%w"/>
+
+    <TextView
+        android:id="@+id/tv_teacher_fengge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_teacher_fengge"
+        android:layout_below="@+id/iv_teacher_fengge"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:paddingRight="15dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5.5%w"
+        app:layout_paddingRightPercent="4.1%w"
+        app:layout_textSizePercent="4.1%w"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/tv_teacher_kemu"
+        android:layout_below="@+id/tv_teacher_fengge"
+        android:layout_marginTop="20dp"
+        android:background="#dfdfdf"
+        app:layout_marginTopPercent="5.5%w"/>
+
+    <ImageView
+        android:id="@+id/iv_teacher_jieshao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/teacher_jieshao"
+        app:layout_marginLeftPercent="4.1%w"
+        app:layout_marginTopPercent="5.5%w"/>
+
+    <TextView
+        android:id="@+id/tv_jieshao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_teacher_jieshao"
+        android:paddingLeft="8dp"
+        android:text="个人介绍"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5%w"
+        app:layout_paddingLeftPercent="2.2%w"
+        app:layout_textSizePercent="4.1%w"/>
+
+    <TextView
+        android:id="@+id/tv_teacher_jieshao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_teacher_jieshao"
+        android:layout_below="@+id/iv_teacher_jieshao"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingRight="15dp"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        app:layout_marginTopPercent="5.5%w"
+        app:layout_paddingRightPercent="4.1%w"
+        app:layout_textSizePercent="4.1%w"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

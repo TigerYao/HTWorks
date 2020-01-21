@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_divider"
+    android:orientation="vertical">
+
+
+    <com.huatu.widget.KitkatProfileFramLayout
+        android:layout_width="match_parent"
+        android:id="@id/xi_toolbar_layout"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.huatu.handheld_huatu.ui.TitleBar
+            android:id="@id/xi_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xd_toolbar_height" />
+    </com.huatu.widget.KitkatProfileFramLayout>
+
+    <LinearLayout
+        android:id="@+id/send_mail_success_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="53dp"
+            android:src="@mipmap/send_mail_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:text="提交成功"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/check_14sp" />
+
+        <Button
+            android:id="@+id/check_bill_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/common_dimens_30dp"
+            android:background="@drawable/btn_bill_mail_stroke"
+            android:text="查看开票详情"
+            android:textColor="#6D7172"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimens_50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/common_10dp"
+        android:elevation="@dimen/common_8dp"
+        android:background="@drawable/dialog_callserver"
+        android:paddingRight="@dimen/common_10dp">
+
+        <TextView
+            style="@style/bill_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="电子邮箱"
+            android:textSize="@dimen/common_textsize_16sp" />
+
+        <EditText
+            android:maxLength="50"
+            style="@style/bill_text_style"
+            android:id="@+id/edit_invoice_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请填写正确地址接收发票" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/bill_text_gray_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注：邮箱地址用于接收电子发票，系统将会在您提交申请后的24小时内将电子发票发往您填写的邮箱，请注意查收。电子发票暂不支持在APP下载！" />
+
+    <Button
+        android:id="@+id/send_mail_btn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/common_dimens_30dp"
+        android:background="@drawable/correct_btn_red"
+        android:elevation="@dimen/common_8dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

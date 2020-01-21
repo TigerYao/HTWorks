@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/mRlHomeworkClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/mViewLine1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/correct_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mViewLine1">
+
+            <TextView
+                android:id="@+id/mTvClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:padding="@dimen/common_10dp"
+                android:textColor="@color/arena_exam_subject_name_text_night"
+                android:textSize="@dimen/common_textsize_16sp"
+                android:textStyle="bold"
+                tools:text="2019国考系统提分班02期003班" />
+
+            <ImageView
+                android:id="@+id/mIvFold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/htzx_homework_list_unfold" />
+
+            <TextView
+                android:id="@+id/mTvTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_textsize_12sp"
+                android:layout_toLeftOf="@+id/mIvFold"
+                android:textColor="@color/grayC4"
+                android:textSize="@dimen/check_12sp"
+                tools:text="2次" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRlCourseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mRlHomeworkClass">
+
+        <RelativeLayout
+            android:id="@+id/mRlTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mIvCircle"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/arena_circle_ff3f47" />
+
+            <TextView
+                android:id="@+id/mTvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="31dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                tools:text="3" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="55dp"
+            android:layout_toRightOf="@+id/mRlTitle"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:text="2019国考系统提分班02期003班（1528838234234)" />
+
+        <TextView
+            android:id="@+id/mTvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mTvTitle"
+            android:layout_below="@+id/mRlTitle"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:textColor="@color/arena_exam_subject_name_text"
+            android:textSize="12sp"
+            tools:text="回放 5月2日 19:00-21:00" />
+
+        <TextView
+            android:id="@+id/mTvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mTvDate"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/arena_exam_subject_name_text"
+            android:textSize="@dimen/check_12sp"
+            tools:text="未完成" />
+
+        <View
+            android:id="@+id/mViewLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mTvDate"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/correct_bg" />
+
+    </RelativeLayout>
+</RelativeLayout>

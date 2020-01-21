@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="80dp"
+    android:background="@drawable/comm_bottom_line_bg2">
+
+    <RelativeLayout
+        android:id="@id/whole_content"
+        android:layout_marginBottom="1px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_offline_course"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+
+            android:layout_toRightOf="@id/img_select_status"
+            android:scaleType="fitXY"
+            android:src="@mipmap/load_default" />
+
+
+        <TextView
+            android:id="@+id/tv_offline_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_toRightOf="@id/img_offline_course"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="江苏考前训练营第二期江苏考前训练营第二期江苏考前训练营第二期"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_offline_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/img_offline_course"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="共10讲"
+            android:textColor="#999999"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_offline_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="12dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="已缓存5讲"
+            android:textColor="#999999"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/img_offline_course"
+            android:layout_alignParentBottom="true"
+            android:background="#dcdcdc" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginBottom="1px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+ </com.nalan.swipeitem.recyclerview.SwipeItemLayout>

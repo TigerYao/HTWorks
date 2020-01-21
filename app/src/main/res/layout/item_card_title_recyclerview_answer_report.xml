@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 答题报告页面 答题卡标题 -->
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="答题卡"
+        android:textColor="@color/black001"
+        android:textSize="16sp"
+        app:layout_textSizePercent="4.44%w"
+        android:lines="1"
+        android:ellipsize="end"
+        android:padding="12dp"
+        app:layout_paddingPercent="3.33%w"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

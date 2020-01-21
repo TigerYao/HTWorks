@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.ui.ScrollLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rootView"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.ui.BJPlayerTouchView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        app:aspect_ratio="fit_parent"
+        app:bottom_controller="@layout/bjplayer_layout_bottom"
+        app:center_controller="@layout/player_center_controller"
+        app:top_controller="@layout/bjplayer_layout_top">
+
+    </com.huatu.handheld_huatu.ui.BJPlayerTouchView>
+
+
+    <com.huatu.scrollablelayoutlib.ScrollableLayout
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/play_vod_title_head2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/magic_indicator2"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/filter_img_btn"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:visibility="gone"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="70dp"
+                android:src="@mipmap/study_course_filter_icon" />
+
+            <ImageView
+                android:id="@+id/down_img_btn"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="4dp"
+                android:src="@mipmap/course_down_icon" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cd_module_line_height"
+            android:background="@color/cc_default_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.huatu.scrollablelayoutlib.ScrollableLayout>
+</com.huatu.handheld_huatu.ui.ScrollLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--直角 不透明度85%-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="#D9000000" />
+
+</shape>

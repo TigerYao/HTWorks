@@ -1,0 +1,6 @@
+/build
+/.idea/
+/servant.jks
+/signing.properties
+/version.properties
+/proguard-rules.pro

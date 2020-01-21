@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="#ffffff">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_left_top_bar"
+            android:layout_width="48dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_left"
+                android:layout_marginLeft="15dp"
+                android:padding="3dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="账户明细"
+            android:textColor="@color/blackF4" />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/balance_selector_tv"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|right"
+            android:layout_gravity="right"
+            android:includeFontPadding="false"
+            android:layout_marginRight="@dimen/titlebar_15dp"
+            android:drawableRight="@mipmap/record_normal"
+            android:drawablePadding="4dp"
+            android:text="课程"
+            android:visibility="invisible"
+            android:textSize="16sp"
+            android:textColor="#666666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_recharge_record"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/textview_rounded_corners_left_red"
+            android:text="收入"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_consume_record"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/textview_round_corners_right_white"
+            android:text="支出"
+            android:textColor="#e9304e"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.huatu.handheld_huatu.business.ztk_zhibo.refresh.RefreshListView
+            android:id="@+id/rlv_detail_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/cut_line"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"/>
+        <com.huatu.handheld_huatu.view.CommonErrorView
+            android:id="@+id/error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_foot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#dfdfdf"
+        android:visibility="gone"
+        android:text="仅显示近三个月的记录"
+        android:textColor="#999999"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.huatu.viewpagerindicator.PagerSlidingTabStrip
+        android:id="@+id/xi_activity_type_tab_strip"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingBottom="2dp"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorBottom="9dp"
+        app:pstsIndicatorColor="@color/indicator_color"
+        app:pstsIndicatorHeight="@dimen/xd_home_group_tab_host_indicator_height"
+        app:pstsIndicatorWidth="20dp"
+        app:pstsLineOffset="false"
+        app:pstsShouldExpand="false"
+        app:pstsTabPaddingLeftRight="40dp"
+        app:pstsTextColor="@color/black2gray_text_selector"
+        app:pstsTextSize="18sp"
+        app:pstsUnderlineColor="@color/transparent"
+        app:pstsUnderlineHeight="@dimen/cd_module_line_height" />
+
+    <View
+        style="@style/comm_split_line"
+        android:layout_gravity="bottom" />
+
+    <com.huatu.handheld_huatu.base.SelectedLoadViewPager
+        android:id="@+id/xi_activity_type_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

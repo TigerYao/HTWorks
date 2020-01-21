@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f4f5">
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="true"
+        app:topbarRightText="关闭"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="领取赠送课程">
+    </com.huatu.handheld_huatu.view.TopActionBar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_divider" />
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/base_list_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:divider="#f2f4f5"
+        android:dividerHeight="10dp"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+    </com.huatu.handheld_huatu.view.XListView>
+    <LinearLayout
+        android:id="@+id/common_list_view_bottom_button_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bottom_button_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    </LinearLayout>
+</LinearLayout>

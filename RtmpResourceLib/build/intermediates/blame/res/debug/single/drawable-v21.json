@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/cv_bg_material.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/drawable-v21/cv_bg_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/huatu/.android/build-cache/fe6b77c2d892aee5656c622a1168e80e5c49e11f/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

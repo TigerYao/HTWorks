@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@id/whole_content"
+    android:background="@drawable/course_bottom_line_bg"
+    android:minHeight="44dp"
+    android:layout_height="wrap_content">
+
+    <TextView style="@style/basetxt_title"
+        android:id="@+id/title_name_txt"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="42dp"
+        android:text="行测-常识"
+        android:textColor="#4A4A4A"
+        android:textSize="15sp" />
+
+    <TextView style="@style/basetxt_title_small"
+        android:text="行测-常识"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:textColor="#ff9b9b9b"
+        android:id="@+id/course_num_txt"
+        android:layout_marginRight="42dp"
+        android:layout_gravity="center_vertical|right"/>
+
+    <ImageView
+         android:padding="10dp"
+         android:rotation="180"
+        android:id="@+id/right_open_img"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_vertical|right"
+        android:src="@drawable/zf_icon_aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

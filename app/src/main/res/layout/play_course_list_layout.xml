@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/play_pop_action_bg"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+<!--  <android.support.v7.widget.RecyclerView
+      android:layout_width="208dp"
+      android:id="@+id/lessionListView"
+      android:paddingTop="40dp"
+      android:clipToPadding="false"
+      android:layout_height="match_parent">
+
+  </android.support.v7.widget.RecyclerView>-->
+  <com.huatu.library.PullVerRefreshRecyclerView
+      android:id="@+id/lessionListView"
+      android:layout_width="208dp"
+      android:layout_height="match_parent"
+      ptr:ptrMode="pullFromEnd"
+      ptr:ptrRefreshableViewBackground="@color/transparent" />
+
+  <include
+      android:visibility="gone"
+      android:layout_height="fill_parent"
+      android:layout_width="208dp"
+      layout="@layout/loading_playdialog_layout"></include>
+
+</FrameLayout>

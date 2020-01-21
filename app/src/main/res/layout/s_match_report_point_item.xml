@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/s_match_report_point_circle_bg"
+        android:gravity="center"
+        android:text="马"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_header"
+        android:layout_alignBottom="@+id/tv_header"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_header"
+        android:text="马克思主义"
+        android:textColor="@color/small_common_black_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="共20道"
+        android:textColor="#7E7E7E"
+        android:textSize="12sp" />
+</RelativeLayout>

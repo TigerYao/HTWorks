@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/live_video_pause_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:scaleType="center"
+        android:src="@drawable/btn_video_small_pause" />
+    <TextView
+        android:id="@+id/live_video_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <SeekBar
+        android:id="@+id/live_video_seek_bar"
+        style="@style/Widget.SeekBar.Normal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:layout_weight="2"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        android:progressDrawable="@drawable/seekbar_style"
+        android:thumb="@drawable/video_play_seek_bar"
+        android:thumbOffset="10dp" />
+    <TextView
+        android:id="@+id/live_video_duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/live_video_full_screen_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="center"
+        android:src="@drawable/btn_video_small_fullscreen" />
+</LinearLayout>

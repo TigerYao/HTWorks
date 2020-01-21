@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/sc_item_divder_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f6f6f8"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#488643"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/sc_item_divder_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#488643"
+        />
+
+    <TextView
+        android:id="@+id/simulation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/netschool_20dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/athletic_12dp"
+        android:paddingRight="@dimen/athletic_12dp"
+        android:text="@string/share_info_result"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/text_size_large"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/netschool_20dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="@dimen/athletic_12dp"
+        android:paddingRight="@dimen/athletic_12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/simulation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016/08/25 开始"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/simulation_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/simulation_time"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:layout_centerVertical="true"
+            android:text="原创试题高分必备原创试题高分必备高分必备高分必备高分必备原创试题高分必备原创试题高分必备高分必备高分必备高分必备"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small"/>
+        <TextView
+            android:id="@+id/simulation_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/simulation_desc"
+            android:text="未开始"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/text_size_small"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sc_item_divder_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#488643"
+            />
+        <View
+            android:id="@+id/sc_item_divder"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f6f6f8"
+            />
+    </LinearLayout>
+
+</LinearLayout>

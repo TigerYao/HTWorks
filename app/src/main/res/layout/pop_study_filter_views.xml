@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/drop_down_pop_bg2"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5.0dip">
+      <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="10.0dip"
+            android:text="按照最近学习"
+            android:textColor="@color/study_filtertext_selector"
+            android:textSize="16.0sp" />
+
+
+        <TextView
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="0"
+            android:id="@+id/pop_menu_upreport"
+            android:gravity="center_vertical|center"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="10.0dip"
+            android:text="按照最近加入"
+            android:textColor="@color/study_filtertext_selector"
+            android:textSize="16.0sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

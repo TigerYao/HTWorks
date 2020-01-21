@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="16dp"
+        android:background="@drawable/red_packet"
+        android:gravity="center"
+        android:text="红包"
+        android:textColor="#FF3F47"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/tv_receive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="09-22 23:00"
+        android:textColor="#4A4A4A"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_money_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+</LinearLayout>

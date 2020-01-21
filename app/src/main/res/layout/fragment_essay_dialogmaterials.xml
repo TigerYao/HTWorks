@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rectangle_top_ffffff">
+
+    <ImageView
+        android:id="@+id/iv_hide_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:src="@mipmap/essay_ans_hide_materil" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_hide_material"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.ogaclejapan.smarttablayout.SmartTabLayout
+                android:id="@+id/ex_materials_viewpager_tab"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                app:stl_customTabTextLayoutId="@layout/custom_tab"
+                app:stl_customTabTextViewId="@id/custom_text"
+                app:stl_indicatorColor="@color/red250"
+                app:stl_indicatorGravity="below_text"
+                app:stl_indicatorInterpolation="smart"
+                app:stl_indicatorThickness="6dp"
+                app:stl_underlineThickness="0dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_essay_question_province"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/show_province_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/app_name"
+                    android:textColor="#4A4A4A"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/show_province_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/homef_title_pop_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_divider" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ex_materials_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="试卷正在更新中..."
+        android:visibility="gone" />
+</RelativeLayout>

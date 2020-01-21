@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@id/whole_content"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/xi_comm_page_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/comm_action_bottom_layout"/>
+    <include
+        layout="@layout/course_collectempty_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+
+
+</RelativeLayout>
+

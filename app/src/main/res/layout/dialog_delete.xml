@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <!-- width:277dp height:170dp -->
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_main_bg"
+        android:orientation="vertical"
+        app:layout_heightPercent="47.22%w"
+        app:layout_widthPercent="76.94%w">
+
+        <!-- height:120dp -->
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请确认是否删除"
+            android:textColor="#323232"
+            app:layout_heightPercent="70.59%h"
+            app:layout_textSizePercent="10%h" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_1"
+            android:background="#d1d1d1" />
+
+        <!-- width:277dp -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dialog_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/bg_green003"
+                app:layout_textSizePercent="6.14%w" />
+
+            <View
+                android:layout_width="@dimen/width_1"
+                android:layout_height="match_parent"
+                android:background="#d1d1d1" />
+
+            <TextView
+                android:id="@+id/tv_dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/bg_green003"
+                app:layout_textSizePercent="6.14%w" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

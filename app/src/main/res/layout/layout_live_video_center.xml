@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_live_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible" />
+    <!--   速度控制  快进 -->
+    <FrameLayout
+        android:id="@+id/live_video_speed_up_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_live_video_kuaijin"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/live_video_speed_up_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/play_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:paddingBottom="@dimen/common_10dp"
+            android:progress="20"
+            android:progressDrawable="@drawable/seekbar_style" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_start_play_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/start_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/play_btn_bg_selector"
+            android:drawableRight="@drawable/ic_loading_wait"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingLeft="@dimen/common_10dp"
+            android:paddingRight="@dimen/common_10dp"
+            android:text="等待播放"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/volume_bright_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kuaijinbj2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/volume_bright_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_live_video_volume" />
+
+        <TextView
+            android:id="@+id/volume_bright_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0%"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!--   loading界面 -->
+    <com.huatu.handheld_huatu.ui.LiveLoadingLayout
+        android:id="@+id/video_play_loading_pb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progress_loadingbar"-->
+        <!--style="@android:style/Widget.DeviceDefault.ProgressBar"-->
+        <!--android:layout_width="52dp"-->
+        <!--android:layout_height="52dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:indeterminate="true"-->
+        <!--android:indeterminateTint="@color/main_color" />-->
+
+        <ImageView
+            android:id="@+id/iv_loading_bg"
+            android:layout_width="@dimen/common_dimens_50dp"
+            android:layout_height="@dimen/common_8dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/bg_reactcirl_luobo" />
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="@dimen/common_dimens_60dp"
+            android:layout_height="@dimen/common_dimens_60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/video_play_error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#66000000"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/error_tip_txt"
+                style="@style/bjplayer_text_big"
+                android:layout_gravity="center"
+                android:text="视频信息加载失败，请重试\n[1]" />
+
+            <TextView
+                android:id="@+id/error_retry_btn"
+                style="@style/bjplayer_text_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bjplayer_bg_radius_12"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="刷新重试" />
+
+        </LinearLayout>
+    </com.huatu.handheld_huatu.ui.LiveLoadingLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_right_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="@dimen/common_10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/live_video_view_close_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/live_video_center_unexpand"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/play_judege_land"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:background="@drawable/course_judge_bg"
+            android:padding="@dimen/common_4dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/course_judge__land_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/play_changeRate_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center|right"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/play_ratechange_btn_bg"
+        android:gravity="center"
+        android:text="1.0x"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/play_judege_txt"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="@dimen/common_5dp"
+        android:layout_marginRight="@dimen/common_10dp"
+        android:background="@drawable/course_judge_bg"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/course_judge__land_icon"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_left_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/video_lock_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_lock_full_screen" />
+
+        <ImageView
+            android:id="@+id/video_play_interaction_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/show_teacher_chat_msg_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/open_add_chat_img"
+        android:layout_width="@dimen/common_dimens_50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/common_5dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/live_btn_open_chat"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/live_list_layout"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:background="@drawable/bg_live_video_land_more_menu"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rl_start_play_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_play_btn_icon" />
+
+    <RelativeLayout
+        android:id="@+id/tip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:clickable="true"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:src="@mipmap/video_switch_tips_img" />
+
+        <ImageView
+            android:id="@+id/hands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/common_20dp"
+            android:layout_marginTop="@dimen/common_dimens_65dp"
+            android:src="@mipmap/video_switch_hands_tip" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_20dp"
+            android:layout_below="@id/hands"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="@dimen/common_20dp"
+            android:layout_marginRight="@dimen/common_20dp"
+            android:src="@mipmap/video_switch_words_tip" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/live_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dimens_100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_live_video_bottom"
+        android:paddingTop="@dimen/common_20dp"
+        android:paddingRight="@dimen/common_20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ppt_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="@dimen/common_20dp"
+            android:background="@drawable/bg_customloadingdialog_rectangle"
+            android:gravity="center"
+            android:paddingLeft="@dimen/common_10dp"
+            android:paddingTop="@dimen/common_2dp"
+            android:paddingRight="@dimen/common_10dp"
+            android:paddingBottom="@dimen/common_2dp"
+            android:text="白板"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/common_textsize_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/live_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_dimens_100dp"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/common_textsize_16sp" />
+
+        <ViewStub
+            android:id="@+id/live_bottom_viewstub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:layout="@layout/layout_live_operate_land" />
+
+    </FrameLayout>
+
+</RelativeLayout>

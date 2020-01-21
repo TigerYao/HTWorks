@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_send_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:background="#f6f6f6"
+    android:clickable="true"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageview_expression"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/live_video_expression" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/live_video_et_bg"
+            android:layout_weight="1">
+
+            <com.huatu.handheld_huatu.business.ztk_zhibo.view.LiveChatEditText
+                android:id="@+id/edittext_comment_content"
+                android:layout_width="0dp"
+                android:layout_height="31dp"
+                android:layout_weight="1"
+                android:hint="发布讨论"
+                android:imeOptions="flagNoExtractUi|actionSend"
+                android:lines="1"
+                android:background="@null"
+                android:maxLines="1"
+                android:padding="7dp"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="#dfdfdf"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/limit_textsize"
+                android:layout_width="wrap_content"
+                android:text="0/25"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/imageview_add"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview_expression"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center_vertical"
+        android:horizontalSpacing="10dp"
+        android:numColumns="6"
+        android:verticalSpacing="5dp"
+        android:visibility="gone" />
+</LinearLayout>

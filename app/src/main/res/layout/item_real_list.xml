@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- height:80dp -->
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_continue"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="28dp"
+            app:layout_marginLeftPercent="3.8889%w"
+            app:layout_marginTopPercent="4.4444%w"
+            app:layout_marginRightPercent="7.7778%w"
+            android:text="2014年5月28号山东省临沂市事业单位考试真题"
+            android:lineSpacingMultiplier="1.1"
+            android:textColor="@color/black001"
+            android:textSize="14sp"
+            app:layout_textSizePercent="3.8889%w"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="16dp"
+            app:layout_marginTopPercent="4.4444%w"
+            android:layout_alignLeft="@+id/tv_title"
+            android:text="@string/infoRealList"
+            android:textColor="@color/gray010"
+            android:textSize="12sp"
+            app:layout_textSizePercent="3.3333%w"/>
+
+
+        <TextView
+            android:id="@+id/tv_unfinished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_info"
+            android:layout_alignBottom="@+id/tv_info"
+            android:layout_marginLeft="12dp"
+            app:layout_marginLeftPercent="3.3333%w"
+            android:text="未完成"
+            android:textColor="@color/gray010"
+            android:textSize="12sp"
+            app:layout_textSizePercent="3.3333%w"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_1"
+            app:layout_heightPercent="0.1389%w"
+            android:background="@color/gray005"
+            android:layout_below="@+id/tv_info"
+            android:layout_marginTop="12dp"
+            app:layout_marginTopPercent="3.3333%w"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

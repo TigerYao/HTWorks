@@ -1,0 +1,8 @@
+<resources>
+
+    <integer name="pop_config_AnimTime">80</integer>
+    <integer name="pop_config_showAnimTime">50</integer>
+    <integer name="loading_showtime">80</integer>
+
+    <integer name="qmui_anim_duration">300</integer>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/com.hhpm.zrb.ui"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        style="@style/qmtips_wrap">
+        <com.buoumall.mobile.ui.ProgressWheel
+                android:id="@+id/progressWheel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                wheel:progressIndeterminate="true" />
+        <TextView
+            android:id="@+id/LoadingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading"
+            android:layout_marginTop="4dp"
+            style="@style/qmtips_text" />
+    </LinearLayout>
+</LinearLayout>

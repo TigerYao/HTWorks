@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoView
+        android:id="@+id/live_video_play_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoCenterView
+        android:id="@+id/layout_live_video_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!--   底部控制栏 -->
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoBottomView
+        android:id="@+id/live_video_play_operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/live_video_play_parent"
+        android:background="@drawable/bg_live_video_bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal" />
+
+    <FrameLayout
+        android:id="@+id/viewpager_live_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/live_video_play_parent"
+        android:background="@color/white"
+        android:clickable="true" />
+
+    <!-- 浮动视频 -->
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoDragView
+        android:id="@+id/float_video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/close_min_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="@dimen/common_10dp"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:onClick="onClick"
+            android:scaleType="center"
+            android:src="@mipmap/video_min_deleted_icon" />
+    </com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoDragView>
+
+    <!--  标题控制栏 -->
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveVideoHeaderView
+        android:id="@+id/live_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/video_play_title_bg"
+        android:gravity="top" />
+    <!-- 浮动视频展开 -->
+    <FrameLayout
+        android:id="@+id/float_operation_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_video_play_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/common_dimens_45dp"
+        android:minWidth="@dimen/common_dimens_30dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/open_cover_view"
+            android:layout_width="@dimen/common_20dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:alpha="0.2"
+            android:background="@drawable/bg_corner_left_black04" />
+
+        <ImageView
+            android:id="@+id/open_min_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:alpha="0.7"
+            android:onClick="onClick"
+            android:scaleType="center"
+            android:src="@mipmap/video_min_open_icon" />
+    </FrameLayout>
+
+    <include layout="@layout/live_video_emoji_layout" />
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.play.view.LiveTestView
+        android:id="@+id/video_test_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_live_video_center"
+        android:layout_marginTop="1px"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/stick_back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClick"
+        android:padding="@dimen/common_15dp"
+        android:scaleType="center"
+        android:src="@drawable/video_play_title_back" />
+
+    <ViewStub
+        android:id="@+id/operate_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_live_video_tips"
+        android:clickable="true" />
+</RelativeLayout>

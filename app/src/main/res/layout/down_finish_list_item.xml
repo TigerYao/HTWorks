@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="44dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@id/whole_content"
+        android:background="@drawable/list_default_bg"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chk_btn"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="10dp"
+            style="@style/deleteCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+　        <TextView
+           android:layout_toRightOf="@+id/chk_btn"
+            android:id="@+id/name_txt"
+            android:layout_toLeftOf="@+id/status_txt"
+            style="@style/basetxt_title"
+            android:layout_width="match_parent"
+            android:maxLines="2"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="5dp"
+            android:text="11" />
+
+        <TextView
+            android:id="@+id/status_txt"
+            style="@style/basetxt_title"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="#9B9B9B"
+            android:layout_marginRight="12dp"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="删除缓存"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</com.nalan.swipeitem.recyclerview.SwipeItemLayout>

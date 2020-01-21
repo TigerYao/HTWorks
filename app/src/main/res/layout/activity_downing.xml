@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="true"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="标题" />
+
+    <FrameLayout
+        android:id="@+id/fl_downing_change"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <FrameLayout
+            android:id="@+id/fl_unedit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_downing_change"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/video_download_pause" />
+
+            <TextView
+                android:id="@+id/tv_down_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="42dp"
+                android:gravity="center_vertical"
+                android:text="全部暂停"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="#dcdcdc" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_select_all"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/img_down_unselect" />
+
+            <TextView
+                android:id="@+id/tv_cancel_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="46dp"
+                android:gravity="center_vertical"
+                android:text="全部"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="46dp"
+                android:background="#dcdcdc" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_downloading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:cacheColorHint="#000000"
+        android:divider="@null"
+        android:listSelector="@drawable/select_list_select"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/bt_down_delete"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ff3b2f"
+        android:text="删除"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_down_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_no_num" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="当前已无正在缓存的课程"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/confirm_order_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="华图网校面试协议">
+
+    </com.huatu.handheld_huatu.view.TopActionBar>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/confirm_order_action_bar" />
+</RelativeLayout>

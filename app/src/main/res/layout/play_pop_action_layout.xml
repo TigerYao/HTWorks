@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_pop_action_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/share_action_txt"
+        style="@style/basetxt_title"
+        android:layout_width="208dp"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/live_video_more_share_btn"
+
+        android:gravity="center_horizontal"
+        android:text="分享"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <com.huatu.widget.like.LikeButton
+        android:id="@+id/likeImage"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+
+        android:layout_marginTop="48dp"
+        app:circle_end_color="@color/main_color"
+        app:circle_start_color="@color/security_code"
+        app:dots_primary_color="@color/assist_color"
+        app:dots_secondary_color="@color/main_color"
+        app:icon_size="23dp"
+
+        app:like_drawable="@drawable/heart_on"
+        app:unlike_drawable="@drawable/heart_off" />
+
+    <TextView
+        style="@style/basetxt_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-5dp"
+        android:id="@+id/like_txt"
+        android:gravity="center_horizontal"
+
+        android:text="收藏"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/suggest_action_txt"
+        style="@style/basetxt_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/live_video_more_report_btn"
+        android:gravity="center_horizontal"
+        android:text="反馈"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

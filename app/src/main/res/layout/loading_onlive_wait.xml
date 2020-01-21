@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="13dip"
+        android:paddingRight="13dip"
+        android:orientation="vertical"
+        style="@style/qmtips_wrap2">
+
+        <com.huatu.Indicator.AVLoadingIndicatorView
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            app:indicator="BallPulse"
+            app:indicator_color="@color/white"
+            android:id="@+id/xi_loading_img" />
+        <TextView
+            android:id="@+id/LoadingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在进入.."
+            android:textSize="9sp"
+             android:layout_marginBottom="5dp"
+            style="@style/qmtips_text" />
+    </LinearLayout>
+</LinearLayout>

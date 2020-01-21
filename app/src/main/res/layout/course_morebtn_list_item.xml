@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#F9F9F9"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+
+    <com.huatu.handheld_huatu.ui.RoundbgTextView
+
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:text="加载更多"
+        android:id="@id/whole_content"
+        android:gravity="center"
+        app:qmui_backgroundColor="#F3F3F3"
+        app:qmui_radiusBottomLeft="16dp"
+        app:qmui_radiusTopLeft="16dp"
+        app:qmui_radiusBottomRight="16dp"
+        app:qmui_radiusTopRight="16dp"
+        android:textColor="#4A4A4A"
+        android:textSize="14sp"
+        ></com.huatu.handheld_huatu.ui.RoundbgTextView>
+</LinearLayout>

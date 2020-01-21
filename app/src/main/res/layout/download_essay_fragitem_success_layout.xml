@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/down_essay_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/down_essay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:maxLines="2"
+            android:text="题目题目题目"
+            android:textColor="@color/gray_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="课后作业"
+            android:layout_marginRight="15dp"
+            android:textColor="#FF3F47"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/down_essay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_homework"
+            android:text="副标题副标题副标题"
+            android:textColor="@color/gray_333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/down_essay_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:text="逗逼逗逼逗逼"
+            android:textColor="@color/red250"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

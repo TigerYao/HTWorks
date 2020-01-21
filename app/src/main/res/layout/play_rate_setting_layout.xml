@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/play_rate_setting_bg2"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:shadowColor="#aa000000"
+    android:shadowDx="0"
+    android:shadowDy="-20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="倍数调整"
+        android:textColor="#ff4a4a4a"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none">
+
+        <com.huatu.widget.MyRadioGroup
+            android:id="@+id/rate_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:tag="0.5"
+                android:text="0.5x" />
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:tag="0.75"
+                android:text="0.75x" />
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:tag="1"
+                android:text="1.0x" />
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:tag="1.25"
+                android:text="1.25x" />
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:tag="1.5"
+                android:text="1.5x" />
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:tag="1.75"
+                android:text="1.75x" />
+
+            <RadioButton
+                style="@style/play_rate_text_style"
+                android:layout_marginRight="18dp"
+                android:tag="2"
+                android:text="2.0x" />
+
+        </com.huatu.widget.MyRadioGroup>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/cancel_action_btn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#ff6d7172"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 答题报告 -->
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_answer_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"/>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        app:layout_heightPercent="31.67%w"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray001">
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_exam_again"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:layout_heightPercent="18.33%w"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/tv_exam_again"
+                android:layout_width="136dp"
+                android:layout_height="36dp"
+                app:layout_widthPercent="37.78%w"
+                app:layout_heightPercent="10%w"
+                android:layout_centerInParent="true"
+                android:text="再来一套"
+                android:textColor="@color/green001"
+                android:textSize="16sp"
+                app:layout_textSizePercent="4.44%w"
+                android:gravity="center"
+                android:background="@drawable/bg_rectangle_exam_again"/>
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_exam_again"
+            android:orientation="horizontal"
+            android:background="@color/green001">
+            <TextView
+                android:id="@+id/tv_wrong_analysis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="错题解析"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_textSizePercent="4.44%w"
+                android:gravity="center"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/tv_whole_analysis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="全部解析"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_textSizePercent="4.44%w"
+                android:gravity="center"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

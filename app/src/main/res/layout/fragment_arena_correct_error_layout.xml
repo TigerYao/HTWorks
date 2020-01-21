@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/correct_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/arena_exam_correct_error_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/correct_common_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/arena_exam_correct_error_title_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/icon_arrow_left" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="错题反馈"
+            android:textColor="@color/correct_common_title_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@null" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_error_description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/correct_common_bg"
+        android:gravity="top"
+        android:hint="请输入您对错误问题的描述，最多不超过160字。"
+        android:padding="15dp"
+        android:textColor="@color/correct_text_edit"
+        android:textColorHint="@color/gray003"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/correct_common_bg"
+            android:padding="15dp"
+            android:text="联系方式"
+            android:textColor="@color/correct_text_tip"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/correct_common_bg"
+            android:hint="请输入您的手机号 / 邮箱地址"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/correct_text_edit"
+            android:textColorHint="@color/gray003"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit_correct_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/correct_btn_gray"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text="提交反馈"
+        android:textSize="18sp" />
+</LinearLayout>

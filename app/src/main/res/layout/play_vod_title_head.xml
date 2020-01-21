@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/course_title_txt"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/course_title_txt"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/add_qq_layout"
+        android:id="@+id/left_layout"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.huatu.handheld_huatu.ui.ProgressTextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/txt_progress"
+
+            android:layout_gravity="right|bottom"/>
+
+        <com.huatu.widget.IncreaseProgressBar
+            android:id="@+id/learn_progressbar"
+            android:layout_gravity="right|bottom"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_rush_sale_horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_qq_layout"
+        android:layout_alignBottom="@+id/left_layout"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="15dp"
+
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/add_qq_btn"
+            android:src="@mipmap/play_addqq_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

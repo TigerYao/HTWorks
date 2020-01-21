@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bjyplayerBottomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/video_play_operation_bg"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/bjybtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:src="@drawable/vod_video_pause"
+        app:layout_paddingLeftPercent="2.7%w" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_paddingBottomPercent="0.5%w">
+
+        <SeekBar
+            android:id="@+id/bjyskbProgress"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/video_play_seek_bar"
+            android:thumbOffset="0dp" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/bjyplayDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="00:00/"
+        android:textColor="@color/white_common"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/bjyvideoDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="00:01"
+        android:textColor="@color/white_common"
+        android:textSize="11dp" />
+
+    <ImageButton
+        android:id="@+id/bjyimage_change_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:src="@drawable/video_play_screen_full"
+        app:layout_paddingLeftPercent="0.83%w"
+        app:layout_paddingRightPercent="3.3%w" />
+</com.zhy.android.percent.support.PercentLinearLayout>

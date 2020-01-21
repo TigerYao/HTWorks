@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_dialog_service"
+        android:orientation="vertical"
+        app:layout_widthPercent="72.22%w">
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="当前设置下特训次数已耗尽！"
+            android:textColor="#333333"
+            android:textSize="15dp"
+            app:layout_heightPercent="31.54%w"
+            app:layout_textSizePercent="5.77%w" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dcdcdc" />
+
+        <TextView
+            android:id="@+id/text_ok"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="好的，知道了"
+            android:textColor="@color/common_style_text_color"
+            android:textSize="15dp"
+            app:layout_heightPercent="16.15%w"
+            app:layout_textSizePercent="5.77%w" />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

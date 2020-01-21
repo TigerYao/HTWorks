@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+    <com.huatu.viewpagerindicator.PagerSlidingArrayTabStrip
+        android:id="@+id/tab_strip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorColor="@color/indicator_color"
+        app:pstsIndicatorHeight="@dimen/xd_home_group_tab_host_indicator_height"
+        app:pstsIndicatorWidth="20dp"
+        app:pstsShouldExpand="false"
+        app:pstsTabPaddingLeftRight="8dp"
+        app:pstsTextColor="@color/black2gray_text_selector"
+        app:pstsTextSize="@dimen/text_size_large"
+        app:pstsUnderlineColor="@color/transparent"
+        app:pstsUnderlineHeight="@dimen/cd_module_line_height" />
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/xi_comm_page_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_strip"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+    <include
+        layout="@layout/loading_default_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_strip" />
+</RelativeLayout>
+

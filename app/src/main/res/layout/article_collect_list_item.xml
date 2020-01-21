@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@id/whole_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chk_btn"
+            style="@style/deleteCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_toRightOf="@+id/chk_btn"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:id="@+id/techer_img"
+                android:scaleType="fitXY"
+                android:background="@mipmap/load_default"
+                android:layout_marginRight="15dp"
+                android:layout_width="113dp"
+                android:layout_height="74dp" />
+            <TextView
+                android:id="@+id/tv_item_course_mine_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/techer_img"
+                android:layout_marginBottom="28dp"
+                android:maxLines="2"
+                android:text="2018江苏省面试特 "
+                android:textColor="@color/blackF4"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:text="5月19日"
+                android:textColor="@color/black250"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="取消收藏"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</com.nalan.swipeitem.recyclerview.SwipeItemLayout>

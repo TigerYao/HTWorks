@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_course"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_collect_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="合集标签"
+        android:textColor="#4A4A4A"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_each_course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_collect_course_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="标题标题"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_each_course_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="不知道是什么"
+        android:textColor="#9B9B9B"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_brief"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="9月5日 共100课时"
+        android:textColor="#9B9B9B"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_left_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_duration"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="3天10小时 10:34:28"
+        android:textColor="#FF3F47"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_left_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_real_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="￥2980"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="980"
+            android:textColor="#9B9B9B"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--课程标签-->
+    <LinearLayout
+        android:id="@+id/ll_discount_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_buy_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_discount_type"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="286人已抢"
+        android:textColor="#6C7172"
+        android:textSize="12sp" />
+
+    <!--老师头像-->
+    <FrameLayout
+        android:id="@+id/ll_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignBottom="@+id/tv_buy_status"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/teacher_first_view"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:src="@mipmap/image11" />
+
+        <ImageView
+            android:id="@+id/teacher_second_view"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="64dp"
+            android:src="@mipmap/image11" />
+
+        <ImageView
+            android:id="@+id/teacher_third_view"
+            android:layout_width="28dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="115dp"
+            android:src="@mipmap/image11" />
+
+        <com.huatu.handheld_huatu.ui.MultTextView
+            android:layout_marginLeft="4dp"
+            android:id="@+id/techer_des_txt"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="35dp"
+            android:layout_width="150dp"
+            android:layout_height="24dp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_collect_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_buy_status"
+        android:background="@color/gray_divider"
+        android:orientation="vertical">
+
+        <!--分割线-->
+        <View
+            android:id="@+id/iv_divide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_divider" />
+
+        <!--合集-->
+        <ImageView
+            android:id="@+id/iv_collect_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_icon_hejike" />
+
+        <!--没有更多，最后的留白-->
+        <View
+            android:id="@+id/view_end"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray_divider" />
+
+        <!--查看更多-->
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="13dp"
+            android:paddingBottom="15dp"
+            android:src="@mipmap/mip_check_more_course" />
+    </LinearLayout>
+</RelativeLayout>

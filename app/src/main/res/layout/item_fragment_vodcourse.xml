@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:minHeight="122dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp">
+
+
+    <ImageView
+        android:id="@+id/item_shop_img"
+        android:layout_width="118dp"
+        android:layout_height="86dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" />
+
+
+    <TextView
+        android:id="@+id/item_shop_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/item_shop_img"
+        android:layout_marginLeft="10dp"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:gravity="top"
+        android:maxLines="2"
+        android:text="@string/lesson_tv_content"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/text_size" />
+    <TextView
+        android:id="@+id/item_shop_tv_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:gravity="center_vertical"
+        android:text="@string/lesson_tv_time_end"
+        android:textSize="11sp"
+        android:textColor="@color/text_color_light"
+        android:background="@drawable/textview_border"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:visibility="gone"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/item_shop_tv_teacher"
+        android:layout_alignStart="@+id/item_shop_tv_teacher" />
+
+
+    <ImageView
+        android:id="@+id/item_shop_mark_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_shop_img"
+        android:src="@drawable/mark_today"
+        android:visibility="gone"  />
+
+    <TextView
+        android:id="@+id/item_shop_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_shop_tv_title"
+        android:includeFontPadding="false"
+        android:layout_alignBottom="@+id/item_shop_img"
+        android:maxLines="1"
+        android:text="价格"
+        android:textSize="@dimen/text_size" />
+    <TextView
+        android:id="@+id/item_shop_tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_shop_img"
+        android:layout_toRightOf="@+id/item_shop_tv_price"
+        android:visibility="gone"
+        android:paddingLeft="5dp"
+        android:text="66666"
+        android:textColor="#999999"
+        android:textSize="@dimen/text_size"
+        />
+    <LinearLayout
+        android:id="@+id/item_shop_tv_origin_price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_shop_tv_price"
+        android:layout_alignBottom="@id/item_shop_tv_price"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="￥"
+            android:textSize="12sp"
+            android:textColor="@color/gray_999999" />-->
+        <TextView
+            android:id="@+id/item_shop_tv_origin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="aaaa"
+            android:textSize="12sp"
+            android:textColor="@color/gray_999999"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_shop_buy_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/item_shop_tv_price"
+        android:textColor="@color/text_color_light"
+        android:drawablePadding="5dp"
+        android:text="@string/lesson_tv_free"
+        android:textSize="@dimen/text_size_small"  />
+
+    <TextView
+        android:id="@+id/item_shop_tv_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_shop_tv_price"
+        android:layout_below="@id/item_shop_tv_end_time"
+        android:layout_alignBottom="@+id/item_shop_tv_teacher"
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:gravity="center_vertical"
+        android:text="课时"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_size_small" />
+    <TextView
+        android:id="@+id/item_shop_tv_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/item_shop_tv_class"
+        android:layout_alignLeft="@id/item_shop_tv_title"
+        android:layout_above="@id/item_shop_tv_price"
+        android:layout_below="@id/item_shop_tv_end_time"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="14dp"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="老师"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <ImageView
+        android:id="@+id/item_shop_sale_status"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/item_shop_tv_title"
+        android:layout_alignBottom="@id/item_shop_tv_price"
+        android:layout_alignTop="@id/item_shop_tv_price"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/sale_out"
+        android:visibility="gone"
+        android:scaleType="fitXY"/>
+
+
+</RelativeLayout>

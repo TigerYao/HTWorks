@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bf000000">
+
+    <RelativeLayout
+        android:id="@+id/rl_redbag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/redbag_open_bg" />
+
+            <TextView
+                android:id="@+id/tv_congratulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="恭喜！ \n获得好友助学现金红包"
+                android:textColor="#FF3F47"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_congratulation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/redbag_money_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#FF3F47"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_money"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/tv_money"
+                    android:text="元"
+                    android:textColor="#FF3F47" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_last_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="27dp"
+                android:text="每人最少获得10元"
+                android:textColor="#FF3F47"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/iv_send"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/redbag_time_bg"
+                android:text="24:00:00 后过期"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:src="@mipmap/redbag_send_btn" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_center_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/iv_flower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_center_5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/redbag_flower"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rl_bag"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/redbag_rule_btn" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_bag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/redbag_close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/redbag_rule_bg"
+        android:elevation="-50dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_rule_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="活动说明"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_rule_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rule_title"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="3dp"
+            android:text="1. 红包新用户享用 \n2.红包可以提现，提现请前往华图在线app，我的-红包-提现（新用户需下载华图在线app） \n3.红包领取时间为自发送起的24小时内，超过24小时，未领取的红包失效 \n4.如果用户7日内不提现，红包清零 \n5.红包提现没有金额限制，只要账户有红包均可提现 \n6.一个用户只能参与一次红包领取 \n7.参加本活动即同意，在发生退款时，助学红包金额不予退款，本人完全知晓。"
+            android:textColor="#4A4A4A" />
+
+        <ImageView
+            android:id="@+id/iv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_rule_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/redbag_rule_ok" />
+    </RelativeLayout>
+</RelativeLayout>

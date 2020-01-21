@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:lines="1"
+            android:text="11:11:11"
+            android:textColor="#d1d1d1"
+            android:textSize="9dp"
+            app:layout_marginRightPercent="5.33%w"
+            app:layout_marginTopPercent="4.44%w"
+            app:layout_textSizePercent="4%w" />
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/text_time"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="蜗牛雪雪"
+            android:textColor="@color/green001"
+            android:textSize="10dp"
+            app:layout_marginLeftPercent="5.33%w"
+            app:layout_marginTopPercent="4.44%w"
+            app:layout_textSizePercent="4.44%w" />
+
+        <TextView
+            android:id="@+id/text_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="9dp"
+            android:text="adfadf"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            app:layout_marginBottomPercent="4.44%w"
+            app:layout_marginLeftPercent="5.33%w"
+            app:layout_marginRightPercent="5.33%w"
+            app:layout_marginTopPercent="4%w"
+            app:layout_textSizePercent="5.33%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

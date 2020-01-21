@@ -1,0 +1,93 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@color/gray004"
+        app:layout_heightPercent="13.33%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            app:layout_heightPercent="13.33%w">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_left"
+                android:padding="1.0dp"
+                app:layout_heightPercent="41.67%w"
+                app:layout_marginLeftPercent="25%w"
+                app:layout_widthPercent="20.83%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="讲义"
+            android:textColor="@color/black001"
+            app:layout_textSizePercent="4.17%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/rl_top"
+        android:background="@color/gray005" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/errorview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top"
+        android:visibility="gone" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_no_handout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/arena_exam_main_error_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/down_no_num" />
+
+        <TextView
+            android:id="@+id/arena_exam_main_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/arena_exam_main_error_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="该课程暂无讲义"
+            android:textColor="@color/common_error_view_text_color"
+            android:textSize="16sp"
+            app:layout_marginTopPercent="4.44%w"
+            app:layout_textSizePercent="4.44%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

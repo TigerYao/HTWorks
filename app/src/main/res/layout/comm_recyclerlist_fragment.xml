@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.widget.ImprovedSwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:isl="http://schemas.android.com/apk/res-auto"
+        android:background="@color/main_bg"
+        android:id="@id/xi_swipe_pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        isl:scrollableChildId="@+id/xi_comm_page_list">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.huatu.handheld_huatu.ui.recyclerview.RecyclerViewEx
+                android:id="@+id/xi_comm_page_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"  />
+
+            <include layout="@layout/loading_default_layout" />
+
+        </RelativeLayout>
+</com.huatu.widget.ImprovedSwipeLayout>

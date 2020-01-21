@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="54dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="54dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="1"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:scrollbars="none">
+
+                <ImageView
+                    android:id="@+id/a_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_a_1" />
+
+                <ImageView
+                    android:id="@+id/b_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_b_1" />
+
+                <ImageView
+                    android:id="@+id/c_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_c_1" />
+
+                <ImageView
+                    android:id="@+id/d_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_d_1" />
+
+                <ImageView
+                    android:id="@+id/e_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_e_1" />
+
+                <ImageView
+                    android:id="@+id/f_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_f_1" />
+
+                <ImageView
+                    android:id="@+id/g_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_g_1" />
+
+                <ImageView
+                    android:id="@+id/h_single"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/single_h_1" />
+
+                <!--两个占位-->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/a_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_a_1" />
+
+                <ImageView
+                    android:id="@+id/b_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_b_1" />
+
+                <ImageView
+                    android:id="@+id/c_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_c_1" />
+
+                <ImageView
+                    android:id="@+id/d_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_d_1" />
+
+                <ImageView
+                    android:id="@+id/e_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_e_1" />
+
+                <ImageView
+                    android:id="@+id/f_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_f_1" />
+
+                <ImageView
+                    android:id="@+id/g_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_g_1" />
+
+                <ImageView
+                    android:id="@+id/h_multi"
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/multi_h_1" />
+
+                <!--两个占位-->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="54dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_no_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="本题答案不支持在线录入"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </GridLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_top_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:alpha="0.5"
+        android:background="@drawable/answer_card_group_bottom" />
+</RelativeLayout>

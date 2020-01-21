@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rl_topbar"
+        layout="@layout/topbar_general_type2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/cut_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.huatu.widget.X5WebView
+        android:id="@+id/wv_advertise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+        <com.huatu.widget.WebProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:id="@+id/progress_tip_bar"
+            android:visibility="gone"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_rush_sale_horizontal"
+            android:layout_height="3dip" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/high_mianshi_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRightShow="true"
+        app:topbarLeftImgRes="@drawable/hms_guanbi"
+        app:topbarRightImgRes="@drawable/hms_wancheng"
+        app:topbarTitle="面试学员信息卡" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/high_mianshi_title_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/high_mianshi_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="58dp"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="请填写"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="20"
+                android:textColor="@color/gray_666666"
+                android:textColorHint="@color/gray003"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="性别"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/high_mianshi_gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="58dp"
+                android:drawableLeft="@drawable/icon_checked"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="女"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/high_mianshi_gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@drawable/icon_check_normal"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="男"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="手机号"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/high_mianshi_phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="43dp"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="11位手机号码"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="11"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray003"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f1f1f1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="身份证号"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/high_mianshi_shenfen_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="18位身份证号码"
+                android:lines="1"
+                android:maxLength="18"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray003"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="准考证号"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/high_mianshi_zhunkao_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="准考证号码"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="18"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray003"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="报名序列号"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/high_mianshi_baokao_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="报名序列号"
+                android:inputType="number"
+                android:lines="1"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray003"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#f1f1f1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="综合成绩"
+                android:textColor="@color/gray_333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/high_mianshi_chengji_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@color/transparent"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:hint="综合成绩"
+                android:inputType="number|numberDecimal"
+                android:lines="1"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray003"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/v_blank_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#88888888"
+        android:visibility="gone"/>
+</RelativeLayout>

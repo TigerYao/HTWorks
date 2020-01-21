@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowUpLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:tag="sticky">
+
+        <TextView
+            style="@style/essay_check_title"
+            android:text="标准答案"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="7dp"
+            android:padding="8dp"
+            android:src="@mipmap/homef_title_pop_up1" />
+    </com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowUpLayout>
+

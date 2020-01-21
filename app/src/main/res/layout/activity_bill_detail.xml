@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xi_toolbar_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/common_10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/bill_img_bg" />
+
+        <TextView
+            android:id="@+id/bill_state"
+            style="@style/bill_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp33"
+            android:text="发票状态：已开票" />
+
+        <TextView
+            android:id="@+id/bill_type"
+            style="@style/bill_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_state"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:text="发票类型：电子发票" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/bill_type"
+            android:layout_margin="10dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/order_code_title"
+            style="@style/bill_text_gray_name"
+            android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:text="订单号：" />
+
+        <TextView
+            android:id="@+id/order_code"
+            style="@style/bill_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/order_code_title"
+            android:text="-- --" />
+
+        <TextView
+            android:layout_marginRight="0dp"
+            android:id="@+id/order_time_name"
+            style="@style/bill_text_gray_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_code_title"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:text="下单时间：" />
+
+        <TextView
+            android:id="@+id/order_time"
+            style="@style/bill_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_code_title"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/order_time_name"
+            android:text="-- --" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/order_time_name"
+            android:layout_margin="10dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/bill_head_type_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1">
+
+            <TextView
+                android:layout_marginRight="0dp"
+                style="@style/bill_text_gray_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抬头类型：" />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:id="@+id/bill_head_type"
+                style="@style/bill_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- --" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bill_head_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_head_type_name">
+
+            <TextView
+                style="@style/bill_text_gray_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/common_10dp"
+                android:text="发票抬头：" />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:id="@+id/bill_head"
+                style="@style/bill_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10dp"
+                android:text="-- --" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bill_content_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_head_name">
+
+            <TextView
+                style="@style/bill_text_gray_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10dp"
+                android:layout_marginRight="0dp"
+                android:text="发票内容：" />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:id="@+id/bill_content"
+                style="@style/bill_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bill_head_name"
+                android:layout_marginTop="@dimen/common_10dp"
+                android:layout_toRightOf="@id/bill_content_name"
+                android:text="咨询费" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bill_code_name"
+            style="@style/bill_text_gray_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_content_name"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:visibility="gone"
+            android:layout_marginRight="0dp"
+            android:text="纳税人识别号："  />
+
+        <TextView
+            android:layout_marginLeft="0dp"
+            android:id="@+id/bill_code"
+            style="@style/bill_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_content_name"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:layout_toRightOf="@id/bill_code_name"
+            android:visibility="gone"
+            android:text="-- --"  />
+
+        <TextView
+            android:id="@+id/bill_price_name"
+            style="@style/bill_text_gray_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_code_name"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:layout_marginRight="0dp"
+            android:text="发票金额：" />
+
+        <TextView
+            android:id="@+id/bill_price"
+            style="@style/bill_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bill_code_name"
+            android:layout_marginTop="@dimen/common_10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/bill_price_name"
+            android:text="￥-- --" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_code"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/common_dimens_30dp"
+            android:src="@mipmap/bill_backgroud_corner" />
+    </RelativeLayout>
+
+    <com.huatu.widget.KitkatProfileFramLayout
+        android:id="@id/xi_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="horizontal">
+
+        <com.huatu.handheld_huatu.ui.TitleBar
+            android:id="@id/xi_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xd_toolbar_height" />
+    </com.huatu.widget.KitkatProfileFramLayout>
+
+    <Button
+        android:id="@+id/send_mail"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="@dimen/common_dimens_30dp"
+        android:background="@drawable/bg_round_corner_gray"
+        android:text="发送发票至邮箱"
+        android:textColor="#9B9B9B"
+        android:textSize="18sp" />
+</RelativeLayout>

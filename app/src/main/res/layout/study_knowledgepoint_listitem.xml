@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/know_name_txt"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="马"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/title_name_txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="马克思主义"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/content_txt"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共20道，答对0道，正确率0%，总计用时"
+        android:textColor="#7E7E7E"
+        android:textSize="12sp"
+        />
+</FrameLayout>

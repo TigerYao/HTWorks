@@ -1,0 +1,108 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    provided "com.android.support:appcompat-v7:${SUPPORT_VERSION}"
+   // testCompile 'junit:junit:4.12'
+   /* androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })*/
+
+
+
+}
+clean.doLast {
+    def recordDir = file("${project.projectDir}/api_records/")
+    if (!recordDir.exists() || !recordDir.directory) {
+        return
+    }
+
+    def contents = new ArrayList<String>()
+    for (File recordFile : recordDir.listFiles()) {
+        if (recordFile.exists() && !recordFile.directory) {
+            def text = recordFile.text
+            if (text != null && !text.empty) {
+                contents.add(recordFile.text)
+            }
+        }
+    }
+
+    if (contents.empty) {
+        return
+    }
+
+    def sourcePath = "${project.projectDir}/src/main/java/"
+    def sourceDir = file(sourcePath)
+    def records = new ArrayList<String>()
+    for (String content : contents) {
+        for (String r : content.split(";\\n")) {
+            def record = r.trim()
+            if (record != null && !record.isEmpty()) {
+                // println "record file " + sourcePath + record
+                records.add(sourcePath + record)
+            }
+        }
+    }
+
+    def removePaths = subtract(recursivlyGetFiles(sourceDir), records)
+    for (String path : removePaths) {
+        //Provider  自定义的不移除
+        if (path.endsWith(".java")&&(!path.endsWith("Provider.java"))) {
+            file(path).delete()
+            println "remove file " + path
+        }
+    }
+}
+
+List<String> subtract(List<String> a, List<String> b) {
+    if (a == null || a.empty || b == null || b.empty) {
+        return a
+    }
+    def res = new ArrayList<String>(a)
+    for (String item : b) {
+        if (res.contains(item)) {
+            res.remove(item)
+        }
+    }
+    return res
+}
+
+List<String> recursivlyGetFiles(File dir) {
+    def result = new ArrayList<String>()
+    if (dir == null || !dir.exists() || !dir.directory) {
+        return result
+    }
+    for (File sub : dir.listFiles()) {
+        if (sub.directory) {
+            result.addAll(recursivlyGetFiles(sub))
+        } else {
+            result.add(sub.absolutePath)
+        }
+    }
+    return result
+}

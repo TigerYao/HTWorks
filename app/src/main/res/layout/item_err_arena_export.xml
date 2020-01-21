@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_rl_tree"
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_img_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/img_content_desc"
+            android:src="@mipmap/tree_indicator1_fold" />
+
+        <View
+            android:id="@+id/item_line_top"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/item_img_expand"
+            android:layout_centerHorizontal="true"
+            android:background="#FF6D73" />
+
+        <View
+            android:id="@+id/item_line_bottom"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/item_img_expand"
+            android:layout_centerHorizontal="true"
+            android:background="#FF6D73" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="常识判断"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_err_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6道错题"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_check"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/ex_err_0"
+            android:enabled="false" />
+    </RelativeLayout>
+</LinearLayout>

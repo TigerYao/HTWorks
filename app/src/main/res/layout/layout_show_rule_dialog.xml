@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/sc_main_card_bg">
+    <ScrollView
+        android:id="@+id/wb_show_rule_sv"
+        android:layout_width="260dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="240dp">
+
+        <WebView
+            android:id="@+id/wb_show_rule"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fitsSystemWindows="true"/>
+    </ScrollView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#dfdfdf"/>
+
+    <TextView
+        android:id="@+id/tv_know"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:text="我知道了"
+        android:textColor="#e9304e"
+        android:textSize="12sp"/>
+</LinearLayout>
+</FrameLayout>

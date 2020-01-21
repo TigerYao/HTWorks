@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minHeight="40dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="总课时数"
+            android:textStyle="bold"
+            android:textColor="#ff4a4a4a"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/name1_value"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginLeft="70dp"
+            android:text="591课时（含20课时直播课）"
+            android:textColor="#ff4a4a4a"
+            android:textSize="13sp"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="#e1e1e1"/>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/bjplayer_layout_center_video_functions_rate_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="208dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_pop_action_bg"
+    android:gravity="center"
+    android:layout_gravity="right"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_0_5_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="0.5"
+        android:text="0.5x"/>
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_0_7_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="0.75"
+        android:text="0.75x"/>
+
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_1_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="1"
+        android:text="1.0x"/>
+
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_1_2_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="1.25"
+        android:text="1.25x"/>
+
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_1_5_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="1.5"
+        android:text="@string/bjplayer_video_rate_1_5"/>
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_1_75_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="1.75"
+        android:text="1.75x"/>
+    <TextView
+        android:id="@+id/bjplayer_layout_center_video_functions_rate_2_btn"
+        style="@style/bjplayer_speedtext_style"
+        android:tag="2"
+        android:text="2.0x"/>
+
+</LinearLayout>

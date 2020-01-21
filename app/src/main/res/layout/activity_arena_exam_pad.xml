@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.arena.activity.ArenaExamActivityPad">
+
+    <View
+        android:id="@+id/view_statue"
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view_statue" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_title" />
+
+    <FrameLayout
+        android:id="@+id/fl_draft_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="26dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_start_five_tip"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:background="@drawable/bg_sc_five_tips_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_five_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="04:30"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/arena_sc_start_five_tip_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:text="距离考试"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_tip_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A3000000"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_long_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/tip_for_long_press_delete"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_doubt"
+        android:layout_width="224dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="40dp"
+        android:src="@mipmap/doubt_tip"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/choose_queseq_tips"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="228dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:minWidth="300dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/err_tip_del"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_title"
+        android:visibility="gone" />
+
+    <ViewStub
+        android:id="@+id/vs_ai_practice_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_statue"
+        android:inflatedId="@+id/viewstub_inflateid_ai_practice_tips"
+        android:layout="@layout/layout_viewstub_ai_practice_tips_rl" />
+</RelativeLayout>

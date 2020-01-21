@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.handheld_huatu.view.CircleImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    app:round_borderWidth="2dp"
+    app:round_borderColor="#ffffff" />

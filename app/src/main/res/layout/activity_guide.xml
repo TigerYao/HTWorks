@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.huatu.handheld_huatu.view.CircleIndicator
+        android:id="@+id/indicator_guide"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        app:bg_mode="normal"
+        app:ci_background="#f3f3f3"
+        app:ci_background_selected="#ff3f47"
+        app:ci_gravity="center"
+        app:ci_margin="10dp"
+        app:ci_mode="outside"
+        app:ci_radius="5dp"
+        />
+
+<!--    <TextView
+        android:id="@+id/guide_start_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        />-->
+</FrameLayout>

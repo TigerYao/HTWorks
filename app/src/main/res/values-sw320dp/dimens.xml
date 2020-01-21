@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--4英寸小屏幕手机的尺寸-->
+    <dimen name="check_12sp">10sp</dimen>
+    <dimen name="check_13sp">11sp</dimen>
+    <dimen name="check_14sp">12sp</dimen>
+    <dimen name="check_15sp">13sp</dimen>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_result_answer_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result_answer_card"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/option_single_def_light"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/gray007"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_result_answer_card_invalid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_result_answer_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:includeFontPadding="false"
+            android:text="不可答"
+            android:textColor="#666666"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_doubt"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignRight="@+id/ll"
+        android:layout_marginTop="2dp"
+        android:src="@mipmap/arena_doubt_icon"
+        android:visibility="gone" />
+</RelativeLayout>

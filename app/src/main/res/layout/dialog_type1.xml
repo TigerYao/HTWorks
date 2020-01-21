@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_rectangle_white"
+        app:layout_heightPercent="34.72%w"
+        app:layout_widthPercent="71.94%w">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registerInfo"
+            android:textColor="@color/black001"
+            app:layout_heightPercent="31.66%w"
+            app:layout_textSizePercent="5.79%w" />
+
+        <View
+            android:id="@+id/v_interval_horizonal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_1"
+            android:layout_below="@id/tv_content"
+            android:background="@color/gray011" />
+
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/v_interval_horizonal"
+            android:gravity="center"
+            android:text="@string/continueRegister"
+            android:textColor="@color/green001"
+            app:layout_textSizePercent="5.79%w"
+            app:layout_widthPercent="50%w" />
+
+        <View
+            android:id="@+id/v_interval_vertical"
+            android:layout_width="@dimen/width_1"
+            android:layout_height="match_parent"
+            android:layout_below="@id/v_interval_horizonal"
+            android:layout_toRightOf="@id/tv_ok"
+            android:background="@color/gray011" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/v_interval_horizonal"
+            android:layout_toRightOf="@+id/v_interval_vertical"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/gray006"
+            app:layout_textSizePercent="5.79%w"
+            app:layout_widthPercent="50%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

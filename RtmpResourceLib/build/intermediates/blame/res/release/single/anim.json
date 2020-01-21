@@ -1,0 +1,234 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/h_fragment_enter.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/h_fragment_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_from_topright_to_bottomleft.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_from_topright_to_bottomleft.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/interpolator_slight_overshoot.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/interpolator_slight_overshoot.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/my_decelerate_cubic.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/my_decelerate_cubic.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/v_fragment_exit.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/v_fragment_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_fade_out.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_fade_out.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/alerter_slide_in_from_top.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/alerter_slide_in_from_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_slide_in_top.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/design_snackbar_in.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/slide_in_from_top.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/slide_in_from_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_from_bottomright_to_topleft.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_from_bottomright_to_topleft.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/slide_out_to_bottom.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_from_topleft_to_bottomright.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_from_topleft_to_bottomright.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/alerter_pulse.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/alerter_pulse.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_fade_out.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_fade_in.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/v_fragment_enter.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/v_fragment_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/interpolator_slight_anticipate.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/interpolator_slight_anticipate.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/h_fragment_pop_exit.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/h_fragment_pop_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_from_bottomleft_to_topright.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_from_bottomleft_to_topright.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/qslide_still.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/qslide_still.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_from_topleft_to_bottomright.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_from_topleft_to_bottomright.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_slide_out_top.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_from_bottom.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/qscale_enter.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/qscale_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_from_bottom.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/my_decelerate_quint.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/my_decelerate_quint.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_from_top.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_from_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_popup_exit.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/slide_out_to_top.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/slide_out_to_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/design_snackbar_out.xml",
+        "source": "/Users/huatu/.android/build-cache/9b0e07081dfa4d9647192588323af96a1512dcd0/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/qscale_exit.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/qscale_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_tooltip_exit.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_tooltip_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/h_fragment_pop_enter.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/h_fragment_pop_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/shrink_from_top.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/shrink_from_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_tooltip_enter.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_tooltip_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/alerter_slide_out_to_top.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/alerter_slide_out_to_top.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_from_bottomleft_to_topright.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_from_bottomleft_to_topright.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/snack_popup_enter.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/snack_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_fade_in_center.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_fade_in_center.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/v_fragment_pop_exit.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/v_fragment_pop_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_from_bottomright_to_topleft.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_from_bottomright_to_topleft.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/my_overshoot_quint.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/my_overshoot_quint.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/slide_in_from_bottom.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/action_exit.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/action_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/no_anim.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/no_anim.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/h_fragment_exit.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/h_fragment_exit.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/pop_exit_no_anim.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/pop_exit_no_anim.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/huatu/.android/build-cache/e7192b4506fa2bbd84a6c1b5aa89a1e1152a6346/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/v_fragment_pop_enter.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/v_fragment_pop_enter.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/grow_from_topright_to_bottomleft.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/grow_from_topright_to_bottomleft.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/build/intermediates/res/merged/release/anim/my_alpha_out.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/RtmpResourceLib/src/main/res/anim/my_alpha_out.xml"
+    }
+]

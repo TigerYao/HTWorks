@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_item_facelist.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_item_facelist.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_voice_left.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_voice_left.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_title.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_title.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_listview_head.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_listview_head.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_text_right.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_text_right.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_video_right.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_video_right.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/activity_video_attestation_upload.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/activity_video_attestation_upload.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_showphoto.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_showphoto.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_custom_facerelativelayout.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_custom_facerelativelayout.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_gif_left.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_gif_left.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_message_function_layout.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_message_function_layout.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_dialog_leavemsg.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_dialog_leavemsg.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_movie_recorder_view.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_movie_recorder_view.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_video_left.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_video_left.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_custommsg_text_right.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_custommsg_text_right.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_text_left.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_text_left.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_voice_right.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_voice_right.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_valuationpage.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_valuationpage.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_robotlist_item.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_robotlist_item.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_fragment_video.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_fragment_video.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/activity_record_video.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/activity_record_video.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_system.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_system.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_showcamera.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_showcamera.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_dialog_myvioce.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_dialog_myvioce.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_image_right.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_image_right.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_gif_right.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_gif_right.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_normal_dialog.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_normal_dialog.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_chatpage.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_chatpage.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_showgoods.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_showgoods.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_righthead_include.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_righthead_include.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_lefthead_include.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_lefthead_include.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_my_pg_bar.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_my_pg_bar.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_item_chatlist.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_item_chatlist.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_blackline.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_blackline.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_videoplayer.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_videoplayer.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_myimage_dialog.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_myimage_dialog.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_popupwindow_copy.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_popupwindow_copy.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/movie_recorder_view.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/movie_recorder_view.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_chatting_item_msg_image_left.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_chatting_item_msg_image_left.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_explorer.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_explorer.xml"
+    },
+    {
+        "merged": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/build/intermediates/res/merged/debug/layout/xn_activity_leavemsgpage.xml",
+        "source": "/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/XiaonengChatUI/src/main/res/layout/xn_activity_leavemsgpage.xml"
+    }
+]

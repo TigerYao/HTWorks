@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:minHeight="63dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_balance"
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="19"
+            android:textColor="#333333"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/tv_num"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_event"
+            android:layout_below="@id/tv_event"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="2017-8-30"
+            android:textColor="#999999"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_foot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rl_balance"
+        android:layout_marginTop="5dp"
+        android:background="#dfdfdf"
+        android:gravity="center"
+        android:text="仅显示近三个月的记录"
+        android:textColor="#999999"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+//        jcenter()
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        jcenter() {
+            url "https://jcenter.bintray.com/"
+        }
+        //添加 Sensors Analytics maven 库地址
+        maven {
+            url 'https://dl.bintray.com/zouyuhan/maven'
+        }
+        maven { url 'http://git.baijiashilian.com/open-android/maven/raw/master/' }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+    }
+    dependencies {
+       // classpath 'com.android.tools.build:gradle:2.3.3'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        if (project.hasProperty('GRADLE_3') && GRADLE_3.equalsIgnoreCase('TRUE')) {
+            classpath 'com.android.tools.build:gradle:3.2.1'
+        } else {
+            classpath 'com.android.tools.build:gradle:2.3.3'
+        }
+        classpath("com.tencent.tinker:tinker-patch-gradle-plugin:${TINKER_VERSION}") {
+            changing = TINKER_VERSION?.endsWith("-SNAPSHOT")
+            exclude group: 'com.android.tools.build', module: 'gradle'
+        }
+
+       //好像有冲突
+      // classpath "com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.1"
+
+        //原始的集成
+        classpath 'org.aspectj:aspectjtools:1.8.9'
+        classpath 'org.aspectj:aspectjweaver:1.8.9'
+
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+      //  classpath("com.tencent.tinker:tinker-patch-gradle-plugin:${TINKER_VERSION}")
+        classpath "com.meituan.android.walle:plugin:${WALLE_VERSION}"
+
+        //https://doc.tingyun.com/app/html/Androidpingtai-Gradle.html  'newlens'
+        //// TingYun_Version为当前听云APP版本号
+        classpath 'com.networkbench.newlens.agent.android:agent-gradle-plugin:2.5.9'
+        //添加 Sensors Analytics android-gradle-plugin 依赖
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:3.0.1'
+
+       // classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.0'
+       // classpath 'org.aspectj:aspectjtools:1.8.9'
+        //classpath "com.github.jengelman.gradle.plugins:shadow:4.0.4"
+    }
+}
+allprojects {
+    repositories {
+        // 添加下面的内容
+        flatDir {
+            dirs 'libs'
+        }
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+
+        maven { url "https://maven.google.com" }
+        jcenter() {
+            url "https://jcenter.bintray.com/"
+        }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+//        maven { url 'https://raw.github.com/baijia/maven/master/' }   //remote
+
+        //添加 Sensors Analytics maven 库地址
+        maven {
+            url 'https://dl.bintray.com/zouyuhan/maven'
+        }
+
+        maven { url 'http://git.baijiashilian.com/open-android/maven/raw/master/' }
+//        maven { url "https://maven.google.com" }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'https://raw.githubusercontent.com/bitterbee/mvn-repo/master/' }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+apply from: "config.gradle"
+
+/*android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+}*/

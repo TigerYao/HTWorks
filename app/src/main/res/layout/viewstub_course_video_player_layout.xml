@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/mini_video_screen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.huatu.handheld_huatu.ui.BJPlayerExView
+        android:id="@+id/presale_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:aspect_ratio="fit_parent"
+        app:bottom_controller="@layout/bjplayer_layout_bottom"
+        app:center_controller="@layout/player_center_controller"
+        app:top_controller="@layout/bjplayer_layout_top" />
+
+</FrameLayout>

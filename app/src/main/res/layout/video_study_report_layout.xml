@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huatu.widget.KitkatProfileFramLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCA58"
+        android:orientation="horizontal">
+
+        <com.huatu.handheld_huatu.ui.TitleBar
+            android:id="@id/xi_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xd_toolbar_height" />
+
+    </com.huatu.widget.KitkatProfileFramLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/live_time_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_video_studyreport_gradient"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/common_20dp">
+
+                <TextView
+                    android:id="@+id/listener_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/bg_video_report_progress_tip"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/common_5dp"
+                    android:paddingTop="@dimen/common_2dp"
+                    android:paddingRight="@dimen/common_5dp"
+                    android:text="直播听课用时"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/progress_layout"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/listener_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/common_dimens_40dp"
+                    android:orientation="vertical">
+
+                    <com.qmuiteam.qmui.widget.QMUIProgressBar
+                        android:id="@+id/circleProgressBar"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="40sp"
+                        app:qmui_background_color="#EFBD51"
+                        app:qmui_progress_color="@color/white"
+                        app:qmui_stroke_round_cap="true"
+                        app:qmui_stroke_width="10dp"
+                        app:qmui_type="type_circle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="@dimen/common_dimens_30dp"
+                        android:text="分钟"
+                        android:textColor="#EFBD51"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progress_layout"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="@mipmap/bg_study_report_des"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/common_20dp">
+
+                    <TextView
+                        android:id="@+id/study_get_coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/common_10dp"
+                        android:textColor="#ff000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/study_report_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:lineSpacingMultiplier="1.3"
+                        android:textColor="#ff000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_10dp"
+                android:background="@color/gray001" />
+
+            <LinearLayout
+                android:id="@+id/class_work_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/class_exi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/common_dimens_30dp"
+                        android:background="@drawable/bg_corner_yellow"
+                        android:text="随堂练习"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/class_coin_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_15dp"
+                        android:layout_toRightOf="@id/class_exi"
+                        android:background="@mipmap/video_report_coin_tip"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:paddingBottom="@dimen/common_5dp"
+                        android:textColor="#ffa45611"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/class_exercises_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="164dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_10dp"
+                    android:background="@color/gray001" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_work_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_corner_yellow"
+                    android:text="课后作业"
+                    android:textColor="#ff000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/after_class_exercises_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="164dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_10dp"
+                    android:background="@color/gray001" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/common_dimens_60dp"
+                    android:layout_height="@dimen/common_dimens_60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_15dp"
+                    android:src="@mipmap/icon_study_report_teacher_img" />
+
+                <TextView
+                    android:id="@+id/study_report_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@mipmap/bg_study_report_after_des"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="@dimen/common_10dp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_10dp"
+                android:background="@color/gray001" />
+
+            <TextView
+                android:id="@+id/continue_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_corner_yellow"
+                android:text="继续练习本节考点"
+                android:textColor="#ff000000"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <com.huatu.widget.LinearLayoutListView
+                android:id="@+id/knowspoint_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

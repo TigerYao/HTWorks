@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/item_shop_ll_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_paddingLeftPercent="3.3%w"
+        app:layout_paddingRightPercent="3.3%w"
+        app:layout_paddingTopPercent="4.7%w">
+
+        <TextView
+            android:id="@+id/item_shop_tv_buy_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/daojishi"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/daojishi"
+            android:gravity="center"
+            android:text="@string/lesson_tv_buy_now"
+            android:textColor="@color/lesson_buy_status_color"/>
+
+        <TextView
+            android:id="@+id/item_shop_tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_tv_time_end"
+            android:textColor="@color/text_color_light"
+            app:layout_marginLeftPercent="3.3%w"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_paddingPercent="3.3%w">
+
+        <ImageView
+            android:id="@+id/item_shop_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            app:layout_heightPercent="23.9%w"
+            app:layout_widthPercent="33.6%w"/>
+
+        <TextView
+            android:id="@+id/item_shop_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_shop_img"
+            android:layout_toRightOf="@id/item_shop_img"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/lesson_tv_free"
+            android:textColor="@color/text_color_dark"
+            android:textSize="15sp"
+            app:layout_marginLeftPercent="2%w"/>
+
+        <TextView
+            android:id="@+id/item_shop_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_shop_img"
+            android:layout_toEndOf="@id/item_shop_img"
+            android:layout_toRightOf="@id/item_shop_img"
+            android:drawablePadding="5dp"
+            android:text="@string/lesson_tv_free"
+            android:textSize="@dimen/text_size"
+            app:layout_marginLeftPercent="2%w"/>
+
+        <TextView
+            android:id="@+id/item_shop_buy_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_shop_img"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/icon_fire"
+            android:drawablePadding="5dp"
+            android:text="@string/lesson_tv_free"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/item_shop_tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_shop_tv_price"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_shop_tv_title"
+            android:gravity="center_vertical"
+            android:text="@string/lesson_tv_free"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small"/>
+
+        <TextView
+            android:id="@+id/item_shop_tv_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/item_shop_tv_class"
+            android:layout_alignTop="@id/item_shop_tv_class"
+            android:layout_toEndOf="@id/item_shop_img"
+            android:layout_toLeftOf="@id/item_shop_tv_class"
+            android:layout_toRightOf="@id/item_shop_img"
+            android:layout_toStartOf="@id/item_shop_tv_class"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/lesson_tv_free"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small"
+            app:layout_marginLeftPercent="2%w"
+            app:layout_marginRightPercent="2%w"/>
+
+        <ImageView
+            android:id="@+id/item_shop_mark_today"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/mark_today"
+            android:visibility="gone"
+            app:layout_heightPercent="10%w"
+            app:layout_widthPercent="10%w"/>
+
+        <ImageView
+            android:id="@+id/item_shop_sale_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_shop_img"
+            android:layout_toRightOf="@id/item_shop_img"
+            android:src="@drawable/sale_out"
+            android:visibility="gone"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

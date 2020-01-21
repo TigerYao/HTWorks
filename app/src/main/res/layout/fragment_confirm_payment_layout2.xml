@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/common_5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:text="选择支付方式"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/confirm_payment_xxb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/confirm_payment_xxb_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="@dimen/common_10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_pay_check_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/mip_tubi" />
+
+        <TextView
+            android:id="@+id/confirm_payment_xxb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="图币支付"
+            android:textColor="@color/black2gray_text_selector"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/confirm_payment_xxb_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="#FF3F47"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm_payment_xxb_error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:includeFontPadding="false"
+            android:text="图币不足"
+            android:textColor="#FF3F47"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm_payment_xxb_charge_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|right"
+            android:includeFontPadding="false"
+            android:text="充值"
+            android:textColor="#3a8bdb"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/confirm_payment_zfb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/confirm_payment_zfb_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="@dimen/common_10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_pay_check_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/mip_alipay" />
+
+        <TextView
+            android:id="@+id/confirm_payment_zfb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="支付宝支付"
+            android:textColor="@color/black2gray_text_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/confirm_payment_we_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/confirm_payment_we_chat_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="@dimen/common_10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_pay_check_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/mip_wchat_pay" />
+
+        <TextView
+            android:id="@+id/confirm_payment_we_chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="微信支付"
+            android:textColor="@color/black2gray_text_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

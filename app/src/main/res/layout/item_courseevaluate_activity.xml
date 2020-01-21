@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_marginLeftPercent="4.1%w"
+            app:layout_marginRightPercent="4.4%w"
+            app:layout_marginTopPercent="5.5%w" />
+
+        <ImageView
+            android:id="@+id/iv_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_title"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/image11"
+            app:layout_marginTopPercent="5.5%w" />
+
+        <TextView
+            android:id="@+id/tv_teachername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/iv_teacher"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_marginTopPercent="8.3%w" />
+
+        <ImageView
+            android:id="@+id/iv_star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_teachername"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/iv_teacher"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w"
+            app:layout_marginTopPercent="3.3%w" />
+
+        <ImageView
+            android:id="@+id/iv_star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_star1"
+            android:layout_toRightOf="@+id/iv_star1"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_star1"
+            android:layout_toRightOf="@+id/iv_star2"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_star1"
+            android:layout_toRightOf="@+id/iv_star3"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_star1"
+            android:layout_toRightOf="@+id/iv_star4"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <TextView
+            android:id="@+id/tv_teacherfengshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_star1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_star5"
+            android:paddingLeft="9dp"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            app:layout_paddingLeftPercent="2.5%w"
+            app:layout_textSizePercent="4.1%w" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_below="@+id/iv_teacher"
+            android:layout_marginTop="20dp"
+            android:background="#f1f1f1"
+            app:layout_marginTopPercent="5.5%w" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

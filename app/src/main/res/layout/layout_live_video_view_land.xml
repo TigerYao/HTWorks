@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/live_video_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/live_video_play_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/teacher_name_ppt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="@dimen/common_10dp"
+            android:background="@drawable/bg_corner_right_black04"
+            android:gravity="left|center_vertical"
+            android:text="华图老师"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize_10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_live_video_chat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_live_tab_info"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/bg_live_video_chat_bottom"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:ems="1"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:maxEms="1"
+            android:text="助\n教\n笔\n记"
+            android:textColor="#D0AA6A"
+            android:textSize="@dimen/common_textsize_13sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/video_teacher_note_tip_icon" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview_interactive_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="36dp" />
+
+        <TextView
+            android:id="@+id/tip_new_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/common_10dp"
+            android:background="@mipmap/video_chat_new_msg_teacher_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_8dp"
+            android:text="有新消息"
+            android:textColor="#D0AA6A"
+            android:textSize="@dimen/common_textsize_12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!--  浮动视频区 -->
+    <FrameLayout
+        android:id="@+id/live_video_view_father_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_live_tab_info"
+        android:layout_gravity="right|top"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_live_video_chat"
+            android:paddingLeft="0.5px">
+
+            <FrameLayout
+                android:id="@+id/video_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/live_video_view_container_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/live_video_play_default"
+                    android:padding="0dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/video_container"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/common_5dp"
+                android:background="@drawable/bg_corner_right_black04"
+                android:gravity="left|center_vertical"
+                android:text="华图老师"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize_10sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line0"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/video_container"
+                android:background="#22000000" />
+
+            <TextView
+                android:id="@+id/talk_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line0"
+                android:gravity="center"
+                android:padding="@dimen/common_5dp"
+                android:text="讨论"
+                android:textColor="#9B9B9B"
+                android:textSize="@dimen/common_textsize_14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/talk_name"
+                android:background="@mipmap/livevideo_right_chats_bg" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listview_interactive_content1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view1" />
+
+            <TextView
+                android:id="@+id/tip_new_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/video_chat_new_msg_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/common_8dp"
+                android:text="有新消息"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textsize_12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.huatu.handheld_huatu.view.photo.TransitionImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"/>
+
+    <com.huatu.handheld_huatu.view.photo.DragPhotoView
+        android:id="@+id/bigPhotoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+
+    <com.huatu.handheld_huatu.view.photo.RoundProgressView
+        android:id="@+id/loading"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

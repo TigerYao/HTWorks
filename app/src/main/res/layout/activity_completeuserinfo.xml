@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray001">
+
+    <include
+        android:id="@+id/rl_topbar"
+        layout="@layout/topbar_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/rl_nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_topbar"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_person" />
+
+        <com.huatu.handheld_huatu.view.ClearEditText
+            android:id="@+id/et_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/inputNickHint"
+            android:lines="1"
+            android:padding="12dp"
+            android:textColorHint="@color/gray002"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_interval"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/rl_nick"
+        android:background="@color/gray005" />
+
+    <LinearLayout
+        android:id="@+id/rl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_interval"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_lock" />
+
+        <com.huatu.handheld_huatu.view.ClearEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/inputPwdHint"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="12dp"
+            android:textColorHint="@color/gray002"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_loginconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/rl_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/drawable_rectangle_bfbfbf"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/white" />
+</RelativeLayout>

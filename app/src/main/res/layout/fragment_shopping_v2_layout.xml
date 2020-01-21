@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f4f5">
+     <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/fragment_shopping_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="-10dp"
+        android:id="@+id/fragment_shopping_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.huatu.handheld_huatu.business.lessons.view.HorizontalListView
+                android:id="@+id/shopping_category_list_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingRight="10dp" />
+            <ImageView
+                android:id="@+id/shopping_category_setting_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/course_category_setting"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/fragment_shopping_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f2f4f5"
+        android:dividerHeight="0.6dp"
+        android:scrollbars="none"
+
+        android:headerDividersEnabled="true"/>
+</LinearLayout>

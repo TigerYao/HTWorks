@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_draft_paper_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/draft_paper_tips_layout"
+        android:layout_toRightOf="@+id/draft_paper_tips_layout"
+        android:background="@color/arena_question_subject_layout_bg_color"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_draft_paper_undo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:id="@+id/iv_draft_paper_undo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_draftpaper_undo_none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_draft_paper_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_draft_paper_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_draftpaper_delete_none" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_draft_paper_redo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_draft_paper_redo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_draftpaper_redo_none" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_draft_paper_close"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_draft_paper_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_draftpaper_close" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.huatu.handheld_huatu.view.custom.MZtkDraftPagerView
+        android:id="@+id/draft_paper_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_draft_paper_top"
+        android:background="@color/draft_paper_bg" />
+
+    <RelativeLayout
+        android:id="@+id/draft_paper_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_rectangle_a8000000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/icon_draft_move_tip" />
+
+            <TextView
+                android:id="@+id/draft_paper_tips_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="23dp"
+                android:text="双指按住，上下左右拖动稿纸"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

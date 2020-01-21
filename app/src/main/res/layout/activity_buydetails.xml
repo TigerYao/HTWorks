@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/buy_detail_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRightShow="true"
+        app:topbarLeftImgRes="@drawable/zc_back"
+        app:topbarRightImgRes="@drawable/share_btn"
+        app:topbarTitle="课程详情"></com.huatu.handheld_huatu.view.TopActionBar>
+
+    <com.huatu.handheld_huatu.business.ztk_zhibo.view.ListenableScrollView
+        android:id="@+id/_buydetails_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlBottom2"
+        android:layout_below="@id/buy_detail_title_bar"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f1f1f1" />
+
+            <TextView
+                android:id="@+id/buy_detail_course_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="3"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/buy_detail_course_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/icon_time"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="3"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/buy_detail_teacher_layout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/buy_detail_teacher_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="36dp"
+                    android:src="@drawable/icon_arrow_right" />
+
+                <LinearLayout
+                    android:id="@+id/buy_detail_teacher_img_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/buy_detail_teacher_right_arrow"
+                    android:orientation="horizontal"></LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/buy_detail_teacher_divider"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f1f1f1" />
+
+            <RelativeLayout
+                android:id="@+id/rl_keshiting"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_shiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/buydetails_shiting" />
+
+                <TextView
+                    android:id="@+id/tv_shiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/iv_shiting"
+                    android:text="精选课程试听"
+                    android:textColor="@color/main_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_right_arrow"
+                    android:layout_width="8dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/icon_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_right_shiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/iv_right_arrow"
+                    android:text="立即观看"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/buy_detail_keshiting"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f1f1f1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/buy_detail_intro_layout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/buy_detail_intro_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="课程简介"
+                    android:textColor="#e9304e"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/buy_detail_syllabus_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="课程表"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#bfbfbf" />
+            <!--<FrameLayout-->
+            <!--android:id="@+id/framelayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+            <!--</FrameLayout>-->
+            <com.huatu.handheld_huatu.business.ztk_zhibo.view.NoScrollWrapViewPager
+                android:id="@+id/vp_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </com.huatu.handheld_huatu.business.ztk_zhibo.view.NoScrollWrapViewPager>
+        </LinearLayout>
+    </com.huatu.handheld_huatu.business.ztk_zhibo.view.ListenableScrollView>
+
+    <LinearLayout
+        android:id="@+id/rlBottom2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f1f1f1"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/lession_prices_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lession_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_price"
+                android:drawablePadding="5dp"
+                android:includeFontPadding="false"
+                android:textColor="@color/main_color"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/lession_origin_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:includeFontPadding="false"
+                android:textColor="@color/gray_999999"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_jujiesu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距停售"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tv_xainzhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仅剩"
+                android:textColor="#666666"
+                android:textSize="12dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/lession_pay"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_rl_xuexi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:visibility="gone"
+        android:text="立即学习"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/bt_zixun2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_zixun"
+        android:visibility="gone"
+        app:layout_heightPercent="12.5%w"
+        app:layout_marginBottomPercent="32.2%w"
+        app:layout_marginRightPercent="3.3%w"
+        app:layout_widthPercent="9.7%w" />
+
+    <Button
+        android:id="@+id/bt_zixun"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_zixun"
+        app:layout_heightPercent="12.5%w"
+        app:layout_marginBottomPercent="20.2%w"
+        app:layout_marginRightPercent="3.3%w"
+        app:layout_widthPercent="9.7%w" />
+
+    <Button
+        android:id="@+id/bt_dingbu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_top"
+        android:visibility="gone"
+        app:layout_heightPercent="9.7%w"
+        app:layout_marginBottomPercent="20.2%w"
+        app:layout_marginRightPercent="3.3%w"
+        app:layout_widthPercent="9.7%w" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--问题内容-->
+    <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/arena_exam_common_bg"
+        android:lineSpacingExtra="5dp"
+        android:lineSpacingMultiplier="1.03"
+        android:paddingTop="15dp"
+        android:textColor="@color/arena_exam_common_text"
+        android:textSize="16sp" />
+
+    <!--选项-->
+    <com.huatu.handheld_huatu.view.RecyclerViewForScroll
+        android:id="@+id/rl_option"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+    <!--问题不可作答-->
+    <LinearLayout
+        android:id="@+id/ll_no_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_no_answer_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:includeFontPadding="false"
+            android:text="本题不支持作答，可在交卷后查看答案及解析"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--答案分析-->
+    <com.huatu.handheld_huatu.business.arena.customview.ArenaQuestionAnalysisLayoutNew
+        android:id="@+id/layout_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</LinearLayout>
+

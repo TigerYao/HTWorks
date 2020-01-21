@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nalan.swipeitem.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/white">
+    <FrameLayout
+        android:id="@id/whole_content"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="vertical">
+
+        <com.huatu.handheld_huatu.ui.DownProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="0" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_gravity="center_vertical"
+                android:id="@+id/chk_btn"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="10dp"
+                style="@style/deleteCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/name_txt"
+                style="@style/basetxt_title"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="80dp"
+                android:text="11" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/status_txt"
+            style="@style/basetxt_title"
+            android:layout_gravity="center_vertical|right"
+
+            android:layout_marginRight="15dp"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_delete"
+            android:text="取消下载"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</com.nalan.swipeitem.recyclerview.SwipeItemLayout>

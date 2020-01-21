@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="14.7%w">
+
+        <TextView
+            android:id="@+id/tv_zonghepingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="综合得分"
+            android:textColor="#333333"
+            app:layout_marginLeftPercent="4.1%w"
+            app:layout_textSizePercent="3.88%w" />
+
+        <ImageView
+            android:id="@+id/iv_star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_zonghepingfen"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_star1"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_star2"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_star3"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <ImageView
+            android:id="@+id/iv_star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_star4"
+            android:background="@drawable/teacher_kxing"
+            app:layout_marginLeftPercent="2.77%w" />
+
+        <TextView
+            android:id="@+id/tv_teacherfengshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_star5"
+            android:paddingLeft="9dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#999999"
+            app:layout_paddingLeftPercent="2.5%w"
+            app:layout_textSizePercent="4.1%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_below="@+id/rl_start"
+        android:background="#f1f1f1" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_lishi"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/line"
+        app:layout_heightPercent="12.2%w">
+
+        <ImageView
+            android:id="@+id/iv_lishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/teacher_lishi"
+            app:layout_marginLeftPercent="4.1%w" />
+
+        <TextView
+            android:id="@+id/tv_lishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_lishi"
+            android:text="历史课程"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            app:layout_paddingLeftPercent="2.5%w"
+            app:layout_textSizePercent="4.1%w" />
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/rl_start"
+            android:layout_alignParentBottom="true"
+            android:background="#d1d1d1" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.huatu.handheld_huatu.view.XListViewNestedS
+        android:id="@+id/xlv_teacherevaluate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_lishi"
+        android:divider="@color/cut_line"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"/>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_down_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_lishi"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_no_num"
+            app:layout_heightPercent="23.6%w"
+            app:layout_widthPercent="25%w" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="暂无相关课程"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            app:layout_marginTopPercent="6.1%w"
+            app:layout_textSizePercent="3.8%w" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

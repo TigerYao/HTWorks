@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/left_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/icon_arrow_left" />
+
+        <com.huatu.handheld_huatu.ui.SwitchFrameLayout
+            android:id="@+id/switchTabLayout"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:tag="0"
+                android:text="视频缓存"
+                android:textColor="@color/onlive_tab_text_selector"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:tag="1"
+                android:text="讲义缓存"
+                android:textColor="@color/onlive_tab_text_selector"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.huatu.viewpagerindicator.ArrowlineView
+                android:id="@+id/viewIndicator2"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                app:item_count="2"
+                app:item_fill="false"
+                app:item_indcolor="#FF3F47"/>
+        </com.huatu.handheld_huatu.ui.SwitchFrameLayout>
+
+        <View
+            android:id="@+id/xi_title_bar_shadow"
+            style="@style/comm_title_line"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:id="@+id/changeDefinition_txt"
+        android:layout_marginTop="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp"
+            android:text="清晰度："
+            android:textColor="#ffc4c4c4"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_definition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="68dp"
+            android:text="省流"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/zf_icon_aa"
+            android:textColor="#ff4a4a4a"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <com.huatu.handheld_huatu.ui.recyclerview.RecyclerViewEx
+        android:id="@+id/download_act_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="45dp"
+        android:scrollbars="none" />
+
+    <include
+        layout="@layout/down_action_bottom_layotu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp" />
+
+
+    <TextView
+        android:id="@+id/space_tip_txt"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:gravity="center"
+        android:text="剩余可用"
+        android:textColor="#6D7172"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/handout_contain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="45dp"></FrameLayout>
+</FrameLayout>

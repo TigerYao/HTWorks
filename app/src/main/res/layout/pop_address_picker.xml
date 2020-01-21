@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/text_p4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A8000000" />
+    <com.huatu.handheld_huatu.view.bottomdialog.AddressPickerView
+        android:id="@+id/apvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_alignParentBottom="true">
+
+    </com.huatu.handheld_huatu.view.bottomdialog.AddressPickerView>
+
+</RelativeLayout>

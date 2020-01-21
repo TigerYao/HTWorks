@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/mCommonErrorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/mRelativeLayoutEmptyData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/htzx_sectional_examination_empty_pic" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/mIvEmptyData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/htzx_sectional_examination_empty_txt" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/mTopViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        app:layout_heightPercent="12.7%w">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/mViewBack"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="19.4%w">
+
+            <ImageView
+                android:id="@+id/ig_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/icon_arrow_left"
+                app:layout_heightPercent="40%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/mTvHomeworkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            android:maxLength="13"
+            android:text="阶段考试"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            app:layout_textSizePercent="4.4%w" />
+
+        <TextView
+            android:id="@+id/mTvAllRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:maxLength="13"
+            android:text="全部已读"
+            android:textColor="@color/blackF4"
+            android:textSize="15sp" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.huatu.handheld_huatu.ui.PullRefreshRecyclerView
+        android:id="@+id/mPullRefreshRecyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/mTopViewTitle"
+        app:ptrAnimationStyle="oldflip"
+        app:ptrMode="pullFromStart" />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/xd_toolbar_height">
+
+    <RelativeLayout
+        android:id="@+id/xi_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xd_toolbar_height">
+
+        <com.huatu.handheld_huatu.ui.MenuItem
+            android:id="@+id/xi_title_bar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/xi_title_bar_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" />
+
+       <View
+            android:id="@+id/xi_title_bar_shadow"
+            style="@style/comm_title_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xd_toolbar_height">
+
+        <com.huatu.viewpagerindicator.BoldTextView
+            android:id="@id/xi_toolbar_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/about"
+            android:maxWidth="260dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/xd_toolbar_title_size"
+            tools:showIn="@layout/activity_reuse_layout" />
+
+        <ImageView
+            android:id="@+id/xi_toolbar_center_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/xi_toolbar_center_title"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</merge>

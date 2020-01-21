@@ -1,0 +1,40 @@
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_tv_filter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="@color/text_color_dark"
+        android:textSize="13sp"
+        app:layout_marginLeftPercent="4.16%w"
+        app:layout_marginTopPercent="2%w"/>
+
+    <com.huatu.handheld_huatu.business.lessons.view.GridViewForMeasure
+        android:id="@+id/item_popup_filter_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:gravity="center"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="12dp"
+        app:layout_marginLeftPercent="5.56%w"
+        app:layout_marginRightPercent="5.56%w"
+        app:layout_paddingBottomPercent="3%w"
+        app:layout_paddingTopPercent="1%w"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+</com.zhy.android.percent.support.PercentLinearLayout>

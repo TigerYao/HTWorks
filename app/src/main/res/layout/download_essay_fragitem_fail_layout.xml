@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/down_fail_essay_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:singleLine="true"
+        android:text="已经下载（3）已经下载（3）已经下载（3）已经下载（3）已经下载（3）已经下载（3）已经下载（3）"
+        android:textColor="#333333"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/down_fail_essay_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="下载失败，请重试"
+        android:textColor="@color/common_style_text_color"
+        android:textSize="10dp" />
+</RelativeLayout>

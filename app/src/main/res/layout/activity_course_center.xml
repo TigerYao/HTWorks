@@ -1,0 +1,77 @@
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/llyout_my_coupon_sort"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_heightPercent="12%w"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/tv_not_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="12%w"
+            app:layout_marginTopPercent="1.3%w"
+            android:layout_weight="1"
+            android:background="@drawable/shape_my_coupon_tab"
+            android:gravity="right|center"
+            android:layout_marginRight="30dp"
+            app:layout_marginRightPercent="8.3%w"
+            app:layout_textSizePercent="4.1%w"
+            android:onClick="notSpending"
+            android:text="全部直播"
+            android:textColor="#898787" />
+        <TextView
+            android:id="@+id/tv_yet_spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="1.3%w"
+            app:layout_heightPercent="12%w"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            app:layout_marginLeftPercent="8.3%w"
+            android:background="@drawable/shape_my_coupon_tab"
+            android:gravity="left|center"
+            android:onClick="yetSpwnt"
+            app:layout_textSizePercent="4.1%w"
+            android:text="我的直播"
+            android:textColor="#898787" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ImageView
+        android:id="@+id/img_tabLine"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_heightPercent="1.8%w"
+        android:contentDescription="@null"
+        android:layout_below="@+id/llyout_my_coupon_sort"
+        android:scaleType="matrix" />
+    <View
+        android:id="@+id/line_lesson_course"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/img_tabLine"
+        android:background="#dcdcdc" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_CourseCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_lesson_course"/>
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:layout_widthPercent="12%w"
+        app:layout_heightPercent="12%w"
+        app:layout_marginTopPercent="1.3%w"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"
+        app:layout_textSizePercent="4.1%w"
+        android:textColor="#999999"
+        android:text="搜索"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

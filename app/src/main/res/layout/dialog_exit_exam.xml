@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40000000">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="128dp"
+        app:layout_widthPercent="72.22%w"
+        app:layout_heightPercent="35.56%w"
+        android:background="@drawable/bg_dialog_exit_exam"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_marginTopPercent="6.67%w"
+            android:layout_centerHorizontal="true"
+            android:text="提示"
+            android:textColor="@color/text_day_001"
+            android:textSize="16sp"
+            app:layout_textSizePercent="6.15%w"/>
+
+        <TextView
+            android:id="@+id/tv_notify_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="12dp"
+            app:layout_marginTopPercent="4.62%w"
+            android:layout_centerHorizontal="true"
+            android:text="是否放弃本次练习？"
+            android:textColor="@color/text_day_001"
+            android:textSize="16sp"
+            app:layout_textSizePercent="6.15%w"/>
+
+        <View
+            android:id="@+id/line_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_1"
+            android:background="@color/gray005"
+            android:layout_below="@+id/tv_notify_content"
+            android:layout_marginTop="16dp"
+            app:layout_marginTopPercent="6.15%w"/>
+
+        <TextView
+            android:id="@+id/tv_left_button"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%w"
+            android:layout_below="@+id/line_horizontal"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="继续答题"
+            android:textColor="@color/green_day_001"
+            android:textSize="16sp"
+            app:layout_textSizePercent="6.15%w"/>
+
+        <View
+            android:id="@+id/line_vertical"
+            android:layout_width="@dimen/width_1"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line_horizontal"
+            android:layout_toRightOf="@+id/tv_left_button"
+            android:background="@color/gray005"/>
+
+        <TextView
+            android:id="@+id/tv_right_button"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="50%w"
+            android:layout_below="@+id/line_horizontal"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="放弃"
+            android:textColor="@color/text_day_002"
+            android:textSize="16sp"
+            app:layout_textSizePercent="6.15%w"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

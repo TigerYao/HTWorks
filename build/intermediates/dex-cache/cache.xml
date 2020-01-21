@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/test/libs/umeng-common-1.5.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="4862353900994359ee2b2c2f9667413978cbb0cf">
+        <dex dex="/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/test/build/intermediates/pre-dexed/release/umeng-common-1.5.3_f38c545daf4c93a45ec00e41bf49b20af2f7d8db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/test/libs/org.ccil.cowan.tagsoup-osgi-1.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="8519db0a0c7957865995ddc32cfb67a8ae9330e5">
+        <dex dex="/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/test/build/intermediates/pre-dexed/release/org.ccil.cowan.tagsoup-osgi-1.2.1_0030010629f3f6bbf3b5464aef4fb01cd15c5dd6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/music/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.3"
+        sha1="254e758a0b4221a7125b5955bdbe178a8c43725b">
+        <dex dex="/Users/huatu/Documents/GitHub/huatu/ztk_gwy_android/test/build/intermediates/pre-dexed/release/classes_b7ba2f4716d3181638523ee9d2eb7cf1578a1ed9.jar" />
+    </item>
+
+</items>

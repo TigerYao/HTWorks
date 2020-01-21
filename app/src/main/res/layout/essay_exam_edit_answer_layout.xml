@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.huatu.handheld_huatu.business.essay.cusview.SoftInputLayout
+        android:id="@+id/softinput_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--内容布局-->
+            <RelativeLayout
+                android:id="@+id/c_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view_statue"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/essay_title_edit_bg"
+                    android:layout_height="25dp" />
+
+                <RelativeLayout
+                    android:id="@+id/fragment_title_bar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/essay_title_edit_bg"
+                    android:layout_below="@+id/view_statue">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/icon_back_white_new" />
+
+                    <TextView
+                        android:id="@+id/action_bar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="00:00"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_change_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@mipmap/essay_change_check"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="人工批改"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.huatu.handheld_huatu.business.essay.cusview.TextSizeControlImageView
+                        android:id="@+id/iv_text_size"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="centerInside"
+                        android:visibility="gone"
+                        android:src="@mipmap/action_bar_text_size_white_small" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/fragment_title_bar2"
+                    android:background="@color/gray_divider" />
+
+                <com.ogaclejapan.smarttablayout.SmartTabLayout
+                    android:id="@+id/ex_materials_ques_viewpager_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/div1"
+                    android:background="@color/white"
+                    app:stl_customTabTextLayoutId="@layout/custom_tab"
+                    app:stl_customTabTextViewId="@id/custom_text"
+                    app:stl_indicatorColor="@color/red250"
+                    app:stl_indicatorGravity="below_text"
+                    app:stl_indicatorInterpolation="smart"
+                    app:stl_indicatorThickness="6dp"
+                    app:stl_underlineThickness="0dp" />
+
+                <View
+                    android:id="@+id/div2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/ex_materials_ques_viewpager_tab"
+                    android:background="@color/gray_divider" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/ex_materials_ques_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/div2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_controller"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="已录入"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/bottom_left_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#FF6D73"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="/200字"
+                        android:textColor="#999999"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!--控制布局-->
+                <RelativeLayout
+                    android:id="@+id/input_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/ll_count"
+                    android:background="@drawable/bg_essay_control"
+                    android:elevation="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/ess_ex_input_voice_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/ee_voice_n" />
+
+                    <ImageView
+                        android:id="@+id/ess_ex_input_soft_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/ess_ex_input_voice_iv"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/ee_edit_n" />
+
+                    <ImageView
+                        android:id="@+id/ess_ex_input_camera_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/ess_ex_input_soft_iv"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:src="@mipmap/ee_photo_n" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_essay_control_x_gray"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_post"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ee_edit_post_gray" />
+
+                        <TextView
+                            android:id="@+id/tv_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="交卷"
+                            android:textColor="@color/outline_last_layer_text"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--语音输入布局-->
+        <RelativeLayout
+            android:id="@+id/emoji_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.huatu.handheld_huatu.business.essay.cusview.EssayExamBottomView
+                android:id="@+id/essay_exam_bottomView"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </com.huatu.handheld_huatu.business.essay.cusview.SoftInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/softinput_layout"
+        android:layout_alignBottom="@+id/softinput_layout">
+
+        <com.huatu.handheld_huatu.business.essay.cusview.RightOperatorTextView
+            android:id="@+id/back_exam_materials"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_essay_material_drag_btn"
+            android:gravity="center"
+            android:text="资料"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.huatu.handheld_huatu.business.essay.cusview.MaterialsCardView
+        android:id="@+id/materials_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible" />
+</RelativeLayout>

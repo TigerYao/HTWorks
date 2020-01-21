@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:id="@+id/upload_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_below="@+id/rl_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+    <include
+        android:id="@+id/upload_rl_one"
+        layout="@layout/activity_feedback_item_rl"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/upload_rl_two"
+        layout="@layout/activity_feedback_item_rl"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/upload_rl_three"
+        layout="@layout/activity_feedback_item_rl"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/upload_rl_four"
+        layout="@layout/activity_feedback_item_rl"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/upload_iv_add"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/add_picture"
+        android:visibility="visible"
+        />
+</merge>

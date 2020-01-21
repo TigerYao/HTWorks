@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/ess_ex_materials_ques_title_scview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/ess_ex_materials_ques_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:lineSpacingExtra="6dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/blackF4"
+            android:textSize="15sp"  />
+    </ScrollView>
+</LinearLayout>

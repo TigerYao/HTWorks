@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_shadow_background" >
+
+    <RelativeLayout
+        android:id="@+id/layout_re_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/new_default_tv"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imv_dialog_dialog_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/netschool_dialog_cancel"
+            android:src="@drawable/select_dialog_clean" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_re_title"
+        android:contentDescription="@string/other"
+        android:src="@drawable/line_home" />
+
+    <TextView
+        android:id="@+id/tv_dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_line"
+        android:gravity="center|left"
+        android:maxHeight="220dp"
+        android:minHeight="120dp"
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/new_default_tv"
+        android:textIsSelectable="true"
+        android:textSize="18sp" />
+    
+
+
+
+
+</RelativeLayout>

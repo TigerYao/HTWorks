@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/my_course_title_popup_window_bg">
+        <TextView
+            android:id="@+id/shopping_type_all"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:includeFontPadding="false"
+            android:drawableLeft="@drawable/icon_my_course_hide"
+            android:drawablePadding="3dp"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:text="已隐藏课程"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#7d7d7d"/>
+        <TextView android:id="@+id/shopping_type_fee"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:includeFontPadding="false"
+            android:drawableLeft="@drawable/icon_search_my_course"
+            android:drawablePadding="3dp"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:text="搜索课程"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical"
+    tools:context=".business.essay.video.BJCheckVideoControlBottomView">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/video_play_operation_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="12dp"
+            android:src="@mipmap/vod_pause_icon" />
+
+        <TextView
+            android:id="@+id/tv_current_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white_common"
+            android:textSize="12sp" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            style="@style/SeekBarAppTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:thumbOffset="0dp" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:01"
+            android:textColor="@color/white_common"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_all_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_definition"
+            style="@style/basetxt_content"
+            android:layout_width="44dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/play_stroke_white_bg"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="标清"
+            android:textColor="#ffffffff"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_rotate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="10dp"
+            android:src="@mipmap/vod_fullscreen_icon" />
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

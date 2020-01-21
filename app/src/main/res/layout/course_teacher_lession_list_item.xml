@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@id/whole_content"
+    android:background="@color/white"
+    android:minHeight="44dp"
+    android:layout_height="wrap_content">
+
+    <TextView style="@style/basetxt_title"
+        android:id="@+id/title_name_txt"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="42dp"
+        android:text="行测-常识"
+        android:textColor="#4A4A4A"
+        android:textSize="15sp" />
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/title_name_txt"
+        android:id="@+id/add_address_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="教室地址：河南省濮阳市南乐县名都宾馆5楼华图教育"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ff4a4a4a"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:padding="10dp"
+        android:rotation="180"
+        android:layout_marginTop="5dp"
+        android:id="@+id/right_open_img"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|right"
+        android:src="@drawable/zf_icon_aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

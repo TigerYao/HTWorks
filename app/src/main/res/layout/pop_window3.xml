@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/text_p4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A8000000" />
+
+    <TextView
+        android:id="@+id/text_p3"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f8f9"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="16dp"
+      />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_above="@+id/text_p3"
+        android:background="#eaeaea"  />
+
+    <TextView
+        android:id="@+id/text_p2"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_above="@+id/view1"
+        android:background="#f8f8f9"
+        android:gravity="center"
+        android:text="从手机相册选择"
+        android:textColor="#333333"
+        android:textSize="16dp"  />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/text_p2"
+        android:background="#dcdcdc" />
+
+    <TextView
+        android:id="@+id/text_p1"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_above="@+id/view2"
+        android:background="#f8f8f9"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="#333333"
+        android:textSize="16dp"  />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

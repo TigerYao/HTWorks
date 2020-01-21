@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp">
+    <com.huatu.handheld_huatu.view.CircleImageView
+        android:id="@+id/civ_teacher_photo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刘有珍"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:textColor="#4A4A4A"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

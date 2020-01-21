@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ht_main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.huatu.handheld_huatu.view.CommonErrorView
+        android:id="@+id/ht_main_error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/arena_exam_common_text_bg"
+        android:visibility="gone" />
+</FrameLayout>

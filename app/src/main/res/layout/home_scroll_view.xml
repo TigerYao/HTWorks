@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--轮播图-->
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/home_advertise"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center" />
+
+        <!--左右滑动的一横排按钮-->
+        <com.huatu.handheld_huatu.business.arena.customview.HomeIconsView
+            android:id="@+id/homef_paper_type_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F3F3F3" />
+
+        <RelativeLayout
+            android:id="@+id/rl_adv"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/view_adv_red"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_red_bg" />
+
+            <TextView
+                android:id="@+id/tv_adv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/view_adv_red"
+                android:text="为你推荐"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_adv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/iv_adv_arrow"
+                android:text="更多"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_adv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:rotation="180"
+                android:src="@mipmap/homef_title_pop_up1" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_adv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F3F3F3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <View
+                android:id="@+id/view_red"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_red_bg" />
+
+            <TextView
+                android:id="@+id/tv_practice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/view_red"
+                android:text="专项练习"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/home_setting" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_tree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rl_line"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#F3F3F3">
+
+            <TextView
+                android:id="@+id/tv_bottom_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我是有底线的"
+                android:textColor="#C4C4C4"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/tv_bottom_line"
+                android:background="#C4C4C4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="80dp"
+                android:layout_toRightOf="@+id/tv_bottom_line"
+                android:background="#C4C4C4" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_data_x"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_question_bank" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="获取数据失败，点击刷新"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <TextView
+        android:id="@+id/space_tip_txt"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/comm_bottom_line_bg2"
+        android:gravity="center"
+        android:text="剩余可用"
+        android:textColor="#6D7172"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_downing_manager"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@+id/space_tip_txt"
+        android:paddingTop="5dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="12dp">
+
+        <FrameLayout
+            android:id="@+id/down_left_layout"
+            android:layout_width="128dp"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:id="@+id/down_cover_img"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/load_default" />
+
+
+            <com.huatu.widget.IncreaseProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/down_cover_progressbar"
+                android:visibility="visible"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/downstatus_txt"
+                android:drawableTop="@drawable/abs_down_selector"
+                android:layout_gravity="center"
+                android:drawablePadding="8dp"
+                android:text="正在缓存"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/need_down_txt"
+                android:background="#FF3F47"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="1"
+                android:layout_gravity="bottom|right"
+                android:gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="20dp" />
+            <ImageView
+                android:src="@mipmap/down_top_shadown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/down_left_layout">
+
+            <TextView
+                android:id="@+id/down_tilte_txt"
+                style="@style/width_weight"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/downfilenum_txt"
+                style="@style/basetxt_title"
+                android:visibility="gone"
+                android:includeFontPadding="false"
+                android:text="等视频"
+                android:textColor="#9B9B9B"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+       <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/down_left_layout"
+            android:orientation="horizontal">
+           <TextView
+                android:id="@+id/tv_space"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:singleLine="true"
+                android:text="0M/0M"
+                android:textColor="#6d7172"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+
+                android:textColor="#6d7172"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_down_finished"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/ll_downing_manager"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="已下载"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_downloaded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_down_finished"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/ll_down_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/course_no_cache_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="暂无缓存视频哦～"
+            android:textColor="#9B9B9B"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

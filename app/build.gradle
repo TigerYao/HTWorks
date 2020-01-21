@@ -1,0 +1,342 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'walle'
+//tinyun
+apply plugin: 'newlens'
+//添加 com.sensorsdata.analytics.android 插件
+apply plugin: 'com.sensorsdata.analytics.android'
+
+//apply plugin: 'android-aspectjx'
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+
+
+
+final def log = project.logger
+final def variants = project.android.applicationVariants
+//在构建工程时，执行编织     只编织了app工程下的注解
+//https://www.jianshu.com/p/c66f4e3113b3
+variants.all { variant ->
+
+    /* def dir = new File(dirName)
+     if (dir.isDirectory()) {
+          dir.eachFileRecurse { file ->
+             println file
+         }
+      } */
+    JavaCompile javaCompile = variant.javaCompile
+    javaCompile.doLast {
+
+        // ||element.absolutePath.contains("RtmpResourceLib") || element.absolutePath.contains("sobotsdk")
+        def setfile = javaCompile.classpath;
+        def classpathAs = setfile.filter(new Spec<File>() {
+            @Override
+            boolean isSatisfiedBy(File element) {
+                if (element.absolutePath.contains("social_sdk_library_project")
+                        || element.absolutePath.contains("music")
+                        || element.absolutePath.contains("liveplayer-sdk-ui")
+
+                        || element.absolutePath.contains("XiaonengChatUI")) {
+                    return false
+                }
+                return true
+            }
+        })
+        //javaCompile.classpath.asPath
+
+        // println "tset:"+"${buildDir}"+"\\generated\\source\\apt\\dev\\debug\\com\\huatu\\handheld_huatu\\router"
+
+        def inputPath = javaCompile.destinationDir.toString()
+        String[] args = ["-showWeaveInfo",
+                         "-1.8",
+                         "-inpath", new File("/Users").exists() ? inputPath + "/com/huatu/handheld_huatu:" + inputPath + "/com/zhy" : inputPath + "\\com\\huatu\\handheld_huatu;" + inputPath + "\\com\\zhy",
+                         "-aspectpath", classpathAs.asPath,
+                         "-d", javaCompile.destinationDir.toString(),
+                         "-classpath", classpathAs.asPath,
+                         "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
+        //log.debug "ajc args: " + Arrays.toString(args)
+        println "ajc args: " + Arrays.toString(args)
+
+
+        // println "ajc args2: " + setfile.asPath
+
+        MessageHandler handler = new MessageHandler(true)
+
+        def start = new Date().time
+        new Main().run(args, handler)
+        println "ajc args: cost  " + (new Date().time - start) + "ms"
+
+        for (IMessage message : handler.getMessages(null, true)) {
+            switch (message.getKind()) {
+                case IMessage.ABORT:
+                case IMessage.ERROR:
+                case IMessage.FAIL:
+                    log.error message.message, message.thrown
+                    break
+                case IMessage.WARNING:
+                    log.warn message.message, message.thrown
+                    break
+                case IMessage.INFO:
+                    log.info message.message, message.thrown
+                    break
+                case IMessage.DEBUG:
+                    log.debug message.message, message.thrown
+                    break
+            }
+        }
+    }
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+        additionalParameters = ['--multi-dex',
+                                '--set-max-idx-number=62000']
+    }
+
+    defaultConfig {
+        applicationId "com.huatu.handheld_huatu"
+
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi"
+            abiFilters "armeabi-v7a"
+        }
+        /**
+         * not like proguard, multiDexKeepProguard is not a list, so we can't just
+         * add for you in our task. you can copy tinker keep rules at
+         * build/intermediates/tinker_intermediates/tinker_multidexkeep.pro
+         */
+        multiDexKeepFile file('keep_in_main_dex.txt')
+        multiDexKeepProguard file("keep_in_main_dex.txt")
+    }
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+    //aapt编译资源文件
+    aaptOptions {
+        //建议关闭aapt对png的优化
+        cruncherEnabled false
+    }
+    //签名
+    signingConfigs {
+        release {
+            try {
+                storeFile file("./netschool.keystore")
+                storePassword "123456"
+                keyAlias "huatu"
+                keyPassword "123456"
+            } catch (ex) {
+                throw new InvalidUserDataException(ex.toString())
+            }
+        }
+
+        debug {
+            storeFile file("./netschool.keystore")
+            storePassword "123456"
+            keyAlias "huatu"
+            keyPassword "123456"
+        }
+    }
+
+    // 多渠道/多环境 的不同配置
+    productFlavors {
+        dev {
+            // 注意，这里是添加，在 string.xml 不能有这个字段，会重名！！
+            resValue "string", "app_name", "华图在线"
+        }
+        /*        baidu {
+             resValue "string", "app_name", "华图在线-公务员考试"
+        }*/
+        /*    huawei {
+                resValue "string", "app_name", "华图在线公务员"
+           } */
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "isDebug", "false"
+
+            debuggable false
+            minifyEnabled false     //   true - 打开混淆  开启删除无用代码
+            shrinkResources false   //删除无用资源
+
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules2.pro'
+
+            // 批量打包
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        //输出apk名称为：渠道名_版本名_时间.apk
+                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+
+        }
+        debug {
+            buildConfigField "boolean", "isDebug", "true"
+            //  buildConfigField "String", "educationUrl", "\"http://app-alpha.huatu.com\""
+            debuggable true
+            minifyEnabled false
+            shrinkResources false   //删除无用资源
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules2.pro'
+
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+/*configurations.all {
+    resolutionStrategy.force 'com.android.support:support-v4:26.1.0' // old dependencies version;
+}*/
+
+/*aspectjx {
+   // enabled true //enabled默认为true，即默认AspectJX生效
+
+    exclude '.jar'
+}*/
+
+apt {
+    arguments {
+        routerPkg 'com.huatu.handheld_huatu.router'
+        apiProjectPath "${rootProject.projectDir}/thirdlibrary".toString()
+        packageName "com.huatu.autoapi"
+        apiBuildEnable "true"
+        logOpen "true"
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    // 支付宝 SDK AAR 包所需的配置
+    compile(name: 'alipaySdk-15.6.5-20190718211148', ext: 'aar')
+
+    //tinker的核心库
+    compile("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") { changing = true }
+
+    //可选，用于生成application类
+    compile("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") { changing = true }
+    compile "com.meituan.android.walle:library:${WALLE_VERSION}"
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+    compile 'com.jakewharton:butterknife:8.1.0'
+
+    //compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile "com.android.support:support-v13:${SUPPORT_VERSION}"
+    compile "com.android.support:support-v4:${SUPPORT_VERSION}"
+
+    //    compile "com.android.support:appcompat-v7:${SUPPORT_VERSION}"
+
+    compile "com.android.support:cardview-v7:${SUPPORT_VERSION}"
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile "com.squareup.okhttp3:okhttp:${OKHTTP_VERSION}"
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    compile "com.android.support:recyclerview-v7:${SUPPORT_VERSION}"
+    compile "com.android.support:design:${SUPPORT_VERSION}"
+
+    //compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
+
+    //com.baijiahulian.common.permission 已包含
+    compile 'com.networkbench.newlens.agent.android:nbs.newlens.agent:2.5.9'
+    compile 'com.android.support.constraint:constraint-layout:1.1.3'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+
+    //百家云点播播放器
+    compile 'com.baijia.live:liveplayer-sdk-core:1.4.23'
+    compile 'com.baijia.player:bjslavsdk-liveplayer:1.1.247'
+   // compile 'com.baijia.player:videoplayer:1.8.1'
+    compile ("com.baijia.player:videoplayer:${BJVIDEOPLAYER_VERSION}"){
+        exclude group: 'com.squareup.okhttp3'
+     }
+    compile('com.baijia.common:common-permission:1.1.0') {
+        exclude group: 'com.android.support'
+    }
+    compile('com.baijia.player:video-playback:1.4.28') {
+        exclude group: 'com.android.support'
+    }
+    compile("com.baijia.live:liveplayer-sdk-core-ppt:${BJYLIVE_PPT_VERSION}") {
+        exclude group: 'support-v4'
+    }
+
+
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+
+    // Optional, if you use support library fragments:
+    debugCompile 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'
+
+    compile "com.android.support:gridlayout-v7:${SUPPORT_VERSION}"
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+
+
+    //添加 Sensors Analytics SDK 依赖
+    compile 'com.sensorsdata.analytics.android:SensorsAnalyticsSDK:3.1.5'
+
+    // 时间选择控件
+    compile 'org.jaaksi:pickerview:1.0.1'
+    compile 'com.amap.api:location:latest.integration'
+    compile files('libs/Baidu_Mtj_android_3.9.4.0.jar')
+    compile 'com.zhihu.android:matisse:0.5.2-beta4'
+
+    compile project(':music')
+
+    compile 'org.aspectj:aspectjrt:1.8.13'
+    compile 'com.netease.heartouch.router:htrouter:1.0.0'
+    apt "com.netease.heartouch.router:htrouterdispatch-process:1.0.0"
+    compile 'com.netease.libs:autoapi:1.1.0'
+
+    compile project(':RtmpResourceLib')
+
+    // apt 'com.netease.libs:autoapi_process:1.1.0'
+    compile project(':social_sdk_library_project')
+
+    compile project(':thirdlibrary')
+
+   // compile project(':liveplayer-sdk-ui')
+   //  compile project(':sobotsdk')
+   // compile project(':XiaonengChatUI')
+
+}
+
+
+
+
+if (tinkerEnable.toBoolean()) {
+    apply from: 'tinker-support.gradle'
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <com.huatu.widget.ArrowlineUpView
+        android:id="@+id/arrow_up"
+        android:layout_width="8dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_menu_bg_drawable"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5.0dip">
+      <TextView
+            android:id="@+id/pop_menu_upreport"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:drawableLeft="@drawable/pop_check_img_selector"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+
+            android:text=" 显示课后作业"
+            android:textColor="@color/white"
+            android:textSize="15.0sp" />
+       <View
+            android:layout_width="135dp"
+           android:layout_height="1px"
+            android:background="@color/outline_last_layer_text" />
+        <TextView
+            android:id="@+id/video_play_pop_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+
+            android:drawableLeft="@drawable/pop_check_img_selector"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+
+            android:text=" 显示缓存课程"
+            android:textColor="@color/onlive_action_text_selector"
+            android:textSize="15.0sp" />
+
+    </LinearLayout>
+</LinearLayout>

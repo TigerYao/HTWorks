@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <com.huatu.handheld_huatu.view.TopActionBar
+        android:id="@+id/common_list_view_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_toolbar_height"
+        app:topbarIsLeftShow="true"
+        app:topbarIsRight2Show="false"
+        app:topbarIsRightShow="false"
+        app:topbarLeftImgRes="@drawable/icon_arrow_left"
+        app:topbarTitle="">
+    </com.huatu.handheld_huatu.view.TopActionBar>
+
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/base_list_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/common_list_view_bottom_button_layout_id"
+        android:layout_below="@id/common_list_view_toolbar_id"
+        android:divider="@color/white"
+        android:dividerHeight="1px"
+        android:listSelector="@null"
+        android:scrollbars="none"
+       >
+    </com.huatu.handheld_huatu.view.XListView>
+</com.zhy.android.percent.support.PercentRelativeLayout>

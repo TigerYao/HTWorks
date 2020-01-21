@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huatu.widget.StickyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/whole_content"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.huatu.handheld_huatu.view.custom.ExerciseTextView
+            android:id="@+id/ess_ex_materials_ques_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="#4A4A4A"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/div_title"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F9F9F9" />
+
+        <!--套题得分-->
+        <com.huatu.handheld_huatu.business.essay.cusview.ScoreLayout
+            android:id="@+id/rl_multpaper_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/layer_esstxtline2_bg"
+                android:text="套题得分"
+                android:textColor="@color/gray_333333"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="95dp"
+                android:text="29/35分"
+                android:textColor="#9B9B9B"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="25dp"
+
+                android:text="总用时:"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <!--         <TextView
+                         android:id="@+id/tv_paper_time"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignBaseline="@+id/tv_paper_total_score"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="25dp"
+                         android:text="0'0''"
+                         android:textColor="#9B9B9B"
+                         android:textSize="14sp"
+                         android:textStyle="bold|italic" />-->
+        </com.huatu.handheld_huatu.business.essay.cusview.ScoreLayout>
+
+        <!--本题得分-->
+        <com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowLayout
+            android:id="@+id/rl_paper_all_score"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:tag="sticky">
+
+            <TextView
+                android:id="@+id/tv_paper_total_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/layer_esstxtline2_bg"
+                android:text="本题得分"
+                android:textColor="@color/gray_333333"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_paper_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="95dp"
+                android:text="0/0分"
+                android:textColor="#9B9B9B"
+                android:textSize="13sp" />
+
+   <!--         <TextView
+                android:id="@+id/tv_use_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="50dp"
+                android:text="用时:"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/check_14sp" />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="7dp"
+                android:padding="8dp"
+                android:src="@mipmap/homef_title_pop_up1"
+                android:tag="rotate_img" />
+        </com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pic_list"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="3dp" />
+
+        <ImageView
+            android:id="@+id/big_pic_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:background="#F9F9F9"
+            android:minHeight="20dp"
+            android:scaleType="fitCenter" />
+
+        <com.huatu.handheld_huatu.view.custom.EssayExerciseTextView
+            android:id="@+id/answer_analysis_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#ff4a4a4a"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.huatu.widget.LinearLayoutListView
+            android:id="@+id/knowspoint_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" />
+
+        <FrameLayout
+            android:id="@+id/subScore_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+
+                style="@style/essay_check_title"
+                android:text="扣分项" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/subScore_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comm_bottom_space_bg"
+
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="1.语言不够得体，-2分"
+            android:textColor="#ff757575"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/markpaper_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/essay_check_title"
+                android:text="本题阅卷" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/markpaper_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comm_bottom_space_bg"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:text="1.语言不够得体，-2分"
+            android:textColor="#ff757575"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/teacher_voice_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/essay_check_title"
+                android:text="名师之声" />
+        </FrameLayout>
+        <!--
+                <com.huatu.handheld_huatu.business.essay.video.CustomAudioPlayerView
+                    android:id="@+id/teacher_voice"
+                    android:minHeight="133dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+
+        <FrameLayout
+            android:id="@+id/teacher_voice_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/voice_play_btn"
+                android:layout_width="@dimen/common_dimens_100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@mipmap/music_player_start_btn" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/voice_split_line"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F9F9F9" />
+
+        <com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowUpLayout
+            android:id="@+id/standanswer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:tag="sticky">
+
+            <TextView
+                style="@style/essay_check_title"
+                android:text="标准答案" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="7dp"
+                android:padding="8dp"
+                android:src="@mipmap/homef_title_pop_up1" />
+        </com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowUpLayout>
+
+        <!--   <include layout="@layout/essay_standanswer_item"/>-->
+        <com.huatu.handheld_huatu.business.essay.cusview.AnswerExercisePasteTextView
+            android:id="@+id/standard_answer_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ff4a4a4a"
+            android:textSize="15sp" />
+
+        <com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowUpLayout
+            android:id="@+id/video_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:tag="sticky">
+
+            <TextView
+                style="@style/essay_check_title"
+                android:text="视频解析" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="7dp"
+                android:padding="8dp"
+                android:src="@mipmap/homef_title_pop_up1" />
+        </com.huatu.handheld_huatu.business.essay.cusview.ExplandArrowUpLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_video_content"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:visibility="gone"
+            android:layout_margin="20dp">
+
+            <ViewStub
+                android:id="@+id/viewStub_videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/ess_ex_check_playview_layout" />
+
+            <FrameLayout
+                android:id="@+id/video_cover_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/check_video_cover"
+                    android:scaleType="fitXY" />
+
+                <Button
+                    android:id="@+id/btn_play_center"
+                    android:layout_width="120dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/play_btn_bg_selector"
+                    android:drawableRight="@drawable/videoicon"
+                    android:paddingRight="10dp"
+                    android:text="开始学习"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/check_video_corner" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.huatu.widget.StickyScrollView>

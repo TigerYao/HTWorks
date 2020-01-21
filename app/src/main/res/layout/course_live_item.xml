@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/qianggoutime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_heightPercent="11.1%w"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/describe_iv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="17dp"
+                app:layout_marginTopPercent="4.7%w"
+                android:background="@drawable/daojishi"
+                app:layout_heightPercent="4.7%w"
+                app:layout_widthPercent="4.7%w" />
+
+            <TextView
+                android:id="@+id/describe_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/describe_iv"
+                android:text="正在热抢"
+                android:textColor="#999999"
+                app:layout_marginLeftPercent="1.3%w"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/seconds_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/colon2"
+                android:gravity="center"
+                android:text="59"
+                android:textColor="#f25a07"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/colon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/minutes_tv"
+                android:text=":"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/minutes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/colon1"
+                android:gravity="center"
+                android:text="59"
+                android:textColor="#f25a07"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/colon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/hours_tv"
+                android:text=":"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/hours_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/colon0"
+                android:gravity="center"
+                android:text="23"
+                android:textColor="#f25a07"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/colon0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/days_tv"
+                android:text="天"
+                android:textColor="#999999"
+                android:visibility="gone"
+                app:layout_marginLeftPercent="0.27%w"
+                app:layout_marginRightPercent="0.27%w"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/days_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/describe_tv2"
+                android:gravity="center"
+                android:text="200"
+                android:textColor="#f25a07"
+                android:visibility="gone"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/describe_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/describe_iv"
+                android:layout_toRightOf="@+id/describe_tv"
+                android:text="距开抢 "
+                android:textColor="#999999"
+                android:visibility="gone"
+                app:layout_marginLeftPercent="2.7%w"
+                app:layout_marginRightPercent="1.3%w"
+                app:layout_textSizePercent="3.3%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/liebiao"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_marginLeftPercent="3.3%w"
+            app:layout_heightPercent="27.7%w"
+            android:layout_below="@+id/qianggoutime"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/iv_item_course_live_scaleimg"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                app:layout_heightPercent="24.1%w"
+                android:background="@drawable/loading"
+                app:layout_widthPercent="33.6%w" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/mark_today"
+                android:layout_alignTop="@+id/iv_item_course_live_scaleimg"
+                app:layout_heightPercent="10%w"
+                app:layout_widthPercent="10%w" />
+
+            <TextView
+                android:id="@+id/tv_item_course_live_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_item_course_live_scaleimg"
+                android:layout_toRightOf="@+id/iv_item_course_live_scaleimg"
+                android:ellipsize="end"
+                android:text="公务员面试真功夫公务员面试真功夫公务员面试真功夫公务员面试真功夫公务员面试真功夫公务员面试真功夫"
+                android:textColor="#333333"
+                android:maxLines="2"
+                app:layout_marginLeftPercent="2.7%w"
+                app:layout_textSizePercent="4%w" />
+
+            <TextView
+                android:id="@+id/tv_item_course_live_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_course_live_title"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/iv_item_course_live_scaleimg"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="断剑重铸之日骑士归来之时"
+                android:textColor="#666666"
+                app:layout_marginLeftPercent="2.7%w"
+                app:layout_marginTopPercent="3.3%w"
+                app:layout_textSizePercent="3.3%w"
+                app:layout_widthPercent="32.7%w" />
+
+            <TextView
+                android:id="@+id/tv_item_course_live_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_item_course_live_teacher"
+                android:gravity="center|left"
+                android:text="480课时"
+                android:textColor="#666666"
+                app:layout_textSizePercent="3.3%w" />
+
+            <TextView
+                android:id="@+id/tv_item_course_live_buynum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_item_course_live_scaleimg"
+                android:layout_alignLeft="@+id/tv_item_course_live_title"
+                android:gravity="center|left"
+                android:lines="1"
+                android:text="¥"
+                android:textColor="#f25a07"
+                app:layout_textSizePercent="3.6%w" />
+
+            <TextView
+                android:id="@+id/tv_item_course_live_isbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_item_course_live_scaleimg"
+                android:layout_toRightOf="@+id/tv_item_course_live_buynum"
+                android:text="1110"
+                android:textColor="#f25a07"
+                app:layout_paddingLeftPercent="1.3%w"
+                app:layout_textSizePercent="5%w" />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_live_buy_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_item_course_live_isbuy"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/tv_item_course_live_startdate"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_fire"
+                    app:layout_heightPercent="3.5%w"
+                    app:layout_marginRightPercent="1%w"
+                    app:layout_widthPercent="3.5%w"
+                    android:visibility="invisible"/>
+
+
+                <TextView
+                    android:id="@+id/tv_item_yigou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="480"
+                    android:textColor="#f47c3e"
+                    app:layout_textSizePercent="3%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="人已抢"
+                    android:textColor="#666"
+                    app:layout_textSizePercent="3%w" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/ll_live_limit_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_item_course_live_isbuy"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_limit"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_limit"
+                    app:layout_heightPercent="3.5%w"
+                    app:layout_marginRightPercent="1%w"
+                    app:layout_widthPercent="3.5%w"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/iv_limit_b"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/limit_icon_b"
+                    android:visibility="gone"
+                    app:layout_heightPercent="3.5%w"
+                    app:layout_marginRightPercent="1%w"
+                    app:layout_widthPercent="3.5%w" />
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="3dp"
+                    android:text="仅剩"
+                    android:textColor="#666"
+                    app:layout_textSizePercent="3%w" />
+
+                <TextView
+                    android:id="@+id/tv_limit_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="88"
+                    android:textColor="#f47c3e"
+                    app:layout_marginLeftPercent="1.3%w"
+                    app:layout_textSizePercent="3%w" />
+
+                <TextView
+                    android:id="@+id/tv_limit_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/88人"
+                    android:textColor="#666"
+                    app:layout_textSizePercent="3%w" />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_sale_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignBottom="@+id/tv_item_course_live_buynum"
+                android:layout_alignLeft="@+id/tv_item_course_live_buynum"
+                android:background="@drawable/sale_out"
+                app:layout_heightPercent="6.1%w"
+                app:layout_widthPercent="17.7%w" />
+
+            <ImageView
+                android:id="@+id/iv_sale_status_b"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignBottom="@+id/tv_item_course_live_buynum"
+                android:layout_alignLeft="@+id/tv_item_course_live_buynum"
+                android:background="@drawable/sale_stop"
+                android:visibility="gone"
+                app:layout_heightPercent="6.1%w"
+                app:layout_widthPercent="17.7%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

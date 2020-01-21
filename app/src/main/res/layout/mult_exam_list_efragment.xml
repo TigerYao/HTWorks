@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_nodata"
+        layout="@layout/common_no_data_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_net_error"
+        layout="@layout/common_net_error_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_net_unconnected"
+        layout="@layout/common_net_unconnected_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.huatu.handheld_huatu.view.XListView
+        android:id="@+id/lv_multi_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F3F3F3"
+        android:dividerHeight="1px" />
+</RelativeLayout>

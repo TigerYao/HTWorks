@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用顶部TopBar height:48dp -->
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray004">
+
+    <ImageView
+        android:id="@+id/iv_top_bar_left"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_widthPercent="13.3333%w"
+        app:layout_heightPercent="13.3333%w"
+        android:paddingLeft="10dp"
+        android:paddingRight="28dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        app:layout_paddingLeftPercent="5.2778%w"
+        app:layout_paddingRightPercent="5.2778%w"
+        app:layout_paddingTopPercent="3.8889%w"
+        app:layout_paddingBottomPercent="3.8889%w"
+        android:src="@drawable/icon_arrow_left"
+        android:clickable="true"
+        android:background="?selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/tv_top_bar_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textColor="@color/black001"
+        android:textSize="15sp"
+        app:layout_textSizePercent="4.17%w"/>
+
+    <TextView
+        android:id="@+id/tv_top_bar_right"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_widthPercent="13.33%w"
+        app:layout_heightPercent="13.33%w"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="添加"
+        android:textColor="@color/green001"
+        android:textSize="15sp"
+        app:layout_textSizePercent="4.17%w"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="?selectableItemBackground"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_1"
+        android:layout_below="@id/iv_top_bar_left"
+        android:background="@color/gray005" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

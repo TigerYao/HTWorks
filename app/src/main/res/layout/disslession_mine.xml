@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#fff"
+        app:layout_heightPercent="35%w"
+        app:layout_paddingBottomPercent="4.5%w"
+        app:layout_paddingLeftPercent="1%w"
+        app:layout_paddingRightPercent="3%w"
+        app:layout_paddingTopPercent="4%w"
+        app:layout_widthPercent="100%w">
+
+        <ImageView
+            android:id="@+id/img_select_status"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/img_down_select"
+            app:layout_heightPercent="6.1%w"
+            app:layout_marginRightPercent="3.3%w"
+            app:layout_widthPercent="6.1%w" />
+
+        <ImageView
+            android:id="@+id/iv_item_course_mine_scaleimg"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/img_select_status"
+            android:background="@drawable/loading"
+            android:scaleType="centerCrop"
+            app:layout_heightPercent="24.1%w"
+            app:layout_marginLeftPercent="1%w"
+            app:layout_marginTopPercent="1%w"
+            app:layout_widthPercent="33.6%w" />
+
+        <ImageView
+            android:id="@+id/iv_item_course_mine_gq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/iv_item_course_mine_scaleimg"
+            android:layout_alignLeft="@+id/iv_item_course_mine_scaleimg"
+            android:layout_alignRight="@+id/iv_item_course_mine_scaleimg"
+            android:layout_alignTop="@+id/iv_item_course_mine_scaleimg"
+            android:background="@drawable/gq"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignLeft="@+id/iv_item_course_mine_scaleimg"
+            android:src="@drawable/mark_today"
+            android:visibility="gone"
+            app:layout_marginTopPercent="0.8%w"
+            app:layout_heightPercent="10%w"
+            app:layout_widthPercent="10%w" />
+
+        <TextView
+            android:id="@+id/tv_item_course_mine_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_item_course_mine_scaleimg"
+            android:layout_gravity="center|left"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/iv_item_course_mine_scaleimg"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="公务员面试真功夫公务员面试真功夫tv_item_course_mine_startdatetv_item_course_mine_startdatetv_item_course_mine_startdate"
+            android:textColor="#333333"
+            app:layout_marginLeftPercent="3%w"
+            app:layout_textSizePercent="4%w" />
+
+        <RelativeLayout
+            android:id="@+id/rl_yincagchuang"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/rl_dismiss"
+            android:layout_below="@+id/rl_dismiss"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bj"
+            android:visibility="gone"
+            app:layout_heightPercent="8.3%w"
+            app:layout_widthPercent="22.2%w"
+            >
+
+            <TextView
+                android:id="@+id/tv_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="隐藏该课程"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                app:layout_textSizePercent="3.6%w"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_course_mine_startdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_course_mine_title"
+            android:layout_below="@+id/tv_item_course_mine_title"
+            android:text="18:30"
+            android:textColor="@color/course_center_price"
+            app:layout_marginTopPercent="12%h"
+            app:layout_textSizePercent="3.8%w" />
+
+        <TextView
+            android:id="@+id/tv_item_course_mine_centerdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_item_course_mine_startdate"
+            android:layout_below="@+id/tv_item_course_mine_title"
+            android:layout_toRightOf="@+id/tv_item_course_mine_startdate"
+            android:text="-"
+            android:textColor="@color/course_center_price"
+            app:layout_paddingLeftPercent="0.5%w"
+            app:layout_paddingRightPercent="0.5%w"
+            app:layout_textSizePercent="3.8%w" />
+
+        <TextView
+            android:id="@+id/tv_item_course_mine_enddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_item_course_mine_startdate"
+            android:layout_below="@+id/tv_item_course_mine_title"
+            android:layout_toRightOf="@+id/tv_item_course_mine_centerdate"
+            android:gravity="center|left"
+            android:text="18:30"
+            android:textColor="@color/course_center_price"
+            app:layout_textSizePercent="3.8%w" />
+
+        <TextView
+            android:id="@+id/tv_item_course_mine_timelength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_item_course_mine_scaleimg"
+            android:layout_alignLeft="@+id/tv_item_course_mine_title"
+            android:text="150课时"
+            android:textColor="@color/course_center_content"
+            app:layout_textSizePercent="3.8%w" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        app:layout_marginLeftPercent="3.3%w"
+        android:layout_alignParentBottom="true"
+        android:background="#d1d1d1"/>
+</com.zhy.android.percent.support.PercentRelativeLayout>

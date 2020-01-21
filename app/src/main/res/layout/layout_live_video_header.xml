@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image_live_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="@dimen/common_15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/video_play_title_back" />
+
+    <ImageView
+        android:id="@+id/live_title_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="12dp"
+        android:scaleType="center"
+        android:src="@drawable/video_play_title_more_land" />
+
+    <TextView
+        android:id="@+id/live_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/live_title_more_btn"
+        android:layout_toRightOf="@id/image_live_back"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:paddingRight="@dimen/common_10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/live_title_schedule_btn"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_white_border_bg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="课表"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/live_title_speed_btn"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/live_title_schedule_btn"
+        android:background="@drawable/shape_white_border_bg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="1.0x"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</merge>
